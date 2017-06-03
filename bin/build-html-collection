@@ -1,0 +1,38 @@
+#! /usr/bin/env node
+
+fs = require("fs")
+
+ejs      = require("ejs")
+
+if ( process.argv.length !== 5 ) {
+  console.error('Usage: build-html context template src')
+  process.exit(1)
+}
+
+context  = process.argv[2]
+template = ejs.compile(fs.readFileSync(process.argv[3]).toString())
+
+json = JSON.parse(fs.readFileSync(process.argv[4]))
+Object
+  .keys(json)
+  .map(function(key){
+    return new Map().set('key', key).set('item', json[key])
+  })
+  .map(function(map){
+    return map.set(
+      'urlBase',
+      context+'/'+map.get('key')+'.html'
+    )
+  })
+  .map(function(map){
+    return map.set('html', template({
+      context: context,
+      item: map.get('item'),
+      url:  "/static/"+map.get('urlBase')
+    }))
+  })
+  .map(function(map){
+    fs.writeFileSync('./dst/'+map.get('urlBase'), map.get('html'))
+  })
+
+// find {} --exec build > {name}.html \;

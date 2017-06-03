@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  font-family: 'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+  max-width: 960px;
+  margin: auto auto;
+  padding-bottom: 50px;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1.0);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.pulse:hover {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: 4;
+}
+
+.hoverDim a {
+  color: #fff;
+  transition: all ease-in-out .7s;
+}
+.hoverDim:hover a {
+  color: #3C3C3C;
+}
+.hoverDim a:hover {
+  border-color: white;
+  color: white;
+}
+
+.hoverFade i{
+  transition: all ease-in-out .7s;
+}
+
+.hoverFade:hover .inactive .fa-inverse{
+  color: #bebebe !important;
+}
+
+.hoverFade .inactive .fa-inverse:hover {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+.hoverFade:hover *:not(.inactive) .fa-stack-2x{
+  color: #bebebe !important;
+}

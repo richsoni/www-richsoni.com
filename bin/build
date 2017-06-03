@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+########################################
+# Posts
+# builds json,html collection, and index
+########################################
+POSTS_PATH=`realpath ./_posts`
+./bin/build-json $POSTS_PATH/*.md > ./blog/posts.json
+
+########################################
+# One off pages
+########################################
+# ./bin/build-html homepage  ./templates/basic.ejs dst/index.html
+# mkdir -p dst/subscribe
+# ./bin/build-html subscribe ./templates/basic.ejs dst/subscribe/index.html
+# ./bin/build-html wheelofimpressions ./templates/basic.ejs dst/index.html
+
+cd ../frontend && webpack

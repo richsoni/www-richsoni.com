@@ -1,0 +1,22 @@
+#! /usr/bin/env ruby
+
+# Flexibility to just write markdown for blogs
+# To just write songs in a folder
+# Low overhead of no server
+# staticly generated pages
+# isomorphic frontend
+# render collections and one off pages
+# possibly just push all data into data spot
+# snap togetherness
+
+##############################
+# Posts
+#      md
+#       |
+#       V
+#   data/posts.json
+# Build Data Into JSON sources
+
+
+buildPostsJSON
+buildSongsJSON

@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.18.0",
+    "flux": "^2.1.1",
+    "front-matter": "^2.1.2",
+    "highlight.js": "^9.12.0",
+    "jsx-loader": "^0.13.2",
+    "moment": "^2.11.1",
+    "object-assign": "^4.0.1",
+    "radium": "^0.16.2",
+    "react": "^0.13.3",
+    "remarkable": "^1.7.1",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richsoni/richsoni-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richsoni/richsoni-frontend/issues"
+  },
+  "homepage": "https://github.com/richsoni/richsoni-frontend#readme"
+}

@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="alternate" type="application/rss+xml" title="RichSoni.com" href="/feed.xml">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {% if page.title %}
+      <title>Rich Soni - {{ page.title }}</title>
+    {% else %}
+      <title>Rich Soni</title>
+    {% endif %}
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <meta name="viewport" content="initial-scale=1">
+    <!-- <link rel="stylesheet" href="/assets/bundles/app.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="print" href="/assets/bundles/print.css" > -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <script src="/bundle.js"></script>
+    <meta property="og:url" content="{{page.url}}" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:image" content="{{ page.attributes.image }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        clear: both;
+        font-family: 'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+        max-width: 960px;
+        margin: auto auto;
+        padding-bottom: 50px;
+        background-color: #232323;
+      }
+      a {
+        color: #428bca;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @-webkit-keyframes pulse {
+        from {
+            -webkit-transform: scale(1.0);
+          }
+        50% {
+            -webkit-transform: scale(1.1);
+          }
+        to {
+            -webkit-transform: scale(1.0);
+          }
+      }
+
+      .pulse:hover {
+        -webkit-animation-name: pulse;
+        -webkit-animation-duration: .7s;
+        -webkit-animation-iteration-count: 4;
+      }
+
+      .hoverDim a {
+        color: #fff;
+        transition: all ease-in-out .7s;
+      }
+      .hoverDim:hover a {
+        color: #3C3C3C;
+      }
+      .hoverDim a:hover {
+        border-color: white;
+        color: white;
+      }
+
+      .hoverFade i{
+        transition: all ease-in-out .7s;
+      }
+
+      .hoverFade:hover .inactive .fa-inverse{
+        color: #bebebe !important;
+      }
+
+      .hoverFade .inactive .fa-inverse:hover {
+        border-color: #000 !important;
+        color: #000 !important;
+      }
+
+      .hoverFade:hover *:not(.inactive) .fa-stack-2x{
+        color: #bebebe !important;
+      }
+    </style>
+  </head>
+  <body>
+    {{page.content}}
+  </body> 
+  <script> 
+    var Component = App.pages['{{page.react}}']
+    React.render(React.createElement(Component, {
+      pathname: window.location.pathname,
+    }), document.body)
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-43693123-1', 'richsoni.com');
+    ga('send', 'pageview');
+  </script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=190656394463883";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '10lsFa']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+</html>

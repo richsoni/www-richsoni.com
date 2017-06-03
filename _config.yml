@@ -22,3 +22,18 @@ collections:
     output: true
     directory: _posts/posts
     permalink: /blog/posts/:year-:month-:day-:title.html
+
+  songs:
+    output: true
+    directory: _songs
+    permalink: /songs/:title.html
+
+exclude: [node_modules, webpack.config.js]
+
+defaults:
+  -
+    scope:
+      type: 'posts'
+      path: ''
+    values:
+      react: 'post'

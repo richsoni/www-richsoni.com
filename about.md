@@ -1,5 +1,5 @@
 ---
-layout: page
+react: page
 title: About
 permalink: /about/
 ---

@@ -1,0 +1,26 @@
+#! /usr/bin/env node
+
+fs = require("fs")
+
+ejs      = require("ejs")
+
+if ( process.argv.length !== 5 ) {
+  console.error('Usage: build-html context template src')
+  process.exit(1)
+}
+
+context  = process.argv[2]
+template = ejs.compile(fs.readFileSync(process.argv[3]).toString())
+
+html = template({
+  context: context,
+  item: {
+    attributes:{
+      title: context
+    }
+  },
+  url:  process.argv[4].replace(/^dst/,'')
+})
+fs.writeFileSync(process.argv[4], html)
+
+// find {} --exec build > {name}.html \;

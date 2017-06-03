@@ -1,0 +1,48 @@
+#! /usr/bin/env node
+var fs   = require('fs')
+var path = require("path")
+
+var fm         = require('front-matter')
+var Remarkable = require('remarkable')
+var hljs       = require("highlight.js")
+
+if(process.argv.length < 3){
+  console.error('USAGE: post-to-json {files}')
+  process.exit(1)
+}
+
+md = new Remarkable({
+  html: true,
+  highlight: function (str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, str).value;
+      } catch (err) {}
+    }
+
+    try {
+      return hljs.highlightAuto(str).value;
+    } catch (err) {}
+
+    return ''; // use external default escaping
+  }
+})
+
+
+var json = process.argv
+  .splice(2)
+  .map(function(file){
+    var data = fs.readFileSync(file, 'utf8')
+    return [path.basename(file, '.md'), fm(data)]
+  })
+  .map(function(cons){
+    var post      = cons[1]
+    post.body = md.render(post.body)
+    return [cons[0], post]
+  })
+  .reduce(function(memo, item){
+    memo[item[0]] = item[1]
+    return memo
+  }, {})
+
+console.log(JSON.stringify(json))
