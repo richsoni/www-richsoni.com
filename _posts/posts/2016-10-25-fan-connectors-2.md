@@ -16,7 +16,7 @@ I conducted a survey both online and in person soliciting the following question
 There where 30 people surveyed so far.
 The results are posted below:
 
-<img style='width:500px' src='/blog/posts/images/10-20-1-survey-results.png' />
+<img style='width:500px' src='/blog/images/10-20-1-survey-results.png' />
 
 A few interesting points:
 1. I found one maven who found rap mixtapes with a special app for leaking mixtapes

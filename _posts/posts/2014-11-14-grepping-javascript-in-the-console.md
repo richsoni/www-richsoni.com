@@ -3,8 +3,8 @@ layout: post
 date: 2014-11-14
 title: "Sifting for Javascript, Ruby Style"
 categories: []
-avatar:   '/blog/posts/images/panning.jpg'
-hero:   '/blog/posts/images/panning.jpg'
+avatar:   '/blog/images/panning.jpg'
+hero:   '/blog/images/panning.jpg'
 tags: []
 revision: 1
 blurb: Porting the Ruby's grep operator to javascript has great debugging advantages

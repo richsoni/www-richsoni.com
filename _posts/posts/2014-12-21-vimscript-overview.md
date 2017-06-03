@@ -3,8 +3,8 @@ layout: post
 date: 2015-01-12
 title: On Vimscript
 categories: []
-avatar: '/blog/posts/images/four_freedoms2.jpg'
-hero: '/blog/posts/images/four_freedoms2.jpg'
+avatar: '/blog/images/four_freedoms2.jpg'
+hero: '/blog/images/four_freedoms2.jpg'
 tags: []
 revision: 11
 blurb: 'A Brief Transfer of Wisdom On Vimscript'
@@ -23,7 +23,7 @@ View the presentation below:
 > "Design is not making beauty, beauty emerges from selection, affinities, integration, love." ~ Louis Kahn
 
 <aside class='col-xs-6'>
-  <img class='img-responsive' src='/blog/posts/images/four_freedoms_map.png' >
+  <img class='img-responsive' src='/blog/images/four_freedoms_map.png' >
   <div class='caption'>
   The Four Freedoms Park, sandwiched between Manhattan and Long Island
   </div>

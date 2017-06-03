@@ -1,8 +1,8 @@
 ---
 layout: post
 categories: [Productivity, Development]
-avatar:   '/blog/posts/images/feet_on_desk.jpg'
-hero:   '/blog/posts/images/feet_on_desk.jpg'
+avatar:   '/blog/images/feet_on_desk.jpg'
+hero:   '/blog/images/feet_on_desk.jpg'
 tags: [Productivity, Development, Terminal]
 blurb: 'Once you start using you will never stop.  Its that good'
 title: 'Why You May Be Missing Out If You Dont Use TMUX'
@@ -90,7 +90,7 @@ A certain workflow is more efficient with two windows aligned next to each other
 1.  Split the current tmux window into two panes
 1.  resize the terminal window, and tmux will proportinally resize the panes
 
-<img class="img-responsive media-object" src='/blog/posts/images/tmux_split.gif' alt="miniature-article">
+<img class="img-responsive media-object" src='/blog/images/tmux_split.gif' alt="miniature-article">
 
 ## SSH
 
@@ -107,7 +107,7 @@ An external box needs to run a long script ( like an install script )
 1. Start the script and feel free to disconnect ( on purpose, or accidentally)
 1. Later on, ssh back in and attach to the tmux session to check on the progress
 
-<img class="img-responsive media-object" src='/blog/posts/images/tmux_ssh.gif' alt="miniature-article">
+<img class="img-responsive media-object" src='/blog/images/tmux_ssh.gif' alt="miniature-article">
 
 ## Accidentally Closing A Bunch Of Tabs
 
@@ -124,7 +124,7 @@ Now, the lost terminal windows need to be restored.
 
 1. Open a new terminal window and attach to the tmux session, everything is still there.
 
-<img class="img-responsive media-object" src='/blog/posts/images/tmux_accident.gif' alt="miniature-article">
+<img class="img-responsive media-object" src='/blog/images/tmux_accident.gif' alt="miniature-article">
 
 ## Morning set up
 
@@ -154,7 +154,7 @@ $ vim .
 1.  Write a tmux script that opens all the tabs, and executes commands in sequence
 1.  Meanwhile, go and talk with a buddy about how awesome Bob Dylan is.
 
-<img class="img-responsive media-object" src='/blog/posts/images/tmux_scripted.gif' alt="miniature-article">
+<img class="img-responsive media-object" src='/blog/images/tmux_scripted.gif' alt="miniature-article">
 
 
 # What to do

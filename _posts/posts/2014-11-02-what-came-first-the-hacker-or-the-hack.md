@@ -3,8 +3,8 @@ layout: post
 date: 2014-12-01
 title: "What Came First The Hacker Or The Hack"
 categories: [philosophy programming]
-avatar:   '/blog/posts/images/hacker.jpg'
-hero:   '/blog/posts/images/hacker.jpg'
+avatar:   '/blog/images/hacker.jpg'
+hero:   '/blog/images/hacker.jpg'
 tags: [philosophy programming]
 revision: 14
 blurb: Delving to an agelong dielema
@@ -31,7 +31,7 @@ These answers shed light on the inner-hacker, and assist in framing our minds to
 > There's no sense in being precise when you don't even know what you're talking about. ~ John Von Neumann
 
 <aside class='col-xs-12 col-sm-7 col-md-5 col-lg-4'>
-  <img style='width: 100%' src='/blog/posts/images/hackerhack.png' />
+  <img style='width: 100%' src='/blog/images/hackerhack.png' />
   <p>
     The definitions found in the dictionary are too specific.
     It is obvious that these words are regularly used more broadly.

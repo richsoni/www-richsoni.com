@@ -3,8 +3,8 @@ layout: post
 date: 2014-03-25
 title: 10 Tools Every Software Developer Should Know, Revisited
 categories: Coding
-avatar: '/blog/posts/images/Yoda_Luke.jpg'
-hero: '/blog/posts/images/Yoda_Luke.jpg'
+avatar: '/blog/images/Yoda_Luke.jpg'
+hero: '/blog/images/Yoda_Luke.jpg'
 tags: [coding, self development]
 revision: 14
 blurb: 'My opinionated must learn list of recommendations'
@@ -51,7 +51,7 @@ Here is my shortlist of tools:
 ## VI
 
 <div class='image block' style='max-height:100px'>
-  <img height='100%' src='/blog/posts/images/wrench.jpg' />
+  <img height='100%' src='/blog/images/wrench.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -83,7 +83,7 @@ At a minimum, learn to insert text, save/quit, and move around.
 ## Regular Expressions
 
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/oi-can.jpg' />
+  <img height='100%' src='/blog/images/oi-can.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -115,7 +115,7 @@ For example, the regex: ```^\$?[0-9,]+(\.[0-9]+)?$```, matches any valid US curr
 
 ## Basic GNU Tools
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/toolbox.jpeg' />
+  <img height='100%' src='/blog/images/toolbox.jpeg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -160,7 +160,7 @@ Here are the steps:  *grab the file; print each word on a single line; alphabeti
 
 ## Bash
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/jack.jpg' />
+  <img height='100%' src='/blog/images/jack.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -185,7 +185,7 @@ As such, all developers benefit from knowing bash even if they use another shell
 
 ## Javascript
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/Emergency-tool-kit.jpg' />
+  <img height='100%' src='/blog/images/Emergency-tool-kit.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -211,7 +211,7 @@ In addition to being portable, Javascript can dice and slice web pages to quickl
 
 ## Emacs
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/air-compressor.jpg' />
+  <img height='100%' src='/blog/images/air-compressor.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -238,7 +238,7 @@ As such, learning emacs keybindings enables a user to manouver a [bash](#Bash) s
 
 ## SQL
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/obd-tool.jpg' />
+  <img height='100%' src='/blog/images/obd-tool.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -264,7 +264,7 @@ With a strong foundation in SQL, learning any dialect will be a breeze.
 
 ## Markdown
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/pry-bar.jpg' />
+  <img height='100%' src='/blog/images/pry-bar.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -290,7 +290,7 @@ Its syntax makes it painless to quickly produce documentation.
 
 ## Tmux
 <div class='image block' style='max-height:100px' >
-  <img height='100%' src='/blog/posts/images/clamp.jpg' />
+  <img height='100%' src='/blog/images/clamp.jpg' />
 </div>
 
 <blockquote style='clear:none'>
@@ -320,7 +320,7 @@ Tmux can be controlled by scripts, and automate repetitive workflow tasks.
 
 ##  R
 <div class='image block' style='max-height:100px' >
-  <img  height='100%' src='/blog/posts/images/tape-measure.jpg' />
+  <img  height='100%' src='/blog/images/tape-measure.jpg' />
 </div>
 
 <blockquote style='clear:none'>
