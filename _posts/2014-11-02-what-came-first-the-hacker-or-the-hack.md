@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2014-12-01
+date: 2014-11-02
 title: "What Came First The Hacker Or The Hack"
 categories: [philosophy programming]
 avatar:   '/blog/images/hacker.jpg'

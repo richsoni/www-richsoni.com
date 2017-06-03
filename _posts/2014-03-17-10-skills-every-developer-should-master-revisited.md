@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2014-03-25
+date: 2014-03-17
 title: 10 Tools Every Software Developer Should Know, Revisited
 categories: Coding
 avatar: '/blog/images/Yoda_Luke.jpg'

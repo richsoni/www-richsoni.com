@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-01-12
+date: 2014-12-21
 title: On Vimscript
 categories: []
 avatar: '/blog/images/four_freedoms2.jpg'
