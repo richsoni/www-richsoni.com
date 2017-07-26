@@ -1,7 +1,6 @@
 "use strict"
 const React           = require("react")
-const Header          = require("../../shared/header/component")
-const Footer          = require("../../shared/footer/component")
+const HF              = require("../../shared/header-footer/")
 const Disqus          = require("../../shared/disqus/component")
 const parseCollection = require("../../lib/parseCollection")
 const ajax            = require("../../lib/ajax")
@@ -22,20 +21,9 @@ class RootComponent extends React.Component{
   }
 
   render() {
-    console.log(this.state.song)
-    return <div style={{marginTop: '5em'}}>
-      <Header />
-      <div style={{
-        backgroundColor: 'white',
-        maxWidth: 960,
-        margin: 'auto auto',
-        textAlign: 'center',
-        padding: '1em',
-      }}>
-        {this.renderSong()}
-      </div>
-      <Footer />
-    </div>
+    return <HF>
+      {this.renderSong()}
+    </HF>
   }
 
   renderSong() {

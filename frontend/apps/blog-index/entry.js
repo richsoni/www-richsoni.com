@@ -1,7 +1,6 @@
 "use strict"
 const React           = require("react")
-const Header          = require("../../shared/header/component")
-const Footer          = require("../../shared/footer/component")
+const HF              = require("../../shared/header-footer/")
 const parseCollection = require("../../lib/parseCollection")
 const ajax            = require("../../lib/ajax")
 const PostPreview     = require("./post-preview")
@@ -42,43 +41,31 @@ class _RootComponent extends React.Component{
   }
 
   render() {
-    return <div style={{
-      paddingTop: '5em',
-      paddingBottom: '2em',
-    }}>
-      <Header />
+    return <HF>
       <div style={{
-        maxWidth: 960,
+        width: '100%',
+        borderBottom: '1px solid #bebebe',
+        paddingBottom: '.5em',
+        maxWidth: 650,
         margin: 'auto auto',
-        padding: '2em',
-        backgroundColor: '#ffffff',
+        minHeight: '1em',
+        overflow: 'hidden',
       }}>
+        <div style={{float: 'left', lineHeight: '2em', width: '3em'}}>Latest</div>
         <div style={{
-          width: '100%',
-          borderBottom: '1px solid #bebebe',
-          paddingBottom: '.5em',
-          maxWidth: 650,
-          margin: 'auto auto',
-          minHeight: '1em',
-          overflow: 'hidden',
-        }}>
-          <div style={{float: 'left', lineHeight: '2em', width: '3em'}}>Latest</div>
-          <div style={{
-            display: 'flex',
-            flexFlow: 'row wrap',
-            justifyContent: 'flex-end',
-          }}
-            className='hoverFade'
-          >
-            {this.renderControl('preview', 'fa-align-justify')}
-            {this.renderControl('grid', 'fa-th')}
-            {this.renderControl('list', 'fa-list-ul')}
-          </div>
+          display: 'flex',
+          flexFlow: 'row wrap',
+          justifyContent: 'flex-end',
+        }}
+          className='hoverFade'
+        >
+          {this.renderControl('preview', 'fa-align-justify')}
+          {this.renderControl('grid', 'fa-th')}
+          {this.renderControl('list', 'fa-list-ul')}
         </div>
-        {this._renderPosts()}
       </div>
-      <Footer />
-    </div>
+      {this._renderPosts()}
+    </HF>
   }
 
   renderControl(type, icon){

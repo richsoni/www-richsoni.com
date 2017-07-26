@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<script> 
+  var Component = App.pages.show
+  if(Component){
+    React.render(React.createElement(Component, {
+      pathname: window.location.pathname,
+      page: {{ page.title | jsonify }},
+      setlist: {{page.setlist | jsonify}},
+      locationKey: {{ page.locationKey | jsonify }},
+      date: {{ page.date | jsonify }},
+    }), document.body)
+  }
+</script>

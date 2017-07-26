@@ -5,7 +5,9 @@ const pages = {
   subscribe:    require("./apps/subscribe/entry"),
   blog:         require("./apps/blog-index/entry"),
   songIndex: require("./apps/song-index/entry"),
+  shows: require('./apps/shows/'),
   songs:        require("./apps/song/entry"),
+  show: require("./apps/show/"),
   post: require("./apps/blog-post/entry"),
 }
 

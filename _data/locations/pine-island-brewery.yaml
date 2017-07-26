@@ -1,0 +1,10 @@
+name: "Pine Island Brewing Co."
+address:
+  # address_1: nil
+  # address_2: nil
+  country: "United States"
+  # latitude: nil
+  locality: "Pine Island"
+  # longitude: nil
+  # postal_code: nil
+  region: "New York"

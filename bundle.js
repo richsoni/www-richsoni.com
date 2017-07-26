@@ -53,8 +53,10 @@
 	  subscribe: __webpack_require__(222),
 	  blog: __webpack_require__(223),
 	  songIndex: __webpack_require__(347),
-	  songs: __webpack_require__(348),
-	  post: __webpack_require__(350)
+	  shows: __webpack_require__(348),
+	  songs: __webpack_require__(349),
+	  show: __webpack_require__(351),
+	  post: __webpack_require__(352)
 	};
 
 	window.App = {
@@ -23945,8 +23947,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(1);
-	var Header = __webpack_require__(210);
-	var Footer = __webpack_require__(219);
+	var HF = __webpack_require__(355);
 	var Radium = __webpack_require__(159);
 	var Style = Radium.Style;
 
@@ -23973,82 +23974,68 @@
 	    key: "render",
 	    value: function render() {
 	      return React.createElement(
-	        "div",
+	        HF,
 	        null,
-	        React.createElement(Header, null),
 	        React.createElement(
-	          "div",
+	          "form",
 	          {
-	            style: {
-	              textAlign: 'center',
-	              padding: '1em',
-	              backgroundColor: '#fff',
-	              boxShadow: '0px 0px 1px #797878',
-	              margin: '1em'
-	            }
+	            action: "//richsoni.us8.list-manage.com/subscribe/post?u=bc85e50b336a97670d097c9d0&id=cd363f3412",
+	            method: "post",
+	            id: "mc-embedded-subscribe-form",
+	            name: "mc-embedded-subscribe-form",
+	            target: "_blank",
+	            noValidate: true,
+	            style: { textAlign: "left", margin: 'auto auto' }
 	          },
 	          React.createElement(
-	            "form",
+	            "h2",
+	            null,
+	            "Subscribe To The Rich Soni Mailing List"
+	          ),
+	          React.createElement(
+	            "p",
+	            { style: p },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email Address"
+	            ),
+	            React.createElement("input", { style: input, type: "email", name: "EMAIL" })
+	          ),
+	          React.createElement(
+	            "p",
+	            { style: p },
+	            React.createElement(
+	              "label",
+	              null,
+	              "First Name "
+	            ),
+	            React.createElement("input", { style: input, type: "text", name: "FNAME" })
+	          ),
+	          React.createElement(
+	            "p",
+	            { style: p },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Last Name "
+	            ),
+	            React.createElement("input", { style: input, type: "text", name: "LNAME" })
+	          ),
+	          React.createElement(
+	            "div",
 	            {
-	              action: "//richsoni.us8.list-manage.com/subscribe/post?u=bc85e50b336a97670d097c9d0&id=cd363f3412",
-	              method: "post",
-	              id: "mc-embedded-subscribe-form",
-	              name: "mc-embedded-subscribe-form",
-	              target: "_blank",
-	              noValidate: true,
-	              style: { textAlign: "left", margin: 'auto auto' }
+	              style: { position: 'absolute', left: '-5000px' },
+	              ariaHidden: "true"
 	            },
-	            React.createElement(
-	              "h2",
-	              null,
-	              "Subscribe To The Rich Soni Mailing List"
-	            ),
-	            React.createElement(
-	              "p",
-	              { style: p },
-	              React.createElement(
-	                "label",
-	                null,
-	                "Email Address"
-	              ),
-	              React.createElement("input", { style: input, type: "email", name: "EMAIL" })
-	            ),
-	            React.createElement(
-	              "p",
-	              { style: p },
-	              React.createElement(
-	                "label",
-	                null,
-	                "First Name "
-	              ),
-	              React.createElement("input", { style: input, type: "text", name: "FNAME" })
-	            ),
-	            React.createElement(
-	              "p",
-	              { style: p },
-	              React.createElement(
-	                "label",
-	                null,
-	                "Last Name "
-	              ),
-	              React.createElement("input", { style: input, type: "text", name: "LNAME" })
-	            ),
-	            React.createElement(
-	              "div",
-	              {
-	                style: { position: 'absolute', left: '-5000px' },
-	                ariaHidden: "true"
-	              },
-	              React.createElement("input", { type: "text", name: "b_bc85e50b336a97670d097c9d0_cd363f3412", tabIndex: "-1", value: "" })
-	            ),
-	            React.createElement(
-	              "div",
-	              null,
-	              React.createElement("input", { style: { background: '#5d5d5d', color: '#fff', border: 'none', cursor: 'pointer', fontSize: '1.3em', padding: '.2em' }, type: "submit", value: "Subscribe", name: "subscribe", id: "mc-embedded-subscribe" })
-	            )
+	            React.createElement("input", { type: "text", name: "b_bc85e50b336a97670d097c9d0_cd363f3412", tabIndex: "-1", value: "" })
+	          ),
+	          React.createElement(
+	            "div",
+	            null,
+	            React.createElement("input", { style: { background: '#5d5d5d', color: '#fff', border: 'none', cursor: 'pointer', fontSize: '1.3em', padding: '.2em' }, type: "submit", value: "Subscribe", name: "subscribe", id: "mc-embedded-subscribe" })
 	          )
-	        ),
-	        React.createElement(Footer, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -24075,8 +24062,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(1);
-	var Header = __webpack_require__(210);
-	var Footer = __webpack_require__(219);
+	var HF = __webpack_require__(355);
 	var parseCollection = __webpack_require__(224);
 	var ajax = __webpack_require__(225);
 	var PostPreview = __webpack_require__(226);
@@ -24124,53 +24110,39 @@
 	    key: "render",
 	    value: function render() {
 	      return React.createElement(
-	        "div",
-	        { style: {
-	            paddingTop: '5em',
-	            paddingBottom: '2em'
-	          } },
-	        React.createElement(Header, null),
+	        HF,
+	        null,
 	        React.createElement(
 	          "div",
 	          { style: {
-	              maxWidth: 960,
+	              width: '100%',
+	              borderBottom: '1px solid #bebebe',
+	              paddingBottom: '.5em',
+	              maxWidth: 650,
 	              margin: 'auto auto',
-	              padding: '2em',
-	              backgroundColor: '#ffffff'
+	              minHeight: '1em',
+	              overflow: 'hidden'
 	            } },
 	          React.createElement(
 	            "div",
-	            { style: {
-	                width: '100%',
-	                borderBottom: '1px solid #bebebe',
-	                paddingBottom: '.5em',
-	                maxWidth: 650,
-	                margin: 'auto auto',
-	                minHeight: '1em',
-	                overflow: 'hidden'
-	              } },
-	            React.createElement(
-	              "div",
-	              { style: { float: 'left', lineHeight: '2em', width: '3em' } },
-	              "Latest"
-	            ),
-	            React.createElement(
-	              "div",
-	              { style: {
-	                  display: 'flex',
-	                  flexFlow: 'row wrap',
-	                  justifyContent: 'flex-end'
-	                },
-	                className: "hoverFade"
-	              },
-	              this.renderControl('preview', 'fa-align-justify'),
-	              this.renderControl('grid', 'fa-th'),
-	              this.renderControl('list', 'fa-list-ul')
-	            )
+	            { style: { float: 'left', lineHeight: '2em', width: '3em' } },
+	            "Latest"
 	          ),
-	          this._renderPosts()
+	          React.createElement(
+	            "div",
+	            { style: {
+	                display: 'flex',
+	                flexFlow: 'row wrap',
+	                justifyContent: 'flex-end'
+	              },
+	              className: "hoverFade"
+	            },
+	            this.renderControl('preview', 'fa-align-justify'),
+	            this.renderControl('grid', 'fa-th'),
+	            this.renderControl('list', 'fa-list-ul')
+	          )
 	        ),
-	        React.createElement(Footer, null)
+	        this._renderPosts()
 	      );
 	    }
 	  }, {
@@ -36044,8 +36016,7 @@
 
 	var React = __webpack_require__(1);
 	var Radium = __webpack_require__(159);
-	var Header = __webpack_require__(210);
-	var Footer = __webpack_require__(219);
+	var HF = __webpack_require__(355);
 	var parseCollection = __webpack_require__(224);
 	var releases = __webpack_require__(208);
 	var ajax = __webpack_require__(225);
@@ -36200,19 +36171,15 @@
 	    key: "render",
 	    value: function render() {
 	      return React.createElement(
-	        "div",
+	        HF,
 	        { style: {
-	            paddingTop: '5em',
-	            paddingBottom: '2em',
-	            backgroundColor: '#232323'
+	            backgroundColor: 'transparent'
 	          } },
-	        React.createElement(Header, null),
 	        React.createElement(
 	          "div",
 	          { style: {
 	              maxWidth: 960,
 	              margin: 'auto auto',
-	              textAlign: 'left',
 	              padding: '1em'
 	            } },
 	          React.createElement(
@@ -36233,8 +36200,7 @@
 	            "Live Bootlegs"
 	          ),
 	          this._renderCategory("live")
-	        ),
-	        React.createElement(Footer, null)
+	        )
 	      );
 	    }
 	  }, {
@@ -36300,14 +36266,67 @@
 
 	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var HF = __webpack_require__(355);
+
+	var Element = (function (_React$Component) {
+	  _inherits(Element, _React$Component);
+
+	  function Element() {
+	    _classCallCheck(this, Element);
+
+	    _get(Object.getPrototypeOf(Element.prototype), "constructor", this).apply(this, arguments);
+	  }
+
+	  _createClass(Element, [{
+	    key: "render",
+	    value: function render() {
+	      console.log(this.props);
+	      return _react2["default"].createElement(
+	        HF,
+	        null,
+	        this.props.shows.map(function (show) {
+	          return _react2["default"].createElement(
+	            "div",
+	            null,
+	            show.locationKey
+	          );
+	        })
+	      );
+	    }
+	  }]);
+
+	  return Element;
+	})(_react2["default"].Component);
+
+	module.exports = Element;
+
+/***/ }),
+/* 349 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(1);
-	var Header = __webpack_require__(210);
-	var Footer = __webpack_require__(219);
-	var Disqus = __webpack_require__(349);
+	var HF = __webpack_require__(355);
+	var Disqus = __webpack_require__(350);
 	var parseCollection = __webpack_require__(224);
 	var ajax = __webpack_require__(225);
 	var KEY = window.location.pathname.replace('/songs/', '').replace('.html', '');
@@ -36335,23 +36354,10 @@
 	  _createClass(RootComponent, [{
 	    key: "render",
 	    value: function render() {
-	      console.log(this.state.song);
 	      return React.createElement(
-	        "div",
-	        { style: { marginTop: '5em' } },
-	        React.createElement(Header, null),
-	        React.createElement(
-	          "div",
-	          { style: {
-	              backgroundColor: 'white',
-	              maxWidth: 960,
-	              margin: 'auto auto',
-	              textAlign: 'center',
-	              padding: '1em'
-	            } },
-	          this.renderSong()
-	        ),
-	        React.createElement(Footer, null)
+	        HF,
+	        null,
+	        this.renderSong()
 	      );
 	    }
 	  }, {
@@ -36394,7 +36400,7 @@
 	module.exports = RootComponent;
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36443,7 +36449,124 @@
 	})(React.Component);
 
 /***/ }),
-/* 350 */
+/* 351 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(1);
+	var moment = window.moment = __webpack_require__(227);
+	var HF = __webpack_require__(355);
+	var Disqus = __webpack_require__(350);
+	var ajax = __webpack_require__(225);
+
+	var RootComponent = (function (_React$Component) {
+	  _inherits(RootComponent, _React$Component);
+
+	  function RootComponent() {
+	    var _this = this;
+
+	    _classCallCheck(this, RootComponent);
+
+	    _get(Object.getPrototypeOf(RootComponent.prototype), "constructor", this).call(this);
+	    this.state = { songs: null, locations: null };
+	    ajax.get('/api/locations.json', (function (payload) {
+	      var locations = JSON.parse(payload);
+	      _this.setState({ locations: locations });
+	    }).bind(this));
+	    ajax.get('/api/songs.json', (function (payload) {
+	      var songs = JSON.parse(payload).reduce(function (memo, item) {
+	        return _extends({}, memo, _defineProperty({}, item.slug, item));
+	      }, {});
+	      _this.setState({ songs: songs });
+	    }).bind(this));
+	  }
+
+	  _createClass(RootComponent, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        HF,
+	        null,
+	        this.renderShow()
+	      );
+	    }
+	  }, {
+	    key: "renderShow",
+	    value: function renderShow() {
+	      var _this2 = this;
+
+	      if (this.state.songs && this.state.locations) {
+	        var _location = this.state.locations[this.props.locationKey];
+	        console.log(this.props, this.state);
+	        return React.createElement(
+	          "div",
+	          { style: {
+	              textAlign: 'center'
+	            } },
+	          React.createElement("h1", { style: {
+	              display: 'flex',
+	              justifyContent: 'center',
+	              alignItems: 'center'
+	            } }),
+	          React.createElement(
+	            "p",
+	            null,
+	            moment(this.props.date).format("MMMM DD, YYYY")
+	          ),
+	          React.createElement(
+	            "p",
+	            null,
+	            _location.name
+	          ),
+	          React.createElement("hr", null),
+	          React.createElement(
+	            "h2",
+	            null,
+	            "Setlist"
+	          ),
+	          this.props.setlist.map(function (sl) {
+	            var song = _this2.state.songs[sl];
+	            if (!song) {
+	              console.error(sl, " is not a song");
+	            }
+	            return React.createElement(
+	              "div",
+	              { key: song.slug },
+	              song.title
+	            );
+	          }),
+	          React.createElement(
+	            "h3",
+	            null,
+	            "Comments"
+	          ),
+	          React.createElement(Disqus, null)
+	        );
+	      }
+	      return React.createElement("div", null);
+	    }
+	  }]);
+
+	  return RootComponent;
+	})(React.Component);
+
+	module.exports = RootComponent;
+
+/***/ }),
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36458,10 +36581,10 @@
 
 	var React = __webpack_require__(1);
 	var moment = __webpack_require__(227);
-	var style = __webpack_require__(351);
+	var style = __webpack_require__(353);
 	var Header = __webpack_require__(210);
 	var Footer = __webpack_require__(219);
-	var Disqus = __webpack_require__(349);
+	var Disqus = __webpack_require__(350);
 	var parseCollection = __webpack_require__(224);
 	var ajax = __webpack_require__(225);
 	var Radium = __webpack_require__(159);
@@ -36556,7 +36679,7 @@
 	module.exports = RootComponent;
 
 /***/ }),
-/* 351 */
+/* 353 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -36757,6 +36880,71 @@
 	    justifyContent: 'center'
 	  }
 	};
+
+/***/ }),
+/* 354 */,
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Header = __webpack_require__(210);
+	var Footer = __webpack_require__(219);
+
+	var Element = (function (_React$Component) {
+	  _inherits(Element, _React$Component);
+
+	  function Element() {
+	    _classCallCheck(this, Element);
+
+	    _get(Object.getPrototypeOf(Element.prototype), "constructor", this).apply(this, arguments);
+	  }
+
+	  _createClass(Element, [{
+	    key: "render",
+	    value: function render() {
+	      var style = this.props.style || {};
+	      return _react2["default"].createElement(
+	        "div",
+	        { style: {} },
+	        _react2["default"].createElement(Header, null),
+	        _react2["default"].createElement(
+	          "div",
+	          { style: _extends({
+	              maxWidth: 960,
+	              margin: 'auto auto',
+	              marginTop: '1.5em',
+	              padding: '2em',
+	              backgroundColor: 'white',
+	              boxShadow: '0px 0px 1px #797878'
+	            }, style) },
+	          this.props.children
+	        ),
+	        _react2["default"].createElement(Footer, null)
+	      );
+	    }
+	  }]);
+
+	  return Element;
+	})(_react2["default"].Component);
+
+	module.exports = Element;
 
 /***/ })
 /******/ ]);

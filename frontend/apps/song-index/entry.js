@@ -1,8 +1,7 @@
 "use strict"
 const React           = require("react")
 const Radium          = require("radium")
-const Header          = require("../../shared/header/component")
-const Footer          = require("../../shared/footer/component")
+const HF              = require("../../shared/header-footer/")
 const parseCollection = require("../../lib/parseCollection")
 const releases        = require("../../data/releases")
 const ajax            = require("../../lib/ajax")
@@ -94,16 +93,12 @@ class RootComponent extends React.Component{
   }
 
   render() {
-    return <div style={{
-      paddingTop: '5em',
-      paddingBottom: '2em',
-      backgroundColor: '#232323',
+    return <HF style={{
+      backgroundColor: 'transparent',
     }}>
-      <Header />
       <div style={{
         maxWidth: 960,
         margin: 'auto auto',
-        textAlign: 'left',
         padding: '1em',
       }}>
         <Heading>Albums</Heading>
@@ -113,8 +108,7 @@ class RootComponent extends React.Component{
         <Heading>Live Bootlegs</Heading>
         {this._renderCategory("live")}
       </div>
-      <Footer />
-    </div>
+    </HF>
   }
 
   _renderCategory(category){

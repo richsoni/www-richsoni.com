@@ -23,10 +23,20 @@ collections:
     directory: _posts/posts
     permalink: /blog/posts/:year-:month-:day-:title.html
 
+  api:
+    output: true
+    directory: _api
+    permalink: /api/:title.json
+
   songs:
     output: true
     directory: _songs
     permalink: /songs/:title.html
+
+  shows:
+    output: true
+    directory: _shows
+    permalink: /shows/:year-:month-:day-:slug.html
 
 exclude: [node_modules, webpack.config.js]
 
@@ -37,3 +47,10 @@ defaults:
       path: ''
     values:
       react: 'post'
+
+  -
+    scope:
+      type: 'shows'
+      path: ''
+    values:
+      layout: 'show'
