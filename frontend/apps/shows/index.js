@@ -1,6 +1,6 @@
 import React from 'react';
 const HF = require("../../shared/header-footer/")
-class Element extends React.Component {
+class Shows extends React.Component {
   render(){
     console.log(this.props)
     return <HF>
@@ -12,4 +12,4 @@ class Element extends React.Component {
     </HF>
   }
 }
-module.exports = Element;
+module.exports = Shows;

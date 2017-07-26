@@ -9,18 +9,18 @@ class RootComponent extends React.Component{
   constructor() {
     super()
     this.state = { songs: null, locations: null }
-    ajax.get('/api/locations.json', (payload) => {
+    ajax.get('/api/locations.json', ((payload) => {
       const locations = JSON.parse(payload)
       this.setState({locations})
-    }.bind(this));
-    ajax.get('/api/songs.json', (payload) => {
+    }).bind(this));
+    ajax.get('/api/songs.json', ((payload) => {
       const songs = JSON
         .parse(payload)
         .reduce((memo, item) => {
           return {...memo, [item.slug]: item}
         }, {})
       this.setState({songs})
-    }.bind(this));
+    }).bind(this));
   }
 
   render() {
