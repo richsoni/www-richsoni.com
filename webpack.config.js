@@ -14,13 +14,22 @@ config.output = {
 config.module.rules = []
 config.plugins = []
 
+// React in production assumes this is set
+// We can leverage this as well
+  config.plugins.push(
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }))
+
 // To require styles in Webpack, you can use require directly in a js file
 // This plugin will extract these, and create a css bundle
 // https://webpack.js.org/plugins/extract-text-webpack-plugin/#usage-example-with-css
 // TODO: our SASS can be compiled with the sass-loader in a similar fashion
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-config.plugins.push( new ExtractTextPlugin('css/[name].[chunkhash].css') );
+config.plugins.push( new ExtractTextPlugin('css/[name].css') );
 
 config.module.rules.push({
   test: /^((?!\.module).)*\.css$/,
