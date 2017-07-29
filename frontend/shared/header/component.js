@@ -106,7 +106,7 @@ class Small extends React.Component {
           }}>
             <a style={{padding: '.3em'}} href='/blog'>Blog</a>
             <a style={{padding: '.3em'}} href='/music'>Music</a>
-            <a style={{padding: '.3em'}} href='https://www.facebook.com/richsonimusic/events'>Live</a>
+            <a style={{padding: '.3em'}} href='/shows'>Live</a>
           </nav>
           <SocialButtons style={{
             marginTop: '3em',
@@ -184,7 +184,7 @@ class Big extends React.Component {
           >
             <a style={{textDecoration: 'none', marginLeft: '1em'}}href='/blog'>Blog</a>
             <a style={{textDecoration: 'none', marginLeft: '1em'}}href='/music'>Music</a>
-            <a style={{textDecoration: 'none', marginLeft: '1em'}} href='https://www.facebook.com/richsonimusic/events'>Live</a>
+            <a style={{textDecoration: 'none', marginLeft: '1em'}} href='/shows'>Live</a>
           </nav>
           <SocialButtons
             style={{

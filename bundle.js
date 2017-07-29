@@ -11016,7 +11016,7 @@ var Small = function (_React$Component3) {
             ),
             React.createElement(
               "a",
-              { style: { padding: '.3em' }, href: "https://www.facebook.com/richsonimusic/events" },
+              { style: { padding: '.3em' }, href: "/shows" },
               "Live"
             )
           ),
@@ -11151,7 +11151,7 @@ var Big = function (_React$Component5) {
             ),
             React.createElement(
               "a",
-              { style: { textDecoration: 'none', marginLeft: '1em' }, href: "https://www.facebook.com/richsonimusic/events" },
+              { style: { textDecoration: 'none', marginLeft: '1em' }, href: "/shows" },
               "Live"
             )
           ),
@@ -44134,7 +44134,7 @@ var upcomingShows = function upcomingShows() {
   return shows.filter(function (show) {
     return (0, _moment2.default)(show.date) > now;
   }).sort(function (a, b) {
-    (0, _moment2.default)(a.date) >= (0, _moment2.default)(b.date);
+    return a.date > (0, _moment2.default)(b.date);
   });
 };
 
@@ -44145,7 +44145,7 @@ var pastShows = function pastShows() {
   return shows.filter(function (show) {
     return (0, _moment2.default)(show.date) < now;
   }).sort(function (a, b) {
-    (0, _moment2.default)(a.date) >= (0, _moment2.default)(b.date);
+    return a.date < b.date;
   });
 };
 
