@@ -44134,7 +44134,7 @@ var upcomingShows = function upcomingShows() {
   return shows.filter(function (show) {
     return (0, _moment2.default)(show.date) > now;
   }).sort(function (a, b) {
-    return a.date > (0, _moment2.default)(b.date);
+    return (0, _moment2.default)(b.date) - (0, _moment2.default)(a.date);
   });
 };
 
@@ -44145,7 +44145,7 @@ var pastShows = function pastShows() {
   return shows.filter(function (show) {
     return (0, _moment2.default)(show.date) < now;
   }).sort(function (a, b) {
-    return a.date < b.date;
+    return (0, _moment2.default)(b.date) - (0, _moment2.default)(a.date);
   });
 };
 
