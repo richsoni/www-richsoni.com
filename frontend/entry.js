@@ -1,4 +1,5 @@
 const React = window.React = require("react")
+const ReactDOM = window.ReactDOM = require('react-dom')
 
 const pages = {
   home:     require("./apps/homepage/entry"),
@@ -16,7 +17,7 @@ window.App = {
   boot: function(page, attrs){
     let Component = pages[page]
     if (Component){
-      React.render(<Component {...attrs} />, document.body)
+      ReactDOM.render(<Component {...attrs} />, document.body)
     } else {
       console.error(page, ' is not an app')
     }

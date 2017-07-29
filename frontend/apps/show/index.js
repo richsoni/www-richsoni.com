@@ -39,6 +39,17 @@ class RootComponent extends React.Component{
           <h1>{showNameLong(this.props, _location)}</h1>
           <h2>{_location.name}</h2>
         <hr />
+        {this.setlist()}
+        <h3>Comments</h3>
+        <Disqus />
+      </div>
+    }
+    return <div />
+  }
+
+  setlist() {
+    if(this.props.setlist && this.props.setlist.length){
+      return <div>
         <h2>Setlist</h2>
         <ol>
           {
@@ -49,11 +60,10 @@ class RootComponent extends React.Component{
             })
           }
         </ol>
-        <h3>Comments</h3>
-        <Disqus />
       </div>
+    } else {
+      return <div />
     }
-    return <div />
   }
 }
 

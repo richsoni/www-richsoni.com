@@ -1,7 +1,4 @@
 ---
-date: 2017-07-17
-layout: show
-locationKey: pine-island-brewery
 setlist:
   - queen-of-the-carnival
   - diamonds-on-the-soles-of-her-shoes
@@ -47,4 +44,3 @@ setlist:
   - planes-trains-autoresponders
   - together
 ---
-

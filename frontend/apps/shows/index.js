@@ -1,21 +1,41 @@
 import React from 'react';
+import moment from 'moment';
 import {showNameLong} from '../../shared/presenters';
-const HF = require("../../shared/header-footer/")
-const styles = require('./styles.module.css');
+import Presenter from './presenter';
+
+const showName = (show, _location) => {
+  return `${moment(show.date).format("MM/DD/YY")} ${_location.name}, ${_location.address.locality}, ${_location.address.region}`;
+}
+
+const upcomingShows = (shows = []) => {
+  const now = moment()
+  return shows
+    .filter((show) => moment(show.date) > now)
+    .sort((a, b) => {
+      moment(a.date) >= moment(b.date)
+    })
+}
+
+const pastShows = (shows = []) => {
+  const now = moment()
+  return shows
+    .filter((show) => moment(show.date) < now)
+    .sort((a, b) => {
+      moment(a.date) >= moment(b.date)
+    })
+}
+
 class Shows extends React.Component {
   render(){
     console.log(this.props)
-    return <HF>
-      <ul>
-        {this.props.shows.map((show) => {
-          console.log(show)
-          const _location = this.props.locations[show.locationKey];
-          return <li >
-            <a href={show.url}>{showNameLong(show, _location)}</a>
-          </li>
-        })}
-      </ul>
-    </HF>
+    const loadedShows = this.props.shows
+      .map((show) => { return {...show, location: this.props.locations[show.locationKey]}})
+      .map((show) => { return {...show, _title: showName(show, show.location)}})
+    return <Presenter
+      locations={this.props.locations}
+      upcomingShows={upcomingShows(loadedShows)}
+      pastShows={pastShows(loadedShows)}
+    />
   }
 }
 module.exports = Shows;
