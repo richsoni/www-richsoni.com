@@ -4,6 +4,8 @@ const moment = window.moment = require("moment")
 const HF = require("../../shared/header-footer/")
 const Disqus = require("../../shared/disqus/component")
 const ajax   = require("../../lib/ajax")
+import styles from './styles.module.css';
+import {showNameLong} from '../../shared/presenters';
 
 class RootComponent extends React.Component{
   constructor() {
@@ -33,26 +35,20 @@ class RootComponent extends React.Component{
     if( this.state.songs && this.state.locations ){
       const _location = this.state.locations[this.props.locationKey];
       console.log(this.props, this.state)
-      return <div style={{
-        textAlign: 'center',
-      }}>
-        <h1 style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        </h1>
-          <p>{moment(this.props.date).format("MMMM DD, YYYY")}</p>
-          <p>{_location.name}</p>
+      return <div>
+          <h1>{showNameLong(this.props, _location)}</h1>
+          <h2>{_location.name}</h2>
         <hr />
         <h2>Setlist</h2>
-        {
-          this.props.setlist.map((sl) => {
-            const song = this.state.songs[sl]
-            if(!song) { console.error(sl, " is not a song") }
-            return <div key={song.slug}>{song.title}</div>
-          })
-        }
+        <ol>
+          {
+            this.props.setlist.map((sl) => {
+              const song = this.state.songs[sl]
+              if(!song) { console.error(sl, " is not a song") }
+              return <li key={song.slug}>{song.title}</li>
+            })
+          }
+        </ol>
         <h3>Comments</h3>
         <Disqus />
       </div>

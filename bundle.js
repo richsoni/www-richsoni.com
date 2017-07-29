@@ -28797,7 +28797,7 @@ var pages = {
   shows: __webpack_require__(346),
   songs: __webpack_require__(348),
   show: __webpack_require__(349),
-  post: __webpack_require__(350)
+  post: __webpack_require__(351)
 };
 
 window.App = {
@@ -42400,6 +42400,8 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _presenters = __webpack_require__(357);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -42423,17 +42425,29 @@ var Shows = function (_React$Component) {
   _createClass(Shows, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       console.log(this.props);
       return _react2.default.createElement(
         HF,
         null,
-        this.props.shows.map(function (show) {
-          return _react2.default.createElement(
-            'div',
-            null,
-            show.locationKey
-          );
-        })
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.props.shows.map(function (show) {
+            console.log(show);
+            var _location = _this2.props.locations[show.locationKey];
+            return _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: show.url },
+                (0, _presenters.showNameLong)(show, _location)
+              )
+            );
+          })
+        )
       );
     }
   }]);
@@ -42551,6 +42565,14 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _stylesModule = __webpack_require__(350);
+
+var _stylesModule2 = _interopRequireDefault(_stylesModule);
+
+var _presenters = __webpack_require__(357);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -42606,21 +42628,14 @@ var RootComponent = function (_React$Component) {
         console.log(this.props, this.state);
         return React.createElement(
           "div",
-          { style: {
-              textAlign: 'center'
-            } },
-          React.createElement("h1", { style: {
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            } }),
+          null,
           React.createElement(
-            "p",
+            "h1",
             null,
-            moment(this.props.date).format("MMMM DD, YYYY")
+            (0, _presenters.showNameLong)(this.props, _location)
           ),
           React.createElement(
-            "p",
+            "h2",
             null,
             _location.name
           ),
@@ -42630,17 +42645,21 @@ var RootComponent = function (_React$Component) {
             null,
             "Setlist"
           ),
-          this.props.setlist.map(function (sl) {
-            var song = _this2.state.songs[sl];
-            if (!song) {
-              console.error(sl, " is not a song");
-            }
-            return React.createElement(
-              "div",
-              { key: song.slug },
-              song.title
-            );
-          }),
+          React.createElement(
+            "ol",
+            null,
+            this.props.setlist.map(function (sl) {
+              var song = _this2.state.songs[sl];
+              if (!song) {
+                console.error(sl, " is not a song");
+              }
+              return React.createElement(
+                "li",
+                { key: song.slug },
+                song.title
+              );
+            })
+          ),
           React.createElement(
             "h3",
             null,
@@ -42660,6 +42679,13 @@ module.exports = RootComponent;
 
 /***/ }),
 /* 350 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"heading":"heading__styles-module__3P4e_"};
+
+/***/ }),
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42675,7 +42701,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = __webpack_require__(2);
 var moment = __webpack_require__(0);
-var style = __webpack_require__(351);
+var style = __webpack_require__(352);
 var Header = __webpack_require__(67);
 var Footer = __webpack_require__(69);
 var Disqus = __webpack_require__(70);
@@ -42774,7 +42800,7 @@ var RootComponent = function (_React$Component) {
 module.exports = RootComponent;
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42975,6 +43001,24 @@ module.exports = {
     alignItems: 'center',
     justifyContent: 'center'
   }
+};
+
+/***/ }),
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var showNameLong = exports.showNameLong = function showNameLong(show, _location) {
+  return moment(show.date).format("MM/DD/YY") + " " + _location.address.locality + ", " + _location.address.region;
 };
 
 /***/ })
