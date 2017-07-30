@@ -1,6 +1,5 @@
 "use strict"
 const React  = require("react")
-const moment = window.moment = require("moment")
 const HF = require("../../shared/header-footer/")
 const Disqus = require("../../shared/disqus/component")
 const ajax   = require("../../lib/ajax")

@@ -5,24 +5,24 @@ import Presenter from './presenter';
 
 const showName = (show, _location) => {
   if(show.date === '2017-08-30 00:00:00 -0400') { debugger }
-  return `${moment(show.date).format("MM/DD/YY")} ${_location.name}, ${_location.address.locality}, ${_location.address.region}`;
+  return `${moment.utc(show.date).format("MM/DD/YY")} ${_location.name}, ${_location.address.locality}, ${_location.address.region}`;
 }
 
 const upcomingShows = (shows = []) => {
-  const now = moment()
+  const now = moment.utc()
   return shows
-    .filter((show) => moment(show.date) > now)
+    .filter((show) => moment.utc(show.date) > now)
     .sort((a, b) => {
-      return moment(a.date) - moment(b.date)
+      return moment.utc(a.date) - moment.utc(b.date)
     })
 }
 
 const pastShows = (shows = []) => {
-  const now = moment()
+  const now = moment.utc()
   return shows
-    .filter((show) => moment(show.date) < now)
+    .filter((show) => moment.utc(show.date) < now)
     .sort((a, b) => {
-      return moment(b.date) - moment(a.date)
+      return moment.utc(b.date) - moment.utc(a.date)
     })
 }
 

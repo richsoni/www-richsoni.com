@@ -26778,8 +26778,16 @@ return zhTw;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.showNameLong = undefined;
+
+var _moment = __webpack_require__(0);
+
+var _moment2 = _interopRequireDefault(_moment);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var showNameLong = exports.showNameLong = function showNameLong(show, _location) {
-  return moment(show.date).format("MM/DD/YY") + " " + _location.address.locality + ", " + _location.address.region;
+  return _moment2.default.utc(show.date).format("MM/DD/YY") + " " + _location.address.locality + ", " + _location.address.region;
 };
 
 /***/ }),
@@ -44127,28 +44135,28 @@ var showName = function showName(show, _location) {
   if (show.date === '2017-08-30 00:00:00 -0400') {
     debugger;
   }
-  return (0, _moment2.default)(show.date).format("MM/DD/YY") + ' ' + _location.name + ', ' + _location.address.locality + ', ' + _location.address.region;
+  return _moment2.default.utc(show.date).format("MM/DD/YY") + ' ' + _location.name + ', ' + _location.address.locality + ', ' + _location.address.region;
 };
 
 var upcomingShows = function upcomingShows() {
   var shows = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 
-  var now = (0, _moment2.default)();
+  var now = _moment2.default.utc();
   return shows.filter(function (show) {
-    return (0, _moment2.default)(show.date) > now;
+    return _moment2.default.utc(show.date) > now;
   }).sort(function (a, b) {
-    return (0, _moment2.default)(a.date) - (0, _moment2.default)(b.date);
+    return _moment2.default.utc(a.date) - _moment2.default.utc(b.date);
   });
 };
 
 var pastShows = function pastShows() {
   var shows = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 
-  var now = (0, _moment2.default)();
+  var now = _moment2.default.utc();
   return shows.filter(function (show) {
-    return (0, _moment2.default)(show.date) < now;
+    return _moment2.default.utc(show.date) < now;
   }).sort(function (a, b) {
-    return (0, _moment2.default)(b.date) - (0, _moment2.default)(a.date);
+    return _moment2.default.utc(b.date) - _moment2.default.utc(a.date);
   });
 };
 
@@ -44384,7 +44392,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(4);
-var moment = window.moment = __webpack_require__(0);
 var HF = __webpack_require__(21);
 var Disqus = __webpack_require__(63);
 var ajax = __webpack_require__(27);
