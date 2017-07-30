@@ -4,6 +4,7 @@ import {showNameLong} from '../../shared/presenters';
 import Presenter from './presenter';
 
 const showName = (show, _location) => {
+  if(show.date === '2017-08-30 00:00:00 -0400') { debugger }
   return `${moment(show.date).format("MM/DD/YY")} ${_location.name}, ${_location.address.locality}, ${_location.address.region}`;
 }
 

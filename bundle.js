@@ -44124,6 +44124,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var showName = function showName(show, _location) {
+  if (show.date === '2017-08-30 00:00:00 -0400') {
+    debugger;
+  }
   return (0, _moment2.default)(show.date).format("MM/DD/YY") + ' ' + _location.name + ', ' + _location.address.locality + ', ' + _location.address.region;
 };
 
@@ -44134,7 +44137,7 @@ var upcomingShows = function upcomingShows() {
   return shows.filter(function (show) {
     return (0, _moment2.default)(show.date) > now;
   }).sort(function (a, b) {
-    return (0, _moment2.default)(b.date) - (0, _moment2.default)(a.date);
+    return (0, _moment2.default)(a.date) - (0, _moment2.default)(b.date);
   });
 };
 
