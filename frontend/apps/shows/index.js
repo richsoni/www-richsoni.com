@@ -12,7 +12,7 @@ const upcomingShows = (shows = []) => {
   return shows
     .filter((show) => moment(show.date) > now)
     .sort((a, b) => {
-      return moment(b.date) - moment(a.date) 
+      return moment(a.date) - moment(b.date)
     })
 }
 
