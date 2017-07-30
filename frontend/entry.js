@@ -1,5 +1,7 @@
 const React = window.React = require("react")
 const ReactDOM = window.ReactDOM = require('react-dom')
+import moment from 'moment';
+window.moment = moment;
 
 const pages = {
   home:     require("./apps/homepage/entry"),

@@ -26797,8 +26797,16 @@ var showNameLong = exports.showNameLong = function showNameLong(show, _location)
 "use strict";
 
 
+var _moment = __webpack_require__(0);
+
+var _moment2 = _interopRequireDefault(_moment);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var React = window.React = __webpack_require__(4);
 var ReactDOM = window.ReactDOM = __webpack_require__(238);
+
+window.moment = _moment2.default;
 
 var pages = {
   home: __webpack_require__(315),
