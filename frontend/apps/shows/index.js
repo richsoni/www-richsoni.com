@@ -4,7 +4,6 @@ import {showNameLong} from '../../shared/presenters';
 import Presenter from './presenter';
 
 const showName = (show, _location) => {
-  if(show.date === '2017-08-30 00:00:00 -0400') { debugger }
   return `${moment.utc(show.date).format("MM/DD/YY")} ${_location.name}, ${_location.address.locality}, ${_location.address.region}`;
 }
 
@@ -30,7 +29,15 @@ class Shows extends React.Component {
   render(){
     console.log(this.props)
     const loadedShows = this.props.shows
-      .map((show) => { return {...show, location: this.props.locations[show.locationKey]}})
+      .map((show) => {
+        const location = this.props.locations[show.locationKey]
+        return {
+        ...show,
+        location,
+        locationString: `${location.address.locality} ${location.address.region}`,
+        dateString: moment.utc(show.date).format("MM/DD/YY"),
+        venueString: location.name,
+      }})
       .map((show) => { return {...show, _title: showName(show, show.location)}})
     return <Presenter
       locations={this.props.locations}

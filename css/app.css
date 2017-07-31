@@ -1,5 +1,22 @@
-.hello__styles-module__3g5z2 {
-  background-color: blue !important;
+.table__styles-module__3GQ37 {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table__styles-module__3GQ37 tr * {
+  padding: .5em;
+}
+
+.table__styles-module__3GQ37 td {
+  cursor: pointer;
+}
+
+.table__styles-module__3GQ37 tbody tr {
+  color: #428bca;
+}
+
+.table__styles-module__3GQ37 tbody tr:hover {
+  background-color: #f4f6ff;
 }
 .heading__styles-module__3P4e_ {
 

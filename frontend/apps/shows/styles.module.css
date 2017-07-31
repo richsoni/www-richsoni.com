@@ -1,3 +1,20 @@
-.hello {
-  background-color: blue !important;
+.table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table tr * {
+  padding: .5em;
+}
+
+.table td {
+  cursor: pointer;
+}
+
+.table tbody tr {
+  color: #428bca;
+}
+
+.table tbody tr:hover {
+  background-color: #f4f6ff;
 }

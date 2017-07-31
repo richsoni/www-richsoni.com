@@ -4535,64 +4535,59 @@ return hooks;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function() {
+	var list = [];
 
+	// return the list of modules as css string
+	list.toString = function toString() {
+		var result = [];
+		for(var i = 0; i < this.length; i++) {
+			var item = this[i];
+			if(item[2]) {
+				result.push("@media " + item[2] + "{" + item[1] + "}");
+			} else {
+				result.push(item[1]);
+			}
+		}
+		return result.join("");
+	};
 
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
 
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var validateFormat = function validateFormat(format) {};
-
-if (false) {
-  validateFormat = function validateFormat(format) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  };
-}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-module.exports = invariant;
 
 /***/ }),
 /* 2 */
@@ -44140,9 +44135,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var showName = function showName(show, _location) {
-  if (show.date === '2017-08-30 00:00:00 -0400') {
-    debugger;
-  }
   return _moment2.default.utc(show.date).format("MM/DD/YY") + ' ' + _location.name + ', ' + _location.address.locality + ', ' + _location.address.region;
 };
 
@@ -44184,7 +44176,13 @@ var Shows = function (_React$Component) {
 
       console.log(this.props);
       var loadedShows = this.props.shows.map(function (show) {
-        return _extends({}, show, { location: _this2.props.locations[show.locationKey] });
+        var location = _this2.props.locations[show.locationKey];
+        return _extends({}, show, {
+          location: location,
+          locationString: location.address.locality + ' ' + location.address.region,
+          dateString: _moment2.default.utc(show.date).format("MM/DD/YY"),
+          venueString: location.name
+        });
       }).map(function (show) {
         return _extends({}, show, { _title: showName(show, show.location) });
       });
@@ -44226,7 +44224,68 @@ var _stylesModule2 = _interopRequireDefault(_stylesModule);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var Table = function Table(props) {
+  var fields = props.fields,
+      items = props.items;
+
+  var titles = fields.map(function (f) {
+    return f.title;
+  });
+  var keys = fields.map(function (f) {
+    return f.key;
+  });
+  return _react2.default.createElement(
+    'table',
+    { className: _stylesModule2.default.table },
+    _react2.default.createElement(
+      'thead',
+      null,
+      _react2.default.createElement(
+        'tr',
+        null,
+        titles.map(function (t) {
+          return _react2.default.createElement(
+            'th',
+            null,
+            t
+          );
+        })
+      )
+    ),
+    _react2.default.createElement(
+      'tbody',
+      null,
+      items.map(function (i) {
+        return _react2.default.createElement(
+          'tr',
+          { onClick: function onClick() {
+              return window.location = i.url;
+            } },
+          keys.map(function (k) {
+            return _react2.default.createElement(
+              'td',
+              null,
+              i[k]
+            );
+          })
+        );
+      })
+    )
+  );
+};
+
 exports.default = function (props) {
+  var fields = [{
+    title: 'Date',
+    key: 'dateString'
+  }, {
+    title: 'Venue',
+    key: 'venueString'
+  }, {
+    title: 'Location',
+    key: 'locationString'
+  }];
+
   return _react2.default.createElement(
     _headerFooter2.default,
     null,
@@ -44235,43 +44294,19 @@ exports.default = function (props) {
       null,
       'Upcoming Shows'
     ),
-    _react2.default.createElement(
-      'ul',
-      null,
-      props.upcomingShows.map(function (show) {
-        var _location = props.locations[show.locationKey];
-        return _react2.default.createElement(
-          'li',
-          { key: show.url },
-          _react2.default.createElement(
-            'a',
-            { href: show.url },
-            show._title
-          )
-        );
-      })
-    ),
+    _react2.default.createElement(Table, {
+      fields: fields,
+      items: props.upcomingShows
+    }),
     _react2.default.createElement(
       'h2',
       null,
       'Past Shows'
     ),
-    _react2.default.createElement(
-      'ul',
-      null,
-      props.pastShows.map(function (show) {
-        var _location = props.locations[show.locationKey];
-        return _react2.default.createElement(
-          'li',
-          { key: show.url },
-          _react2.default.createElement(
-            'a',
-            { href: show.url },
-            show._title
-          )
-        );
-      })
-    )
+    _react2.default.createElement(Table, {
+      fields: fields,
+      items: props.pastShows
+    })
   );
 };
 
@@ -44280,7 +44315,7 @@ exports.default = function (props) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"hello":"hello__styles-module__3g5z2"};
+module.exports = {"table":"table__styles-module__3GQ37"};
 
 /***/ }),
 /* 386 */
