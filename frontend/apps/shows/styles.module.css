@@ -1,20 +1,27 @@
 .table {
   border-collapse: collapse;
   text-align: left;
+  display: table;
 }
 
-.table tr * {
+.table header {
+  display: table-header-group;
+  font-weight: bold;
+}
+
+
+.table span {
+  display: table-cell;
+  vertical-align: middle;
   padding: .5em;
 }
 
-.table td {
-  cursor: pointer;
-}
-
-.table tbody tr {
+.table a {
   color: #428bca;
+  display: table-row;
 }
 
-.table tbody tr:hover {
+.table a:hover {
   background-color: #f4f6ff;
+  text-decoration: none;
 }

@@ -10,6 +10,7 @@ layout: default
         {
          date: {{ show.date | jsonify }},
          locationKey: {{ show.slug | jsonify }},
+         startTime: {{ show.startTime | jsonify }},
          url: {{ show.url | jsonify }},
         },
       {% endfor %}],
