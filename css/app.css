@@ -1,27 +1,27 @@
-.table__styles-module__3GQ37 {
+.table__styles-module__3e-n8 {
   border-collapse: collapse;
   text-align: left;
   display: table;
 }
 
-.table__styles-module__3GQ37 header {
+.table__styles-module__3e-n8 header {
   display: table-header-group;
   font-weight: bold;
 }
 
 
-.table__styles-module__3GQ37 span {
+.table__styles-module__3e-n8 span {
   display: table-cell;
   vertical-align: middle;
   padding: .5em;
 }
 
-.table__styles-module__3GQ37 a {
+.table__styles-module__3e-n8 a {
   color: #428bca;
   display: table-row;
 }
 
-.table__styles-module__3GQ37 a:hover {
+.table__styles-module__3e-n8 a:hover {
   background-color: #f4f6ff;
   text-decoration: none;
 }

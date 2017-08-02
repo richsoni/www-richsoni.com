@@ -26801,6 +26801,10 @@ var _moment = __webpack_require__(0);
 
 var _moment2 = _interopRequireDefault(_moment);
 
+var _song = __webpack_require__(399);
+
+var _song2 = _interopRequireDefault(_song);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var React = window.React = __webpack_require__(4);
@@ -26808,13 +26812,14 @@ var ReactDOM = window.ReactDOM = __webpack_require__(240);
 
 window.moment = _moment2.default;
 
+
 var pages = {
   home: __webpack_require__(317),
   subscribe: __webpack_require__(377),
   blog: __webpack_require__(378),
   songIndex: __webpack_require__(382),
   shows: __webpack_require__(383),
-  songs: __webpack_require__(386),
+  songs: _song2.default,
   show: __webpack_require__(387),
   post: __webpack_require__(389)
 };
@@ -44217,51 +44222,11 @@ var _headerFooter = __webpack_require__(21);
 
 var _headerFooter2 = _interopRequireDefault(_headerFooter);
 
-var _stylesModule = __webpack_require__(385);
+var _Table = __webpack_require__(397);
 
-var _stylesModule2 = _interopRequireDefault(_stylesModule);
+var _Table2 = _interopRequireDefault(_Table);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Table = function Table(props) {
-  var fields = props.fields,
-      items = props.items;
-
-  var titles = fields.map(function (f) {
-    return f.title;
-  });
-  var keys = fields.map(function (f) {
-    return f.key;
-  });
-  return _react2.default.createElement(
-    'div',
-    { className: _stylesModule2.default.table },
-    _react2.default.createElement(
-      'header',
-      null,
-      titles.map(function (t) {
-        return _react2.default.createElement(
-          'span',
-          null,
-          t
-        );
-      })
-    ),
-    items.map(function (i) {
-      return _react2.default.createElement(
-        'a',
-        { href: i.url },
-        keys.map(function (k) {
-          return _react2.default.createElement(
-            'span',
-            null,
-            i[k]
-          );
-        })
-      );
-    })
-  );
-};
 
 exports.default = function (props) {
   return _react2.default.createElement(
@@ -44272,7 +44237,7 @@ exports.default = function (props) {
       null,
       'Upcoming Shows'
     ),
-    _react2.default.createElement(Table, {
+    _react2.default.createElement(_Table2.default, {
       fields: [{
         title: 'Date',
         key: 'dateString'
@@ -44293,7 +44258,7 @@ exports.default = function (props) {
       null,
       'Past Shows'
     ),
-    _react2.default.createElement(Table, {
+    _react2.default.createElement(_Table2.default, {
       fields: [{
         title: 'Date',
         key: 'dateString'
@@ -44310,103 +44275,8 @@ exports.default = function (props) {
 };
 
 /***/ }),
-/* 385 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"table":"table__styles-module__3GQ37"};
-
-/***/ }),
-/* 386 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = __webpack_require__(4);
-var HF = __webpack_require__(21);
-var Disqus = __webpack_require__(63);
-var parseCollection = __webpack_require__(36);
-var ajax = __webpack_require__(27);
-var KEY = window.location.pathname.replace('/songs/', '').replace('.html', '');
-
-var RootComponent = function (_React$Component) {
-  _inherits(RootComponent, _React$Component);
-
-  function RootComponent() {
-    _classCallCheck(this, RootComponent);
-
-    var _this = _possibleConstructorReturn(this, (RootComponent.__proto__ || Object.getPrototypeOf(RootComponent)).call(this));
-
-    _this.state = {
-      collection: []
-    };
-
-    ajax.get('/songs/songs.json', function (payload) {
-      var songs = JSON.parse(payload);
-      _this.setState(parseCollection(songs, 'ASC'));
-      _this.setState({ song: songs[KEY] });
-    });
-    return _this;
-  }
-
-  _createClass(RootComponent, [{
-    key: "render",
-    value: function render() {
-      return React.createElement(
-        HF,
-        null,
-        this.renderSong()
-      );
-    }
-  }, {
-    key: "renderSong",
-    value: function renderSong() {
-      if (this.state.song) {
-        return React.createElement(
-          "div",
-          { style: {
-              textAlign: 'center'
-            } },
-          React.createElement(
-            "h1",
-            { style: {
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center'
-              } },
-            " ",
-            this.state.song.attributes.title,
-            " "
-          ),
-          React.createElement("div", { dangerouslySetInnerHTML: { __html: this.state.song.body } }),
-          React.createElement("hr", null),
-          React.createElement(
-            "h3",
-            null,
-            "Comments"
-          ),
-          React.createElement(Disqus, null)
-        );
-      }
-      return React.createElement("div", null);
-    }
-  }]);
-
-  return RootComponent;
-}(React.Component);
-
-module.exports = RootComponent;
-
-/***/ }),
+/* 385 */,
+/* 386 */,
 /* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44865,6 +44735,180 @@ module.exports = {
     alignItems: 'center',
     justifyContent: 'center'
   }
+};
+
+/***/ }),
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _stylesModule = __webpack_require__(398);
+
+var _stylesModule2 = _interopRequireDefault(_stylesModule);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (props) {
+  var fields = props.fields,
+      items = props.items;
+
+  var titles = fields.map(function (f) {
+    return f.title;
+  });
+  var keys = fields.map(function (f) {
+    return f.key;
+  });
+  return _react2.default.createElement(
+    'div',
+    { className: _stylesModule2.default.table },
+    _react2.default.createElement(
+      'header',
+      null,
+      titles.map(function (t) {
+        return _react2.default.createElement(
+          'span',
+          null,
+          t
+        );
+      })
+    ),
+    items.map(function (i) {
+      return _react2.default.createElement(
+        'a',
+        { href: i.url },
+        keys.map(function (k) {
+          return _react2.default.createElement(
+            'span',
+            null,
+            i[k]
+          );
+        })
+      );
+    })
+  );
+};
+
+/***/ }),
+/* 398 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"table":"table__styles-module__3e-n8"};
+
+/***/ }),
+/* 399 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _moment = __webpack_require__(0);
+
+var _moment2 = _interopRequireDefault(_moment);
+
+var _presenter = __webpack_require__(400);
+
+var _presenter2 = _interopRequireDefault(_presenter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Shows = function (_React$Component) {
+  _inherits(Shows, _React$Component);
+
+  function Shows() {
+    _classCallCheck(this, Shows);
+
+    return _possibleConstructorReturn(this, (Shows.__proto__ || Object.getPrototypeOf(Shows)).apply(this, arguments));
+  }
+
+  _createClass(Shows, [{
+    key: 'render',
+    value: function render() {
+      console.log(this.props);
+      var songs = this.props.songs.map(function (song) {
+        return _extends({}, song, {
+          composedAt: _moment2.default.utc(song.composed_at).format("MM/DD/YY")
+        });
+      });
+      return _react2.default.createElement(_presenter2.default, {
+        songs: songs
+      });
+    }
+  }]);
+
+  return Shows;
+}(_react2.default.Component);
+
+module.exports = Shows;
+
+/***/ }),
+/* 400 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Table = __webpack_require__(397);
+
+var _Table2 = _interopRequireDefault(_Table);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var React = __webpack_require__(4);
+var HF = __webpack_require__(21);
+
+exports.default = function (props) {
+  var songs = props.songs;
+
+  console.log(props);
+  return React.createElement(
+    HF,
+    null,
+    React.createElement(_Table2.default, {
+      fields: [{
+        title: 'Title',
+        key: 'title'
+      }, {
+        title: 'Composed',
+        key: 'composed_at'
+      }],
+      items: songs
+    })
+  );
 };
 
 /***/ })
