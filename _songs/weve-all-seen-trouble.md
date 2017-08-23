@@ -1,6 +1,5 @@
 ---
-title: Tumblin' Rock
-soundcloud: https://soundcloud.com/richsoni/tumblin-rock-take-1
+title: We've All Seen Trouble
 composed_at: 2015-03-12
 ---
 A F#m A D A F#m A D E

@@ -1,2 +1,45 @@
 ---
+setlist:
+  - old-dog-blue
+  - tend-to-your-soul
+  - since-the-last-blood-moon
+  - ordinary-man-and-the-angel
+  - doin-time-rock-island-line
+  - purple-gun
+  - black-and-blues
+  - weve-all-seen-trouble
+  - rosin-the-beau
+  - please-come-home
+  - stormy-window
+  - need-for-love
+  - babe-it-aint-no-lie
+  - ghosts-in-the-wire
+  - black-rose
+  - mcalpines-fusiliers
+  - queen-of-the-carnival
+  - thats-what-i-call-love
+  - together
+  - whiskey-in-the-jar
+  - black-velvet-band
+  - blind-willie-mctell
+  - leeds-devil
+  - wayward-sister
+  - hints-are-not-half-hearted
+  - sugaree
+  - lets-get-deserted
+  - sweet-grass-memory
+  - greatest-gift
+  - auld-triangle
+  - dinks-song
+  - between-these-canals
+  - tower-of-cain
+  - hey-baby-doll
+  - freak-out-kid
+  - friend-of-the-devil
+  - saints-dont-wander-far-from-sin
+  - little-seaside-home
+  - peg-and-awl
+  - fly-away
+  - pine-of-the-pub
+  - wander-with-me
 ---

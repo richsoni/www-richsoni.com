@@ -1,10 +1,7 @@
 "use strict"
-const React  = require("react")
-const HF = require("../../shared/header-footer/")
-const Disqus = require("../../shared/disqus/component")
-const ajax   = require("../../lib/ajax")
-import styles from './styles.module.css';
-import {showNameLong} from '../../shared/presenters';
+import React  from "react";
+import ajax   from "../../lib/ajax";
+import Presenter from "./presenter";
 
 class RootComponent extends React.Component{
   constructor() {
@@ -25,44 +22,15 @@ class RootComponent extends React.Component{
   }
 
   render() {
-    return <HF>
-      {this.renderShow()}
-    </HF>
-  }
-
-  renderShow() {
     if( this.state.songs && this.state.locations ){
       const _location = this.state.locations[this.props.locationKey];
-      console.log(this.props, this.state)
-      return <div>
-          <h1>{showNameLong(this.props, _location)}</h1>
-          <h2>{_location.name}</h2>
-        <hr />
-        {this.setlist()}
-        <h3>Comments</h3>
-        <Disqus />
-      </div>
+      return <Presenter
+        location={_location}
+        songs={this.state.songs}
+        setlist={this.props.setlist}
+      />
     }
     return <div />
-  }
-
-  setlist() {
-    if(this.props.setlist && this.props.setlist.length){
-      return <div>
-        <h2>Setlist</h2>
-        <ol>
-          {
-            this.props.setlist.map((sl) => {
-              const song = this.state.songs[sl]
-              if(!song) { console.error(sl, " is not a song") }
-              return <li key={song.slug}>{song.title}</li>
-            })
-          }
-        </ol>
-      </div>
-    } else {
-      return <div />
-    }
   }
 }
 

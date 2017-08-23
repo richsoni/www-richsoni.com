@@ -1,0 +1,35 @@
+---
+setlist:
+  - babe-it-aint-no-lie
+  - please-come-home
+  - hey-baby-doll
+  - diamonds-on-the-soles-of-her-shoes
+  - queen-of-the-carnival
+  - thats-what-i-call-love
+  - dinks-song
+  - abbey-road-medley
+  - freak-out-kid
+  - between-these-canals
+  - blind-willie-mctell
+  - leeds-devil
+  - wayward-sister
+  - hints-are-not-half-hearted
+  - one-more-cup-of-coffee
+  - tower-of-cain
+  - black-rose
+  - sugaree
+  - fly-away
+  - sweet-grass-memory
+  - weve-all-seen-trouble
+  - im-only-sleeping
+  - black-and-blues
+  - for-the-wall
+  - black-velvet-band
+  - everybody-knows-this-is-nowhere
+  - lets-get-deserted
+  - need-for-love
+  - peg-and-awl
+  - ups-and-downs
+  - together
+  - wander-with-me
+---

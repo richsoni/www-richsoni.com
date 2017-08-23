@@ -1,2 +1,43 @@
 ---
----
+setlist:
+  - dinks-song
+  - hey-baby-doll
+  - planes-trains-autoresponders
+  - sugaree
+  - sweet-grass-memory
+  - since-the-last-blood-moon
+  - rosin-the-beau
+  - waste-of-life
+  - lets-get-deserted
+  - lonesome-whistle
+  - abbey-road-medley
+  - freak-out-kid
+  - between-these-canals
+  - dicey-riley
+  - blind-willie-mctell
+  - leeds-devil
+  - spookytown
+  - wayward-sister
+  - hints-are-not-half-hearted
+  - babe-it-aint-no-lie
+  - tower-of-cain
+  - diamonds-on-the-soles-of-her-shoes
+  - thats-what-i-call-love
+  - black-rose
+  - you-aint-goin-nowhere
+  - together
+  - queen-of-the-carnival
+  - greatest-gift
+  - romance-in-durango
+  - purple-gun
+  - fly-away
+  - jug-of-punch
+  - wild-rover
+  - little-seaside-home
+  - black-velvet-band
+  - need-for-love
+  - pine-of-the-pub
+  - in-the-airplane-over-the-sea
+  - ups-and-downs
+  - without-you
+  - wander-with-me

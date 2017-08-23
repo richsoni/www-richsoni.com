@@ -26,5 +26,38 @@
   text-decoration: none;
 }
 .heading__styles-module__3P4e_ {
+}
 
+.tabs__styles-module__1FuYB {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.tab__styles-module__5kHJf {
+  padding: 1em;
+  border-left: 1px solid #000;
+  cursor: pointer;
+}
+
+.tab__styles-module__5kHJf:first-child {
+  border-left: none;
+}
+
+.tab__styles-module__5kHJf:last-child {
+  border-right: 1px solid #000;
+}
+
+.tab__styles-module__5kHJf:not(.activeTab__styles-module__3Ap5T):hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.activeTab__styles-module__3Ap5T {
+  background-color: #333;
+  color: #fff;
 }
