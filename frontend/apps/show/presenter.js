@@ -37,9 +37,7 @@ export default class Presenter extends React.Component {
     const {location, show} = this.props
     return <HF>
       <h1>
-        <a href="/shows">Shows</a> /
-        {MMDDYYYY(show.date)} /
-        {cityCommaState(location.address)}
+        <a href="/shows">Shows</a> / {MMDDYYYY(show.date)} / {cityCommaState(location.address)}
       </h1>
       <h2><a target='_blank' href={location.website}>{location.name}</a></h2>
       <Tabs tabs={this.tabs()} />

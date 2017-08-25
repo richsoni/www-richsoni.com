@@ -36154,9 +36154,9 @@ var Presenter = function (_React$Component2) {
             { href: "/shows" },
             "Shows"
           ),
-          " /",
+          " / ",
           (0, _presenters.MMDDYYYY)(show.date),
-          " /",
+          " / ",
           (0, _presenters.cityCommaState)(location.address)
         ),
         _react2.default.createElement(
