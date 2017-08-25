@@ -2,7 +2,7 @@ import React from "react";
 import HF from "../../shared/header-footer/";
 import styles from './styles.module.css';
 import LocationMap from '../../shared/LocationMap';
-import {showNameLong} from '../../shared/presenters';
+import {MMDDYYYY, cityCommaState} from '../../presenters/';
 import Disqus from "../../shared/disqus/component";
 
 class Tabs extends React.Component {
@@ -34,10 +34,13 @@ class Tabs extends React.Component {
 
 export default class Presenter extends React.Component {
   render() {
-    const {location} = this.props
-    const show = this.props
+    const {location, show} = this.props
     return <HF>
-      <h1><a href="/shows">Shows</a> / {showNameLong(show, location)}</h1>
+      <h1>
+        <a href="/shows">Shows</a> /
+        {MMDDYYYY(show.date)} /
+        {cityCommaState(location.address)}
+      </h1>
       <h2><a target='_blank' href={location.website}>{location.name}</a></h2>
       <Tabs tabs={this.tabs()} />
       <h3>Comments</h3>
@@ -50,7 +53,7 @@ export default class Presenter extends React.Component {
       content: this.map.bind(this),
       title: "Map",
     }];
-    if(this.props.setlist && this.props.setlist.length){
+    if(this.props.show.setlist && this.props.show.setlist.length){
       tabs = tabs.concat([{
         content: this.setlist.bind(this),
         title: "Setlist",
@@ -65,12 +68,15 @@ export default class Presenter extends React.Component {
   }
 
   setlist() {
-    const {setlist, songs} = this.props
+    const {
+      show,
+      songs
+    } = this.props
     return <div>
       <h2>Setlist</h2>
       <ol>
         {
-          setlist.map((sl) => {
+          show.setlist.map((sl) => {
             const song = songs.byID[sl]
             if(!song) { console.error(sl, " is not a song") }
             return <li key={song.slug}>{song.title}</li>

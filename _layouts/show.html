@@ -8,9 +8,12 @@ layout: default
     ReactDOM.render(React.createElement(Component, {
       pathname: window.location.pathname,
       page: {{ page.title | jsonify }},
-      setlist: {{page.setlist | jsonify}},
-      locationKey: {{ page.slug | jsonify }},
-      date: {{ page.date | jsonify }},
+      slug: {{ page.slug | jsonify}},
+      show: {
+        date: {{ page.date | jsonify }},
+        setlist: {{page.setlist | jsonify}},
+        slug: {{ page.slug | jsonify }},
+      },
     }), document.body)
   }
 </script>

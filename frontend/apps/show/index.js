@@ -4,7 +4,7 @@ import Presenter from "./presenter";
 import ReduxProvider from '../../shared/reduxProvider';
 import {fetchAllLocations} from '../../data/locations/actions';
 import {fetchAll as fetchAllSongs} from '../../data/songs/actions';
-import ajax   from "../../lib/ajax";
+import {hydrateShow} from '../../data/shows/actions';
 import {connect} from 'react-redux';
 
 class Container extends React.Component {
@@ -14,22 +14,24 @@ class Container extends React.Component {
 
   componentDidMount() {
     if(this.props.componentDidMount){
-      this.props.componentDidMount()
+      this.props.componentDidMount(this.props)
     }
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    componentDidMount: () => {
+    componentDidMount: (props) => {
       dispatch(fetchAllLocations())
       dispatch(fetchAllSongs())
+      dispatch(hydrateShow(props.show))
     }
   }
 }
 
 const mapStateToProps = (state) => {
   return {
+    shows: state.shows,
     songs: state.songs,
     locations: state.locations,
   }
@@ -46,15 +48,17 @@ class RootComponent extends React.Component{
   render() {
     const {
       locations,
-      locationKey,
+      shows,
       songs,
+      slug,
     } = this.props
-    if( songs.length && locations.length ){
-      const _location = locations.byID[locationKey];
+    const show = shows.byID[slug]
+    if(show && songs.length && locations.length ){
+      const _location = locations.byID[show.slug];
       return <Presenter
           location={_location}
           songs={songs}
-          setlist={this.props.setlist}
+          show={show}
         />
     }
     return <div />
