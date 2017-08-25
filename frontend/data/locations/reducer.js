@@ -2,10 +2,17 @@ export const REQUEST = "LOCATIONS_REQUEST";
 export const FINISH  = "LOCATIONS_FINISH";
 export const ERROR  = "LOCATIONS_ERROR";
 
-export default (state = {}, action) => {
-  switch(action.payload) {
+const parse = (locations) => {
+  return {
+    length: Object.keys(locations).length,
+    byID: locations,
+  }
+}
+
+export default (state = parse({}), action) => {
+  switch(action.type) {
     case FINISH:
-      return action.payload
+      return parse(action.payload)
     default: return state;
   }
 }

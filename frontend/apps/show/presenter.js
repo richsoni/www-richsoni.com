@@ -65,13 +65,13 @@ export default class Presenter extends React.Component {
   }
 
   setlist() {
-    const {setlist} = this.props
+    const {setlist, songs} = this.props
     return <div>
       <h2>Setlist</h2>
       <ol>
         {
           setlist.map((sl) => {
-            const song = this.props.songs[sl]
+            const song = songs.byID[sl]
             if(!song) { console.error(sl, " is not a song") }
             return <li key={song.slug}>{song.title}</li>
           })

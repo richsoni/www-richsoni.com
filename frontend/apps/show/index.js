@@ -3,6 +3,7 @@ import React  from "react";
 import Presenter from "./presenter";
 import ReduxProvider from '../../shared/reduxProvider';
 import {fetchAllLocations} from '../../data/locations/actions';
+import {fetchAll as fetchAllSongs} from '../../data/songs/actions';
 import ajax   from "../../lib/ajax";
 import {connect} from 'react-redux';
 
@@ -20,13 +21,17 @@ class Container extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchAllLocations: () => { dispatch(fetchAllLocations()) },
+    componentDidMount: () => {
+      dispatch(fetchAllLocations())
+      dispatch(fetchAllSongs())
+    }
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-  
+    songs: state.songs,
+    locations: state.locations,
   }
 }
 
@@ -38,30 +43,17 @@ export default (props) => {
 }
 
 class RootComponent extends React.Component{
-  constructor(props) {
-    super()
-    this.state = { songs: null, locations: null }
-    ajax.get('/api/locations.json', ((payload) => {
-      const locations = JSON.parse(payload)
-      this.setState({locations})
-    }).bind(this));
-    ajax.get('/api/songs.json', ((payload) => {
-      const songs = JSON
-        .parse(payload)
-        .reduce((memo, item) => {
-          return {...memo, [item.slug]: item}
-        }, {})
-      this.setState({songs})
-    }).bind(this));
-  }
-
   render() {
-    if( this.state.songs && this.state.locations ){
-      debugger
-      const _location = this.state.locations[this.props.locationKey];
+    const {
+      locations,
+      locationKey,
+      songs,
+    } = this.props
+    if( songs.length && locations.length ){
+      const _location = locations.byID[locationKey];
       return <Presenter
           location={_location}
-          songs={this.state.songs}
+          songs={songs}
           setlist={this.props.setlist}
         />
     }
