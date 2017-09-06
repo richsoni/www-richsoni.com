@@ -28,7 +28,7 @@ I believe my experience playing at SIMILAR_VENUES_HERE make me well suited to pe
 
 I usually have about 20 fans show up to each of my shows, and my sets contain a mix of original music, Irish Songs, and Acoustic Covers (Bob Dylan, Grateful Dead, The Band etc.)
 
-You can find out more about me including sample me music here: bandf.la/re1e95b.
+You can find out more about me including sample me music here: http://www.bandf.la/reRichSoni.
 
 Hope to hear from you soon,
 Rich
