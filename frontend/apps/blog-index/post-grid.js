@@ -4,8 +4,8 @@ const moment          = require("moment")
 
 class PostGrid extends React.Component {
   render(){
-    const date = new moment(this.props.attributes.date).format('MM/DD/YYYY')
-    const link = `/blog/posts/${this.props.filePrefix}.html`
+    const date = new moment(this.props.date).format('MM/DD/YYYY')
+    const link = this.props.url
     return <a
       style={{
         borderBottom: '1px solid #bebebe',
@@ -22,7 +22,7 @@ class PostGrid extends React.Component {
           display: 'block',
           color: '#000',
           textDecoration: 'none',
-          backgroundImage: `url(${this.props.attributes.hero})`,
+          backgroundImage: `url(${this.props.hero})`,
           height: 280,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -32,7 +32,7 @@ class PostGrid extends React.Component {
       <h1 style={{
         marginBottom: '.4em',
         fontSize: '1em',
-      }}>{this.props.attributes.title}</h1>
+      }}>{this.props.title}</h1>
     </a>
   }
 
@@ -40,7 +40,7 @@ class PostGrid extends React.Component {
     let tree       = document.createElement("div")
     let result     = ""
     let counter    = 0
-    tree.innerHTML = this.props.body.replace(/href=["'][^'"]*/, 'href=""')
+    tree.innerHTML = this.props.content.replace(/href=["'][^'"]*/, 'href=""')
     while(result.length < 200){
       const el = tree.children[counter]
       if(el){

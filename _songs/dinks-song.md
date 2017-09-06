@@ -1,10 +1,8 @@
 ---
 title: Dinks Song
-soundcloud: https://soundcloud.com/richsoni/dinks-song-take-1
 composed_at: \< 2015-01-17
+words: [traditional, Rich Soni]
 ---
-
-*Credit: trad/Rich Soni*
 
 Once I had wings like Noah's dove  
 I flew up the river looked for a love  

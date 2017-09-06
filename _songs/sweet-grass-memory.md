@@ -3,45 +3,45 @@ title: Sweet Grass Memory
 composed_at: 2016-04
 ---
 
-taping up a wrinkled picture of her
-on the dashboard of my van
-exits all seem like a blur
-i imagine us holding hands
+Taping up a wrinkled picture of her  
+On the dashboard of my van  
+All the exits signs seem like a blur  
+Imagine we are holding hands  
 
-somewhere back in sweet grass country
-is a girl that is my one true love
-yeah i know shes waitin for me
-even though im on the run
+*Back in Sweet Grass County*  
+*Is my one true love*  
+*Yeah I know shes waitin' for me*  
+*Even though I'm on the run*  
 
-ditched my car near devils tower
-at the south dakota line
-hitched a ride for several hour
-found myself a vacant sign
+Ditched my car somewhere near Devils Tower  
+At the South Dakota line  
+Hitched a ride out there several hours  
+Until I found a vacant sign  
 
-somewhere back in sweet grass country
-is a girl that is my one true love
-yeah i know shes waitin for me
-even though im on the run
+*Back in Sweet Grass County*  
+*Is my one true love*  
+*Yeah i know shes waitin' for me*  
+*Even though I'm on the run*  
 
-got a job in cedar rapids
-when i ran out of my cash
-sweeping floors at cornell college
-with a fake name on my badge
+Got myself a job in Cedar Rapids  
+When I ran out of my cash  
+Sweeping floors over at Cornell College  
+With a fake name on my badge  
 
-somewhere back in sweet grass country
-is a girl that is my one true love
-yeah i know shes waitin for me
-even though im on the run
+*Back in Sweet Grass County*  
+*Is my one true love*  
+*Yeah i know shes waitin' for me*  
+*Even though I'm on the run*  
 
-when she showed me the fourty five
-i wiped her prints off, and i left mine
+When she showed me the fourty five  
+I wiped her prints off, and i left mine  
 
-at trailer park in little falls
-i rent a bed for a couple bucks
-i wish that i could give her a call
-but i dont want to press my luck
+At trailer park in Little Falls  
+I rent a bed for a couple bucks  
+Man, I wish I could give her a call  
+But, I don't want to press my luck  
 
-somewhere back in sweet grass country
-is a girl that is my one true love
-yeah i know shes waitin for me
-even though im on the run
+*Back in Sweet Grass County*  
+*Is my one true love*  
+*Yeah i know shes waitin' for me*  
+*Even though I'm on the run*  

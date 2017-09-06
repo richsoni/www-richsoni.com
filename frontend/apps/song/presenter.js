@@ -1,23 +1,19 @@
-"use strict"
-const React           = require("react")
-const HF              = require("../../shared/header-footer/")
-import Table from '../../ui/Table/';
+import React from "react";
+import HF from "../../shared/header-footer/";
+import Disqus from "../../shared/disqus/component";
 
-export default (props) => {
-  const {
-    songs
-  } = props
-  console.log(props)
-  return <HF>
-    <Table
-       fields={[{
-         title: 'Title',
-         key: 'title',
-       }, {
-         title: 'Composed',
-         key: 'composed_at',
-       }]}
-       items={songs}
-    />
-  </HF>
+export default class Presenter extends React.Component {
+  render() {
+    const {
+      slug, content, title
+    } = this.props
+    return <HF>
+      <h1>
+        <a href="/songs">Songs</a> / {title}
+      </h1>
+      <div dangerouslySetInnerHTML={{__html: content}} />
+      <h3>Comments</h3>
+      <Disqus />
+    </HF>
+  }
 }

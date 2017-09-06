@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<script> 
+  var Component = App.pages.song
+  if(Component){
+    ReactDOM.render(React.createElement(Component, {
+      pathname: window.location.pathname,
+      page: {{ page.title | jsonify }},
+      slug: {{ page.slug | jsonify}},
+      song: {
+        slug: {{ page.slug | jsonify}},
+        content: {{ page.content | jsonify }},
+        title: {{page.title | jsonify}},
+      },
+    }), document.body)
+  }
+</script>

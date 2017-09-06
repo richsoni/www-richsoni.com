@@ -1,35 +1,36 @@
 ---
 composed_at: 2016-02-16
+title: Couldn't Be More Wrong
 ---
 
-early in the morning
-while the captain's snoring
-grab my hat
-and start exploring
+Early in the morning  
+While the captain's snoring  
+Grab my hat  
+and, start exploring  
 
-sipping on a tea
-sip it by the sea
-i have to go, wait another 3
+Sipping on a tea  
+Sip it by the sea  
+I have to go, wait another 3  
 
-it aint a crime, im just another dime
-to the nursery rhyme
-of mr your not on time
+It aint a crime, I'm just another dime  
+To the nursery rhyme  
+Of Mr your not on time  
 
-as he licks his lips
-gives his cuffs a twist
-but, i wont let him slap my wrist
+As he licks his lips  
+Gives his cuffs a twist  
+But, i wont let him slap my wrist  
 
-hes a cactus thorn
-if my pants are torn
-but, all his scorn
-is just a joke to me
+Hes a cactus thorn  
+If my pants are torn  
+But, all his scorn  
+Is just a joke to me  
 
-im just blowing rings
-hes typing things
-never knew the sping
-was even coming
+I'm just blowing rings  
+Hes typing things  
+Never knew the spring  
+was even coming  
 
-ill be marching on
-before the sun is gone
-he thinks its wrong
-i think its funny
+I'll be marching on  
+Before the sun is gone  
+He thinks its wrong  
+I think its funny  

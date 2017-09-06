@@ -4,9 +4,8 @@ const moment          = require("moment")
 
 class Post extends React.Component {
   render(){
-    const url  = `./posts/${this.props.filePrefix}.html`
-    const date = new moment(this.props.attributes.date).format('MM/DD/YYYY')
-    const link = `/blog/posts/${this.props.filePrefix}.html`
+    const date = new moment(this.props.date).format('MM/DD/YYYY')
+    const link = this.props.url
     return <div
       style={{
         borderBottom: '1px solid #bebebe',
@@ -17,7 +16,7 @@ class Post extends React.Component {
     >
       <h1 style={{
         marginBottom: '.4em'
-      }}><a href={link}> {this.props.attributes.title}</a></h1>
+      }}><a href={link}> {this.props.title}</a></h1>
       <div style={{
         fontStyle: 'italic',
         marginBottom: '1em'
@@ -34,24 +33,24 @@ class Post extends React.Component {
   }
 
   blurb(){
-    if(this.props.attributes.blurb){
+    if(this.props.blurb){
       return <blockquote style={{
         fontStyle: 'italic',
         margin: 0,
         padding: '1em 0',
-      }}>{this.props.attributes.blurb}</blockquote>
+      }}>{this.props.blurb}</blockquote>
     } else {
       return <div />
     }
   }
   hero(){
-    if(this.props.attributes.hero){
+    if(this.props.hero){
       return <div
         style={{
           display: 'block',
           color: '#000',
           textDecoration: 'none',
-          backgroundImage: `url(${this.props.attributes.hero})`,
+          backgroundImage: `url(${this.props.hero})`,
           height: 280,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -66,7 +65,7 @@ class Post extends React.Component {
     let tree       = document.createElement("div")
     let result     = ""
     let counter    = 0
-    tree.innerHTML = this.props.body.replace(/href=["'][^'"]*/, 'href=""')
+    tree.innerHTML = this.props.content.replace(/href=["'][^'"]*/, 'href=""')
     while(result.length < 200){
       const el = tree.children[counter]
       if(el){

@@ -3,15 +3,6 @@ module.exports = {
     backgroundColor: '#232323',
   },
 
-
-  '.post h1, .blog-post-body h1':{
-    color: '#428bca',
-  },
-
-  '.post a': {
-    color: '#0089FF',
-  },
-
   '.blog-post-body, .post': {
     color: '#333333',
     backgroundColor: '#fff',
@@ -159,7 +150,7 @@ module.exports = {
 
   '.blog-post-body *': {
     maxWidth: '100%',
-    overflow: 'scroll',
+    overflow: 'auto',
   },
 
   '.blog-post-body ol, .blog-post-body li': {

@@ -1,6 +1,5 @@
 ---
 title: Commuter Train
-soundcloud: https://soundcloud.com/richsoni/commuter-train
 composed_at: 2014-03-28
 ---
 

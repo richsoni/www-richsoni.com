@@ -52,6 +52,13 @@ defaults:
 
   -
     scope:
+      type: 'songs'
+      path: ''
+    values:
+      layout: 'song'
+
+  -
+    scope:
       type: 'shows'
       path: ''
     values:

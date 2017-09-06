@@ -1,6 +1,5 @@
 ---
 title: Born To Live
-soundcloud: https://soundcloud.com/richsoni/born-to-live
 composed_at: 2014-02-22
 ---
 

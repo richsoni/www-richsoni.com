@@ -12,21 +12,21 @@ const Style = Radium.Style
 
 class RootComponent extends React.Component{
   constructor(attrs){
-    const KEY = attrs.pathname.replace('/blog/posts/','').replace('.html','')
+    const KEY = attrs.pathname
     super()
     this.state = {
       collection: [],
     }
 
-    ajax.get('/blog/posts.json', (payload) => {
+    ajax.get('/api/posts.json', (payload) => {
       const posts = JSON.parse(payload)
       this.setState(parseCollection(posts, 'ASC'))
-      this.setState({post: posts[KEY]})
+      this.setState({post: posts.find((p) => p.url == KEY)})
     })
   }
 
   render() {
-    return <div style={{marginTop: '5em'}}>
+    return <div style={{marginTop: '1.5em'}}>
       <Style rules={style}></Style>
       <Header />
       {this.renderPost()}
@@ -36,26 +36,26 @@ class RootComponent extends React.Component{
 
   renderPost() {
     if( this.state.post ){
-      const date = new moment(this.state.post.attributes.date).format('MM/DD/YYYY')
+      const date = new moment(this.state.post.date).format('MM/DD/YYYY')
       return <div
       style={{
         padding: '2em',
       }}
       className='post'>
         <div className='post-heading'>
-          <h1 className='title'>{this.state.post.attributes.title}</h1>
+          <h1 className='title'><a href='/blog'>Posts</a> / {this.state.post.title}</h1>
           <div style={{fontStyle: 'italic', marginBottom: '1em'}}>Posted {date}</div>
         </div>
         <div
           style={{
-            backgroundImage: `url(${this.state.post.attributes.hero})`,
+            backgroundImage: `url(${this.state.post.hero})`,
             width: '100%',
-            height: this.state.post.attributes.hero ? '280px' : 0,
+            height: this.state.post.hero ? '280px' : 0,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             borderBottom: '1px solid #bebebe',
         }} />
-        <div className='blog-post-body' dangerouslySetInnerHTML={{__html: this.state.post.body}} />
+        <div className='blog-post-body' dangerouslySetInnerHTML={{__html: this.state.post.content}} />
         <hr />
         <h1>Comments</h1>
         <Disqus />

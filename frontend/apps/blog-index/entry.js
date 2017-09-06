@@ -35,7 +35,7 @@ class _RootComponent extends React.Component{
       collection: [],
       currentView: 'preview',
     }
-    ajax.get('/blog/posts.json', (payload) => {
+    ajax.get('/api/posts.json', (payload) => {
       this.setState(parseCollection(JSON.parse(payload)))
     })
   }
@@ -101,7 +101,7 @@ class _RootComponent extends React.Component{
       </div>
     }
     return <div style={postsWrap[this.state.currentView]}>
-      { this.state.collection.map((post) => <Component key={post[0]} filePrefix={post[0]} {...post[1]} /> )}
+      { this.state.collection.map((post) => <Component key={post.id} {...post} /> )}
     </div>
   }
 }

@@ -128,6 +128,6 @@ So, go out and enjoy the work you are doing, and don't sweat the small stuff!!!
 --------------------
 # Further Reading
 
-  * The Young Beatles: [The Beatles: the birth of the band](http://www.telegraph.co.uk/culture/music/the-beatles/10321180/The-Beatles-the-birth-of-the-band.html)
-  * Productivity, and running a company: [Rework](http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
-  * Thinking and being creative: [Pragmatic Thinking and Learning.](http://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)
+  1. The Young Beatles: [The Beatles: the birth of the band](http://www.telegraph.co.uk/culture/music/the-beatles/10321180/The-Beatles-the-birth-of-the-band.html)
+  1. Productivity, and running a company: [Rework](http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
+  1. Thinking and being creative: [Pragmatic Thinking and Learning.](http://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)

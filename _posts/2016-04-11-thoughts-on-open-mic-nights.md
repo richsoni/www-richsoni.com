@@ -10,10 +10,10 @@ author: Rich Soni
 If you have gone to an Open Mic, you can agree with their usefulness as a tool for musicians.
 Here are some reasons to start/continue going:
 
-* Performance Experience
-* Pilot New Material
-* Ensure Engagement Consistency
-* Networking/Bootstrapping
+1. Performance Experience
+1. Pilot New Material
+1. Ensure Engagement Consistency
+1. Networking/Bootstrapping
 
 # Performance Experience
 
@@ -27,12 +27,12 @@ Since Open Mic nights are such low pressure, they are a great place to make mist
 
 Here are just a handful of things I have experienced within the safety of Open Mic, sets:
 
-* forgetting words
-* going out of tune
-* breaking strings
-* loud feedback
-* low audience engagement
-* poor sound quality
+1. forgetting words
+1. going out of tune
+1. breaking strings
+1. loud feedback
+1. low audience engagement
+1. poor sound quality
 
 # Pilot New Material
 
@@ -53,10 +53,10 @@ Open Mic's provide external benefits in addition to the internal ones explored a
 Use them to engage with your fanbase.
 If you play an Open Mic night once a week (you should), you get these items for free:
 
-* reason email subscribers
-* interesting content to post to social media (an event, reminder etc.)
-* new photos for social media
-* new recording of a performance (why not record/release these performances)
+1. reason email subscribers
+1. interesting content to post to social media (an event, reminder etc.)
+1. new photos for social media
+1. new recording of a performance (why not record/release these performances)
 
 # Networking/Bootstrapping
 
@@ -66,10 +66,10 @@ However, networking with the other musicians is usually fruitful.
 
 This the information other players have is valuable:
 
-* other musicians to play with
-* other open mic nights that are good
-* local venues to play
-* local studios to record at
+1. other musicians to play with
+1. other open mic nights that are good
+1. local venues to play
+1. local studios to record at
 
 
 Feel free to discuss your thoughts and opinions on the subject in the comments section below.

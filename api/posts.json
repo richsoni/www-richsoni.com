@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+
+[
+{% for post in site.posts %}
+  {
+    "categories": {{post.categories | jsonify}},
+    "content": {{post.content | jsonify}},
+    "date": {{post.date | jsonify}},
+    "draft": {{post.draft | jsonify}},
+    "excerpt": {{post.excerpt | jsonify}},
+    "ext": {{post.ext | jsonify}},
+    "id": {{post.id | jsonify}},
+    "hero": {{post.hero | jsonify}},
+    "blurb": {{post.blurb | jsonify}},
+    "layout": {{post.layout | jsonify}},
+    "path": {{post.path | jsonify}},
+    "relative_path": {{post.relative_path | jsonify}},
+    "revision": {{post.revision | jsonify}},
+    "slug": {{post.slug | jsonify}},
+    "tags": {{post.tags | jsonify}},
+    "title": {{post.title | jsonify}},
+    "url": {{post.url | jsonify}},
+    "depricated": {{post.depricated | jsonify}}
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}
+]

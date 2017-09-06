@@ -22,7 +22,7 @@ Productivity is not just about getting more things done; it is also about perfor
 
 ## ☯ Yin and Yang of Distraction ☯
 
-<div class='col-md-5 image inline' style='float:right; margin:auto auto'>
+<div class='col-md-5 image inline' style='width: 400px;float:right; margin:auto auto'>
   <img class='img-responsive'  src='/blog/images/distraction.jpg' />
   <span class='caption' href=''></span>
 </div>

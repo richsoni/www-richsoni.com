@@ -23,9 +23,9 @@ Nope.
 
 Reading off a sheet is bad for three reasons:
 
-*  Creates an unprofessional vibe
-*  Disengages you from your performance emotion
-*  Disengages you from the audience
+1.  Creates an unprofessional vibe
+1.  Disengages you from your performance emotion
+1.  Disengages you from the audience
 
 The second is the most important to me.
 Things like timing, melodic and tonal microexpressions, and passion are sacrificed when your focus in stuck on a sheet.
@@ -34,7 +34,7 @@ Yet, I can sympathise because its hard to memorize songs.
 Its also exciting when you have a new song to perform.
 But, you cannot really engage the song until you know it.
 
-I memorise lyrics by using two different methods.
+I memorize lyrics by using two different methods.
 The first, and my primary method is *Eyes Open/Eyes Closed*.
 
 ## 4x

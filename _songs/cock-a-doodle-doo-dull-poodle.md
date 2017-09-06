@@ -1,20 +1,24 @@
-cock a doodle doo, dull poodle
-all kit no caboodle
+---
+title: Cock A Doodle Doo Dull Poodle
+---
 
-cock a doodle doo, dull poodle
-cock a yankee doodle dandy
+Cock a doodle doo, dull poodle
+All kit no caboodle
 
-leading on that shes handy
-striped peppermint candy
+Cock a doodle doo, dull poodle
+Cock a Yankee doodle dandy
 
-like a viper, yes indeed
-rollin over tumbleweed
-riding on a silver steed
+Leading on that shes handy
+Striped peppermint candy
 
-without a home
-living all alone
-dretched to the bone
+Like a viper, yes indeed
+Rollin over tumbleweed
+Riding on a silver steed
 
-it feels so good
-it feels so good
+Without a home
+Living all alone
+Drenched to the bone
+
+It feels so good
+It feels so good
 

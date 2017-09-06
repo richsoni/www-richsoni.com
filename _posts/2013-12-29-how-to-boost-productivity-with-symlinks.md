@@ -39,11 +39,11 @@ $  ln -s ~/Code/Projects/Personal/blog post
 
 Notice the format of the command.
 
-* ``ln`` stands for link
-* ``-s`` means symbolic, so ``ln -s`` means symbolic link
-* Then you specify the folder you want to make the link of (``.../blog``)
-* Finally give the link a name (``post``)
-* ``ln -s target_dir name``
+1. ``ln`` stands for link
+1. ``-s`` means symbolic, so ``ln -s`` means symbolic link
+1. Then you specify the folder you want to make the link of (``.../blog``)
+1. Finally give the link a name (``post``)
+1. ``ln -s target_dir name``
 
 
 # 3.  Setup an alias

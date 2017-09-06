@@ -1,6 +1,7 @@
 import {CALL_API} from 'redux-api-middleware';
 import {
-  REQUEST, FINISH, ERROR
+  REQUEST, FINISH, ERROR,
+  HYDRATE_ONE,
 } from './reducer';
 
 export const fetchAll = () => {
@@ -10,5 +11,13 @@ export const fetchAll = () => {
       method: 'GET',
       types: [REQUEST, FINISH, ERROR]
     }
+  }
+}
+
+
+export const hydrateOne = (song) => {
+  return {
+    type: HYDRATE_ONE,
+    payload: song,
   }
 }

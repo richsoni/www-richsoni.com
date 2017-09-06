@@ -1,44 +1,53 @@
 ---
 composed_at: 2016-04
+title: Fly Away
 ---
-A                     G
-fly away into the sea breeze
-spread your wings and fly away
 
-footsteps in the sand wont be here tomorrow
-they will all be washed away be the sea
+*Fly away into the sea breeze*  
+*Spread your wings and fly away*  
 
-A         G         A          D
-born as a boardwalk ballerina
-A         G         E          F#
-just a flip flopping along
-in the outskirts of the marina
-she gives it away for a song
+*Footsteps in the sand wont be here tomorrow*  
+*They will all be washed away be the sea*  
 
-back past the kitchen of the cantina
-jefe fixed himself a nice little room
-hell go back there with a few senoritas
-to gamble with fisherman from the lagoon
+Born as a boardwalk ballerina  
+Just a flip flopping along  
+In the outskirts of the marina  
+She gives it away for a song  
+
+Back past the kitchen of the cantina  
+Johnny fixed himself a nice little room  
+Hell go back there with a few señoritas  
+To gamble with fisherman from the lagoon  
 
 
-he was a real son of a beach boy
-renting a shack, by the sea
-washed into town, with the driftwood
-after a bender in carpi
+He was a real son of a beach boy  
+Renting a shack, by the sea  
+Washed into town, with the driftwood  
+After a bender in Carpi  
 
-(chorus)
+*Fly away into the sea breeze*  
+*Spread your wings and fly away*  
 
-he was lookin for something easy to do for the season
-something for which he could bend up the rules
-he got mixed up with her for that reason
-they'd sneak around swimming in neighborhood pools
+*Footsteps in the sand wont be here tomorrow*  
+*They will all be washed away be the sea*  
 
-well, word got back to the jefe that I was sneakin
-around the town with his brown colored spoon
-I heard the boards behind me squeaking
-and they pull of the sack and im in the back of the saloon
+He was lookin' for something easy to do for the season  
+Something for which he could bend up the rules  
+He got mixed up with her for that reason  
+They'd swimming around in neighborhood pools  
 
-she said this place is so dead, in the winter
-after the seagulls cross over the town
-dont drag his feet there gonna get spliters
-down at the sound theres no one around
+Well, word got back to Johnny that I was Sneakin'  
+Around the town with his brown colored spoon  
+I heard the boards behind me squeaking  
+And they pull of the sack and I'm in the back of the saloon  
+
+She said this place is so dead, in the winter  
+After the seagulls cross over the town  
+Don't drag his feet there gonna get spliters  
+Down at the sound there's no one around  
+
+*Fly away into the sea breeze*  
+*Spread your wings and fly away*  
+
+*Footsteps in the sand wont be here tomorrow*  
+*They will all be washed away be the sea*  

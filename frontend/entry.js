@@ -2,6 +2,7 @@ const React = window.React = require("react")
 const ReactDOM = window.ReactDOM = require('react-dom')
 import moment from 'moment';
 window.moment = moment;
+import songsEntry from "./apps/songs/"
 import songEntry from "./apps/song/"
 import show from "./apps/show/";
 
@@ -9,9 +10,9 @@ const pages = {
   home:     require("./apps/homepage/entry"),
   subscribe:    require("./apps/subscribe/entry"),
   blog:         require("./apps/blog-index/entry"),
-  songIndex: require("./apps/song-index/entry"),
   shows: require('./apps/shows/'),
-  songs: songEntry,
+  songs: songsEntry,
+  song: songEntry,
   show: show,
   post: require("./apps/blog-post/entry"),
 }
