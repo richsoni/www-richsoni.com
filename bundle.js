@@ -24570,6 +24570,7 @@ module.exports = exports['default'];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Provide = undefined;
 
 var _react = __webpack_require__(2);
 
@@ -24583,12 +24584,19 @@ var _store2 = _interopRequireDefault(_store);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = function (props) {
-  return _react2.default.createElement(
-    _reactRedux.Provider,
-    { store: _store2.default },
-    props.children
-  );
+var Provide = exports.Provide = function Provide(attributes) {
+  return function (props) {
+    var Component = attributes.Component,
+        mapStateToProps = attributes.mapStateToProps,
+        mapDispatchToProps = attributes.mapDispatchToProps;
+
+    var Connected = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Component);
+    return _react2.default.createElement(
+      _reactRedux.Provider,
+      { store: _store2.default },
+      _react2.default.createElement(Connected, props)
+    );
+  };
 };
 
 /***/ }),
@@ -29597,19 +29605,18 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Shows = function (_React$Component) {
-  _inherits(Shows, _React$Component);
+var Songs = function (_React$Component) {
+  _inherits(Songs, _React$Component);
 
-  function Shows() {
-    _classCallCheck(this, Shows);
+  function Songs() {
+    _classCallCheck(this, Songs);
 
-    return _possibleConstructorReturn(this, (Shows.__proto__ || Object.getPrototypeOf(Shows)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Songs.__proto__ || Object.getPrototypeOf(Songs)).apply(this, arguments));
   }
 
-  _createClass(Shows, [{
+  _createClass(Songs, [{
     key: 'render',
     value: function render() {
-      console.log(this.props);
       var songs = this.props.songs.map(function (song) {
         return _extends({}, song, {
           composedAt: _moment2.default.utc(song.composed_at).format("MM/DD/YY")
@@ -29621,10 +29628,10 @@ var Shows = function (_React$Component) {
     }
   }]);
 
-  return Shows;
+  return Songs;
 }(_react2.default.Component);
 
-module.exports = Shows;
+module.exports = Songs;
 
 /***/ }),
 /* 287 */
@@ -32077,7 +32084,6 @@ var HF = __webpack_require__(22);
 exports.default = function (props) {
   var songs = props.songs;
 
-  console.log(props);
   return React.createElement(
     HF,
     null,
@@ -36031,8 +36037,6 @@ var _presenter2 = _interopRequireDefault(_presenter);
 
 var _reduxProvider = __webpack_require__(226);
 
-var _reduxProvider2 = _interopRequireDefault(_reduxProvider);
-
 var _actions = __webpack_require__(255);
 
 var _reactRedux = __webpack_require__(58);
@@ -36085,15 +36089,6 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-exports.default = function (props) {
-  var Component = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Container);
-  return _react2.default.createElement(
-    _reduxProvider2.default,
-    null,
-    _react2.default.createElement(Component, props)
-  );
-};
-
 var RootComponent = function (_React$Component2) {
   _inherits(RootComponent, _React$Component2);
 
@@ -36123,6 +36118,12 @@ var RootComponent = function (_React$Component2) {
 
   return RootComponent;
 }(_react2.default.Component);
+
+exports.default = (0, _reduxProvider.Provide)({
+  Component: Container,
+  mapStateToProps: mapStateToProps,
+  mapDispatchToProps: mapDispatchToProps
+});
 
 /***/ }),
 /* 357 */
@@ -40658,15 +40659,11 @@ var _presenter2 = _interopRequireDefault(_presenter);
 
 var _reduxProvider = __webpack_require__(226);
 
-var _reduxProvider2 = _interopRequireDefault(_reduxProvider);
-
 var _actions = __webpack_require__(440);
 
 var _actions2 = __webpack_require__(255);
 
 var _actions3 = __webpack_require__(441);
-
-var _reactRedux = __webpack_require__(58);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40676,8 +40673,42 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Container = function (_React$Component) {
-  _inherits(Container, _React$Component);
+var RootComponent = function (_React$Component) {
+  _inherits(RootComponent, _React$Component);
+
+  function RootComponent() {
+    _classCallCheck(this, RootComponent);
+
+    return _possibleConstructorReturn(this, (RootComponent.__proto__ || Object.getPrototypeOf(RootComponent)).apply(this, arguments));
+  }
+
+  _createClass(RootComponent, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          locations = _props.locations,
+          shows = _props.shows,
+          songs = _props.songs,
+          slug = _props.slug;
+
+      var show = shows.byID[slug];
+      if (show && songs.length && locations.length) {
+        var _location = locations.byID[show.slug];
+        return _react2.default.createElement(_presenter2.default, {
+          location: _location,
+          songs: songs,
+          show: show
+        });
+      }
+      return _react2.default.createElement("div", null);
+    }
+  }]);
+
+  return RootComponent;
+}(_react2.default.Component);
+
+var Container = function (_React$Component2) {
+  _inherits(Container, _React$Component2);
 
   function Container() {
     _classCallCheck(this, Container);
@@ -40720,48 +40751,11 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-exports.default = function (props) {
-  var Component = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Container);
-  return _react2.default.createElement(
-    _reduxProvider2.default,
-    null,
-    _react2.default.createElement(Component, props)
-  );
-};
-
-var RootComponent = function (_React$Component2) {
-  _inherits(RootComponent, _React$Component2);
-
-  function RootComponent() {
-    _classCallCheck(this, RootComponent);
-
-    return _possibleConstructorReturn(this, (RootComponent.__proto__ || Object.getPrototypeOf(RootComponent)).apply(this, arguments));
-  }
-
-  _createClass(RootComponent, [{
-    key: "render",
-    value: function render() {
-      var _props = this.props,
-          locations = _props.locations,
-          shows = _props.shows,
-          songs = _props.songs,
-          slug = _props.slug;
-
-      var show = shows.byID[slug];
-      if (show && songs.length && locations.length) {
-        var _location = locations.byID[show.slug];
-        return _react2.default.createElement(_presenter2.default, {
-          location: _location,
-          songs: songs,
-          show: show
-        });
-      }
-      return _react2.default.createElement("div", null);
-    }
-  }]);
-
-  return RootComponent;
-}(_react2.default.Component);
+exports.default = (0, _reduxProvider.Provide)({
+  Component: Container,
+  mapStateToProps: mapStateToProps,
+  mapDispatchToProps: mapDispatchToProps
+});
 
 /***/ }),
 /* 436 */

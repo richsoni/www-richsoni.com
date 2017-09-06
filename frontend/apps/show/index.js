@@ -1,11 +1,31 @@
 "use strict"
 import React  from "react";
 import Presenter from "./presenter";
-import ReduxProvider from '../../shared/reduxProvider';
+import {Provide} from '../../shared/reduxProvider';
 import {fetchAllLocations} from '../../data/locations/actions';
 import {fetchAll as fetchAllSongs} from '../../data/songs/actions';
 import {hydrateShow} from '../../data/shows/actions';
-import {connect} from 'react-redux';
+
+class RootComponent extends React.Component{
+  render() {
+    const {
+      locations,
+      shows,
+      songs,
+      slug,
+    } = this.props
+    const show = shows.byID[slug]
+    if(show && songs.length && locations.length ){
+      const _location = locations.byID[show.slug];
+      return <Presenter
+          location={_location}
+          songs={songs}
+          show={show}
+        />
+    }
+    return <div />
+  }
+}
 
 class Container extends React.Component {
   render() {
@@ -37,30 +57,8 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default (props) => {
-  const Component = connect(mapStateToProps, mapDispatchToProps)(Container)
-  return <ReduxProvider>
-    <Component {...props} />
-  </ReduxProvider>
-}
-
-class RootComponent extends React.Component{
-  render() {
-    const {
-      locations,
-      shows,
-      songs,
-      slug,
-    } = this.props
-    const show = shows.byID[slug]
-    if(show && songs.length && locations.length ){
-      const _location = locations.byID[show.slug];
-      return <Presenter
-          location={_location}
-          songs={songs}
-          show={show}
-        />
-    }
-    return <div />
-  }
-}
+export default Provide({
+  Component: Container,
+  mapStateToProps,
+  mapDispatchToProps
+});

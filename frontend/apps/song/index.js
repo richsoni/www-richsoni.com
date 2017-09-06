@@ -1,6 +1,6 @@
 import React from 'react';
 import Presenter from "./presenter";
-import ReduxProvider from '../../shared/reduxProvider';
+import {Provide} from '../../shared/reduxProvider';
 import {hydrateOne} from '../../data/songs/actions';
 import {connect} from 'react-redux';
 
@@ -32,13 +32,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default (props) => {
-  const Component = connect(mapStateToProps, mapDispatchToProps)(Container)
-  return <ReduxProvider>
-    <Component {...props} />
-  </ReduxProvider>
-}
-
 class RootComponent extends React.Component{
   render() {
     const {
@@ -57,3 +50,9 @@ class RootComponent extends React.Component{
     return <div />
   }
 }
+
+export default Provide({
+  Component: Container,
+  mapStateToProps,
+  mapDispatchToProps
+});

@@ -2,9 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import Presenter from './presenter';
 
-class Shows extends React.Component {
+class Songs extends React.Component {
   render(){
-    console.log(this.props)
     const songs = this.props.songs
       .map((song) => {
         return {
@@ -16,4 +15,4 @@ class Shows extends React.Component {
     />
   }
 }
-module.exports = Shows;
+module.exports = Songs;

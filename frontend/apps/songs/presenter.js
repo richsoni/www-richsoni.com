@@ -7,7 +7,6 @@ export default (props) => {
   const {
     songs
   } = props
-  console.log(props)
   return <HF>
     <Table
        fields={[{
