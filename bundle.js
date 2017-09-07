@@ -23780,15 +23780,14 @@ var Row = function Row(props) {
   );
 };
 
-var sort = function sort(items, sortField, sortDirection) {
-  console.count("SORT");
-  var customSort = sortField['sort' + sortDirection];
+var sort = function sort(items, sortKey, sortDirection) {
+  var customSort = sortKey['sort' + sortDirection];
   if (customSort) {
     return items.sort(customSort);
   }
   return items.sort(function (sA, sB) {
-    var a = sA[sortField.key];
-    var b = sB[sortField.key];
+    var a = sA[sortKey];
+    var b = sB[sortKey];
     if (!a && !b) {
       return 0;
     }
@@ -23820,11 +23819,11 @@ var Table = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Table.__proto__ || Object.getPrototypeOf(Table)).call(this, props));
 
-    var sortField = props.fields[0];
-    var sortDirection = 'ASC';
-    var items = sort(props.items, sortField, sortDirection);
+    var sortKey = props.sortDefaultKey || props.fields[0].key;
+    var sortDirection = props.sortDefaultDirection || 'ASC';
+    var items = sort(props.items, sortKey, sortDirection);
     _this.state = {
-      sortField: sortField,
+      sortKey: sortKey,
       sortDirection: sortDirection,
       items: items
     };
@@ -23867,7 +23866,7 @@ var Table = function (_React$Component) {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       this.setState({
-        items: sort(nextProps.items, this.state.sortField, this.state.sortDirection)
+        items: sort(nextProps.items, this.state.sortKey, this.state.sortDirection)
       });
     }
   }]);
@@ -32225,6 +32224,8 @@ var _Table = __webpack_require__(215);
 
 var _Table2 = _interopRequireDefault(_Table);
 
+var _dateSort = __webpack_require__(541);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var React = __webpack_require__(2);
@@ -32243,30 +32244,8 @@ exports.default = function (props) {
       }, {
         title: 'Composed',
         key: 'composedAt',
-        sortASC: function sortASC(sA, sB) {
-          if (!sA.moment) {
-            return 1;
-          }
-          if (!sB.moment) {
-            return -1;
-          }
-          if (!sA.moment && !sB.moment) {
-            return 0;
-          }
-          return sA.moment.diff(sB.moment);
-        },
-        sortDESC: function sortDESC(sA, sB) {
-          if (!sA.moment) {
-            return -1;
-          }
-          if (!sB.moment) {
-            return 1;
-          }
-          if (!sA.moment && !sB.moment) {
-            return 0;
-          }
-          return sB.moment.diff(sA.moment);
-        }
+        sortASC: _dateSort.sortASC,
+        sortDESC: _dateSort.sortDESC
       }],
       items: songs
     })
@@ -51924,6 +51903,8 @@ var _Table = __webpack_require__(215);
 
 var _Table2 = _interopRequireDefault(_Table);
 
+var _dateSort = __webpack_require__(541);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (props) {
@@ -51938,7 +51919,9 @@ exports.default = function (props) {
     _react2.default.createElement(_Table2.default, {
       fields: [{
         title: 'Date',
-        key: 'dateString'
+        key: 'dateString',
+        sortASC: _dateSort.sortASC,
+        sortDESC: _dateSort.sortDESC
       }, {
         title: 'Start',
         key: 'startTime'
@@ -51949,7 +51932,8 @@ exports.default = function (props) {
         title: 'Location',
         key: 'locationString'
       }],
-      items: props.upcomingShows
+      items: props.upcomingShows,
+      sortDefaultKey: 'date'
     }),
     _react2.default.createElement(
       'h2',
@@ -51959,7 +51943,9 @@ exports.default = function (props) {
     _react2.default.createElement(_Table2.default, {
       fields: [{
         title: 'Date',
-        key: 'dateString'
+        key: 'dateString',
+        sortASC: _dateSort.sortASC,
+        sortDESC: _dateSort.sortDESC
       }, {
         title: 'Venue',
         key: 'venueString'
@@ -51967,7 +51953,9 @@ exports.default = function (props) {
         title: 'Location',
         key: 'locationString'
       }],
-      items: props.pastShows
+      items: props.pastShows,
+      sortDefaultKey: 'date',
+      sortDefaultDirection: 'DESC'
     })
   );
 };
@@ -52289,6 +52277,46 @@ module.exports = {
     alignItems: 'center',
     justifyContent: 'center'
   }
+};
+
+/***/ }),
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var sortASC = exports.sortASC = function sortASC(sA, sB) {
+  if (!sA.moment) {
+    return 1;
+  }
+  if (!sB.moment) {
+    return -1;
+  }
+  if (!sA.moment && !sB.moment) {
+    return 0;
+  }
+  return sA.moment.diff(sB.moment);
+};
+
+var sortDESC = exports.sortDESC = function sortDESC(sA, sB) {
+  if (!sA.moment) {
+    return -1;
+  }
+  if (!sB.moment) {
+    return 1;
+  }
+  if (!sA.moment && !sB.moment) {
+    return 0;
+  }
+  return sB.moment.diff(sA.moment);
 };
 
 /***/ })

@@ -1,6 +1,7 @@
 import React from 'react';
 import HF from '../../shared/header-footer/';
 import Table from '../../ui/Table/';
+import {sortASC, sortDESC} from '../../ui/Table/dateSort';
 
 export default (props) => {
   return <HF>
@@ -9,6 +10,8 @@ export default (props) => {
        fields={[{
          title: 'Date',
          key: 'dateString',
+         sortASC,
+         sortDESC,
        }, {
          title: 'Start',
          key: 'startTime',
@@ -20,12 +23,15 @@ export default (props) => {
          key: 'locationString',
        }]}
        items={props.upcomingShows}
+       sortDefaultKey='date'
     />
     <h2>Past Shows</h2>
     <Table
        fields={[{
          title: 'Date',
          key: 'dateString',
+         sortASC,
+         sortDESC,
        }, {
          title: 'Venue',
          key: 'venueString',
@@ -34,6 +40,8 @@ export default (props) => {
          key: 'locationString',
        }]}
        items={props.pastShows}
+       sortDefaultKey='date'
+       sortDefaultDirection='DESC'
     />
   </HF>
 }

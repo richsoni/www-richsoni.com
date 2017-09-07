@@ -16,13 +16,12 @@ const Row = (props) => {
   </a>
 }
 
-const sort = (items, sortField, sortDirection) => {
-  console.count("SORT");
-  const customSort = sortField['sort'+sortDirection];
+const sort = (items, sortKey, sortDirection) => {
+  const customSort = sortKey['sort'+sortDirection];
   if(customSort){ return items.sort(customSort) }
   return items.sort((sA, sB) => {
-    const a = sA[sortField.key]
-    const b = sB[sortField.key]
+    const a = sA[sortKey]
+    const b = sB[sortKey]
     if(!a && !b) { return 0 }
     if(sortDirection === 'ASC'){
       if(!a) { return 1 }
@@ -39,11 +38,11 @@ const sort = (items, sortField, sortDirection) => {
 export default class Table extends React.Component {
   constructor(props) {
     super(props);
-    const sortField = props.fields[0]
-    const sortDirection = 'ASC'
-    const items = sort(props.items, sortField, sortDirection);
+    const sortKey = props.sortDefaultKey || props.fields[0].key;
+    const sortDirection = props.sortDefaultDirection || 'ASC';
+    const items = sort(props.items, sortKey, sortDirection);
     this.state = {
-      sortField,
+      sortKey,
       sortDirection,
       items
     };
@@ -67,7 +66,7 @@ export default class Table extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      items: sort(nextProps.items, this.state.sortField, this.state.sortDirection)
+      items: sort(nextProps.items, this.state.sortKey, this.state.sortDirection)
     })
   }
 }

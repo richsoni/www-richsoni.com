@@ -2,6 +2,7 @@
 const React           = require("react")
 const HF              = require("../../shared/header-footer/")
 import Table from '../../ui/Table/';
+import {sortASC, sortDESC} from '../../ui/Table/dateSort';
 
 export default (props) => {
   const {
@@ -15,18 +16,8 @@ export default (props) => {
        }, {
          title: 'Composed',
          key: 'composedAt',
-         sortASC: (sA, sB) => {
-            if(!sA.moment) { return 1 }
-            if(!sB.moment) { return -1 }
-            if(!sA.moment && !sB.moment) { return 0 }
-            return sA.moment.diff(sB.moment)
-         },
-         sortDESC: (sA, sB) => {
-           if(!sA.moment) { return -1 }
-           if(!sB.moment) { return 1 }
-           if(!sA.moment && !sB.moment) { return 0 }
-           return sB.moment.diff(sA.moment)
-         }
+         sortASC,
+         sortDESC,
        }]}
        items={songs}
     />
