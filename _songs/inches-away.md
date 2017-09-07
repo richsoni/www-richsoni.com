@@ -1,6 +1,5 @@
 ---
-title: When The Girl Of Your Dreams Sleeps Inches Away
-soundcloud: https://soundcloud.com/richsoni/when-the-girl-of-your-dreams-sleeps-inches-away
+title: Inches Away
 composed_at: 2015-09-25
 ---
 

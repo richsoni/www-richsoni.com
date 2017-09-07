@@ -1,6 +1,6 @@
 ---
 title: Out Cold
-composed_at: 2014
+composed_at: 2014-09-21
 ---
 
 Aint it just like my mind, to play tricks every time  

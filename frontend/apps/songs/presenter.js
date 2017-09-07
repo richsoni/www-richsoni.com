@@ -14,7 +14,19 @@ export default (props) => {
          key: 'title',
        }, {
          title: 'Composed',
-         key: 'composed_at',
+         key: 'composedAt',
+         sortASC: (sA, sB) => {
+            if(!sA.moment) { return 1 }
+            if(!sB.moment) { return -1 }
+            if(!sA.moment && !sB.moment) { return 0 }
+            return sA.moment.diff(sB.moment)
+         },
+         sortDESC: (sA, sB) => {
+           if(!sA.moment) { return -1 }
+           if(!sB.moment) { return 1 }
+           if(!sA.moment && !sB.moment) { return 0 }
+           return sB.moment.diff(sA.moment)
+         }
        }]}
        items={songs}
     />
