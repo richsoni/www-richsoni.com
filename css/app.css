@@ -25,6 +25,28 @@
   background-color: #f4f6ff;
   text-decoration: none;
 }
+
+.titleSortingASC__styles-module__I4yOL, .titleSortingDESC__styles-module__13ix5, .titleNotSorting__styles-module__VQvQf {
+  cursor: pointer;
+}
+
+.titleSortingASC__styles-module__I4yOL:after {
+  content: '\25BC';
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  line-height: 1em;
+  margin-top: -0.5em;
+  display: inline-block;
+}
+
+.titleSortingDESC__styles-module__13ix5:after {
+  content: '\25B2';
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  line-height: 1em;
+  margin-top: -0.5em;
+  display: inline-block;
+}
 .heading__styles-module__3P4e_ {
 }
 

@@ -11,7 +11,7 @@ export default (props) => {
   return <HF>
     <Table
        fields={[{
-         title: 'Title',
+         title: 'Song',
          key: 'title',
        }, {
          title: 'Composed',
