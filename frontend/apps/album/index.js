@@ -1,27 +1,27 @@
 import React  from "react";
-// import Presenter from "./presenter";
+import Presenter from "./presenter";
 import {Provide} from '../../shared/reduxProvider';
+import {fetchAll as fetchAllReleases} from '../../data/releases/actions';
 import {fetchAll as fetchAllSongs} from '../../data/songs/actions';
-import {hydrateShow} from '../../data/shows/actions';
 
 class RootComponent extends React.Component{
   render() {
     const {
-      title,
-      realeased_on,
-      release_type,
-      tracklist,
+      releases,
+      slug,
+      songs,
     } = this.props
-    // const show = shows.byID[slug]
-    // if(show && songs.length && locations.length ){
-    //   const _location = locations.byID[show.slug];
-    //   return <Presenter
-    //       location={_location}
-    //       songs={songs}
-    //       show={show}
-    //     />
-    // }
-    // return <div />
+    const release = releases[slug]
+    if(release && Object.keys(songs).length){
+      const tracks = release.tracklist.reduce((memo, s) => {
+        return memo.concat([songs[s]])
+      }, [])
+      return <Presenter
+          tracks={tracks}
+          release={release}
+        />
+    }
+    return <div />
   }
 }
 
@@ -40,18 +40,17 @@ class Container extends React.Component {
 const mapDispatchToProps = (dispatch) => {
   return {
     componentDidMount: (props) => {
-      // dispatch(fetchAllLocations())
-      // dispatch(fetchAllSongs())
-      // dispatch(hydrateShow(props.show))
+      dispatch(fetchAllReleases())
+      dispatch(fetchAllSongs())
     }
   }
 }
 
+
 const mapStateToProps = (state) => {
   return {
-    shows: state.shows,
-    songs: state.songs,
-    locations: state.locations,
+    releases: state.releases.byID,
+    songs: state.songs.byID,
   }
 }
 

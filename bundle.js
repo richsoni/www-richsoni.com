@@ -26501,7 +26501,6 @@ var ERROR = exports.ERROR = "RELEASES_ERROR";
 var parse = function parse() {
   var releases = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-  console.log(releases);
   return {
     byID: Object.keys(releases).reduce(function (memo, key) {
       var release = releases[key];
@@ -52618,11 +52617,15 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _presenter = __webpack_require__(549);
+
+var _presenter2 = _interopRequireDefault(_presenter);
+
 var _reduxProvider = __webpack_require__(40);
 
-var _actions = __webpack_require__(74);
+var _actions = __webpack_require__(449);
 
-var _actions2 = __webpack_require__(445);
+var _actions2 = __webpack_require__(74);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -52631,8 +52634,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import Presenter from "./presenter";
-
 
 var RootComponent = function (_React$Component) {
   _inherits(RootComponent, _React$Component);
@@ -52644,23 +52645,24 @@ var RootComponent = function (_React$Component) {
   }
 
   _createClass(RootComponent, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       var _props = this.props,
-          title = _props.title,
-          realeased_on = _props.realeased_on,
-          release_type = _props.release_type,
-          tracklist = _props.tracklist;
-      // const show = shows.byID[slug]
-      // if(show && songs.length && locations.length ){
-      //   const _location = locations.byID[show.slug];
-      //   return <Presenter
-      //       location={_location}
-      //       songs={songs}
-      //       show={show}
-      //     />
-      // }
-      // return <div />
+          releases = _props.releases,
+          slug = _props.slug,
+          songs = _props.songs;
+
+      var release = releases[slug];
+      if (release && Object.keys(songs).length) {
+        var tracks = release.tracklist.reduce(function (memo, s) {
+          return memo.concat([songs[s]]);
+        }, []);
+        return _react2.default.createElement(_presenter2.default, {
+          tracks: tracks,
+          release: release
+        });
+      }
+      return _react2.default.createElement("div", null);
     }
   }]);
 
@@ -52677,12 +52679,12 @@ var Container = function (_React$Component2) {
   }
 
   _createClass(Container, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(RootComponent, this.props);
     }
   }, {
-    key: 'componentDidMount',
+    key: "componentDidMount",
     value: function componentDidMount() {
       if (this.props.componentDidMount) {
         this.props.componentDidMount(this.props);
@@ -52696,18 +52698,16 @@ var Container = function (_React$Component2) {
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     componentDidMount: function componentDidMount(props) {
-      // dispatch(fetchAllLocations())
-      // dispatch(fetchAllSongs())
-      // dispatch(hydrateShow(props.show))
+      dispatch((0, _actions.fetchAll)());
+      dispatch((0, _actions2.fetchAll)());
     }
   };
 };
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    shows: state.shows,
-    songs: state.songs,
-    locations: state.locations
+    releases: state.releases.byID,
+    songs: state.songs.byID
   };
 };
 
@@ -52716,6 +52716,133 @@ exports.default = (0, _reduxProvider.Provide)({
   mapStateToProps: mapStateToProps,
   mapDispatchToProps: mapDispatchToProps
 });
+
+/***/ }),
+/* 549 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _headerFooter = __webpack_require__(18);
+
+var _headerFooter2 = _interopRequireDefault(_headerFooter);
+
+var _presenters = __webpack_require__(443);
+
+var _component = __webpack_require__(75);
+
+var _component2 = _interopRequireDefault(_component);
+
+var _stylesModule = __webpack_require__(550);
+
+var _stylesModule2 = _interopRequireDefault(_stylesModule);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Track = function Track(props) {
+  var url = props.url,
+      title = props.title;
+
+  return _react2.default.createElement(
+    "li",
+    null,
+    _react2.default.createElement(
+      "a",
+      { href: url },
+      title
+    )
+  );
+};
+
+var Tracklist = function Tracklist(props) {
+  var tracks = props.tracks;
+
+  return _react2.default.createElement(
+    "ol",
+    { className: "tracklist" },
+    tracks.map(function (track) {
+      return _react2.default.createElement(Track, _extends({ key: track.slug }, track));
+    })
+  );
+};
+
+var Presenter = function (_React$Component) {
+  _inherits(Presenter, _React$Component);
+
+  function Presenter() {
+    _classCallCheck(this, Presenter);
+
+    return _possibleConstructorReturn(this, (Presenter.__proto__ || Object.getPrototypeOf(Presenter)).apply(this, arguments));
+  }
+
+  _createClass(Presenter, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          release = _props.release,
+          tracks = _props.tracks;
+
+      return _react2.default.createElement(
+        _headerFooter2.default,
+        null,
+        _react2.default.createElement(
+          "h1",
+          null,
+          _react2.default.createElement(
+            "a",
+            { href: "/albums" },
+            "Albums"
+          ),
+          " / ",
+          release.title
+        ),
+        _react2.default.createElement(
+          "h2",
+          null,
+          "Released on ",
+          (0, _presenters.MMDDYYYY)(release.realeased_on)
+        ),
+        _react2.default.createElement("div", { className: "albumArt" }),
+        _react2.default.createElement(Tracklist, { tracks: tracks }),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Comments"
+        ),
+        _react2.default.createElement(_component2.default, null)
+      );
+    }
+  }]);
+
+  return Presenter;
+}(_react2.default.Component);
+
+exports.default = Presenter;
+
+/***/ }),
+/* 550 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -3,7 +3,6 @@ export const FINISH  = "RELEASES_FINISH";
 export const ERROR  = "RELEASES_ERROR";
 
 const parse = (releases={}) => {
-  console.log(releases)
   return {
     byID: Object.keys(releases).reduce((memo, key) => {
       const release = releases[key]
