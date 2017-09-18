@@ -1,0 +1,58 @@
+.list {
+  display: block;
+  margin: auto auto;
+}
+
+.item {
+  float: left;
+  background-color: #bebebe;
+  margin: 1vw;
+  height: 70vw;
+  width: 70vw;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none !important;
+}
+
+.overlay {
+  height: 45%;
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.item:hover .overlay {
+  display: block;
+}
+
+@media(min-width: 320px) {
+  .item {
+    height: 38vw;
+    width: 38vw;
+  }
+}
+
+@media(min-width: 750px) {
+  .item {
+    height: 28vw;
+    width: 28vw;
+    margin: .5vw;
+  }
+}
+
+@media(min-width: 960px) {
+  .item {
+    margin:7px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .item:first-child {
+    width: 313px;
+    height: 313px;
+  }
+}

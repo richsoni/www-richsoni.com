@@ -5,11 +5,16 @@ window.moment = moment;
 import songsEntry from "./apps/songs/"
 import songEntry from "./apps/song/"
 import show from "./apps/show/";
+import albums from "./apps/albums/";
+import album from "./apps/album/";
+
 
 const pages = {
   home:     require("./apps/homepage/entry"),
   subscribe:    require("./apps/subscribe/entry"),
   blog:         require("./apps/blog-index/entry"),
+  albums: albums,
+  album: album,
   shows: require('./apps/shows/'),
   songs: songsEntry,
   song: songEntry,

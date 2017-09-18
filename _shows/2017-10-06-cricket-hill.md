@@ -1,4 +1,57 @@
 ---
 startTime: 5:00 PM
 endTime: 8:00 PM
+setlist:
 ---
+- deep-elem-blues
+- willie-bet-his-wife-in-a-game-of-texas-stud
+- molly-do-it-look-like-i-care
+- singing-in-the-wind
+- tower-of-cain
+- since-the-last-blood-moon
+- rye-whiskey
+- deep-elem-blues
+- sugaree
+
+- willie-bet-his-wife-in-a-game-of-texas-stud
+- two-more-things
+- song-of-broken-justice
+- ballad-of-the-condor
+- workingmans-blues
+- walk-and-wheeze
+- molly-do-it-look-like-i-care
+- pine-of-the-pub
+- between-these-canals
+- amelia
+- black-and-blues
+- need-for-love
+- ordinary-man-and-the-angel
+- shake-shake-honey
+- singing-in-the-wind
+- planes-trains-autoresponders
+- black-rose
+- wayward-sister
+- leeds-devil
+- tower-of-cain
+- fly-away
+- since-the-last-blood-moon
+- sweet-grass-memory
+- ghosts-in-the-wire
+- hey-baby-doll
+- please-come-home
+- wander-with-me
+- together
+- black-velvet-band
+- down-in-the-bottom
+- rye-whiskey
+- the-wild-rover
+- whiskey-in-the-jar
+- babe-it-aint-no-lie
+- deep-elem-blues
+- casey-jones
+- friend-of-the-devil
+- get-off-of-my-cloud
+- farmhouse-no-woman-no-cry
+- it-takes-a-lot-to-laugh-it-takes-a-train-to-cry
+- sugaree
+- the-weight

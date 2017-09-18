@@ -1,4 +1,4 @@
 ---
 title: Rosin The Beau
-words: traditional
+words: Traditional
 ---

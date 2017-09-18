@@ -15,6 +15,8 @@ class Element extends React.Component {
         padding: '2em',
         backgroundColor: 'white',
         boxShadow: '0px 0px 1px #797878',
+        minHeight: '100%',
+        overflow: 'hidden',
         ...style
       }}>
         {this.props.children}

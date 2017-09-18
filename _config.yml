@@ -33,12 +33,17 @@ collections:
   songs:
     output: true
     directory: _songs
-    permalink: /songs/:title.html
+    permalink: /songs/:title
+
+  releases:
+    output: true
+    directory: _releases
+    permalink: /albums/:title
 
   shows:
     output: true
     directory: _shows
-    permalink: /shows/:year-:month-:day-:slug.html
+    permalink: /shows/:year-:month-:day-:slug
 
 exclude: [node_modules, webpack.config.js]
 
@@ -56,6 +61,13 @@ defaults:
       path: ''
     values:
       layout: 'song'
+
+  -
+    scope:
+      type: 'releases'
+      path: ''
+    values:
+      layout: 'release'
 
   -
     scope:
