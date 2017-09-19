@@ -2,22 +2,29 @@
 composed_at: 2016-03-30
 ---
 
-i gave my lovin i gave it to you
-i thought us two where stuck like glue
-but then you packed your things and said so long
-baby, wont you show me where I went wrong
+I gave my loving  
+I gave it to you  
+I thought us two where stuck like glue  
+But, then you packed your things and said so long  
 
-buying roses by the boquet
-a box of chocolates on valentines day
-in the card, i wrote you a song
-baby, wont you show me where i went wrong
+*Baby, won't you show me where I went wrong*  
 
-i took you swimmin in south caroline
-you drank your mojito your drank your wine
-we sat on the beach all day long
-baby, wont you show me where i went wrong
+Buying roses by the bouquet  
+A box of chocolates on valentines day  
+In the card, I wrote you a song  
 
-i built a fire, we lay on the rug
-i gave my kiss, i gave my hug
-the heat it was oh so strong
-baby, wont you show me where i went wrong
+*Baby, won't you show me where I went wrong*  
+
+I took you swimming in South Caroline  
+You drank your mojito your drank your wine  
+We sat on the beach all day long  
+
+*Baby, won't you show me where I went wrong*  
+
+I built a fire  
+We lay on the rug  
+I gave my kiss  
+I gave my hug  
+The heat it was oh so strong  
+
+*Baby, won't you show me where I went wrong*  

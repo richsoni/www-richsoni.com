@@ -2,42 +2,40 @@
 composed_at: 2016-01-05
 ---
 
-girl you know me
-oh, for many years
-long ago we
-let our hearts eclipse and
-ever since then its like
+Girl you know me  
+Oh, for many years  
+Long ago we let our hearts eclipse  
+And, ever since then its like  
 
-oh, a raging under toe
-like oh, avalanches of snow
-like oh, our love is strong its true
-me and you stick like glue baby
+*Oh, a raging under toe*  
+*Like oh, avalanches of snow*  
+*Like oh, our love is strong its true*  
+*Me and you, stick like glue baby*  
 
-always care free
-we can just chill out for days
-yet it still seems
-like we zoomed to the moon
-on a rocket ship
+Always care free  
+We can just chill out for days  
+Yet it still seems  
+Like we zoomed to the moon on a rocket ship  
 
-oh, a raging under toe
-like oh, avalanches of snow
-like oh, our love is strong its true
-me and you stick like glue baby
+*Oh, a raging under toe*  
+*Like oh, avalanches of snow*  
+*Like oh, our love is strong its true*  
+*Me and you, stick like glue baby*  
 
-who says that we
-need to follow any rules
-one day theyll see
-that theyve been schooled by our love goin on like
+Who says that we need to follow any rules  
+One day they'll see  
+That they've been schooled by our love  
+going on like  
 
-its crazy, the way, the time keeps tick tocking by
-i am certain you wont disagree, our love its still, still so strong
+Its crazy, the way, the time keeps tick tocking by  
+I am certain you wont disagree, our love its still, still so strong  
 
-oh, a raging under toe
-like oh, avalanches of snow
-like oh, our love is strong its true
-me and you stick like glue baby
+*Oh, a raging under toe*  
+*Like oh, avalanches of snow*  
+*Like oh, our love is strong its true*  
+*Me and you, stick like glue baby*  
 
-oh, a raging under toe
-like oh, avalanches of snow
-like oh, our love is strong its true
-me and you stick like glue baby
+*Oh, a raging under toe*  
+*Like oh, avalanches of snow*  
+*Like oh, our love is strong its true*  
+*Me and you, stick like glue baby*  

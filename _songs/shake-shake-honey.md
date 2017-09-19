@@ -1,25 +1,34 @@
 ---
+title: Shake Shake Honey
 composed_at: 2016-11-20
 ---
 
-Well your, mother knows but shes turned her head
-Your father dont cuz you'd end up dead
-and now you find yourself crawling out your window
-when its time to go to bed
-oh shake shake it honey wont you shake yourself down the ledge
+Well your, mother knows but she turns her head  
+Your father don't, and if he did you'd be dead  
+And, now you find yourself crawling out your window  
+When its time to go to bed  
 
-You got a driver hes got cash to spend
-he says he loves you but you dont even pretend
-he takes to a disco and you go lookin for a friend
-shake shake it honey looks like hes home alone again
+*Oh, shake shake honey*  
+*Won't you shake on down the ledge*  
 
-a teacher caught you when your where skippin class
-to head downtown to work your sass
-but you said he could come with you if he wrote you up a pass
-shake shake it honey shake it down the grass
+You got a driver, and he's got cash to spend  
+He says he loves you, but you don't even pretend  
+He takes to a disco, and you go lookin' for a friend  
 
-well the people whisper all around the town
-how you wear the moonlight as your evening gown
-but dont you listen to the baby
-they cant prove whats going down
-shake shake it honey shake it all around
+*Shake shake it honey*  
+*Looks like hes home alone again*  
+
+A teacher caught you when your where skippin' class  
+To head downtown to work your sass  
+But, you said he could come with you if he wrote you up a pass  
+
+*Shake shake it honey*  
+*Shake it down the grass*  
+
+Well, the people whisper all around the town  
+How you wear the moonlight as your evening gown  
+But, don't listen to them baby  
+They cant prove whats going down  
+
+*Shake shake it honey*  
+*Shake it all around*  

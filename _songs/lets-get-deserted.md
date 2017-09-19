@@ -2,48 +2,39 @@
 composed_at: 2016-03-31
 ---
 
-the undertoe
-underneath our toes
-will pull us far
-from the life we know
+The undertow underneath our toes  
+Will pull us far from the life we know  
 
-all of our dreams
-happy they seem
-reality screams
-screams so loud
+All of our dreams  
+Happy they seem  
+Reality screams so loud  
 
-lets get deserted baby
-on a desert i-hi-hi-isle
-maybe then we could be
-alone for a whi-hi-hi-ile
+*Lets get deserted baby*  
+*On a desert isle*  
+*Maybe then we could be*  
+*Alone for a while*  
 
-coconuts
-nipa hut
-would be all
-all that we need
+Coconuts, nipa huts  
+Would be all that we need  
 
-the salt in the air
-flowers in your hair
-nothing to wear
-but a smile
+The salt in the air  
+Flowers in your hair  
+Nothing to wear, but a smile  
 
-lets get deserted baby
-on a desert i-hi-hi-isle
-maybe then we could be
-alone for a whi-hi-hi-ile
+*Lets get deserted baby*  
+*On a desert isle*  
+*Maybe then we could be*  
+*Alone for a while*  
 
-the salt in the air
-flowers in your hair
-nothing to wear
-but a smile
+The salt in the air  
+Flowers in your hair  
+Nothing to wear, but a smile  
 
-all of our dreams
-happy they seem
-reality screams
-screams so loud
+All of our dreams  
+happy they seem  
+Reality screams so loud  
 
-lets get deserted baby
-on a desert i-hi-hi-isle
-maybe then we could be
-alone for a whi-hi-hi-ile
-
+*Lets get deserted baby*  
+*On a desert isle*  
+*Maybe then we could be*  
+*Alone for a while*  

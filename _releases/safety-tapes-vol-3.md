@@ -4,7 +4,7 @@ released_on: 2016-04-28
 release_type: safety-tapes
 tracklist:
   - dont-cry
-    queen-of-the-carnival
+  - queen-of-the-carnival
   - without-you
   - please-stand-by
   - sweet-grass-memory

@@ -12,7 +12,7 @@ tracklist:
   - for-the-wall
   - just-another-day-in-the-neighborhood
   - peggy-will-you-ever-know-my-name
-  - inner-medly
+  - inner-medley
   - honey-wheres-my-tommy-gun
   - wayward-sister
 ---

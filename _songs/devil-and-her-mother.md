@@ -1,50 +1,51 @@
 ---
 title: Devil & Her Mother
+composed_at: tk
 ---
 
-The devil and her mother  
+The Devil and her mother  
 Rained it down on me  
 When I mentioned that her lover  
-Was seen kissing Nelly B  
+Was seen kissing Nelly B.  
 
-The devil and her mother  
+The Devil and her mother  
 They raced across the room  
 Pushed aside poor Nelly  
-And sent johnny to his tomb  
+And sent Johnny to his tomb  
 
-Mama this man,  
-He was doin' me wrong  
+*Mama this man,*  
+*He's been doin' me wrong*  
 
-The devil and her mother  
+The Devil and her mother  
 They never tell no jokes  
 And, if you tell one to them  
 Your get your ankles broked  
 
-The devil and her mother  
+The Devil and her mother  
 They like to tell their lies  
 But, if you tell em yours  
 They'll scratch you in the eyes  
 
-Mama this man,  
-He was doin' me wrong  
+*Mama this man,*  
+*He's been doin' me wrong*  
 
-The devil's icy father  
+The Devil's icy father  
 Came rising from the sea  
 Saying whats become of Johnny?  
-Well, he laid with Nelly B.  
+He's been with Nelly B.  
 
-Papa this man,  
-He was doin' me wrong  
+*Papa this man,*  
+*He's been doin' me wrong*  
 
-The devil and her mother  
+The Devil and her mother  
 To pay for what they've done  
 Where banished past the river  
-To the land where there is no sun  
+To the land without a sun  
 
 If you ride that river  
-With a full moon in the sky  
-You can her the devil whisper  
-Dear is that your guy  
+On an evening just like this  
+You can her the Devil whisper  
+Mama, look who it is  
 
-Mama that man,  
-He was doin' me wrong  
+*Mama that man,*  
+*He's been doin' me wrong*  

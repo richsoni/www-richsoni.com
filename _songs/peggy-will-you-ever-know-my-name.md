@@ -3,26 +3,22 @@ title: Peggy Will You Ever Know My Name
 composed_at: 2015-11-07
 ---
 
-peggy will you ever know my name
-peggy will you ever know my name
-i learned yours from the coffee cup that your holdin in your hand
+Peggy will you ever know my name  
+Peggy will you ever know my name  
+I learned yours from the coffee cup in your hand  
 
-peggy will you ever play with me
-peggy will you ever play with me
-you stick my bubble gum in mind come play with me
+Peggy will you ever play with me  
+Peggy will you ever play with me  
+You stick my bubble gum in mind come play with me  
 
-peggy will you ride the ferris wheel
-peggy will you ride the ferris wheel
-goes nowhere, but the ride is such a thrill
+Peggy will you ride the Ferris Wheel  
+Peggy will you ride the Ferris Wheel  
+Goes nowhere, but the ride is such a thrill  
 
----
+Peggy will you ever make me cry  
+Peggy will you ever make me cry  
+Whats the point of livin' if you aint willin' to even try  
 
-peggy will you ever make me cry
-peggy will you ever make me cry
-whats the point of livin if you aint willin to even try
-
-peggy will you settle down with me
-peggy will you settle down with me
-where are you runnin to everything is all the same
-
-
+Peggy will you settle down with me  
+Peggy will you settle down with me  
+Where are you runnin' to everything is all the same  
