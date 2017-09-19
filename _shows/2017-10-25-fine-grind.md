@@ -1,6 +1,7 @@
 ---
 startTime: 7:30 PM
 endTime: 9:00 PM
+---
 setlist:
   - willie-bet-his-wife-in-a-game-of-texas-stud
   - amelia
@@ -9,4 +10,3 @@ setlist:
   - ballad-of-the-condor
   - leeds-devil
   - wayward-sister
----
