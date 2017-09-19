@@ -1,39 +1,34 @@
 ---
 title: Take You To A Basement
 composed_at: 2015-09-18
-soundcloud: https://soundcloud.com/richsoni/take-you-to-a-basement
 ---
-
-### Lyrics
 
 Well its 11 o'clock on a Saturday prowl  
 Lookin' for a  lover with a penetrating smile  
 I'll keep my hands to myself, gee you feel so nice  
 
-Hey, let me take you to a basement  
-You'll look so exotic in the neon light  
-Babe, you'll get a hot pink paper bracelet  
-It'll Bring out the blue in your eyes tonight  
+*Hey, let me take you to a basement*  
+*You'll look so exotic in the neon light*  
+*Babe, you'll get a hot pink paper bracelet*  
+*It'll Bring out the blue in your eyes tonight*  
 
 Got your hip tattoo of an upside down cross  
 Diggin' the way your riding on the evening bus  
 Come along if you trust me, but I wont ask you twice  
 
-Hey, let me take you to a basement  
-You'll look so exotic in the neon light  
-Babe, you'll get a hot pink paper bracelet  
-It'll Bring out the blue in your eyes tonight  
+*Hey, let me take you to a basement*  
+*You'll look so exotic in the neon light*  
+*Babe, you'll get a hot pink paper bracelet*  
+*It'll Bring out the blue in your eyes tonight*  
 
 We could pound back a few, I know it'll warm us up  
 Forget that new movie, forget that expensive night club  
 I know a place it'll be just alright, but if you don't wanna come I wont put up a fight  
 
-Hey, let me take you to a basement  
-You'll look so exotic in the neon light  
-Babe, you'll get a hot pink paper bracelet  
-It'll Bring out the blue in your eyes tonight  
-
----
+*Hey, let me take you to a basement*  
+*You'll look so exotic in the neon light*  
+*Babe, you'll get a hot pink paper bracelet*  
+*It'll Bring out the blue in your eyes tonight*  
 
 ### Chords
 
@@ -52,5 +47,5 @@ Youll look so exotic in the neon light
 G           C             D
 Babe, youll get a hot pink paper bracelet
 G              D            G
-itl Bring out the blue in your eyes tonight
+It'll Bring out the blue in your eyes tonight
 ```

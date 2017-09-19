@@ -1,6 +1,5 @@
 ---
-title: Ill Tend To Your Soul
-soundcloud: https://soundcloud.com/richsoni/tend-to-your-soul
+title: I'll Tend To Your Soul
 composed_at: 2015-08-20
 ---
 
@@ -10,14 +9,14 @@ When your clock it stops a-tickin'
 Brother I want you to know  
 
 If a crow is at your window  
-Ill be sittin' by your bed  
+I'll be sittin' by your bed  
 Forget that crow upon your window  
 Focus on my singing instead  
 
 Don't you worry about nobody  
-Ill keep everything in control  
+I'll keep everything in control  
 While there tending to your body  
-Ill tend to your soul  
+I'll tend to your soul  
 
 When your days are getting numbered  
 When your weary to your toe  
@@ -29,17 +28,17 @@ Live this moment as you wish
 Depart with a tranquil feeling  
 Before you flip off that switch  
 
-Ill make sure the angels get it  
+I'll make sure the angels get it  
 To induct you to their shoal  
 Brother don't you fret it  
-Ill tend to your soul  
+I'll tend to your soul  
 
-Ill bring it every where with me  
-making sure its never lost  
-Ill bring it every where with me  
+I'll bring it every where with me  
+Making sure its never lost  
+I'll bring it every where with me  
 Until its time to hand it off  
 
 I'll keep it right next to mine  
-I'm sure theres space in there for both  
+I'm sure there's space in there for both  
 They'll both be there intertwined  
-yeah, ill tend to your soul  
+Yeah, I'll tend to your soul  

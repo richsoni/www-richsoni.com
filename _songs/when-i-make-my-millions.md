@@ -3,34 +3,34 @@ title: When I Make My Millions
 composed_at: 2015-07-07
 ---
 
-When i make my millions, ro-da-do-do  
-The devil will still be steppn' on the heel  
+When I make my millions, ro-da-do-do  
+The devil will still be steppng on the heel  
 Of my shoe with his toe  
 
-When i make my millions, ro-da-do-ray  
-There'll still be a mod with pitch forks  
+When I make my millions, ro-da-do-ray  
+There'll still be a lynch mob  
 At the foot of my driveway  
 
-When i make my millions, ro-da-do-me  
-Ill still be a prisoner  
-In this world ill never be free  
+When I make my millions, ro-da-do-me  
+I'll still be a prisoner  
+In this world I'll never be free  
 
-When i make my millions, ro-da-do-fa  
-Ill still be a drifter  
+When I make my millions, ro-da-do-fa  
+I'll still be a drifter  
 On the run from the law  
 
-When i make my millions, ro-da-do-so  
-Ill still be so lonesome  
+When I make my millions, ro-da-do-so  
+I'll still be so lonesome  
 That don't change with some doe  
 
-When i make my millions, ro-da-do-la  
-Ill still be self conscious  
+When I make my millions, ro-da-do-la  
+I'll still be self conscious  
 And want to withdraw  
 
-When i make my millions, ro-da-do-ti  
-Ill still be so lost  
+When I make my millions, ro-da-do-ti  
+I'll still be so lost  
 Lookin' for the silver key  
 
-When i make my millions, ro-da-do-do  
+When I make my millions, ro-da-do-do  
 The devil will still be steppin' on the heel  
 Of my shoe with his toe  

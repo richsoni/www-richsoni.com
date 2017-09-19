@@ -1,34 +1,39 @@
 ---
+title: Freak Out Kid
 composed_at: 2016-04-07
 ---
-www
-f dm am
-i once had a dark revelation
-at a fire in the woods by a creek
-a stranger that i met started shaking
-he rolled back his eyes and started to speak
 
-the joke is on him he was saying
-he smacked himself in the head
-the posture he had left was decaying
-he contorted and twisted on the forest bed
+I once had a dark revelation  
+At a fire in the woods by a creek  
+A stranger that I met started shaking  
+He rolled back his eyes and started to speak  
 
-we smoked cigarettes as we held him
-we held him down with all of our might
-he was trying to kick his heels past his sternum
-we held him for all of the night
+The joke is on him he was saying  
+He smacked himself in the head  
+The posture he had left was decaying  
+He contorted and twisted on the forest bed  
 
-it was not until several hours later
-his conscious returned to his brain
-we walked him back to his dorm room elevator
-as it opened.. once more did it wain
+We smoked cigarettes as we held him  
+We held him down with all of our might  
+He was trying to kick his heels past his sternum  
+We held him for most of the night  
 
-he whispered in the ear of the closest
-one of us that was standing by him
-as the doors to the elevator closed up
-he flicked us a menacing grin
+It was not until several hours later  
+His conscious returned to his brain  
+We walked him back to his dorm room elevator  
+As it opened...  
+Once more did it wain  
 
-i ran into the kid three years later
-at a party 200 miles away
-he we talked and acted as if nothing happened
-now i pray to the lord i never see that kid again
+He whispered in the ear of the closest  
+One of us that was standing by him  
+As the doors to the elevator closed up  
+He flicked us a menacing grin  
+
+I ran into the kid three years later  
+At a party 200 miles away  
+He we talked and acted as if nothing happened  
+Now I pray to the Lord I never see that kid again  
+
+## Chords
+
+> f dm am

@@ -1,6 +1,5 @@
 ---
 title: Hocus Focus
-soundcloud: https://soundcloud.com/richsoni/hocus-focus
 composed_at: 2015-03-19
 ---
 
@@ -16,13 +15,13 @@ When she puts that hocus focus on you
 
 That hocus focus it can smell  
 When you been swimming the royal canal  
-Shell jingle jangle a triangle and blow into a conch shell  
-makin' sure you keep away from the swell  
+She'll jingle jangle a triangle and blow into a conch shell  
+Makin' sure you keep away from the swell  
 
 Her hocus focus can hear  
 Your breath as it trebles with fear  
 When she grabs your horns and tries to steer  
-Thats hocus focus for you dear  
+That's hocus focus for you dear  
 
 Her hocus focus can feel  
 When you try to squirm from her like an eel  

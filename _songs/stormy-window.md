@@ -1,6 +1,5 @@
 ---
 title: Stormy Window
-soundcloud: https://soundcloud.com/richsoni/stormy-window
 composed_at: 2015-08-26
 ---
 
@@ -10,27 +9,27 @@ Kneeling on the floor
 I couldn't help but moan  
 
 Since you've been gone  
-Ive been waitin'  
-I want you to know  
-My wrist is restin'  
+I've been waitin'  
+I really want you to know  
+My wrist is resting  
 Against a stormy window  
 
 You really shook me up  
 Nothin' seems the same  
-Ive gut a tangle of guts  
-With a sinkin' pain  
+I've gut a tangle of guts  
+With a sinking pain  
 
 You left me stranded  
-Shakin', tired  
+Shaking, tired  
 Bitter, weary, and low  
-Ive been fearin' the world  
+I've been fearing the world  
 Outside the stormy window  
 
 Baby, darlin', honey, dear  
 I want you back with me here  
-Birds a chirpin', sunshine a smilin'  
-Breezes blowin' but I'm stuck a cryin'  
-Pushin' my palms  
+Birds a-chirpin', sunshine a-smilin'  
+Breezes blowin' but I'm stuck a-cryin'  
+Pushing my palms  
 Against the stormy window  
 
 I know your gone for good  
@@ -38,7 +37,7 @@ Its settled into my mind
 Still the crack in my heart  
 Is pounding colder than ice  
 
-Ive gone crazy, I've gone nuts  
-Why cant i just start a-hatin' your guts  
-I'm bangin' my head  
+I've gone crazy, I've gone nuts  
+Why cant I just start hating your guts  
+I'm banging my head  
 On a stormy window  

@@ -9,37 +9,37 @@ With a rabbits foot
 Rattle snack rattle  
 Bat wing soot  
 
-If your lookin' for salvation  
-Don't expect it too soon  
-Ive been toiling and waiting  
-Since the last blood moon  
+*If your lookin' for salvation*  
+*Don't expect it too soon*  
+*I've been toiling and waiting*  
+*Since the last blood moon*  
 
 Got yourself black book  
 Brewed tea, read the leaves  
 Flipping tarot cards  
-Placing candles at your feet  
+Placing candles at your knees  
 
-If your lookin' for salvation  
-Don't expect it too soon  
-Ive been toiling and waiting  
-Since the last blood moon  
+*If your lookin' for salvation*  
+*Don't expect it too soon*  
+*I've been toiling and waiting*  
+*Since the last blood moon*  
 
 Prayin' up to Jesus  
-He will never come
-fold up all of your fingers  
+Hopin' he'll come  
+Fold up all of your fingers  
 Twist together your thumbs  
 
-If your lookin' for salvation  
-Don't expect it too soon  
-Ive been toiling and waiting  
-Since the last blood moon  
+*If your lookin' for salvation*  
+*Don't expect it too soon*  
+*I've been toiling and waiting*  
+*Since the last blood moon*  
 
 You can kill all the evil  
 But more always grows  
 Burn the forest down
 But spare the crows  
 
-If your lookin' for salvation  
-Don't expect it too soon  
-Ive been toiling and waiting  
-Since the last blood moon  
+*If your lookin' for salvation*  
+*Don't expect it too soon*  
+*I've been toiling and waiting*  
+*Since the last blood moon*  

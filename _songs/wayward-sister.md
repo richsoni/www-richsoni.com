@@ -2,57 +2,64 @@
 composed_at: 2016-05-03
 ---
 
+Hard luck don't go down easy  
+It seizes up your wits  
+But, I promise aint sleazy  
+To hack it up to bits  
+
+Those that leave it up to Nature  
+To bargain Fortune in their name  
+Often justify the torture  
+Often revel in the shame  
+
+*Wayward Sister, get up off the floor*  
+*Wayward Sister, step out the door*  
+
+Woke up between one and two  
+Who are you kidding, you never fell asleep  
+In the tips of your fingers you can feel the doom  
+Being laughed at by the sheep  
+
+Cooking, cleaning, smiling, scheming,  
+Breathing in a chicken room takes a toll  
+You've spent years of daydreaming  
+Chasing the fox out of its hole  
+
+*Wayward Sister, get up off the floor*  
+*Wayward Sister, step out the door*  
+
+Hitched up the hogs about a million times  
+Yet what is there to show  
+Move to town, drop all your dimes  
+Rush down there to earn some more  
+
+We can smell it when you enter  
+Don't deny the utter truth  
+You've been made over by a blender  
+You've been howling to the moon  
+
+*Wayward Sister, get up off the floor*  
+*Wayward Sister, step out the door*  
+
+Hard luck don't go down easy  
+It suffocates your brain  
+But, I promise aint sleazy  
+To run away from all the pain  
+
+Nestle with us in the forest  
+We eat and sing all of the time  
+Live like a transendentalistic tourist  
+Is being happy such a crime?  
+
+*Wayward Sister, get up off the floor*  
+*Wayward Sister, step out the door*  
+
+## Chords
+
+```
+verse:
 c#m g# f# g#
+
+chorus:
 f# g# c#m
-
-hard luck dont go down easy
-it seizes up your wits
-but, i promise aint sleazy
-to hack it up to bits
-
-those that leave it up to Nature
-to bargain Fortune in their name
-often justify the torture
-often revel in the shame
-
-wayward sister, get up off the floor
-wayward sister, step out the door
-
-woke up between 1 and 2
-who are you kidding, you never fell asleep
-in the tips of your fingers you can feel the doom
-being laughed at by the sheep
-
-cooking, cleaning, smiling, scheming, breathing
-in a chicken room takes a toll
-youve spent years of daydreaming
-chasing the fox out of its hole
-
-wayward sister, get up off the floor
-wayward sister, step out the door
-
-hitched up the hogs about a million times
-yet what is there to show
-move to town, drop all your dimes
-rush down there to earn some more
-
-we can smell it when you enter
-dont deny the utter truth
-youve been made over by a blender
-youve been howling to the moon
-
-wayward sister, get up off the floor
-wayward sister, step out the door
-
-hard luck doesnt go down easy
-it suffocates your brain
-but, i promise aint sleazy
-to runaway from all the pain
-
-nestle with us in the forest
-we eat and sing all of the time
-live like a transendentalistic tourist
-is being happy such a crime?
-
-wayward sister, get up off the floor
-wayward sister, step out the door
+```

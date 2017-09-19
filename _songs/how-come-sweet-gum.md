@@ -1,7 +1,6 @@
 ---
 title: How Come Sweet Gum
-soundcloud: https://soundcloud.com/richsoni/how-come-sweet-gum
-composed_at: \< 11-08-2015 think its 03-2015
+composed_at: 03-01-2015
 ---
 
 How come you don't get along with me  
@@ -26,5 +25,5 @@ How come you always acting smug
 
 How come you make my wanna punch yo lip  
 How come you make my wanna punch yo lip  
-Ill whack you with a mace, ill give your shirt a rip  
+I'll whack you with a mace, I'll give your shirt a rip  
 How come you make my want to punch your lip  
