@@ -6,6 +6,7 @@
 .item {
   float: left;
   background-color: #bebebe;
+  background-size: cover;
   margin: 1vw;
   height: 70vw;
   width: 70vw;

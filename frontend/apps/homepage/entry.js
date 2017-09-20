@@ -2,7 +2,6 @@
 const React           = require("react")
 const Half            = require("../../shared/half")
 const LatestRelease   = require("./LatestRelease")
-const AngelsShare     = require("./angelsShareComponent")
 const Header          = require("../../shared/header/component")
 const Footer          = require("../../shared/footer/component")
 const Radium          = require("radium")

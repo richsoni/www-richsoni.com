@@ -9,10 +9,11 @@ import styles from './styles.module.css';
 
 const Release = (props) => {
   console.log(props)
-  const {title, released_on} = props
+  const {title, released_on, url, slug} = props
   return <a
     className={styles.item}
-    href={props.url}
+    href={url}
+    style={{backgroundImage: `url(/images/releases/${slug}.png`}}
   >
     <div className={styles.overlay}>
       <div className={styles.title}>{title}</div>
