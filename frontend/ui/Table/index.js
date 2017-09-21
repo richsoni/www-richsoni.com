@@ -19,7 +19,33 @@ const Row = (props) => {
 }
 
 const sort = (items, sortKey, sortDirection) => {
-  const customSort = sortKey['sort'+sortDirection];
+  const sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
+  const customSort = sortKey['sort'+sortPrefix];
+  if(customSort){ return items.sort(customSort) }
+  return items.sort((sA, sB) => {
+    const a = sA[sortKey]
+    const b = sB[sortKey]
+    if(!a && !b) { return 0 }
+    if(sortDirection === SORTASC){
+      if(!a) { return 1 }
+      if(!b) { return -1 }
+      return a.localeCompare(b)
+    } else {
+      if(!b) { return 1 }
+      if(!a) { return -1 }
+      return b.localeCompare(a)
+    }
+  })
+}
+
+const sort2 = (props, sortKey, sortDirection) => {
+  const {
+    fields,
+    items
+  } = props
+  const sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
+  const field = fields.find((f) => f.key === sortKey)
+  const customSort = field[`sort${sortPrefix}`];
   if(customSort){ return items.sort(customSort) }
   return items.sort((sA, sB) => {
     const a = sA[sortKey]
@@ -49,7 +75,7 @@ export default class Table extends React.Component {
     super(props);
     const sortKey = props.sortDefaultKey || props.fields[0].key;
     const sortDirection = props.sortDefaultDirection || SORTASC;
-    const items = sort(props.items, sortKey, sortDirection);
+    const items = sort2(props, sortKey, sortDirection);
     this.state = {
       sortKey,
       sortDirection,
@@ -88,13 +114,13 @@ export default class Table extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     if(prevState.sortKey !== this.state.sortKey || prevState.sortDirection !== this.state.sortDirection){
-      this.setState({items: sort(this.props.items, this.state.sortKey, this.state.sortDirection)})
+      this.setState({items: sort2(this.props, this.state.sortKey, this.state.sortDirection)})
     }
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      items: sort(nextProps.items, this.state.sortKey, this.state.sortDirection)
+      items: sort2(nextProps, this.state.sortKey, this.state.sortDirection)
     })
   }
 }

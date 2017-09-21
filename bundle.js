@@ -23795,7 +23795,46 @@ var Row = function Row(props) {
 };
 
 var sort = function sort(items, sortKey, sortDirection) {
-  var customSort = sortKey['sort' + sortDirection];
+  var sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
+  var customSort = sortKey['sort' + sortPrefix];
+  if (customSort) {
+    return items.sort(customSort);
+  }
+  return items.sort(function (sA, sB) {
+    var a = sA[sortKey];
+    var b = sB[sortKey];
+    if (!a && !b) {
+      return 0;
+    }
+    if (sortDirection === SORTASC) {
+      if (!a) {
+        return 1;
+      }
+      if (!b) {
+        return -1;
+      }
+      return a.localeCompare(b);
+    } else {
+      if (!b) {
+        return 1;
+      }
+      if (!a) {
+        return -1;
+      }
+      return b.localeCompare(a);
+    }
+  });
+};
+
+var sort2 = function sort2(props, sortKey, sortDirection) {
+  var fields = props.fields,
+      items = props.items;
+
+  var sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
+  var field = fields.find(function (f) {
+    return f.key === sortKey;
+  });
+  var customSort = field['sort' + sortPrefix];
   if (customSort) {
     return items.sort(customSort);
   }
@@ -23846,7 +23885,7 @@ var Table = function (_React$Component) {
 
     var sortKey = props.sortDefaultKey || props.fields[0].key;
     var sortDirection = props.sortDefaultDirection || SORTASC;
-    var items = sort(props.items, sortKey, sortDirection);
+    var items = sort2(props, sortKey, sortDirection);
     _this.state = {
       sortKey: sortKey,
       sortDirection: sortDirection,
@@ -23904,14 +23943,14 @@ var Table = function (_React$Component) {
     key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps, prevState) {
       if (prevState.sortKey !== this.state.sortKey || prevState.sortDirection !== this.state.sortDirection) {
-        this.setState({ items: sort(this.props.items, this.state.sortKey, this.state.sortDirection) });
+        this.setState({ items: sort2(this.props, this.state.sortKey, this.state.sortDirection) });
       }
     }
   }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       this.setState({
-        items: sort(nextProps.items, this.state.sortKey, this.state.sortDirection)
+        items: sort2(nextProps, this.state.sortKey, this.state.sortDirection)
       });
     }
   }]);
@@ -24861,7 +24900,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var sortMomentASC = exports.sortMomentASC = function sortMomentASC(mA, mB) {
-  console.log(mA && mA.toString(), mB && mB.toString());
   if (!mA) {
     return 1;
   }

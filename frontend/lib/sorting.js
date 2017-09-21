@@ -1,5 +1,4 @@
 export const sortMomentASC = (mA, mB) => {
-  console.log(mA && mA.toString(), mB && mB.toString())
   if(!mA) { return 1 }
   if(!mB) { return -1 }
   if(!mA && !mB) { return 0 }
@@ -11,7 +10,9 @@ export const sortMomentDESC =  (mA, mB) => {
 };
 
 export const sortObjMomentASC = (key) => {
-  return (a, b) => sortMomentASC(a[key], b[key]);
+  return (a, b) => {
+    return sortMomentASC(a[key], b[key]);
+  }
 }
 
 export const sortObjMomentDESC = (key) => {
