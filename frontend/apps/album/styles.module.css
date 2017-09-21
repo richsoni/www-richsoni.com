@@ -1,0 +1,10 @@
+.releasedOn {
+  font-size: 17px;
+}
+
+.artwork {
+  display: block;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
