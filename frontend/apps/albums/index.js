@@ -2,10 +2,10 @@ import React from 'react';
 import Presenter from './presenter';
 import {Provide} from '../../shared/reduxProvider';
 import {fetchAll as fetchAllReleases} from '../../data/releases/actions';
+import {sorted as sortedReleases} from './selectors';
 
 class Container extends React.Component {
   render() {
-    console.log(this.props)
     return <Presenter {...this.props} />
   }
 
@@ -26,7 +26,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
   return {
-    releases: Object.values(state.releases.byID),
+    releases: sortedReleases(state),
   }
 }
 

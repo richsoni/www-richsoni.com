@@ -1,13 +1,6 @@
-export const sortASC = (sA, sB) => {
-  if(!sA.moment) { return 1 }
-  if(!sB.moment) { return -1 }
-  if(!sA.moment && !sB.moment) { return 0 }
-  return sA.moment.diff(sB.moment)
-};
+import {sortObjMomentASC, sortObjMomentDESC} from '../../lib/sorting';
 
-export const sortDESC =  (sA, sB) => {
-  if(!sA.moment) { return -1 }
-  if(!sB.moment) { return 1 }
-  if(!sA.moment && !sB.moment) { return 0 }
-  return sB.moment.diff(sA.moment)
-};
+export const sortASC = sortObjMomentASC('moment')
+export const sortDESC =  sortObjMomentDESC('moment');
+
+

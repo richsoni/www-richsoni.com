@@ -23,7 +23,6 @@ const pastShows = (shows = []) => {
 
 class Shows extends React.Component {
   render(){
-    console.log(this.props)
     const loadedShows = this.props.shows
       .map((show) => {
         const location = this.props.locations[show.locationKey]

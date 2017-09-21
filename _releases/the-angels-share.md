@@ -1,6 +1,6 @@
 ---
 title: The Angels Share
-realeased_on: 2016-02-20
+released_on: 2016-02-20
 release_type: studio
 tracklist:
   - rosin-the-beau

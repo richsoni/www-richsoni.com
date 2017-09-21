@@ -1,6 +1,6 @@
 ---
 title: Heartbeat Road
-realeased_on: 2016-10-28
+released_on: 2016-10-28
 release_type: studio
 tracklist:
   - leeds-devil

@@ -8,7 +8,6 @@ import styles from './styles.module.css';
 // 1 50%, and the rest equal
 
 const Release = (props) => {
-  console.log(props)
   const {title, released_on, url, slug} = props
   return <a
     className={styles.item}
