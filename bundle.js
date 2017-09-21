@@ -9055,8 +9055,13 @@ var Small = function (_React$Component3) {
             ),
             React.createElement(
               "a",
+              { style: { padding: '.3em' }, href: "/albums" },
+              "Albums"
+            ),
+            React.createElement(
+              "a",
               { style: { padding: '.3em' }, href: "/songs" },
-              "Music"
+              "Songs"
             ),
             React.createElement(
               "a",
@@ -9190,8 +9195,13 @@ var Big = function (_React$Component5) {
             ),
             React.createElement(
               "a",
+              { style: { textDecoration: 'none', marginLeft: '1em' }, href: "/albums" },
+              "Albums"
+            ),
+            React.createElement(
+              "a",
               { style: { textDecoration: 'none', marginLeft: '1em' }, href: "/songs" },
-              "Music"
+              "Songs"
             ),
             React.createElement(
               "a",
