@@ -1,4 +1,4 @@
 ---
 title: Sugaree
-words: Robert Hunter
+artist: Grateful Dead
 ---

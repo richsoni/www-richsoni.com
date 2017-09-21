@@ -1,6 +1,7 @@
 ---
 title: Amelia
 composed_at: tk
+artist: Rich Soni
 ---
 
 Your father was a railroad man  

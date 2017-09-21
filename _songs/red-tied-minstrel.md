@@ -1,6 +1,7 @@
 ---
 title: Red Tied Minstrel
 composed_at: 2015-11-05
+artist: Rich Soni
 ---
 
 I'm-a red tied minstrel, roamin' from town to town  

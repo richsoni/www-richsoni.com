@@ -1,6 +1,7 @@
 ---
 title: Inner Medley
 composed_at: 01-29-2016
+artist: Rich Soni
 ---
 
 Its just another busy night  

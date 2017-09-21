@@ -1,6 +1,7 @@
 ---
 title: Between These Canals
 composed_at: 2016-01-08
+artist: Rich Soni
 ---
 
 I've painted a rainbow on hundreds of doors  

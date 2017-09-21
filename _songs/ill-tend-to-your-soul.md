@@ -1,6 +1,7 @@
 ---
 title: I'll Tend To Your Soul
 composed_at: 2015-08-20
+artist: Rich Soni
 ---
 
 When your clock it stops a-tickin''  

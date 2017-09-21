@@ -1,5 +1,7 @@
 ---
+title: Let's Get Deserted
 composed_at: 2016-03-31
+artist: Rich Soni
 ---
 
 The undertow underneath our toes  

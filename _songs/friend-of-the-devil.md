@@ -1,4 +1,4 @@
 ---
 title: Friend Of The Devil
-words: Robert Hunter
+artist: Grateful Dead
 ---

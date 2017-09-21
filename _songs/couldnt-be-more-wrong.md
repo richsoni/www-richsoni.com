@@ -1,6 +1,7 @@
 ---
-composed_at: 2016-02-16
 title: Couldn't Be More Wrong
+composed_at: 2016-02-16
+artist: Rich Soni
 ---
 
 Early in the morning  

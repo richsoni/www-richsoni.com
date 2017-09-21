@@ -1,6 +1,7 @@
 ---
 title: Honey, Where's My Tommy Gun
 composed_at: 2015-10-15
+artist: Rich Soni
 ---
 
 Jump a mojito baby, put a paper plate on your head  

@@ -1,6 +1,7 @@
 ---
 title: Stormy Window
 composed_at: 2015-08-26
+artist: Rich Soni
 ---
 
 When you slammed the door  

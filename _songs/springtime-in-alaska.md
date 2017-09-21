@@ -1,4 +1,4 @@
 ---
 title: Springtime In Alaska
-words: [Johnny Horton]
+artist: [Johnny Horton]
 ---

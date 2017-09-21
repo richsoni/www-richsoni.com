@@ -1,4 +1,4 @@
 ---
 title: Whiskey In The Jar
-words: Traditional
+artist: Traditional
 ---

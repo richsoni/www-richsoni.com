@@ -1,7 +1,7 @@
 ---
 title: Wander With Me
-soundcloud: https://soundcloud.com/richsoni/wander-with-me
-composed_at: 2015-05
+composed_at: 2015-05-01
+artist: Rich Soni
 ---
 
 I can't tell you where we're going  

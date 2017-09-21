@@ -1,4 +1,4 @@
 ---
 title: Casey Jones
-words: Robert Hunter
+artist: Grateful Dead
 ---

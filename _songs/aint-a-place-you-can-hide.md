@@ -1,6 +1,7 @@
 ---
 title: Ain't A Place You Can Hide
 composed_at: 2015-11-23
+artist: Rich Soni
 ---
 
 Nuclear bombs blowin' venomous air  

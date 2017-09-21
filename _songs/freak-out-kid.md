@@ -1,6 +1,7 @@
 ---
 title: Freak Out Kid
 composed_at: 2016-04-07
+artist: Rich Soni
 ---
 
 I once had a dark revelation  

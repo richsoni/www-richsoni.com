@@ -1,6 +1,7 @@
 ---
 title: Willie Bet His Wife In A Game Of Texas Stud
 composed_at: 2017-09-14
+artist: Rich Soni
 ---
 
 Willie bet his wife

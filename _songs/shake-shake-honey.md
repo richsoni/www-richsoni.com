@@ -1,6 +1,7 @@
 ---
 title: Shake Shake Honey
 composed_at: 2016-11-20
+artist: Rich Soni
 ---
 
 Well your, mother knows but she turns her head  

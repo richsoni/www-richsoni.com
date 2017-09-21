@@ -1,5 +1,7 @@
 ---
+title: For The Wall
 composed_at: 2016-04-01
+artist: Rich Soni
 ---
 
 Baby, I'm sitting on the back of a bus  

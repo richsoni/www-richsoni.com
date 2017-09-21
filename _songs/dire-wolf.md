@@ -1,4 +1,4 @@
 ---
 title: Dire Wolf
-words: Robert Hunter
+artist: Grateful Dead
 ---

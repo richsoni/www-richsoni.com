@@ -1,7 +1,7 @@
 ---
 title: Why Do The Righteous Suffer
-soundcloud: https://soundcloud.com/richsoni/why-do-the-righteous-suffer
 composed_at: 2015-08
+artist: Rich Soni
 ---
 
 Lookie here friend  

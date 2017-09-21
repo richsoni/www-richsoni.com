@@ -1,6 +1,7 @@
 ---
 title: How Come Sweet Gum
 composed_at: 03-01-2015
+artist: Rich Soni
 ---
 
 How come you don't get along with me  

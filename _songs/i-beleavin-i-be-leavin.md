@@ -1,6 +1,7 @@
 ---
 title: I Beleivin' I Be Leavin'
 composed_at: 2015-05-01
+artist: Rich Soni
 ---
 
 I believin', I be leavin' in the morning  

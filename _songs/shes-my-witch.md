@@ -1,4 +1,4 @@
 ---
 title: She's My Witch
-words: Kip Tyler
+artist: Kip Tyler
 ---

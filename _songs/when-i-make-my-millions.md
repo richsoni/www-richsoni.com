@@ -1,6 +1,7 @@
 ---
 title: When I Make My Millions
 composed_at: 2015-07-07
+artist: Rich Soni
 ---
 
 When I make my millions, ro-da-do-do  

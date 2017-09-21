@@ -1,3 +1,7 @@
+.emptyField {
+  text-align: center;
+}
+
 .table {
   border-collapse: collapse;
   text-align: left;

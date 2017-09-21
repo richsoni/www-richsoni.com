@@ -1,4 +1,4 @@
 ---
 title: Romance In Durango
-words: Bob Dylan
+artist: Bob Dylan
 ---

@@ -1,3 +1,4 @@
 ---
 title: Down In The Bottom
-words: [Traditional, Howlin' Wolf]
+artist: [Traditional, Howlin' Wolf]
+---

@@ -1,6 +1,7 @@
 ---
 title: Four And Twenty Elders
 composed_at: 2015-11-23
+artist: Rich Soni
 ---
 
 Four and twenty elders  

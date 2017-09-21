@@ -1,6 +1,7 @@
 ---
 title: Inches Away
 composed_at: 2015-09-25
+artist: Rich Soni
 ---
 
 My dreams came true the day that I met you  

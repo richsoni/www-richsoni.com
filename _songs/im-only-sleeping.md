@@ -1,4 +1,4 @@
 ---
-title: Im Only Sleeping
-words: John Lennon
+title: I'm Only Sleeping
+artist: The Beatles
 ---

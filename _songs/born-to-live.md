@@ -1,6 +1,7 @@
 ---
 title: Born To Live
 composed_at: 2014-02-22
+artist: Rich Soni
 ---
 
 Some people born, to workin' every day  

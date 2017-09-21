@@ -1,4 +1,4 @@
 ---
 title: Dicey Riley
-words: Traditional
+artist: Traditional
 ---

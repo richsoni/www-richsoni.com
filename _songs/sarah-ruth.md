@@ -1,6 +1,7 @@
 ---
 title: Sarah Ruth
 composed_at: 2015-09-01
+artist: Rich Soni
 ---
 
 Sarah Ruth, you snap those beans I'll snap yo bone  

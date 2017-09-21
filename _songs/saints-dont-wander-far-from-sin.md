@@ -1,5 +1,7 @@
 ---
+title: Saints Don't Wander Far From Sin
 composed_at: 2016-04-19
+artist: Rich Soni
 ---
 
 Enslaved in Killala Bay  

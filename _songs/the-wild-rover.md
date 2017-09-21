@@ -1,4 +1,4 @@
 ---
 title: The Wild Rover
-words: Traditional
+artist: Traditional
 ---

@@ -1,7 +1,7 @@
 ---
 title: Working Overtime
-soundcloud: https://soundcloud.com/richsoni/working-overtime-take-1
-composed_at: \< 2015-01-08
+composed_at: 2015-01-08
+artist: Rich Soni
 ---
 
 Well Ive been under a guise

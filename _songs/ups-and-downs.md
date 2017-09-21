@@ -1,6 +1,7 @@
 ---
 title: Ups and Downs
 composed_at: 2010-09-21
+artist: Rich Soni
 ---
 
 Seven days, is way too long  

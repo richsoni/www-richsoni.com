@@ -1,6 +1,7 @@
 ---
 title: Take You To A Basement
 composed_at: 2015-09-18
+artist: Rich Soni
 ---
 
 Well its 11 o'clock on a Saturday prowl  

@@ -1,6 +1,7 @@
 ---
 title: Tower Of Cain
 composed_at: 2016-08-05
+artist: Rich Soni
 ---
 
 Some say life is the shadow of our dreams  

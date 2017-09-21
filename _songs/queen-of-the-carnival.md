@@ -1,6 +1,7 @@
 ---
 title: Queen Of The Carnival
 composed_at: 2016-01-26
+artist: Rich Soni
 ---
 
 The summer breeze was blowing all the hair out of my eyes  

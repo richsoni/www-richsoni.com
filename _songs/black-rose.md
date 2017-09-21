@@ -1,6 +1,7 @@
 ---
 title: Black Rose
 composed_at: 2016-09-11
+artist: Rich Soni
 ---
 
 Well, the first time I saw her was down in New Orleans  

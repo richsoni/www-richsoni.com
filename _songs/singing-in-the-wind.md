@@ -1,6 +1,6 @@
 ---
 title: Singing In The Wind
-composed_at: tk
+artist: Rich Soni
 ---
 
 Did you smell the roses in the air?  

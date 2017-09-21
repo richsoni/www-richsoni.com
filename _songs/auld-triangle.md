@@ -1,4 +1,4 @@
 ---
 title: Auld Triangle
-words: Traditional
+artist: Traditional
 ---

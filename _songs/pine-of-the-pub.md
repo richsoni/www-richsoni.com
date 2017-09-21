@@ -1,6 +1,7 @@
 ---
 title: Pine Of The Pub
 composed_at: 2016-01-07
+artist: Rich Soni
 ---
 
 # chorus

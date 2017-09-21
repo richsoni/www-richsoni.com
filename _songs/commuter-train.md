@@ -1,6 +1,7 @@
 ---
 title: Commuter Train
 composed_at: 2014-03-28
+artist: Rich Soni
 ---
 
 Well the hiss of the rail always begins the tail  

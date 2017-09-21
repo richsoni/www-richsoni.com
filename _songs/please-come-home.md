@@ -1,6 +1,7 @@
 ---
 title: Please Come Home
 composed_at: 2015-11-05
+artist: Rich Soni
 ---
 
 I've been waiting in the darkness all alone for so long  

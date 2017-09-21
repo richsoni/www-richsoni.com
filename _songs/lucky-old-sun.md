@@ -1,4 +1,4 @@
 ---
 title: Lucky Old Sun
-words: Haven Gillespie
+artist: Haven Gillespie
 ---

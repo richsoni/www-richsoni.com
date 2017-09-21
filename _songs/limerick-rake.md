@@ -1,4 +1,4 @@
 ---
 title: The Limerick Rake
-words: Traditional
+artist: Traditional
 ---

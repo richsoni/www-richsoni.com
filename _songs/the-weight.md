@@ -1,4 +1,4 @@
 ---
 title: The Weight
-words: Robbie Robertson
+artist: The Band
 ---

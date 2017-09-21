@@ -1,6 +1,7 @@
 ---
 title: Two More Things
 composed_at: 03/28-03/29
+artist: Rich Soni
 ---
 
 Fm G G# C

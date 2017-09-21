@@ -1,6 +1,7 @@
 ---
 title: Out Cold
 composed_at: 2014-09-21
+artist: Rich Soni
 ---
 
 Aint it just like my mind, to play tricks every time  

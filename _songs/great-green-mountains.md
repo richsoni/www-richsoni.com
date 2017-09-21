@@ -1,6 +1,7 @@
 ---
 title: Great Green Mountains
 composed_at: 2015-02-28
+artist: Rich Soni
 ---
 
 Ridin' along the great Green Mountains  

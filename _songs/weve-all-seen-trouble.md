@@ -1,6 +1,7 @@
 ---
 title: We've All Seen Trouble
 composed_at: 2015-03-12
+artist: Rich Soni
 ---
 
 When the lime lite is shining  

@@ -1,6 +1,7 @@
 ---
 title: Ghosts In The Wire
 composed_at: 2013-03-14
+artist: Rich Soni
 ---
 
 Well there's ghosts in the wire, ma  

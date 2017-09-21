@@ -1,4 +1,4 @@
 ---
 title: My Sweet Love Aint Around
-words: Hank Williams
+artist: Hank Williams
 ---

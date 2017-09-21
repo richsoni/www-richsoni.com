@@ -1,6 +1,7 @@
 ---
 title: Without You
 composed_at: 2016-01-25
+artist: Rich Soni
 ---
 
 I'd walk a couple hundred miles  

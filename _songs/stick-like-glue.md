@@ -1,5 +1,7 @@
 ---
+title: Stick Like Glue
 composed_at: 2016-01-05
+artist: Rich Soni
 ---
 
 Girl you know me  

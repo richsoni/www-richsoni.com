@@ -1,6 +1,7 @@
 ---
 title: Spookytown
 composed_at: 2016-05-01
+artist: Rich Soni
 ---
 
 Your ear will hear a dreary sound  

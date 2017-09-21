@@ -1,6 +1,7 @@
 ---
 title: Purple Gun
 composed_at: 2016-07-01
+artist: Rich Soni
 ---
 
 Swaying in the cane on the Brazos  

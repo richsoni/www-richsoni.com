@@ -1,4 +1,4 @@
 ---
 title: Lonesome Whistle
-words: Hank Williams
+artist: Hank Williams
 ---

@@ -1,7 +1,7 @@
 ---
 title: Dinks Song
 composed_at: 2015-01-17
-words: [Traditional, Rich Soni]
+artist: [Traditional, Rich Soni]
 ---
 
 Once I had wings like Noah's dove  

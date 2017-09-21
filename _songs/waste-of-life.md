@@ -1,5 +1,7 @@
 ---
+title: Waste Of Life
 composed_at: 2016-03-25
+artist: Rich Soni
 ---
 
 Good god, I'm falling over  

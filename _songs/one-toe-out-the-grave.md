@@ -1,7 +1,7 @@
 ---
 title: One Toe Out The Grave
-soundcloud: https://soundcloud.com/richsoni/one-toe-out-the-grave
 composed_at: 2015-08-18
+artist: Rich Soni
 ---
 
 Hard aint nothin'' mama  
