@@ -45,6 +45,7 @@ const sort2 = (props, sortKey, sortDirection) => {
   } = props
   const sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
   const field = fields.find((f) => f.key === sortKey)
+  if(!field) {console.error('Field Missing ', sortKey)}
   const customSort = field[`sort${sortPrefix}`];
   if(customSort){ return items.sort(customSort) }
   return items.sort((sA, sB) => {

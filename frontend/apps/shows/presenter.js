@@ -23,7 +23,7 @@ export default (props) => {
          key: 'locationString',
        }]}
        items={props.upcomingShows}
-       sortDefaultKey='date'
+       sortDefaultKey='dateString'
     />
     <h2>Past Shows</h2>
     <Table
@@ -40,7 +40,7 @@ export default (props) => {
          key: 'locationString',
        }]}
        items={props.pastShows}
-       sortDefaultKey='date'
+       sortDefaultKey='dateString'
        sortDefaultDirection='DESC'
     />
   </HF>
