@@ -1,3 +1,13 @@
+.logo200__styles-module__1Gwt6 {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-image: url(/images/logo-200.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
 .emptyField__styles-module__1j2Wb {
   text-align: center;
 }

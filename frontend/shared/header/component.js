@@ -4,6 +4,7 @@ const SocialButton = require("../../shared/socialButton/component")
 const responsiveComponentComposer = require("../../shared/responsiveComponentComposer")
 const assign = require("object-assign")
 const Radium = require("radium")
+import styles from './styles.module.css';
 
 class _SocialButtons extends React.Component {
   render(){
@@ -148,7 +149,7 @@ class _Logo extends React.Component {
           color: 'white',
         }}
         className='pulse'
-        href='/'>{"{ RichSoni }"}</a>
+        href='/'><div className={styles.logo200} /></a>
     </div>
   }
 }
