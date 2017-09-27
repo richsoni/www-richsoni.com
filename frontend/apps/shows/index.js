@@ -31,6 +31,7 @@ class Shows extends React.Component {
         location,
         locationString: `${location.address.locality}, ${location.address.region}`,
         dateString: moment.utc(show.date).format("MM/DD/YY"),
+        moment: moment.utc(show.date),
         venueString: location.name,
       }})
     return <Presenter

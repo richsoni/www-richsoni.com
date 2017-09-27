@@ -52551,6 +52551,7 @@ var Shows = function (_React$Component) {
           location: location,
           locationString: location.address.locality + ', ' + location.address.region,
           dateString: _moment2.default.utc(show.date).format("MM/DD/YY"),
+          moment: _moment2.default.utc(show.date),
           venueString: location.name
         });
       });
