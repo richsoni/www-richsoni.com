@@ -1,10 +1,10 @@
 ---
-title: Willie Bet His Wife In A Game Of Texas Stud
+title: Benny Bet His Wife In A Game Of Texas Stud
 composed_at: 2017-09-14
 artist: Rich Soni
 ---
 
-Willie bet his wife
+Benny bet his wife
 in a game of Texas Stud
 He had nothing more to loose
 to the hand of Mr. Mudd
@@ -16,22 +16,22 @@ and took her to the square
 
 Bonnie took the hand
 Of the man she truly loved
-And, she left that Willie Gold
+And, she left that Benny Gold
 Without even one last hug
 
 In his yard there was a garden
-And, Willie burnt it bare
+And, Benny burnt it bare
 Shotgun in the wagon
 He drove down to the square
 
 Mudd he had a hand
 of aces flyin' high
-He looked at Willie Gold
+He looked at Benny Gold
 Straight in the suckers eye
 
 His love was in the garden
 She rigged the deck of hards
-She knew Willie would bargain
+She knew Benny would bargain
 With the love that chained her heart
 
 Standing in the square
