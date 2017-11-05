@@ -25,8 +25,8 @@ Thanks for the dream
 
 An *if*, a *where*, a *You & Me*  
 Imaginary jubilee  
-For, this affair could never be  
-But, thanks for the dream  
+But, this affair could never be  
+So, thanks for the dream  
 
 Thanks for the dream  
 A brief scene of what could have been  
