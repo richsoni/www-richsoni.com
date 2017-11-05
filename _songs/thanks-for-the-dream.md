@@ -6,7 +6,7 @@ artist: Rich Soni
 
 Thanks for the dream  
 A brief scene of what could have been  
-An if, a where, a you and me darlin'  
+An *if*, a *where*, a *You & Me*, darlin'  
 Thanks for the dream  
 
 A scene that could have been  
@@ -23,12 +23,12 @@ Another world, that I can see
 Within my vault of memories  
 Thanks for the dream  
 
-An if, a where, a you & me  
+An *if*, a *where*, a *You & Me*  
 Imaginary jubilee  
 For, this affair could never be  
 But, thanks for the dream  
 
 Thanks for the dream  
 A brief scene of what could have been  
-An if, a where, a you and me darlin'  
+An *if*, a *where*, a *You & Me*, darlin'  
 Thanks for the dream  
