@@ -27,7 +27,7 @@ Or you lookup, and you laugh at the moon
 On a warm eve  
 I start to believe  
 This Old World  
-Got not time to whistle my tune  
+Aint gonna twirl to the beat of yer tune  
 So, I chastise the town  
 And they call me a clown  
 Like the girl who laughs at the moon  
