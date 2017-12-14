@@ -23,7 +23,7 @@ setlist:
   - tomorrow-might-be-monday
   - mcalpines-fusiliers
   - dicey-riley
-  - wild-rover
+  - the-wild-rover
   - magellan-and-me
   - workingmans-blues
   - need-for-love

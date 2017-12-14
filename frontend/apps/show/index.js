@@ -12,9 +12,9 @@ class RootComponent extends React.Component{
       locations,
       shows,
       songs,
-      slug,
+      url,
     } = this.props
-    const show = shows.byID[slug]
+    const show = shows.byID[url]
     if(show && songs.length && locations.length ){
       const _location = locations.byID[show.slug];
       return <Presenter

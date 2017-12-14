@@ -41599,9 +41599,9 @@ var RootComponent = function (_React$Component) {
           locations = _props.locations,
           shows = _props.shows,
           songs = _props.songs,
-          slug = _props.slug;
+          url = _props.url;
 
-      var show = shows.byID[slug];
+      var show = shows.byID[url];
       if (show && songs.length && locations.length) {
         var _location = locations.byID[show.slug];
         return _react2.default.createElement(_presenter2.default, {
