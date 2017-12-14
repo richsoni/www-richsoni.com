@@ -57,21 +57,21 @@ Errors:
   - stormy-window: forgot words
 
 Picks:
-  - blues-in-a-bottle
   - ordinary-man-and-the-angel
+  - need-for-love
+  - hey-baby-doll
+  - black-and-blues
   - song-of-broken-justice
-  - a-hard-rains-a-gonna-fall
   - ballad-of-the-condor
-  - wayward-sister
   - tomorrow-might-be-monday
+  - workingmans-blues
+  - blues-in-a-bottle
+  - a-hard-rains-a-gonna-fall
   - mcalpines-fusiliers
   - wild-rover
-  - workingmans-blues
-  - need-for-love
-  - please-come-home
-  - black-and-blues
+  - wayward-sister
   - purple-gun
-  - hey-baby-doll
+  - please-come-home
 
 Notes:
   - Quality from new mixer is amazing.  Just knowing how to use it really well helps a lot.  Especially for getting a recording.

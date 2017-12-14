@@ -19,9 +19,9 @@ That can forge the swallowed key
 *Our paths our surly merging*  
 *So come wander with me*  
 
-Babe the Big and The Yazoo river  
+Babe, The Big and The Yazoo river  
 They never ponder or expect  
-They rely on gravity to delivers  
+They rely on gravity to deliver  
 Them to the place where they connect  
 
 And, the water flowing downward  
