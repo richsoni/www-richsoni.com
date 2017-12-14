@@ -3,7 +3,7 @@ const React           = require("react")
 const HF              = require("../../shared/header-footer/")
 import Table from '../../ui/Table/';
 import Tabs from '../../shared/tabs/';
-import {sortASC, sortDESC} from '../../ui/Table/dateSort';
+import {sortObjMomentASC, sortObjMomentDESC} from '../../lib/sorting';
 
 const tableFields = [
   {
@@ -17,8 +17,24 @@ const tableFields = [
   {
     title: 'Date Composed',
     key: 'composedAt',
-    sortASC,
-    sortDESC,
+    sortASC: sortObjMomentASC('moment'),
+    sortDESC: sortObjMomentDESC('moment'),
+  },
+  {
+    title: "Times Played",
+    key: "performanceCount",
+  },
+  {
+    title: 'First Performed',
+    key: 'firstPerformance',
+    sortASC: sortObjMomentASC('firstPerformanceMoment'),
+    sortDESC: sortObjMomentDESC('firstPerformanceMoment'),
+  },
+  {
+    title: 'Last Performed',
+    key: 'lastPerformance',
+    sortASC: sortObjMomentASC('lastPerformanceMoment'),
+    sortDESC: sortObjMomentDESC('lastPerformanceMoment'),
   },
 ];
 

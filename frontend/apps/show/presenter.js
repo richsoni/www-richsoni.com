@@ -52,7 +52,7 @@ export default class Presenter extends React.Component {
           show.setlist.map((sl) => {
             const song = songs.byID[sl]
             if(!song) { console.error(sl, " is not a song") }
-            return <li key={song.slug}>{song.title}</li>
+            return <li key={song.slug}><a href={song.url}>{song.title}</a></li>
           })
         }
       </ol>

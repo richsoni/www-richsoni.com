@@ -29,11 +29,17 @@ const sort = (items, sortKey, sortDirection) => {
     if(sortDirection === SORTASC){
       if(!a) { return 1 }
       if(!b) { return -1 }
-      return a.localeCompare(b)
+      if(typeof a  === 'string' && typeof b === 'string'){
+        return a.localeCompare(b)
+      }
+      return a - b
     } else {
       if(!b) { return 1 }
       if(!a) { return -1 }
-      return b.localeCompare(a)
+      if(typeof a  === 'string' && typeof b === 'string'){
+        return b.localeCompare(a)
+      }
+      return b - a
     }
   })
 }
@@ -51,15 +57,23 @@ const sort2 = (props, sortKey, sortDirection) => {
   return items.sort((sA, sB) => {
     const a = sA[sortKey]
     const b = sB[sortKey]
-    if(!a && !b) { return 0 }
+    const aEmpty = (a !== 0) && !a;
+    const bEmpty = (a !== 0) && !a;
+    if(aEmpty && bEmpty) { return 0 }
     if(sortDirection === SORTASC){
-      if(!a) { return 1 }
-      if(!b) { return -1 }
-      return a.localeCompare(b)
+      if(aEmpty) { return 1 }
+      if(bEmpty) { return -1 }
+      if(typeof a  === 'string' && typeof b === 'string'){
+        return a.localeCompare(b)
+      }
+      return a - b
     } else {
-      if(!b) { return 1 }
-      if(!a) { return -1 }
-      return b.localeCompare(a)
+      if(bEmpty) { return 1 }
+      if(aEmpty) { return -1 }
+      if(typeof a  === 'string' && typeof b === 'string'){
+        return b.localeCompare(a)
+      }
+      return b - a
     }
   })
 }

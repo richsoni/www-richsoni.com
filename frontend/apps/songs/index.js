@@ -3,6 +3,7 @@ import moment from 'moment';
 import Presenter from './presenter';
 import {Provide} from '../../shared/reduxProvider';
 import {fetchAll as fetchAllSongs} from '../../data/songs/actions';
+import {fetchAll as fetchAllShows} from '../../data/shows/actions';
 import {songIndex} from './selectors';
 
 class Songs extends React.Component {
@@ -39,6 +40,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     componentDidMount: (props) => {
       dispatch(fetchAllSongs())
+      dispatch(fetchAllShows())
     }
   }
 }

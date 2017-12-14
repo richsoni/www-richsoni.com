@@ -1,14 +1,22 @@
-export const HYDRATE_ONE = "SONG_HYDRATE_ONE";
+export const HYDRATE_ONE = "SHOW_HYDRATE_ONE";
+export const REQUEST = "SHOWS_REQUEST";
+export const FINISH = "SHOWS_FINISH";
+export const ERROR = "SHOWS_ERROR";
 
-const parse = (locations) => {
+const parse = (items) => {
   return {
-    length: Object.keys(locations).length,
-    byID: locations,
+    length: Object.keys(items).length,
+    byID: Object.keys(items).reduce((memo, key) => {
+      const item = items[key]
+      return {...memo, [item.url]: item}
+    }, {}),
   }
 }
 
 export default (state = parse({}), action) => {
   switch(action.type) {
+    case FINISH:
+      return parse(action.payload)
     case HYDRATE_ONE:
       return parse({
         ...state.byID,
