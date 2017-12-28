@@ -1,8 +1,9 @@
 import moment from 'moment';
+import momentify from '../lib/momentify';
 
 export const MMDDYYYY = (date) => {
   if(!date) { return '' }
-  return `${moment.utc(date).format("MMM. DD, YYYY")}`;
+  return `${momentify(date).format("MMM. DD, YYYY")}`;
 }
 
 export const cityCommaState = (address) => {

@@ -2,22 +2,23 @@ import React from 'react';
 import moment from 'moment';
 import {showNameLong} from '../../shared/presenters';
 import Presenter from './presenter';
+import momentify from '../../lib/momentify';
 
 const upcomingShows = (shows = []) => {
   const now = moment.utc()
   return shows
-    .filter((show) => moment.utc(show.date, 'YYYY-MM-DD HH:mm:ss Z') > now)
+    .filter((show) => momentify(show.date) > now)
     .sort((a, b) => {
-      return moment.utc(a.date) - moment.utc(b.date)
+      return momentify(a.date) - momentify(b.date)
     })
 }
 
 const pastShows = (shows = []) => {
   const now = moment.utc()
   return shows
-    .filter((show) => moment.utc(show.date) < now)
+    .filter((show) => momentify(show.date) < now)
     .sort((a, b) => {
-      return moment.utc(b.date) - moment.utc(a.date)
+      return momentify(b.date) - momentify(a.date)
     })
 }
 
@@ -30,8 +31,8 @@ class Shows extends React.Component {
         ...show,
         location,
         locationString: `${location.address.locality}, ${location.address.region}`,
-        dateString: moment.utc(show.date).format("MM/DD/YY"),
-        moment: moment.utc(show.date),
+        dateString: momentify(show.date).format("MM/DD/YY"),
+        moment: momentify(show.date),
         venueString: location.name,
       }})
     return <Presenter

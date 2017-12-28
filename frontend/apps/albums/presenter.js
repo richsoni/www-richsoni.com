@@ -1,5 +1,6 @@
 "use strict"
 import React from 'react';
+import values from 'object.values';
 import HF from "../../shared/header-footer/"
 import styles from './styles.module.css';
 
@@ -27,7 +28,7 @@ export default (props) => {
   } = props
   return <HF>
     <div className={styles.list}>
-      {Object.values(releases).map((r) => {
+      {values(releases).map((r) => {
         return <Release key={r.slug} {...r} />
       })}
     </div>

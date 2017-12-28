@@ -1,5 +1,6 @@
 import moment from 'moment';
+import momentify from '../lib/momentify';
 
 export const showNameLong = (show, _location) => {
-  return `${moment.utc(show.date).format("MMM. DD, YYYY")} / ${_location.address.locality}, ${_location.address.region}`;
+  return `${momentify(show.date).format("MMM. DD, YYYY")} / ${_location.address.locality}, ${_location.address.region}`;
 }

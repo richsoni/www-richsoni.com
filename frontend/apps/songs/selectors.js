@@ -1,5 +1,6 @@
 import {createSelector} from 'reselect'
 import momentify from '../../lib/momentify';
+import values from 'object.values';
 
 const songsByID = (state) => state.songs.byID;
 const showsArray = (state) => {
@@ -17,8 +18,7 @@ export const songIndex = createSelector(
   songsByID,
   showsArray,
   (songsByID, showsArray) => {
-    return Object
-      .values(songsByID)
+    return values(songsByID)
       .map((song) => {
         const _moment = momentify(song.composed_at);
         const _artist = typeof song.artist === 'object' ? song.artist.sort().join(', ') : song.artist
