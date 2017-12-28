@@ -34,7 +34,6 @@ class Shows extends React.Component {
         moment: moment.utc(show.date),
         venueString: location.name,
       }})
-    console.log(upcomingShows(loadedShows))
     return <Presenter
       locations={this.props.locations}
       upcomingShows={upcomingShows(loadedShows)}
