@@ -6,7 +6,7 @@ import Presenter from './presenter';
 const upcomingShows = (shows = []) => {
   const now = moment.utc()
   return shows
-    .filter((show) => moment.utc(show.date) > now)
+    .filter((show) => moment.utc(show.date, 'YYYY-MM-DD HH:mm:ss Z') > now)
     .sort((a, b) => {
       return moment.utc(a.date) - moment.utc(b.date)
     })
@@ -34,6 +34,7 @@ class Shows extends React.Component {
         moment: moment.utc(show.date),
         venueString: location.name,
       }})
+    console.log(upcomingShows(loadedShows))
     return <Presenter
       locations={this.props.locations}
       upcomingShows={upcomingShows(loadedShows)}
