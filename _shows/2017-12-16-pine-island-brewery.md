@@ -11,6 +11,8 @@ setlist:
   - wander-with-me
   - the-weight
   - song-of-broken-justice
+  - pine-of-the-pub
+  - the-wild-rover
 ---
 
 
