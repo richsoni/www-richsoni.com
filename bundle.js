@@ -27155,7 +27155,7 @@ module.exports = function getPolyfill() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.type = exports.cityCommaState = exports.MMDDYYYY = undefined;
+exports.cityCommaState = exports.MMDDYYYY = undefined;
 
 var _moment = __webpack_require__(0);
 
@@ -27176,21 +27176,6 @@ var MMDDYYYY = exports.MMDDYYYY = function MMDDYYYY(date) {
 
 var cityCommaState = exports.cityCommaState = function cityCommaState(address) {
   return address.locality + ', ' + address.region;
-};
-
-var type = exports.type = function type(_type) {
-  switch (_type) {
-    case 'open-mic-host':
-      return 'Open Mic (Host)';
-    case 'open-mic':
-      return "Open Mic";
-    case 'writers-in-the-round':
-      return "Writers In The Round";
-    case 'support':
-      return "Supporting Act";
-    default:
-      return 'Headliner';
-  }
 };
 
 /***/ }),
@@ -54398,7 +54383,7 @@ module.exports = Shows;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.showNameLong = undefined;
+exports.type = exports.showNameLong = undefined;
 
 var _moment = __webpack_require__(0);
 
@@ -54412,6 +54397,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var showNameLong = exports.showNameLong = function showNameLong(show, _location) {
   return (0, _momentify2.default)(show.date).format("MMM. DD, YYYY") + ' / ' + _location.address.locality + ', ' + _location.address.region;
+};
+
+var type = exports.type = function type(_type) {
+  switch (_type) {
+    case 'open-mic-host':
+      return 'Open Mic (Host)';
+    case 'open-mic':
+      return "Open Mic";
+    case 'writers-in-the-round':
+      return "Writers In The Round";
+    case 'support':
+      return "Supporting Act";
+    default:
+      return 'Headliner';
+  }
 };
 
 /***/ }),
