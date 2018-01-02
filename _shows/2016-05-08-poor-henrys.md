@@ -1,4 +1,5 @@
 ---
+type: open-mic
 setlist:
   - sweet-grass-memory
   - together

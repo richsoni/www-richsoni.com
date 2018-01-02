@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import {showNameLong} from '../../shared/presenters';
+import {showNameLong, type} from '../../shared/presenters';
 import Presenter from './presenter';
 import momentify from '../../lib/momentify';
 
@@ -31,6 +31,7 @@ class Shows extends React.Component {
         ...show,
         location,
         locationString: `${location.address.locality}, ${location.address.region}`,
+        typeString: type(show.type),
         dateString: momentify(show.date).format("MM/DD/YY"),
         moment: momentify(show.date),
         venueString: location.name,

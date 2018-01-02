@@ -1,4 +1,5 @@
 ---
+type: open-mic
 setlist:
   - wander-with-me
   - sweet-grass-memory

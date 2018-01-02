@@ -9,3 +9,13 @@ export const MMDDYYYY = (date) => {
 export const cityCommaState = (address) => {
   return `${address.locality}, ${address.region}`;
 }
+
+export const type = (type) => {
+  switch(type){
+    case 'open-mic-host': return 'Open Mic (Host)';
+    case 'open-mic': return "Open Mic";
+    case 'writers-in-the-round': return "Writers In The Round";
+    case 'support': return "Supporting Act";
+    default: return 'Headliner';
+  }
+}

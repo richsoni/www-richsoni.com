@@ -19,6 +19,10 @@ export default (props) => {
          title: 'Venue',
          key: 'venueString',
        }, {
+         title: 'Type',
+         key: 'typeString',
+       }, {
+       }, {
          title: 'Location',
          key: 'locationString',
        }]}
@@ -35,6 +39,10 @@ export default (props) => {
        }, {
          title: 'Venue',
          key: 'venueString',
+       }, {
+       }, {
+         title: 'Type',
+         key: 'typeString',
        }, {
          title: 'Location',
          key: 'locationString',

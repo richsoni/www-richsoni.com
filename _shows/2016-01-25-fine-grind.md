@@ -1,4 +1,5 @@
 ---
+type: open-mic
 setlist:
   - auld-triangle
   - between-these-canals

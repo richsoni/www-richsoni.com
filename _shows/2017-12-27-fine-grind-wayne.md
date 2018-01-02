@@ -1,6 +1,7 @@
 ---
 startTime: 7:30 PM
 endTime: 9:00 PM
+type: writers-in-the-round
 setlist:
   - ballad-of-the-condor
   - tomorrow-might-be-monday
