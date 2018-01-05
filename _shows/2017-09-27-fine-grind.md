@@ -20,7 +20,7 @@ setlist:
   - rye-whiskey
   - black-velvet-band
   - pine-of-the-pub
-  - two-more-things
+  - geeshies-conjecture
   - whiskey-in-the-jar
   - purple-gun
   - ballad-of-the-condor

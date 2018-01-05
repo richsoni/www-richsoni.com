@@ -27,7 +27,7 @@ setlist:
   - black-rose
   - all-along-the-watchtower
   - wayward-sister
-  - two-more-things
+  - geeshies-conjecture
   - walk-and-wheeze
   - black-velvet-band
   - hey-baby-doll

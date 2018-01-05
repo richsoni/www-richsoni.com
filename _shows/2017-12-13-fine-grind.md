@@ -13,7 +13,7 @@ setlist:
   - amelia
   - a-hard-rains-a-gonna-fall
   - black-rose
-  - two-more-things
+  - geeshies-conjecture
   - the-weight
   - ballad-of-the-condor
   - wayward-sister

@@ -3,7 +3,7 @@ startTime: 3:00 PM
 endTime: 6:00 PM
 setlist:
   - blues-in-a-bottle
-  - two-more-things
+  - geeshies-conjecture
   - rare-auld-mountain-dew
   - hey-baby-doll
   - walk-and-wheeze

@@ -4,7 +4,7 @@ setlist:
   - hey-baby-doll
   - singing-in-the-wind
   - dire-wolf
-  - two-more-things
+  - geeshies-conjecture
   - need-for-love
   - get-off-of-my-cloud
   - ballad-of-the-condor

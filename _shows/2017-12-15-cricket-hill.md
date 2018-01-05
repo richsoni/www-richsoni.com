@@ -41,7 +41,7 @@ rosin-the-beau.md
 - song-of-broken-justice
 - amelia
 - black-rose
-- two-more-things
+- geeshies-conjecture
 - ballad-of-the-condor
 - wayward-sister
 - evergreen-eyes

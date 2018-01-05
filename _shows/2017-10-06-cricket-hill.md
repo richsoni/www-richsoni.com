@@ -7,7 +7,7 @@ setlist:
 - 28 originals
 
 - benny-bet-his-wife-in-a-game-of-texas-stud
-- two-more-things
+- geeshies-conjecture
 - song-of-broken-justice
 - ballad-of-the-condor
 - workingmans-blues

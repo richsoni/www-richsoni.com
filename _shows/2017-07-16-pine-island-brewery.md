@@ -31,7 +31,7 @@ setlist:
   - walk-and-wheeze
   - the-weight
   - greatest-gift
-  - two-more-things
+  - geeshies-conjecture
   - the-wild-rover
   - amelia
   - wayward-sister
