@@ -4,46 +4,50 @@ composed_at: 03/28-03/29
 artist: Rich Soni
 ---
 
-Fm G G# C
-C G
+Two more things I'd like to try
+Before I lay down and die
+The first is to look you in the eye
+And the second is to tell you goodbye
 
-two more things id like to try
-before aeee-i lay down and die
-the first is to look you in the eye
-and the other is to tell yo-o-o-u goodbye
+Well, I walk to the top of your doorstep
+I knock, knock, knock on the door
+Your father he does answer
+Says, you aint alive no mo'
 
-so, I walk to the top of yourrr doorrrstep
-I knock, knock onnnn the door
-You father he does answer
-You aint alive no mo'
+Three more links of golden chain
+Until I, learn my name
+Woke up to the drizzling rain
+Around the curve of my heart was a pain
 
-three more golden links of chain
-until at last I learn-n-n my name
-woke up to the drizzling rain
-around the curve there cammme-a pain
+Oh, the lady in red she is crying
+She puts all the willows to shame
+You claim that you don't mind a-dying
+Til, your kids are rolling in pain
 
-the lady in red she is crying
-she puts all the willows to shame
-you say that you dont mind a-dying
-but, your kids theylll be rolling in pain
- --
+Four high aces in your hand
+Don't make you no less of a man
+Armies and fools at your command
+Can't slow down the speed of the sand
 
-four high aces in your hand
-dont make you no less of a man
-armies and fools at your command
-cant slow down the speed of the sand
-
-an angel fell down from the heavens
-he bought her a nine dollar shawl
-he'll show you the bend if you let him
-he'll dress you like la belle et la ball
+An angel fell down from the heavens
+He bought you a nine dollar shawl
+He'll take you to the bend if you let him
+He'll dress you like la-belle-et-la ball
 
 Cresting to the summit of the hill
-Theres a man in the ruins of a mill
-Trade a pole for a fourty dollar bill
-never worked and you never will
+There's a man in the ruins of a mill
+Trade a pole for a forty dollar bill
+You never worked and you never will
 
-hero was lying this second
+Hero was lying this second
 She rarely is telling the truth
-It will dig at your sould if you let it
-Itl kill you like boothe in the booth
+It'll dig at your soul if you let it
+It'll shoot you like Booth in the booth
+It'll shoot you just like John Wilkes Booth
+
+```
+Chords:
+
+Fm G G# C
+C G
+```
