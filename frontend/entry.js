@@ -7,7 +7,7 @@ import songEntry from "./apps/song/"
 import show from "./apps/show/";
 import albums from "./apps/albums/";
 import album from "./apps/album/";
-
+import epk from './apps/epk/';
 
 const pages = {
   home:     require("./apps/homepage/entry"),
@@ -20,6 +20,7 @@ const pages = {
   song: songEntry,
   show: show,
   post: require("./apps/blog-post/entry"),
+  epk,
 }
 
 window.App = {

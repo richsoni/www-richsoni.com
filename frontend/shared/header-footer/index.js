@@ -4,7 +4,8 @@ const Footer = require("../../shared/footer/component")
 
 class Element extends React.Component {
   render(){
-    const style = this.props.style || {}
+    const {style, className} = this.props
+
     return <div style={{
     }}>
       <Header />
@@ -17,8 +18,8 @@ class Element extends React.Component {
         boxShadow: '0px 0px 1px #797878',
         minHeight: '100%',
         overflow: 'hidden',
-        ...style
-      }}>
+        ...(style || {})
+      }} className={className || ""}>
         {this.props.children}
       </div>
       <Footer />

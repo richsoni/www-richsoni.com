@@ -166,3 +166,65 @@
   width: 250px;
   height: 250px;
 }
+.background__styles-module__FVIsD {
+  background-image: url('/images/waterfall.jpg');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.logo__styles-module__3HrMV {
+  display: block;
+  width: 400px;
+  height: 100px;
+  background-image: url(/images/logo-200.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto auto;
+}
+
+.logoWrap__styles-module___J3L6 {
+  width: 100%;
+}
+
+.bio__styles-module__2mzFI {
+  float: right;
+  font-size: 17px;
+}
+
+.bio__styles-module__2mzFI, .bio__styles-module__2mzFI a {
+  color: #000;
+  padding: 2px;
+  text-shadow: -1px 1px 0 #fff, 0px -1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.bio__styles-module__2mzFI p {
+  width: 190px;
+}
+
+.bio__styles-module__2mzFI a {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.bio__styles-module__2mzFI ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__styles-module__2q91F{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.embed__styles-module__-IeOY {
+  margin-top: 20px;
+
+}
+
+
+.right__styles-module__3bNRv {
+  float: right;
+}
