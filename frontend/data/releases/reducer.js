@@ -7,10 +7,12 @@ const parse = (releases={}) => {
   return {
     byID: Object.keys(releases).reduce((memo, key) => {
       const release = releases[key]
+      const links = release.links || {}
       return {...memo, [release.slug]: {
         ...release,
         releasedOnMoment: momentify(release.released_on),
-        links: [].concat(release.links || [])
+        links,
+        imageURL: `/images/releases/${release.slug}.png`,
       }}
     }, {}),
   }

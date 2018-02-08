@@ -15,4 +15,8 @@ tracklist:
   - waste-of-life
   - weve-all-seen-trouble
   - one-in-a-million
+links:
+  bandcamp: https://richsoni.bandcamp.com/album/safety-tapes-vol-3
+  spotify: https://open.spotify.com/album/6zbxSZVSTKb9M5VtQVjpF8?si=jOqR5yyFTQGhEYEQV4lXdw
+  itunes: https://itunes.apple.com/us/album/safety-tapes-vol-3/1109373329
 ---

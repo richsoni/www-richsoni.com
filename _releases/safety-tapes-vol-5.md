@@ -15,4 +15,8 @@ tracklist:
   - top-of-the-train
   - planes-trains-autoresponders
   - waterfallen
+links:
+  bandcamp: https://richsoni.bandcamp.com/album/safety-tapes-vol-5
+  spotify: https://open.spotify.com/album/64njXT0EekPU6gXjXAzXYu?si=NqLq8lwdRBKocYVLvas6XA
+  itunes: https://itunes.apple.com/us/album/safety-tapes-vol-5/1216530373
 ---

@@ -10,6 +10,8 @@ const getSpotifyURI = function(release){
   return release.links.spotify.match(/[^\/]*$/)[0]
 }
 
+const rounded = {backgroundColor: '#000000', color:'#ffffff', padding: '1em', marginLeft: '1em', textAlign: 'center'}
+
 const containerStyle = {
   display: 'flex',
   flexDirection: 'row',
@@ -35,10 +37,10 @@ const rightStyle = {
 const Bandcamp = (props) => {
   const {release} = props;
   if(!release.links.bandcamp) { return <div /> }
-  return <h2 style={rounded}><a style={{color: '#fff', textDecoration:'none'}} href={release.links.bandcamp}><i className='fa fa-headphones' /> Purchase On Bandcamp!</a></h2>
+  return <a style={{color: '#fff', textDecoration:'none'}} href={release.links.bandcamp}><h2 style={rounded}><i className='fa fa-headphones' /> Purchase On Bandcamp!</h2></a>
 }
 
-const iTunes = (props) => {
+const Itunes = (props) => {
   const {release} = props;
   if(!release.links.itunes) { return <div /> }
   return <a style={rounded} href={release.links.itunes}><i className='fa fa-apple' /> iTunes</a>
@@ -59,10 +61,9 @@ const SpotifyPlaylist = (props) => {
 class _Presenter extends React.Component{
   render(){
     const {release} = this.props;
-    const rounded = {backgroundColor: '#000000', color:'#ffffff', padding: '1em', marginLeft: '1em'}
     if(!release.id) { return <div /> }
     return <Half style={{
-      backgroundImage: 'url(/images/stv6.jpg)',
+      backgroundImage: `url(${release.imageURL})`,
       backgroundPosition: 'bottom center',
       backgroundColor: '#12002F',
       backgroundRepeat: 'no-repeat',
@@ -75,7 +76,7 @@ class _Presenter extends React.Component{
           <Bandcamp release={release} />
           <br/>
           <div style={{marginTop: '1em', marginBottom: '1em', textAlign: 'center'}}>
-            <iTunes release={release} />
+            <Itunes release={release} />
             <Amazon release={release} />
           </div>
         </div>

@@ -14,4 +14,8 @@ tracklist:
   - inches-away
   - greatest-gift
   - stormy-window
+links:
+  bandcamp: https://richsoni.bandcamp.com/album/safety-tapes-vol-1
+  spotify: https://open.spotify.com/album/4kDyNXEDBQ5supyibyBlEU?si=uGTLZbSPTTysPkqPZsGeew
+  itunes: https://itunes.apple.com/us/album/safety-tapes-vol-1/1064373884
 ---
