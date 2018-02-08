@@ -2,7 +2,7 @@ import React from 'react';
 import Presenter from './presenter';
 import {Provide} from '../../shared/reduxProvider';
 import {fetchAll as fetchAllReleases} from '../../data/releases/actions';
-import {sorted as sortedReleases} from './selectors';
+import {sorted as sortedReleases} from '../../data/releases/selectors';
 
 class Container extends React.Component {
   render() {

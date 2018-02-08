@@ -10,6 +10,7 @@ const parse = (releases={}) => {
       return {...memo, [release.slug]: {
         ...release,
         releasedOnMoment: momentify(release.released_on),
+        links: [].concat(release.links || [])
       }}
     }, {}),
   }

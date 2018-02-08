@@ -1,7 +1,7 @@
 "use strict"
 const React           = require("react")
 const Half            = require("../../shared/half")
-const LatestRelease   = require("./LatestRelease")
+import LatestRelease from "./LatestRelease";
 const Header          = require("../../shared/header/component")
 const Footer          = require("../../shared/footer/component")
 const Radium          = require("radium")
@@ -35,7 +35,7 @@ class _RootComponent extends React.Component{
         backgroundPosition: 'center'}}>
         <MailingListHalf />
       </Half>
-      <Half style={{backgroundImage: 'url(/images/hbr.png)', backgroundPosition: 'bottom center', backgroundColor: '#12002F', backgroundRepeat: 'no-repeat', backgroundSize:'cover'}}><LatestRelease /></Half>
+      <LatestRelease />
       <Footer />
     </div>
   }

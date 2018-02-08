@@ -1,21 +1,13 @@
-const React           = require("react")
-const Radium          = require("radium")
-const releases        = require("../../data/releases")
+import React from 'react';
+import Radium from 'radium';
+import {Provide} from '../../shared/reduxProvider';
+import {fetchAll as fetchAllReleases} from '../../data/releases/actions';
+import {sorted as sortedReleases} from '../../data/releases/selectors';
+import Half from "../../shared/half";
 
-const release = releases
-  .filter(function(release){ return !release.tags.match("live")})
-  .sort(function(releaseA, releaseB){ return releaseA.created_at < releaseB.created_at })[0]
-
-
-const getLink = function(service){
-  return release.links.filter(function(link){
-    return link.service_name === service || link.title === service;
-  })[0]
-}
-
-const getSpotifyURI = function(){
-  const link=getLink('Spotify')
-  return link.url.match(/[^\/]*$/)[0]
+const getSpotifyURI = function(release){
+  if(!release.links.spotify) { return null }
+  return release.links.spotify.match(/[^\/]*$/)[0]
 }
 
 const containerStyle = {
@@ -40,25 +32,95 @@ const rightStyle = {
   textAlign: 'center',
 }
 
-class SafetyTapesVol1 extends React.Component{
+const Bandcamp = (props) => {
+  const {release} = props;
+  if(!release.links.bandcamp) { return <div /> }
+  return <h2 style={rounded}><a style={{color: '#fff', textDecoration:'none'}} href={release.links.bandcamp}><i className='fa fa-headphones' /> Purchase On Bandcamp!</a></h2>
+}
+
+const iTunes = (props) => {
+  const {release} = props;
+  if(!release.links.itunes) { return <div /> }
+  return <a style={rounded} href={release.links.itunes}><i className='fa fa-apple' /> iTunes</a>
+}
+
+const Amazon = (props) => {
+  const {release} = props;
+  if(!release.links.amazon) { return <div /> }
+  return <a style={rounded} href={release.links.amazon}><i className='fa fa-amazon' /> Amazon</a>
+}
+
+const SpotifyPlaylist = (props) => {
+  const {release} = props;
+  if(!release.links.spotify) { return <div /> }
+  return <iframe src={`https://embed.spotify.com/?uri=spotify%3Aalbum%3A${getSpotifyURI(release)}`} width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+}
+
+class _Presenter extends React.Component{
   render(){
+    const {release} = this.props;
     const rounded = {backgroundColor: '#000000', color:'#ffffff', padding: '1em', marginLeft: '1em'}
-    return <div style={containerStyle}>
-      <div style={leftStyle}>
-        <h1 style={{backgroundColor:'#ffffff',padding:2, textAlign: 'center', color: '#000000'}}>{release.title} Available Now!!!</h1>
-        <br/>
-        <h2 style={rounded}><a style={{color: '#fff', textDecoration:'none'}} href={getLink('Bandcamp').url}><i className='fa fa-headphones' /> Purchase On Bandcamp!</a></h2>
-        <br/>
-        <div style={{marginTop: '1em', marginBottom: '1em', textAlign: 'center'}}>
-          <a style={rounded} href={getLink('iTunes').url}><i className='fa fa-apple' /> iTunes</a>
-          <a style={rounded} href={getLink('Amazon').url}><i className='fa fa-amazon' /> Amazon</a>
+    if(!release.id) { return <div /> }
+    return <Half style={{
+      backgroundImage: 'url(/images/stv6.jpg)',
+      backgroundPosition: 'bottom center',
+      backgroundColor: '#12002F',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize:'cover'
+    }}>
+      <div style={containerStyle}>
+        <div style={leftStyle}>
+          <h1 style={{backgroundColor:'#ffffff',padding:2, textAlign: 'center', color: '#000000'}}>{release.title} Available Now!!!</h1>
+          <br/>
+          <Bandcamp release={release} />
+          <br/>
+          <div style={{marginTop: '1em', marginBottom: '1em', textAlign: 'center'}}>
+            <iTunes release={release} />
+            <Amazon release={release} />
+          </div>
+        </div>
+        <div style={rightStyle}>
+          <SpotifyPlaylist release={release} />
         </div>
       </div>
-      <div style={rightStyle}>
-        <iframe src={`https://embed.spotify.com/?uri=spotify%3Aalbum%3A${getSpotifyURI()}`} width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-      </div>
-    </div>
+    </Half>
   }
 }
 
-module.exports = Radium(SafetyTapesVol1)
+const Presenter = Radium(_Presenter);
+
+class Container extends React.Component {
+  render(){
+    return <Presenter {...this.props} />
+  }
+
+  componentDidMount() {
+    if(this.props.componentDidMount){
+      this.props.componentDidMount(this.props)
+    }
+  }
+
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    componentDidMount: (props) => {
+      dispatch(fetchAllReleases())
+    }
+  }
+}
+
+const mapStateToProps = (state) => {
+  const releases = sortedReleases(state)
+  const release = releases[0] || {}
+  return {
+    release
+  }
+}
+
+
+export default Provide({
+  Component: Container,
+  mapStateToProps,
+  mapDispatchToProps
+});
