@@ -27,7 +27,6 @@ class Shows extends React.Component {
     const loadedShows = this.props.shows
       .map((show) => {
         const location = this.props.locations[show.locationKey]
-        console.log(show)
         return {
         ...show,
         location,
