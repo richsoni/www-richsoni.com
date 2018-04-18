@@ -54580,6 +54580,7 @@ var Shows = function (_React$Component) {
 
       var loadedShows = this.props.shows.map(function (show) {
         var location = _this2.props.locations[show.locationKey];
+        console.log(show);
         return _extends({}, show, {
           location: location,
           locationString: location.address.locality + ', ' + location.address.region,
