@@ -18,10 +18,17 @@ layout: nil
         {% if posttime > nowunix %}
         {% assign location = site.data.locations[show.slug]%}
         <tr>
-          <td>{{ show.date | date: "%Y-%m-%d" }}</td>
+          <td>{{ show.date | date: "%m/%d/%Y (%a.)" }}</td>
           <td>{{ show.startTime }}</td>
           <td>{{location.name}}</td>
-          <td>{{ show.type }}</td>
+          <td>
+            {% if show.type == 'open-mic-host' %}
+              Open Mic Host
+            {% else %}
+              Headliner
+            {% endif %}
+
+          </td>
           <td>{{location.address.locality}}, {{location.address.region}}</td>
         </tr>
       {%endif%}
