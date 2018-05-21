@@ -1,0 +1,30 @@
+---
+layout: nil
+---
+
+<table>
+  <thead>
+    <th>Date</th>
+    <th>Start</th>
+    <th>Venue</th>
+    <th>Type</th>
+    <th>Location</th>
+  </thead>
+  <tbody>
+  {{ show }}
+    {% for show in site.shows %}
+        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+        {% capture posttime %}{{show.date | date: '%s'}}{% endcapture %}
+        {% if posttime > nowunix %}
+        {% assign location = site.data.locations[show.slug]%}
+        <tr>
+          <td>{{ show.date | date: "%Y-%m-%d" }}</td>
+          <td>{{ show.startTime }}</td>
+          <td>{{location.name}}</td>
+          <td>{{ show.type }}</td>
+          <td>{{location.address.locality}}, {{location.address.region}}</td>
+        </tr>
+      {%endif%}
+    {% endfor %}
+  </tbody>
+</table>
