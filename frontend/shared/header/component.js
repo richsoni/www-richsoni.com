@@ -44,10 +44,11 @@ class _MenuToggle extends React.Component {
       <span
         className="fa-stack fa-lg pulse"
       >
+        <i style={{color: 'black'}} className="fa fa-circle fa-stack-2x"></i>
         <i
           className='fa fa-reorder fa-stack-1x'
           style={{
-            color: theme.fontColor,
+            color: theme.bgColor,
             transitionProperty: 'font-size',
             transitionDuration: '.5s',
             fontSize: this.props.showMenu ? 0 : '1em',
@@ -56,7 +57,7 @@ class _MenuToggle extends React.Component {
         <i
           className='fa fa-close fa-stack-1x'
           style={{
-            color: theme.fontColor,
+            color: theme.bgColor,
             transitionProperty: 'font-size',
             transitionDuration: '.5s',
             fontSize: this.props.showMenu ? '1em' : 0,

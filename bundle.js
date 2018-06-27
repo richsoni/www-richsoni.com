@@ -9095,10 +9095,11 @@ var _MenuToggle = function (_React$Component2) {
           {
             className: "fa-stack fa-lg pulse"
           },
+          React.createElement("i", { style: { color: 'black' }, className: "fa fa-circle fa-stack-2x" }),
           React.createElement("i", {
             className: "fa fa-reorder fa-stack-1x",
             style: {
-              color: _themeVars2.default.fontColor,
+              color: _themeVars2.default.bgColor,
               transitionProperty: 'font-size',
               transitionDuration: '.5s',
               fontSize: this.props.showMenu ? 0 : '1em'
@@ -9107,7 +9108,7 @@ var _MenuToggle = function (_React$Component2) {
           React.createElement("i", {
             className: "fa fa-close fa-stack-1x",
             style: {
-              color: _themeVars2.default.fontColor,
+              color: _themeVars2.default.bgColor,
               transitionProperty: 'font-size',
               transitionDuration: '.5s',
               fontSize: this.props.showMenu ? '1em' : 0
@@ -33249,7 +33250,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  fontColor: 'black'
+  fontColor: 'black',
+  bgColor: 'white'
 };
 
 /***/ }),
