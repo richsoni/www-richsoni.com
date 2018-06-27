@@ -15,8 +15,8 @@ class _MailingListHalf extends React.Component{
             listStyle: 'none',
           }}
         >
-          <h1 style={{color: '#FFED88'}}>Join My Mailing List,</h1>
-          <h3 style={{color: '#CEB8FF'}}>Because I would like you to join my mailing list</h3>
+          <h1 style={{color: '#000'}}>Join My Mailing List,</h1>
+          <h3 style={{color: '#000'}}>Because I would like you to join my mailing list</h3>
           <SocialButton
             href='http://richsoni.com/subscribe'
             service='envelope'

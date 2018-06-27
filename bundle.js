@@ -5213,8 +5213,6 @@ var Element = function (_React$Component) {
               margin: 'auto auto',
               marginTop: '1.5em',
               padding: '2em',
-              backgroundColor: 'white',
-              boxShadow: '0px 0px 1px #797878',
               minHeight: '100%',
               overflow: 'hidden'
             }, style || {}), className: className || "" },
@@ -9646,9 +9644,9 @@ var Footer = function (_React$Component) {
           style: {
             display: 'block',
             position: 'fixed',
-            backgroundColor: '#000',
+            backgroundColor: 'white',
             overflow: 'hidden',
-            color: '#fff',
+            color: 'black',
             width: '100%',
             bottom: 0,
             left: 0,
@@ -53825,12 +53823,12 @@ var _MailingListHalf = function (_React$Component) {
           },
           React.createElement(
             "h1",
-            { style: { color: '#FFED88' } },
+            { style: { color: '#000' } },
             "Join My Mailing List,"
           ),
           React.createElement(
             "h3",
-            { style: { color: '#CEB8FF' } },
+            { style: { color: '#000' } },
             "Because I would like you to join my mailing list"
           ),
           React.createElement(

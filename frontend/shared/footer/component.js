@@ -8,9 +8,9 @@ class Footer extends React.Component {
       style={{
         display: 'block',
         position: 'fixed',
-        backgroundColor: '#000',
+        backgroundColor: 'white',
         overflow: 'hidden',
-        color: '#fff',
+        color: 'black',
         width: '100%',
         bottom: 0,
         left: 0,
