@@ -1,10 +1,48 @@
+.logoContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
+  border-bottom: 0.0625rem solid rgba(37, 39, 41, .05);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 2.9em;
+}
+
 .logo200 {
   display: block;
   width: 200px;
   height: 100px;
-  background-image: url(/images/logo-200.png);
+  background-image: url(/images/logo-300.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.hoverDim a {
+  color: #000;
+  position: relative;
+}
+.hoverDim a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+
+.hoverDim > a:hover:before,
+.hoverDim > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
 }

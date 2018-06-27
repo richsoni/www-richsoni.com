@@ -9,7 +9,6 @@ let style = {
   flexWrap: 'wrap',
   justifyContent: 'center',
   alignItems: 'center',
-  border: '3px groove #232323',
   borderLeft: 0,
   borderRight: 0,
 }

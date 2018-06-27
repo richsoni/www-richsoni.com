@@ -28,7 +28,6 @@ class _RootComponent extends React.Component{
       <Header />
       <Half style={{
         backgroundImage: 'url(/images/stv1bgt.png)',
-        backgroundColor: '#232323',
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         padding: '1em 0',

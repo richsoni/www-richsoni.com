@@ -12,10 +12,9 @@ class SocialButton extends React.Component{
         href={this.props.href}
         style={{
           padding: 10,
-          backgroundColor: '#000',
-          color: '#fff',
           lineHeight: '2.5em',
           textAlign: 'center',
+          color: 'black',
           textDecoration: 'none',
           cursor: 'pointer',
         }}

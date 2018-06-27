@@ -1,8 +1,4 @@
 module.exports = {
-  body: {
-    backgroundColor: '#232323',
-  },
-
   '.blog-post-body, .post': {
     color: '#333333',
     backgroundColor: '#fff',

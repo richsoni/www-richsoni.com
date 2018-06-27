@@ -5,6 +5,7 @@ const responsiveComponentComposer = require("../../shared/responsiveComponentCom
 const assign = require("object-assign")
 const Radium = require("radium")
 import styles from './styles.module.css';
+import theme from '../themeVars';
 
 class _SocialButtons extends React.Component {
   render(){
@@ -37,18 +38,16 @@ class _MenuToggle extends React.Component {
         zIndex: 5,
         height: '2.5em',
         cursor: 'pointer',
-        color: 'white',
       }}
       onClick={this.props.onToggle.bind(this)}
     >
       <span
         className="fa-stack fa-lg pulse"
       >
-        <i className="fa fa-circle fa-stack-2x"></i>
         <i
           className='fa fa-reorder fa-stack-1x'
           style={{
-            color: 'black',
+            color: theme.fontColor,
             transitionProperty: 'font-size',
             transitionDuration: '.5s',
             fontSize: this.props.showMenu ? 0 : '1em',
@@ -57,7 +56,7 @@ class _MenuToggle extends React.Component {
         <i
           className='fa fa-close fa-stack-1x'
           style={{
-            color: 'black',
+            color: theme.fontColor,
             transitionProperty: 'font-size',
             transitionDuration: '.5s',
             fontSize: this.props.showMenu ? '1em' : 0,
@@ -82,8 +81,8 @@ class Small extends React.Component {
         <MenuToggle showMenu={this.state.showMenu} onToggle={this.toggleMenu.bind(this)} />
         <div
           style={{
-            backgroundColor: 'black',
-            color: 'white',
+            backgroundColor: 'white',
+            color: 'black',
             position: 'fixed',
             top: !this.state.showMenu ? '-10000' : 0,
             height: '100%',
@@ -131,22 +130,11 @@ class Small extends React.Component {
 
 class _Logo extends React.Component {
   render(){
-    return <div style={assign({
-      display: 'flex',
-      position: 'absolute',
-      width: '100%',
-      backgroundColor: 'black',
-      zIndex: 1,
-      top: 0,
-      left: 0,
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '2.9em',
+    return <div className={styles.logoContainer} style={assign({
     }, this.props.style || {})}>
       <a
         style={{
           textDecoration: 'none',
-          color: 'white',
         }}
         className='pulse'
         href='/'><div className={styles.logo200} /></a>
@@ -170,6 +158,7 @@ class Big extends React.Component {
           <nav
             style={{
               position: 'fixed',
+              backgroundColor: 'white',
               zIndex: 3,
               display: 'flex',
               justifyContent: 'flex-end',
@@ -182,7 +171,7 @@ class Big extends React.Component {
               width: 400,
               overflow: 'hidden'
             }}
-            className='hoverDim'
+            className={styles.hoverDim}
           >
             <a style={{textDecoration: 'none', marginLeft: '1em'}}href='/blog'>Blog</a>
             <a style={{textDecoration: 'none', marginLeft: '1em'}}href='/albums'>Albums</a>
@@ -206,7 +195,7 @@ class Big extends React.Component {
               fontSize: '.8em',
               display: 'flex',
             }}
-            className='hoverDim'
+            className={styles.hoverDim}
           />
         </div>
     </header>
