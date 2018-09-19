@@ -1,0 +1,53 @@
+.emptyField {
+  text-align: center;
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: left;
+  display: table;
+}
+
+.table header {
+  display: table-header-group;
+  font-weight: bold;
+}
+
+
+.table span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5em;
+}
+
+.table a {
+  color: #428bca;
+  display: table-row;
+}
+
+.table a:hover {
+  background-color: #f4f6ff;
+  text-decoration: none;
+}
+
+.titleSortingASC, .titleSortingDESC, .titleNotSorting {
+  cursor: pointer;
+}
+
+.titleSortingASC:after {
+  content: '▼';
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  line-height: 1em;
+  margin-top: -0.5em;
+  display: inline-block;
+}
+
+.titleSortingDESC:after {
+  content: '▲';
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  line-height: 1em;
+  margin-top: -0.5em;
+  display: inline-block;
+}

@@ -1,0 +1,16 @@
+.hoverFade i{
+  transition: all ease-in-out .7s;
+}
+
+.hoverFade:hover .inactive .fa-inverse{
+  color: #bebebe !important;
+}
+
+.hoverFade .inactive .fa-inverse:hover {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+.hoverFade:hover *:not(.inactive) .fa-stack-2x{
+  color: #bebebe !important;
+}

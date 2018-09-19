@@ -1,0 +1,10 @@
+name: "Boontunes"
+address:
+  # address_1: nil
+  # address_2: nil
+  country: "United States"
+  # latitude: nil
+  locality: "Boonton"
+  # longitude: nil
+  # postal_code: nil
+  region: "New Jersey"

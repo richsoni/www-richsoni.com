@@ -1,0 +1,40 @@
+---
+setlist:
+  - you-aint-goin-nowhere
+  - since-the-last-blood-moon
+  - greatest-gift
+  - purple-gun
+  - for-the-sake-of-the-song
+  - fly-away
+  - thats-what-i-call-love
+  - diamonds-on-the-soles-of-her-shoes
+  - black-rose
+  - queen-of-the-carnival
+  - abbey-road-medley
+  - tower-of-cain
+  - planes-trains-autoresponders
+  - dinks-song
+  - between-these-canals
+  - hey-baby-doll
+  - babe-it-aint-no-lie
+  - freak-out-kid
+  - saints-dont-wander-far-from-sin
+  - blind-willie-mctell
+  - spookytown
+  - leeds-devil
+  - shes-my-witch
+  - wayward-sister
+  - hints-are-not-half-hearted
+  - sugaree
+  - sweet-grass-memory
+  - lets-get-deserted
+  - lonesome-whistle
+  - ups-and-downs
+  - weve-all-seen-trouble
+  - the-weight
+  - need-for-love
+  - how-come-sweet-gum
+  - peg-and-awl
+  - together
+  - wander-with-me
+---

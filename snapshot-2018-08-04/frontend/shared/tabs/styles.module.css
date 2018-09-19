@@ -1,0 +1,34 @@
+.tabs {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.tab {
+  padding: 1em;
+  border-left: 1px solid #000;
+  cursor: pointer;
+}
+
+.tab:first-child {
+  border-left: none;
+}
+
+.tab:last-child {
+  border-right: 1px solid #000;
+}
+
+.tab:not(.activeTab):hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.activeTab {
+  composes: tab;
+  background-color: #333;
+  color: #fff;
+}

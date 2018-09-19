@@ -1,0 +1,27 @@
+.input {
+  width: 100%;
+  margin: .5em 0;
+  font-size: 1.2em;
+}
+
+.p {
+  margin: 1em 0;
+}
+
+.form {
+  text-align: left;
+}
+
+.hidden {
+  position: absolute;
+  left: -5000px;
+}
+
+.submit {
+  background: #5d5d5d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: .2em;
+}

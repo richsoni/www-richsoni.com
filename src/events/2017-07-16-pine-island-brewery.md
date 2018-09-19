@@ -1,0 +1,46 @@
+---
+setlist:
+  - queen-of-the-carnival
+  - diamonds-on-the-soles-of-her-shoes
+  - thats-what-i-call-love
+  - sugaree
+  - sweet-grass-memory
+  - lets-get-deserted
+  - it-takes-a-lot-to-laugh-it-takes-a-train-to-cry
+  - show-me-where
+  - ghosts-in-the-wire
+  - down-in-the-bottom
+  - together
+  - black-and-blues
+  - get-off-of-my-cloud
+  - black-rose
+  - black-velvet-band
+  - song-of-broken-justice
+  - between-these-canals
+  - whiskey-in-the-jar
+  - please-come-home
+  - hey-baby-doll
+  - king-of-the-road
+  - ordinary-man-and-the-angel
+  - singing-in-the-wind
+  - friend-of-the-devil
+  - wander-with-me
+  - need-for-love
+  - farmhouse-no-woman-no-cry
+  - fly-away
+  - walk-and-wheeze
+  - the-weight
+  - greatest-gift
+  - geeshies-conjecture
+  - the-wild-rover
+  - amelia
+  - wayward-sister
+  - casey-jones
+  - shake-shake-honey
+  - just-like-tom-thumbs-blues
+  - im-only-sleeping
+  - ballad-of-the-condor
+  - dire-wolf
+  - planes-trains-autoresponders
+  - together
+---

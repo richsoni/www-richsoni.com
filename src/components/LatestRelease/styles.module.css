@@ -1,0 +1,30 @@
+.rounded {
+  background-color: #000000;
+  color:#ffffff;
+  padding: 1em;
+  margin-left: 1em;
+  text-align: center
+}
+
+.containerStyle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.leftStyle {
+  align-self: flex-start;
+  padding: 1em;
+}
+
+.rightStyle {
+  align-self: flex-end;
+  width: 372px;
+  text-align: center;
+}
+

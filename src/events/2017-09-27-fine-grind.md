@@ -1,0 +1,31 @@
+---
+startTime: 7:30 PM
+endTime: 9:00 PM
+setlist:
+  - babe-it-aint-no-lie
+  - wander-with-me
+  - sweet-grass-memory
+  - get-off-of-my-cloud
+  - please-come-home
+  - together
+  - down-in-the-bottom
+  - wayward-sister
+  - fly-away
+  - willie-the-wandering-gypsy
+  - song-of-broken-justice
+  - workingmans-blues
+  - it-takes-a-lot-to-laugh-it-takes-a-train-to-cry
+  - black-and-blues
+  - amelia
+  - rye-whiskey
+  - black-velvet-band
+  - pine-of-the-pub
+  - geeshies-conjecture
+  - whiskey-in-the-jar
+  - purple-gun
+  - ballad-of-the-condor
+  - like-a-rolling-stone
+  - need-for-love
+  - ordinary-man-and-the-angel
+  - sugaree
+---

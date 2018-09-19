@@ -1,16 +1,6 @@
-Add show notes to show page
-make song page
-make songs clickable on songs index
-make songs clickable on show setlist
-song sort & filtering
-blog posts show up on song page
+(A) Save the last version of the application to an archived repo
+(A) Tell the story with commits
 
-Song
-[lyrics] [notes] [times played]
-
-Songs
-
-List of songs I have played over the years.
-Most of which I have written.
-
-Song | Composed | First Release |  First Played | Last Played | Times Played
+(A) Fork the library, and rename it to v6.richsoni.com
+(A) Push master to that branch
+(A) Point v6.richsoni.com to that code

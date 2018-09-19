@@ -1,0 +1,28 @@
+.breadcrumbs {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.breadcrumb {
+  font-weight: bold;
+}
+
+.breadcrumb:after {
+  content: "/";
+  color: black;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.breadcrumb:last-child:after {
+  content: "";
+}
+
+a.breadcrumb {
+  text-decoration: none;
+  background:none;
+}
+
+a.breadcrumb:hover {
+  text-decoration: none;
+}

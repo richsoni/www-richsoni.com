@@ -1,0 +1,32 @@
+.footer {
+  display: block;
+  position: fixed;
+  background-color: white;
+  overflow: hidden;
+  color: black;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -3px 14px rgba(0; 0, 0, 0.35),
+}
+
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: .7em;
+  margin-bottom: none;
+}
+
+
+.copyright {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: .4em;
+  margin-bottom: none;
+}

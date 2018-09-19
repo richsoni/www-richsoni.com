@@ -1,0 +1,41 @@
+.header {
+  height: 70px;
+  font-size: 1.5em;
+}
+
+.navItem, .navItem:visited {
+  margin-left: 1em;
+  color: black;
+}
+
+.navItemsContainer {
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  height: 70px;
+  align-items: center;
+  transition-property: right;
+  transition-duration: .5s;
+  width: 435;
+  overflow: hidden;
+}
+
+.socialButtonsContainer {
+  position: fixed;
+  z-index: 3;
+  justify-content: center;
+  top: 0;
+  height: 70px;
+  posisition: fixed;
+  whitespace: nowrap;
+  align-items: center;
+  width:  435;
+  transition-property: right;
+  transition-duration: .5s;
+  overflow: hidden;
+  font-size: .8em;
+  display: flex;
+}

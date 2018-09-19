@@ -1,0 +1,61 @@
+---
+startTime: 7:00 PM
+endTime: 9:00 PM
+---
+- queen-of-the-carnival
+- soul
+- lets-get-deserted
+- shake-shake-honey
+- fly-away
+- shut-up-kiss-me
+- peg-and-awl
+
+- sweet-grass-memory
+- singing-in-the-wind
+- purple-gun
+- a-hard-rains-a-gonna-fall
+- please-come-home
+- thanks-for-the-dream
+- the-girl-who-laughs-at-the-moon
+- farmhouse-no-woman-no-cry
+- walk-and-wheeze
+- i-beleavin-i-be-leavin
+
+---
+- just-like-tom-thumbs-blues
+- queen-of-the-carnival
+- little-seaside-home
+- shut-up-kiss-me
+- lets-get-deserted
+- fly-away
+- get-off-of-my-cloud
+- benny-bet-his-wife-in-a-game-of-texas-stud
+- shake-shake-honey
+- down-in-the-bottom
+- sweet-grass-memory
+- together
+- ballad-of-the-condor
+- need-for-love
+- soul
+- magellan-and-me
+- singing-in-the-wind
+- casey-jones
+- black-and-blues
+- ordinary-man-and-the-angel
+- blues-in-a-bottle
+- amelia
+- purple-gun
+- peg-and-awl
+- workingmans-blues
+- song-of-broken-justice
+- a-hard-rains-a-gonna-fall
+- please-come-home
+- geeshies-conjecture
+- brown-eyed-women
+- evergreen-eyes
+- thanks-for-the-dream
+- the-girl-who-laughs-at-the-moon
+- tomorrow-might-be-monday
+- farmhouse-no-woman-no-cry
+- walk-and-wheeze
+- i-beleavin-i-be-leavin

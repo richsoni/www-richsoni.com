@@ -1,0 +1,31 @@
+---
+setlist:
+  - the-weight
+  - hey-baby-doll
+  - singing-in-the-wind
+  - dire-wolf
+  - geeshies-conjecture
+  - need-for-love
+  - get-off-of-my-cloud
+  - ballad-of-the-condor
+  - it-takes-a-lot-to-laugh-it-takes-a-train-to-cry
+  - amelia
+  - between-these-canals
+  - farmhouse-no-woman-no-cry
+  - show-me-where
+  - ghosts-in-the-wire
+  - down-in-the-bottom
+  - together
+  - black-velvet-band
+  - song-of-broken-justice
+  - ordinary-man-and-the-angel
+  - babe-it-aint-no-lie
+  - wander-with-me
+  - casey-jones
+  - sweet-grass-memory
+  - lucky-old-sun
+  - stormy-window
+  - black-and-blues
+  - friend-of-the-devil
+  - fly-away
+---

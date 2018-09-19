@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
+  border-bottom: 0.0625rem solid rgba(37, 39, 41, .05);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.container a {
+  background-image: none;
+  text-shadow: none;
+
+}
+
+.logo200 {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-image: url(./logo-300.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
