@@ -37,10 +37,19 @@ export default class EventsTemplate extends React.Component {
 
   tabs() {
     const {event} = this.props.data;
-    let tabs = [{
+    let tabs = [];
+
+    const publish_notes = event.frontmatter.publish_notes
+    if(publish_notes){
+      tabs = tabs.concat([{
+        content: this.notes.bind(this),
+        title: "Notes",
+      }]);
+    }
+    tabs = tabs.concat([{
       content: this.map.bind(this),
       title: "Map",
-    }];
+    }]);
     const setlist = event.frontmatter.setlist
     if(setlist && setlist.length){
       tabs = tabs.concat([{
@@ -71,6 +80,11 @@ export default class EventsTemplate extends React.Component {
     return <AlbumMediaCard data={album}></AlbumMediaCard>
   }
 
+  notes() {
+    const {event} = this.props.data;
+    return <div dangerouslySetInnerHTML={{ __html: event.html }} />
+  }
+
   setlist() {
     const {
       event,
@@ -98,6 +112,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        publish_notes
         setlist
         links {
           album
@@ -154,6 +169,7 @@ export const query = graphql`
           fields {
             basename
             url
+
           }
           name
           website
