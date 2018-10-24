@@ -34,7 +34,8 @@ setlist:
   - leeds-devil
   - black-velvet-band
   - pine-of-the-pub
-
+links:
+  album: live-2018-09-09-pine-island-brewery
 ---
 
 The beginning of this set is interesting.  blues-in-a-bottle Sound Check is not uncommon.  However, girl-who-laughs-at-the-moon, stormy-window, queen-of-the-carnival.

@@ -6,6 +6,11 @@
   overflow: hidden;
   margin: auto !important;
 }
+
+.blog-post-body {
+  margin-top: 2em !important;
+}
+
 .blog-post-body em, .blog-post-body strong{
   color: #6391FF;
 }

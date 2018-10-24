@@ -9,6 +9,7 @@ import {MMDDYYYY, cityCommaState} from '../utils/presenters';
 import {nodesByBasename} from '../utils/data';
 import Tabs from '../components/Tabs/';
 import LocationMap from '../components/LocationMap';
+import AlbumMediaCard from '../components/AlbumMediaCard';
 
 export default class EventsTemplate extends React.Component {
 
@@ -47,12 +48,27 @@ export default class EventsTemplate extends React.Component {
         title: "Setlist",
       }]);
     }
+    const links = event.frontmatter.links;
+    if(links) {
+      tabs = tabs.concat([{
+        content: this.links.bind(this),
+        title: "Links & Media",
+      }]);
+    }
     return tabs
   }
 
   map() {
     const location = this.location()
     return <LocationMap {...location} />
+  }
+
+  links() {
+    const {event, albums} = this.props.data;
+    const albumBasename = event.frontmatter.links.album;
+    const albumsByBasename = nodesByBasename(albums);
+    const album = albumsByBasename[albumBasename]
+    return <AlbumMediaCard data={album}></AlbumMediaCard>
   }
 
   setlist() {
@@ -83,6 +99,9 @@ export const query = graphql`
       frontmatter {
         title
         setlist
+        links {
+          album
+        }
       }
       fields {
         date
@@ -107,6 +126,27 @@ export const query = graphql`
           }
         }
       }
+
+    albums: allMarkdownRemark(
+      filter: { fields: { relativeDirectory: {eq: "albums"}  }}
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              released_on
+              release_type
+              tracklist
+            }
+            fields {
+              url
+              basename
+            }
+          }
+        }
+      }
+
 
     locations: allLocationsYaml {
       edges {

@@ -11,7 +11,7 @@ export default ({ data }) => {
   const date = new moment(post.fields.date).format('MM/DD/YYYY')
   return (
     <Content>
-      <div className='post'>
+      <div className='blog-post'>
         <div className='post-heading'>
           <Breadcrumbs>
             <Breadcrumb href='/posts'>Posts</Breadcrumb>
@@ -42,6 +42,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        hero
       }
       fields {
         date
