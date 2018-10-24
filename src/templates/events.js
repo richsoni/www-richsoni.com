@@ -153,6 +153,9 @@ export const query = graphql`
               released_on
               release_type
               tracklist
+              links {
+                archiveID
+              }
             }
             fields {
               url
@@ -169,7 +172,6 @@ export const query = graphql`
           fields {
             basename
             url
-
           }
           name
           website

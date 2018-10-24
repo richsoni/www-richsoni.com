@@ -38,6 +38,6 @@ tracklist:
   - black-velvet-band
   - pine-of-the-pub
 links:
-  archive: https://archive.org/details/rs2018-09-09.rs2018-09-09.pine-island-brewery
+  archiveID: rs2018-09-09.rs2018-09-09.pine-island-brewery
   show: /events/2018-09-09-pine-island-brewery
 ---
