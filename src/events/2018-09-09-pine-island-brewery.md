@@ -34,28 +34,40 @@ setlist:
   - leeds-devil
   - black-velvet-band
   - pine-of-the-pub
+publish_notes: true
 links:
   album: live-2018-09-09-pine-island-brewery
 ---
 
-The beginning of this set is interesting.  blues-in-a-bottle Sound Check is not uncommon.  However, girl-who-laughs-at-the-moon, stormy-window, queen-of-the-carnival.
+This was a notable show.
+It started with some interesting arrangements:
+* girl-who-laughs-at-the-moon
+* stormy-window
+* queen-of-the-carnival
 
-These performances are all better than usual.  This is certainly due to the focus I gave them at the end of rehearsal.  stormy-window, is slower and more intentional than usual.   
+These songs got a lot of focus during rehearsal for this show.
+The rehearsal for this show was rather intensive, and its effect can be heard during the performance.
 
-brown-eyed-women is the most intriguing song in my set.  And, it was not used wisely, and I had to tune in the middle of it.  
+Really good version of brown-eyed-women, despite the mid-song tuning.
 
-ordinary-man-and-the-angel was played to the crowd.  It sounds weird listening back now, but it actually was matching in the moment well.  While ordinary-man-and-the-angel did not translate on tape, black-and-blues did.  It’s worth trying it like that again.  
+The crowd was great, and songs like ordinary-man-and-the-angel, where performed differently to work with the room.
+While ordinary-man-and-the-angel did not deliver the same way on tape, I feel black-and-blues did.
 
-y-control was everything I expected.  A cover with some potential.  nyc felt weird to play.  Maybe I will try it a few more times to see how it goes.
+I premiered two new covers:
+* y-control
+* nyc
 
-The next set: tomorrow-might-be-monday, workingmans-blues, benny-bet-his-wife-in-a-game-of-texas-stud, song-of-broken-justice is polished.  These songs are my bread and butter at this point.  
-I tried waiting-around-to-die a few times before, but I rearranged it during my rehearsals, and its sounding a lot better.
+I was happy with y-control, and not happy with nyc.
+nyc did not feel convincing.
 
-It goes strong until mcalpines-fusiliers which is a weird rendition.
+waiting-around-to-die, was a song I put down for awhile, but it resurfaced in a different form during rehearsal.
+I enjoyed playing it here.
 
-Then I broke a string during Geeshie's Conjecture, and it took a few songs to get it back.
-sweet-grass-memory was interesting.
+mcalpines-fusiliers in this set is a weird rendition, besides that I liked most of the takes.
 
-bearfort-tower made its premiere.
+I broke a string during Geeshie's Conjecture, and it took a few songs to get it back.
 
-By this time my voice is shot, you can it in spookytown.
+bearfort-tower made its premiere at this show.
+
+I was getting sick during this performance, and by spookytown my voice is shot.
+That did not stop the set from finishing strong though.
