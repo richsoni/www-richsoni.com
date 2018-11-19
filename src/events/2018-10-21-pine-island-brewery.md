@@ -41,6 +41,8 @@ setlist:
   - wander-with-me
   - please-come-home
 publish_notes: true
+links:
+  album: live-2018-09-09-pine-island-brewery
 ---
 
 # Thoughts
