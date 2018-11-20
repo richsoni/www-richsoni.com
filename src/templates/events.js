@@ -117,6 +117,10 @@ export const query = graphql`
         links {
           album
         }
+        external_sources {
+          tag
+          href
+        }
       }
       fields {
         date
