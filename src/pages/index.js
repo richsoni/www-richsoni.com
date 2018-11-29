@@ -1,5 +1,4 @@
 import React from "react";
-import Link from 'gatsby-link';
 import Half from "../components/Half/";
 import MailingListHalf from  "../components/MailingListHalf/";
 import LatestRelease from '../components/LatestRelease/';

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from 'gatsby-link';
 import moment from 'moment';
 import {eventNameLong, type} from '../utils/presenters';
 import Presenter from '../components/EventIndex/';
