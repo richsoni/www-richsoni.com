@@ -26,7 +26,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query SongQuery($url: String!) {
+  query ($url: String!) {
     song: markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {

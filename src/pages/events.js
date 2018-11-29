@@ -55,7 +55,7 @@ export default class EventIndex extends React.Component {
 }
 
 export const query = graphql`
-  query EventIndex {
+  query {
     events: allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { relativeDirectory: {eq: "events"}  }}

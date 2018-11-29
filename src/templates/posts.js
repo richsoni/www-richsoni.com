@@ -38,7 +38,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query PostQuery($url: String!) {
+  query ($url: String!) {
     markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {

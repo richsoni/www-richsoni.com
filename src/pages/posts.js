@@ -149,7 +149,7 @@ export default class PostIndex extends React.Component {
 };
 
 export const query = graphql`
-  query PostIndex {
+  query {
     allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { relativeDirectory: {eq: "posts"}  }}

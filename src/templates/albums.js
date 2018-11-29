@@ -38,7 +38,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query AlbumQuery($url: String!) {
+  query ($url: String!) {
     album: markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {

@@ -28,7 +28,7 @@ export default class AlbumIndex extends React.Component {
 }
 
 export const query = graphql`
-  query AlbumIndex {
+  query {
     albums: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___released_on] }
       filter: { fields: { relativeDirectory: {eq: "albums"}  }}

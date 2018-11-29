@@ -109,7 +109,7 @@ export default class SongIndex extends React.Component {
 };
 
 export const query = graphql`
-  query SongIndex {
+  query {
     songs: allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { relativeDirectory: {eq: "songs"}  }}

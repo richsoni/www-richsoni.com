@@ -108,7 +108,7 @@ export default class EventsTemplate extends React.Component {
 }
 
 export const query = graphql`
-  query EventQuery($url: String!) {
+  query ($url: String!) {
     event: markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {
