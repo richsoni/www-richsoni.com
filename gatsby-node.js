@@ -4,7 +4,6 @@ const existsSync = require(`fs-exists-sync`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if(JSON.stringify(node).match('archive/2018')) { console.log(node) }
   if(node.internal.type === 'MarkdownRemark' || node.internal.type ==='LocationsYaml'){
     extraFields = buildExtraMarkdownFields({ node, getNode})
     Object.keys(extraFields).map((k) => {
