@@ -2,6 +2,7 @@ import React from 'react';
 import assign from 'object-assign';
 import styles from './style.module.css';
 import hoverDim from '../../styles/hoverDim.module.css';
+import PropTypes from 'prop-types';
 
 export default class SocialButton extends React.Component{
   render(){
@@ -22,9 +23,9 @@ export default class SocialButton extends React.Component{
 }
 
 SocialButton.propTypes = {
-  service: React.PropTypes.string,
-  href:  React.PropTypes.string,
-  style: React.PropTypes.object,
+  service: PropTypes.string,
+  href:  PropTypes.string,
+  style: PropTypes.object,
 }
 SocialButton.defaultProps = {
   style: {},

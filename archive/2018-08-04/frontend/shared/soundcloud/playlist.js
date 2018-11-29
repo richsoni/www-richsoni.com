@@ -1,4 +1,5 @@
-const React = require('react')
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const buildURL = function(playlistId, color){
   return `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/${playlistId}&amp;color=${color}&amp;theme_color=${color}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false`
@@ -19,8 +20,8 @@ class SoundCloudPlaylist extends React.Component{
 }
 
 SoundCloudPlaylist.propTypes = {
-  playlistId: React.PropTypes.string.isRequired,
-  color: React.PropTypes.string,
+  playlistId: PropTypes.string.isRequired,
+  color: PropTypes.string,
 }
 
 SoundCloudPlaylist.defaultProps = {

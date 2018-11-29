@@ -27,9 +27,9 @@ class SocialButton extends React.Component{
 }
 
 SocialButton.propTypes = {
-  service: React.PropTypes.string,
-  href:  React.PropTypes.string,
-  style: React.PropTypes.string,
+  service: PropTypes.string,
+  href:  PropTypes.string,
+  style: PropTypes.string,
 }
 SocialButton.defaultProps = {
   style: {},
