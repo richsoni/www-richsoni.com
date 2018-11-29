@@ -10,6 +10,7 @@ import {nodesByBasename} from '../utils/data';
 import Tabs from '../components/Tabs/';
 import LocationMap from '../components/LocationMap';
 import AlbumMediaCard from '../components/AlbumMediaCard';
+import { graphql } from "gatsby"
 
 export default class EventsTemplate extends React.Component {
 

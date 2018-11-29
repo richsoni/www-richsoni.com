@@ -3,7 +3,7 @@ import assign from 'object-assign';
 import styles from './style.module.css';
 import hoverDim from '../../styles/hoverDim.module.css';
 
-class SocialButton extends React.Component{
+export default class SocialButton extends React.Component{
   render(){
     return <li
       className={`${styles.container} ${hoverDim.hoverDim}`}
@@ -30,4 +30,3 @@ SocialButton.defaultProps = {
   style: {},
 }
 
-module.exports = SocialButton

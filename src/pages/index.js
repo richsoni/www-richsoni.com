@@ -2,6 +2,7 @@ import React from "react";
 import Half from "../components/Half/";
 import MailingListHalf from  "../components/MailingListHalf/";
 import LatestRelease from '../components/LatestRelease/';
+import { graphql } from "gatsby"
 
 export default class SiteIndex extends React.Component {
   constructor() {

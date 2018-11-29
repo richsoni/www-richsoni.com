@@ -4,6 +4,7 @@ import styles from './style.module.css';
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
+import { graphql } from "gatsby"
 
 const ControlBar = (props) => (
   <div className={styles.controlBar}>{props.children}</div>

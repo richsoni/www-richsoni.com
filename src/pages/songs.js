@@ -8,6 +8,7 @@ import {eventsBySong} from '../utils/data';
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
+import { graphql } from "gatsby"
 
 const tableFields = [
   {

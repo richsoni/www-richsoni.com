@@ -3,6 +3,7 @@ import moment from 'moment';
 import {eventNameLong, type} from '../utils/presenters';
 import Presenter from '../components/EventIndex/';
 import momentify from '../utils/momentify';
+import { graphql } from "gatsby"
 
 const upcomingEvents = (events = []) => {
   const now = moment.utc()

@@ -2,8 +2,9 @@ const path = require('path');
 const buildExtraMarkdownFields = require('./lib/MarkdownFields');
 const existsSync = require(`fs-exists-sync`)
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if(JSON.stringify(node).match('archive/2018')) { console.log(node) }
   if(node.internal.type === 'MarkdownRemark' || node.internal.type ==='LocationsYaml'){
     extraFields = buildExtraMarkdownFields({ node, getNode})
     Object.keys(extraFields).map((k) => {
@@ -17,8 +18,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const {createPage, createRedirect } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const {createPage, createRedirect } = actions;
   createRedirect({
     fromPath: '/blog/',
     toPath: '/posts', isPermanent: true, redirectInBrowser: true

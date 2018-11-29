@@ -4,6 +4,7 @@ import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import styles from './albumStyles.module.css';
 import AlbumArtwork from '../components/AlbumArtwork/';
+import { graphql } from "gatsby"
 
 const AlbumDisplay = (props) => {
   return <div className={styles.list}>
