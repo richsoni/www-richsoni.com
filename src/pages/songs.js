@@ -1,5 +1,4 @@
 import React from "react";
-import Link from 'gatsby-link';
 import styles from './style.module.css';
 import Table from '../components/Table/';
 import Tabs from '../components/Tabs/';
@@ -9,6 +8,7 @@ import {eventsBySong} from '../utils/data';
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
+import { graphql } from "gatsby"
 
 const tableFields = [
   {
@@ -109,7 +109,7 @@ export default class SongIndex extends React.Component {
 };
 
 export const query = graphql`
-  query SongIndex {
+  query {
     songs: allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { relativeDirectory: {eq: "songs"}  }}

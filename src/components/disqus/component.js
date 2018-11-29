@@ -1,5 +1,5 @@
-const React = require("react")
-module.exports = class Disqus extends React.Component{
+import React from "react"
+export default class Disqus extends React.Component{
   render() {
     return <div className='content comments'>
       <div id="disqus_thread"></div>

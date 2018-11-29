@@ -22,7 +22,7 @@ class Half extends React.Component{
 }
 
 Half.propTypes = {
-  style: React.PropTypes.object,
+  style: PropTypes.object,
 }
 Half.defaultProps = {
   style: {},

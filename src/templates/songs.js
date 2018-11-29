@@ -5,6 +5,7 @@ import {eventsWithSong} from '../utils/data';
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
+import { graphql } from "gatsby"
 
 export default ({ data }) => {
   const song = data.song;
@@ -25,7 +26,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query SongQuery($url: String!) {
+  query ($url: String!) {
     song: markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {

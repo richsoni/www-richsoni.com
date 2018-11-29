@@ -4,6 +4,7 @@ import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import styles from './albumStyles.module.css';
 import AlbumArtwork from '../components/AlbumArtwork/';
+import { graphql } from "gatsby"
 
 const AlbumDisplay = (props) => {
   return <div className={styles.list}>
@@ -27,7 +28,7 @@ export default class AlbumIndex extends React.Component {
 }
 
 export const query = graphql`
-  query AlbumIndex {
+  query {
     albums: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___released_on] }
       filter: { fields: { relativeDirectory: {eq: "albums"}  }}

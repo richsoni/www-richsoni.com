@@ -1,9 +1,9 @@
 import React from "react";
-import Link from 'gatsby-link';
 import moment from 'moment';
 import {eventNameLong, type} from '../utils/presenters';
 import Presenter from '../components/EventIndex/';
 import momentify from '../utils/momentify';
+import { graphql } from "gatsby"
 
 const upcomingEvents = (events = []) => {
   const now = moment.utc()
@@ -55,7 +55,7 @@ export default class EventIndex extends React.Component {
 }
 
 export const query = graphql`
-  query EventIndex {
+  query {
     events: allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       filter: { fields: { relativeDirectory: {eq: "events"}  }}

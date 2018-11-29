@@ -5,6 +5,7 @@ import moment from "moment";
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
+import { graphql } from "gatsby"
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -37,7 +38,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query PostQuery($url: String!) {
+  query ($url: String!) {
     markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {

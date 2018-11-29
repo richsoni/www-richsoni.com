@@ -6,6 +6,7 @@ import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import AlbumArtwork from '../components/AlbumArtwork/';
 import {nodesByBasename} from '../utils/data';
+import { graphql } from "gatsby"
 
 const Track = (props) => {
   return <li><a href={props.data.fields.url}>{props.data.frontmatter.title}</a></li>
@@ -37,7 +38,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query AlbumQuery($url: String!) {
+  query ($url: String!) {
     album: markdownRemark(fields: { url: { eq: $url } }) {
       html
       frontmatter {
