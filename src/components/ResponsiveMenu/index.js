@@ -1,5 +1,6 @@
 import React from 'react';
 import Media from 'react-media';
+import {RESPONSIVE_THRESHOLD} from './constants';
 import OverlayMenu from '../OverlayMenu/';
 import FixedMenu from '../FixedMenu/';
 import MenuToggle from '../MenuToggle/';
@@ -20,10 +21,10 @@ export default class ResponsiveMenu extends React.Component {
 
     return (
       <div>
-        <Media query={{ maxWidth: 1018 }}>
+        <Media query={{ maxWidth: RESPONSIVE_THRESHOLD }}>
           <OverlayMenu display={toggleState} />
         </Media>
-        <Media query={{ minWidth: 1018 }}>
+        <Media query={{ minWidth: RESPONSIVE_THRESHOLD }}>
           <FixedMenu showNavMenu={toggleState} />
         </Media>
         <Logo style={{position: 'fixed'}} />

@@ -29,7 +29,7 @@ const Amazon = (props) => {
 const SpotifyPlaylist = (props) => {
   const {release} = props;
   if(!release.frontmatter.links.spotify) { return <div /> }
-  return <iframe src={`https://embed.spotify.com/?uri=spotify%3Aalbum%3A${getSpotifyURI(release)}`} width="300" height="380" frameBorder="0" allowTransparency="true"></iframe>
+  return <iframe src={`https://embed.spotify.com/?uri=spotify%3Aalbum%3A${getSpotifyURI(release)}`} width="300" height="380" frameBorder="0" allowtransparency="true"></iframe>
 }
 
 export default class LatestRelease extends React.Component {

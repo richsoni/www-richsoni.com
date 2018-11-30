@@ -1,5 +1,8 @@
 .article {
-  padding: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  padding-top: 2em;
   width: 960px;
   margin: auto auto;
   display: flex;
