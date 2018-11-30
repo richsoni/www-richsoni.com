@@ -4,7 +4,7 @@ date: 2018-10-17
 categories: [changelog]
 tags: []
 revision: 1
-title: "Show Recordings On The Internet Archive"
+title: "Show Recordings on the Internet Archive"
 hero: /images/posts/2018-09-10-pine-island-show-recap-hero.png
 ---
 
