@@ -1,3 +1,8 @@
+.overlay a, .overlay a:visited, .overlay a:hover {
+  color: black; /* paper-blue */
+  text-decoration: none;
+}
+
 .overlay {
   background-color: white;
   color: black;

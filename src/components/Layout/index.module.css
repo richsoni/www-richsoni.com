@@ -7,10 +7,6 @@
 
 }
 
-a:visited {
-  color: blue;
-}
-
 a, a:visited, a:hover {
   color: #0070e0; /* paper-blue */
   text-decoration: none;
