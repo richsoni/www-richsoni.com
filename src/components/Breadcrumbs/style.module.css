@@ -1,6 +1,7 @@
 .breadcrumbs {
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .breadcrumb {

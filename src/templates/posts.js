@@ -26,9 +26,9 @@ export default ({ data }) => {
           backgroundImage: `url(${post.frontmatter.hero})`,
           width: '100%',
           height: post.frontmatter.hero ? '280px' : 0,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          borderBottom: '1px solid #bebebe',
       }} />
       <div className='blog-post-body' >
         <div dangerouslySetInnerHTML={{ __html: post.html }} />

@@ -14,7 +14,7 @@ C'est la vie.
 
 After weeks of migrating data and code from Jekyll to Gatsby, I had no interest in doing an update from Gatsby 1.9 to Gatsby 2.0.
 However, my interest was piqued this week, after a few murky attempts at installing [gatsby-plugin-typescript](https://www.npmjs.com/package/gatsby-plugin-typescript/).
-It turns out that [Typescript](https://www.typescriptlang.org/) is bundled by default in Gatsby V2, making [gatsby-plugin-typescript](https://www.npmjs.com/package/gatsby-plugin-typescript/) unnecessary.
+It turns out that [Typescript] is bundled by default in Gatsby V2, making [gatsby-plugin-typescript](https://www.npmjs.com/package/gatsby-plugin-typescript/) unnecessary.
 This was enough reason for me to perform the update.
 
 # The Update Path
@@ -285,3 +285,5 @@ git diff
 Overall, I was pleased with the level of effort required for this upgrade.
 However, my usage of Gatsby's features is not yet extensive, and I fear future upgrades.
 My takeaway is to be weary of adding Gatsby Plugins.
+
+[Typescript]: https://www.typescriptlang.org/
