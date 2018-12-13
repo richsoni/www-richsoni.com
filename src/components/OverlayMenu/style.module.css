@@ -1,5 +1,5 @@
 .overlay a, .overlay a:visited, .overlay a:hover {
-  color: black; /* paper-blue */
+  color: black !important; /* paper-blue */
   text-decoration: none;
 }
 

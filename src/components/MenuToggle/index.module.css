@@ -12,6 +12,6 @@
   background-image: none;
 }
 .container a, .container a:visited, .container a:hover {
-  color: black; /* paper-blue */
+  color: black !important; /* paper-blue */
   text-decoration: none;
 }

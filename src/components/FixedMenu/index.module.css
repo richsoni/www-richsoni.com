@@ -3,9 +3,9 @@
   font-size: 1.5em;
 }
 
-.navItem, .navItem:visited {
+.navItem, .navItem:visited, .navItem:hover {
   margin-left: 1em;
-  color: black;
+  color: black !important;
 }
 
 .navItemsContainer {
