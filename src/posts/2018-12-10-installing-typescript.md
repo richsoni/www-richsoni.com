@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-12-10
+date: 2018-12-10
 categories: [changelog]
 tags: [gatsby typescript]
 revision: 1
