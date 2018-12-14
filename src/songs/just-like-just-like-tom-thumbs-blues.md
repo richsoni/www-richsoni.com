@@ -32,8 +32,8 @@ He Points To The Sky, And He Cries, Besides We Already Tied Up The Noose!’
 
 In Achaea's Yard, A Bard, Sings Your Songs The Clowns  
 While They Pilfer Your Wine, They Take Turns Kicking Your Dogs All Around  
-Bombarded With Danger, You Feel Like A Stranger In Your Own Home Town  
-Slithering Down In The Rocks, Til' The Locks Of The Dawn Start To Crown  
+Your Fortune's Endangered, You Feel Like A Stranger In Your Own Home Town  
+Settled Down In The Rocks, Til' The Locks Of The Dawn Start To Crown  
 
 Here Words On A Wing, For Kings Who's Absence Brings A Different Kind Of Love!  
 While Maidens At The Window Sing, 'Bluebeard!  Darling, Won't You Please Come Up!'  
