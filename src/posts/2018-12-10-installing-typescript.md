@@ -4,7 +4,7 @@ date: 2018-12-10
 categories: [changelog]
 tags: [gatsby typescript]
 revision: 1
-title: "Installing Typescript on richsoni.com"
+title: "Installing Typescript on RichSoni.com"
 hero: /images/posts/gatsby-logo.jpg
 ---
 
