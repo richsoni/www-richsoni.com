@@ -1,9 +1,11 @@
 import React from 'react';
-import styles from './styles.module.css';
+const styles = require('./styles.module.css');
 
 const SORTASC = true;
+//@ts-ignore
 const SORTDESC = false;
-const Row = (props) => {
+
+const Row = (props: any) => {
   const {
     url,
     fields,
@@ -11,50 +13,25 @@ const Row = (props) => {
   } = props
   return <a
     href={ url }
-  > { fields.map((f) => {
+  > { fields.map((f: any) => {
       const text = attributes[f.key];
-      return <span key={f.key}> {String(text || '')} </span>
+      const aurl = attributes[url]
+      return <span key={`${f.key}:${aurl}`}> {String(text || '')} </span>
     }) }
   </a>
 }
 
-const sort = (items, sortKey, sortDirection) => {
-  const sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
-  const customSort = sortKey['sort'+sortPrefix];
-  if(customSort){ return items.sort(customSort) }
-  return items.sort((sA, sB) => {
-    const a = sA[sortKey]
-    const b = sB[sortKey]
-    if(!a && !b) { return 0 }
-    if(sortDirection === SORTASC){
-      if(!a) { return 1 }
-      if(!b) { return -1 }
-      if(typeof a  === 'string' && typeof b === 'string'){
-        return a.localeCompare(b)
-      }
-      return a - b
-    } else {
-      if(!b) { return 1 }
-      if(!a) { return -1 }
-      if(typeof a  === 'string' && typeof b === 'string'){
-        return b.localeCompare(a)
-      }
-      return b - a
-    }
-  })
-}
-
-const sort2 = (props, sortKey, sortDirection) => {
+const sort2 = (props: any, sortKey: any, sortDirection: any) => {
   const {
     fields,
     items
   } = props
   const sortPrefix = sortDirection === SORTASC ? 'ASC' : 'DESC';
-  const field = fields.find((f) => f.key === sortKey)
+  const field = fields.find((f: any) => f.key === sortKey)
   if(!field) {console.error('Field Missing ', sortKey)}
   const customSort = field[`sort${sortPrefix}`];
   if(customSort){ return items.sort(customSort) }
-  return items.sort((sA, sB) => {
+  return items.sort((sA: any, sB: any) => {
     const a = sA[sortKey]
     const b = sB[sortKey]
     const aEmpty = (a !== 0) && !a;
@@ -78,15 +55,38 @@ const sort2 = (props, sortKey, sortDirection) => {
   })
 }
 
-const getTitleClass = (sortKey, field, sortDirection) => {
+const getTitleClass = (sortKey: any, field: any, sortDirection: any) => {
   const isSorting = sortKey === field.key;
   if(isSorting && sortDirection === SORTASC){ return styles.titleSortingASC; }
   if(isSorting && sortDirection !== SORTASC) { return styles.titleSortingDESC; }
   return styles.titleNotSorting;
 }
 
-export default class Table extends React.Component {
-  constructor(props) {
+type Item = {
+  url: string,
+}
+
+type Fields = {
+  key: string,
+}
+
+type Props = {
+  sortKey: string,
+  sortDirection: boolean,
+  items: Array<Item>,
+  sortDefaultDirection?: boolean,
+  sortDefaultKey?: string,
+  fields: Array<Fields>
+}
+
+type State = {
+  sortKey: string,
+  sortDirection: boolean,
+  items: Array<Item>,
+}
+
+export default class Table extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     const sortKey = props.sortDefaultKey || props.fields[0].key;
     const sortDirection = props.sortDefaultDirection || SORTASC;
@@ -99,7 +99,7 @@ export default class Table extends React.Component {
     this.changeSort = this.changeSort.bind(this);
   }
 
-  changeSort(f) {
+  changeSort(f: any) {
     if(this.state.sortKey === f.key){
       return this.setState({sortDirection: !this.state.sortDirection})
     }
@@ -111,8 +111,8 @@ export default class Table extends React.Component {
     const {items} = this.state
     return <div className={styles.table}>
       <header>
-        {fields.map((f) => <span
-            key={f.key}
+        {fields.map((f: any) => <span
+            key={`TABLE_HEADER${f.key}`}
             className={getTitleClass(this.state.sortKey, f, this.state.sortDirection)}
             onClick={() => this.changeSort(f)}
           >
@@ -120,8 +120,8 @@ export default class Table extends React.Component {
           </span>
         )}
       </header>
-      {items.map((i) => <Row
-        key={i.key}
+      {items.map((i: any) => <Row
+        key={i.url}
         url={i.url}
         fields={fields}
         attributes={i}
@@ -129,13 +129,14 @@ export default class Table extends React.Component {
     </div>
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  //@ts-ignore
+  componentDidUpdate(prevProps: any, prevState: State) {
     if(prevState.sortKey !== this.state.sortKey || prevState.sortDirection !== this.state.sortDirection){
       this.setState({items: sort2(this.props, this.state.sortKey, this.state.sortDirection)})
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps: Props) {
     this.setState({
       items: sort2(nextProps, this.state.sortKey, this.state.sortDirection)
     })

@@ -1,5 +1,6 @@
 import React from "react";
-export default (props) => {
+
+export default (props: any) => {
   const address = [
     props.name,
     props.address.address_1,

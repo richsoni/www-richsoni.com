@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from 'react-helmet';
-import favicon from './favicon.png';
+const favicon = require('./favicon.png');
 
 //TODO
 // <link rel="alternate" type="application/rss+xml" title="RichSoni.com" href="/feed.xml">

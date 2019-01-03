@@ -3,4 +3,4 @@
 js = `git ls-files src/ | grep -e 'jsx\\?$' | wc -l`.to_i
 ts = `git ls-files src/ | grep -e 'tsx\\?$' | wc -l`.to_i
 
-puts "#{((ts/(js * 1.0)).round(2) * 100).to_i}% (#{ts} Typescript / #{js} Javascript)"
+puts "#{((ts/((js + ts) * 1.0)).round(2) * 100).to_i}% (#{ts} Typescript / #{js} Javascript)"

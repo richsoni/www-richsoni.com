@@ -1,9 +1,8 @@
 import React from "react";
-import styles from './styles.module.css';
+const styles = require('./styles.module.css');
 import ReactImageFallback from "react-image-fallback";
 
-export default (props) => {
-  console.log(props.data)
+export default (props: any) => {
   const Overlay = props.overlay ? (
     <div className={styles.overlay}>
       <div className={styles.title}>{props.data.frontmatter.title}</div>

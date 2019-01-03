@@ -27,7 +27,7 @@ I was able to commit the code in a half hour, and took another half hour to make
 Here is the [The Github Pull Request].
 
 **Coverage Improvement**
-2% (1 Typescript / 40 Javascript) → **17% (6 Typescript / 35 Javascript)**
+2% (1 Typescript / 40 Javascript) → **14% (6 Typescript / 35 Javascript)**
 
 **TSC Tooling**
 
@@ -45,7 +45,7 @@ The `tsc:coverage` task relies on a new script I wrote:
     js = `git ls-files src/ | grep -e 'jsx\\?$' | wc -l`.to_i
     ts = `git ls-files src/ | grep -e 'tsx\\?$' | wc -l`.to_i
     
-    puts "#{((ts/(js * 1.0)).round(2) * 100).to_i}% (#{ts} Typescript / #{js} Javascript)"
+    puts "#{((ts/((js + ts) * 1.0)).round(2) * 100).to_i}% (#{ts} Typescript / #{js} Javascript)"
 
 **Typescript**
 There are still only minor benefits from Typescript at this point.  Most of these files only needed to be renamed.  The others just got `any` types added to them, which is pretty simple.
