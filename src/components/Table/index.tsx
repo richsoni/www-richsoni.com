@@ -1,9 +1,9 @@
 import React from 'react';
 const styles = require('./styles.module.css');
 
-const SORTASC = true;
+export const SORTASC = true;
 //@ts-ignore
-const SORTDESC = false;
+export const SORTDESC = false;
 
 const Row = (props: any) => {
   const {
@@ -68,11 +68,14 @@ type Item = {
 
 type Fields = {
   key: string,
+  title: string,
+  sortASC?: any,
+  sortDESC?: any,
 }
 
 type Props = {
-  sortKey: string,
-  sortDirection: boolean,
+  sortKey?: string,
+  sortDirection?: boolean,
   items: Array<Item>,
   sortDefaultDirection?: boolean,
   sortDefaultKey?: string,

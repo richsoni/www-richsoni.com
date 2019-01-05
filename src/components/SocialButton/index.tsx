@@ -1,10 +1,19 @@
 import React from 'react';
 import assign from 'object-assign';
-import styles from './style.module.css';
-import hoverDim from '../../styles/hoverDim.module.css';
-import PropTypes from 'prop-types';
+const styles = require('./style.module.css');
+const hoverDim =  require('../../styles/hoverDim.module.css');
 
-export default class SocialButton extends React.Component{
+type Props = {
+  service: string,
+  href: string,
+  style?: any,
+}
+
+type State = {}
+
+export default class SocialButton extends React.Component <Props, State>{
+  public readonly state: State ={}
+
   render(){
     return <li
       className={`${styles.container} ${hoverDim.hoverDim}`}
@@ -21,13 +30,3 @@ export default class SocialButton extends React.Component{
     </li>
   }
 }
-
-SocialButton.propTypes = {
-  service: PropTypes.string,
-  href:  PropTypes.string,
-  style: PropTypes.object,
-}
-SocialButton.defaultProps = {
-  style: {},
-}
-

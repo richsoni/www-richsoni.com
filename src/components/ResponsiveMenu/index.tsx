@@ -6,12 +6,16 @@ import FixedMenu from '../FixedMenu/';
 import MenuToggle from '../MenuToggle/';
 import Logo from '../Logo/';
 
-export default class ResponsiveMenu extends React.Component {
-  constructor(attrs){
-    super()
-    this.state = {
-      toggleState: false
-    }
+type Props = {}
+
+type State = {
+  toggleState: boolean
+}
+
+
+export default class ResponsiveMenu extends React.Component<Props, State> {
+  public readonly state: State = {
+    toggleState: false
   }
 
   render() {

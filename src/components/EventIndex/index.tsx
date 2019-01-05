@@ -1,11 +1,12 @@
 import React from 'react';
+import {SORTDESC} from '../Table/';
 import Table from '../Table/';
 import {sortASC, sortDESC} from '../Table/dateSort';
 import Content from '../content/';
 import {Breadcrumbs} from '../Breadcrumbs/';
 import {Breadcrumb} from '../Breadcrumbs/';
 
-export default (props) => {
+export default (props: any) => {
   return <Content>
     <Breadcrumbs>
       <Breadcrumb>Upcoming Events</Breadcrumb>
@@ -26,7 +27,6 @@ export default (props) => {
        }, {
          title: 'Type',
          key: 'typeString',
-       }, {
        }, {
          title: 'Location',
          key: 'locationString',
@@ -49,7 +49,6 @@ export default (props) => {
          title: 'Venue',
          key: 'venueString',
        }, {
-       }, {
          title: 'Type',
          key: 'typeString',
        }, {
@@ -58,7 +57,7 @@ export default (props) => {
        }]}
        items={props.pastEvents}
        sortDefaultKey='dateString'
-       sortDefaultDirection='DESC'
+       sortDefaultDirection={SORTDESC}
     />
   </Content>
 }

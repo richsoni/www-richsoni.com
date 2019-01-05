@@ -12,6 +12,7 @@
     "tsc:watch": "tsc --noEmit --watch"
   },
   "dependencies": {
+    "@types/object-assign": "^4.0.30",
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
     "@types/react-helmet": "^5.0.7",

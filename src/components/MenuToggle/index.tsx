@@ -1,16 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './index.module.css';
+const styles = require('./index.module.css');
 import theme from '../../utils/themeVars';
-import {pulse} from '../../utils/pulse.module.css';
+const {pulse} = require('../../utils/pulse.module.css');
 
-export default class MenuToggle extends React.Component {
-  static propTypes = {
-    onToggle: PropTypes.func
-  }
+type Props = {
+  onToggle: any,
+  toggleState: any,
+}
 
-  static deafultProps = {
-    onToggle: (() => {}),
+type State = {
+
+}
+
+export default class MenuToggle extends React.Component<Props, State> {
+  public readonly state: State = {
+  
   }
 
   render(){

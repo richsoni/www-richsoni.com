@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.module.css';
+const style = require('./style.module.css');
 import navItems from '../ResponsiveMenu/nav-items';
 import socialButtons from '../ResponsiveMenu/social-items';
 import SocialButton from '../SocialButton/';
@@ -13,7 +13,7 @@ const NavItems = navItems.map((ni) =>
 );
 
 
-export default (props) => {
+export default (props: any) => {
   const {display} = props;
   if(!display) { return(<div></div>);}
   return (

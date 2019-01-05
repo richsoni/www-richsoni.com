@@ -3,16 +3,22 @@ import ResponsiveMenu from '../ResponsiveMenu/';
 import ResponsiveMargin from '../ResponsiveMenu/Margin';
 import Footer from '../Footer/';
 import BaseMeta from '../BaseMeta';
-import styles from './index.module.css';
+const styles = require('./index.module.css');
 
-export default ({ children }) => (
+type Props = {
+  children: JSX.Element
+}
+
+const Layout: React.SFC<Props> = (props) => (
   <div className={styles.site}>
     <BaseMeta />
     <ResponsiveMenu />
     <ResponsiveMargin />
     <div className={styles.content}>
-      { children }
+      { props.children }
     </div>
     <Footer />
   </div>
 );
+
+export default Layout;

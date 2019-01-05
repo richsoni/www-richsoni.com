@@ -1,6 +1,6 @@
 import React from "react";
 import SocialButton from '../SocialButton/';
-import styles from './styles.module.css';
+const styles = require('./styles.module.css');
 export default class MailingListHalf extends React.Component {
   render(){
     return <div className={styles.container}>

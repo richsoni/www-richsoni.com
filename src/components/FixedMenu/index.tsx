@@ -1,11 +1,9 @@
+const styles   = require('./index.module.css');
+const hoverDim = require('../../styles/hoverDim.module.css');
 import React from 'react';
-import styles from './index.module.css';
-import Logo from '../Logo/';
-import MenuToggle from '../MenuToggle/';
 import SocialButton from '../SocialButton/';
 import navItems from '../ResponsiveMenu/nav-items';
 import socialButtons from '../ResponsiveMenu/social-items';
-import hoverDim from '../../styles/hoverDim.module.css';
 
 const SocialButtons = socialButtons.map((sb) =>
   <SocialButton key={sb.href} service={sb.service} href={sb.href}>{sb.value || ''}</SocialButton>
@@ -17,7 +15,14 @@ const NavItems = navItems.map((ni) =>
   </div>
 );
 
-export default class FixedMenu extends React.Component {
+type Props = {
+  showNavMenu: boolean,
+}
+type State = {}
+
+export default class FixedMenu extends React.Component<Props, State> {
+  public readonly state: State = {}
+
   render() {
     const { showNavMenu } = this.props
     return (

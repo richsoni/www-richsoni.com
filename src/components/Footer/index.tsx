@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.module.css';
+const style = require('./style.module.css');
 import socialButtons from '../ResponsiveMenu/social-items';
 import SocialButton from '../SocialButton/';
 

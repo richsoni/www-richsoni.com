@@ -1,8 +1,8 @@
 import React from "react";
-import style from './style.module.css';
+const style =  require('./style.module.css');
 import Layout from "../Layout"
 
-export default (props) => {
+export default (props: any) => {
   return  <Layout>
       <article className={style.article}>
       {props.children}
