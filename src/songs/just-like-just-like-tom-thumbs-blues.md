@@ -4,38 +4,41 @@ composed_at: 2018-12-04
 artists: [Rich Soni]
 ---
 
-When You've Broken Your Spine,  
-When Your Coughing Up Brine & Blood Too  
-When Your Lost & Confused  
-When Groveling Is All You Can Do  
+# Lyrics
 
-For Years She Shed Tears  
-While Her Ears Yearn For The Steps Of My Shoe  
-But Once Again,  
-The Winds Of Aeolus  
-Blew Me Away From You  
+When you've broken your spine,  
+When your coughing up brine & blood too  
+When your lost & confused  
+When groveling is all you can do  
 
-Well, If You See Althea,  
-Send Her The Wild Roving Sign  
-She'll Tell You Your Fortune,  
-She'll Sing You Some Four Over Nine  
+For years she shed tears  
+While her ears yearn for the steps of my shoe  
+But once again,  
+The winds of Aeolus  
+Blew me away from you  
 
-Then Just Like Calypso,  
-She'll Rob You Of Seven Years Time  
-And The Last Word She Gives You Is: 'Trouble',  
-As She Waves You Goodbye  
+Well, if you see Althea,  
+Send her The Wild Roving Sign  
+She'll tell you your fortune,  
+She'll sing you some four over nine  
 
-Sweet Sabrina, She Liked To Keep It Reckless & Loose  
-With Her Roguish Black Eyes, She Would Steal The Aegis Right Off Of Zeus  
-The Paupers They Brought Her To The Augur Who Offered Up An Excuse:  
-He Points To The Sky, And He Cries, Besides We Already Tied Up The Noose!’  
+Then just like Calypso,  
+She'll rob you of seven years time  
+And the last word she gives you is: 'Trouble',  
+As she waves you goodbye  
 
-In Achaea's Yard, A Bard, Sings Your Songs The Clowns  
-While They Pilfer Your Wine, They Take Turns Kicking Your Dogs All Around  
-Your Fortune's Endangered, You Feel Like A Stranger In Your Own Home Town  
-Settled Down In The Rocks, Til' The Locks Of The Dawn Start To Crown  
+Sweet Sabrina, she liked to keep it reckless & loose  
+With her roguish black eyes, she would steal the Aegis right off of Zeus  
+The paupers they brought her to the augur who offered up an excuse:  
+He points to the sky, and he cries: 'Besides, we already tied up the noose!'  
 
-Here Words On A Wing, For Kings Who's Absence Brings A Different Kind Of Love!  
-While Maidens At The Window Sing, 'Bluebeard!  Darling, Won't You Please Come Up!'  
-Well, A Sword To Revenge It's Just Like A Net To A Bluff  
-I'm Going Back To Anticleia Babe, I Do Believe I've Had Enough  
+In Ithaca's Yard, a bard, sings your songs the clowns  
+While they pilfer your wine, they take turns kicking your dogs around  
+Your family is in danger, you feel like a stranger in your own home town  
+Settled down in the rocks, til' the locks of the Dawn start to crown  
+
+Hear words on a wing, For Kings Who's Absence Brings A DIFFERENT KIND OF LOVE!  
+While maidens at the window sing, 'Bluebeard!  Darling, Won't You PLEASE COME UP!'  
+Well, A Sword To Revenge It's Just Like A NET TO A BLUFF  
+I'm going back to Anticleia, I do believe I've had enough  
+
