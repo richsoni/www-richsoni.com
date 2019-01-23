@@ -1,16 +1,16 @@
 import React from "react";
 import Link from 'gatsby-link';
-import styles from './style.module.css';
+const styles = require('./style.module.css');
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import { graphql } from "gatsby"
 
-const ControlBar = (props) => (
+const ControlBar = (props: any) => (
   <div className={styles.controlBar}>{props.children}</div>
 );
 
-const Control = (props) => {
+const Control = (props: any) => {
   const {
     active, onClick
   } = props;
@@ -42,7 +42,7 @@ const ViewTypes = {
   list: 'list',
 };
 
-const Grid = (props) => {
+const Grid = (props: any) => {
  const {post} = props
  return (<Link
     to={post.fields.url}
@@ -78,18 +78,18 @@ const Grid = (props) => {
   </Link>);
 }
 
-const List = (props) => {
+const List = (props: any) => {
  const {post} = props
  return (<Link
     to={post.fields.url}
-    style={{ alignItems: 'center', borderTop: '1px solid black', textDecoration: 'none', backgroundImage: 'none', display: 'flex', width: '100%', textDecoration: `none`, color: `inherit` }}
+    style={{ alignItems: 'center', borderTop: '1px solid black', textDecoration: 'none', backgroundImage: 'none', display: 'flex', width: '100%', color: `inherit` }}
   >
     <div style={{minWidth: '250px', width: '250px'}}>{post.frontmatter.date}</div>
     <div>{post.frontmatter.title}</div>
   </Link>);
 }
 
-const Preview = (props) => {
+const Preview = (props: any) => {
   const {post} = props
  return (<div>
     <Link
@@ -102,12 +102,16 @@ const Preview = (props) => {
   );
 }
 
-export default class PostIndex extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      activeControlName: ViewTypes.preview
-    }
+type State = {
+  activeControlName: string
+}
+
+type Props = {
+  data: any
+}
+export default class PostIndex extends React.Component<Props, State> {
+  public readonly state: State = {
+    activeControlName: ViewTypes.preview
   }
 
   render(){
@@ -128,11 +132,12 @@ export default class PostIndex extends React.Component {
              </div>
           </ControlBar>
           <div style={{marginTop: '1em', display: 'flex', flexFlow: 'row wrap', justifyContent: 'space-between'}}>
-            {data.allMarkdownRemark.edges.map(({ node }) => {
+            {data.allMarkdownRemark.edges.map(({ node }: any) => {
               switch(activeControlName) {
                 case ViewTypes.preview: return <Preview key={node.id} post={node} />
                 case ViewTypes.grid: return <Grid key={node.id} post={node} />
                 case ViewTypes.list: return <List key={node.id} post={node} />
+                default: return <div />
               }
             })}
           </div>
@@ -141,7 +146,7 @@ export default class PostIndex extends React.Component {
     );
   }
 
-  onControlClick(controlName) {
+  onControlClick(controlName: string) {
     this.setState({
       activeControlName: controlName
     })

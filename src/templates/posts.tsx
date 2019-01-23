@@ -1,15 +1,14 @@
 import React from "react";
-import style from './style.css';
-import styleMod from './style.module.css';
+require('./style.css');
 import moment from "moment";
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import { graphql } from "gatsby"
 
-export default ({ data }) => {
+export default ({ data }: any) => {
   const post = data.markdownRemark;
-  const date = new moment(post.fields.date).format('MM/DD/YYYY')
+  const date = moment(post.fields.date).format('MM/DD/YYYY')
   return (
     <Content>
       <div className='blog-post'>

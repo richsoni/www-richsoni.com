@@ -4,14 +4,19 @@ import MailingListHalf from  "../components/MailingListHalf/";
 import LatestRelease from '../components/LatestRelease/';
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import { Albums } from '../data/albums';
 
-export default class SiteIndex extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-    }
+type Props = {
+  data: {
+    albums: Albums,
   }
+}
 
+type State = {
+
+}
+
+export default class SiteIndex extends React.Component<Props, State> {
   render(){
     return (
       <Layout>

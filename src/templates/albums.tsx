@@ -1,26 +1,44 @@
 import React from "react";
-import styles from './style.module.css';
-import moment from "moment";
+const styles = require('./style.module.css');
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import AlbumArtwork from '../components/AlbumArtwork/';
-import {nodesByBasename} from '../utils/data';
+import {nodesByBasename, NodesByBasename} from '../utils/data';
 import { graphql } from "gatsby"
+import { Songs } from '../data/songs';
+import { AlbumNode } from '../data/albums';
 
-const Track = (props) => {
+type AlbumProps = {
+  data: {
+    songs: Songs,
+    album: AlbumNode
+  }
+}
+
+type TracklistProps = {
+  songs: Songs
+  tracks?: string[]
+}
+
+const Track = (props: any) => {
   return <li><a href={props.data.fields.url}>{props.data.frontmatter.title}</a></li>
 }
 
-const Tracklist = (props) => {
+const Tracklist = (props: TracklistProps) => {
   const {tracks,songs} = props;
-  const songsByBasename = nodesByBasename(songs)
+  const songsByBasename: NodesByBasename = nodesByBasename(songs)
+  if(!tracks) { return (<div />) }
   return <ol className='tracklist'>
-    {tracks.map((track) => <Track key={track} data={songsByBasename[track]} />)}
+    {tracks.map((track) => {
+      const song = songsByBasename[track]
+      if(!song) { return <div /> }
+      return <Track key={track} data={song} />
+    })}
   </ol>
 }
 
-export default ({ data }) => {
+export default ({ data }: AlbumProps) => {
   const album = data.album;
   const songs = data.songs;
   return (

@@ -1,0 +1,9 @@
+echo '\n------------------------------------------------\n'
+echo 'SCRIPTS: \n'
+echo "$ cat package.json | jq -r '.scripts | keys | map("yarn "+.) | join("__")' | sed 's/__/\'$'\n/g'"
+cat package.json | jq -r '.scripts | keys | map("yarn "+.) | join("__")' | sed 's/__/\'$'\n/g'
+echo '\n------------------------------------------------\n'
+
+echo '\n$ tree scripts\n'
+tree scripts
+echo '\n------------------------------------------------\n'

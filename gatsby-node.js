@@ -54,7 +54,10 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         const type = node.fields.relativeDirectory;
         const url = node.fields.url;
-        const template = path.resolve(`./src/templates/${type}.js`);
+        let template = path.resolve(`./src/templates/${type}.js`);
+        if(!existsSync(template)) { 
+          template = path.resolve(`./src/templates/${type}.tsx`);
+        }
         if(existsSync(template))
         {
           //Create Basic Blog Pages

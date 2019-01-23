@@ -1,3 +1,6 @@
+import { AllMarkdownRemark } from '../data/remark';
+import { GatsbyNode } from '../data/remark';
+
 export const eventsWithSetlist = (events: any) => {
   return events
     .edges
@@ -23,10 +26,16 @@ export const eventsWithSong = (events: any, song: any) => {
     .filter((event: any) => event.node.frontmatter.setlist.includes(song))
 }
 
-export const nodesByBasename = (collection: any) => {
-  return collection.edges.map((e: any) => e.node).reduce((memo: any, node: any) => {
-    return {...memo,
-      [node.fields.basename]: node,
+export type NodesByBasename = {
+  [key: string]: GatsbyNode
+}
+
+export const nodesByBasename = (collection: AllMarkdownRemark) => {
+  return collection.edges.map((e) => e.node).reduce((memo: NodesByBasename, node) => {
+    if(node && node.fields && node.fields.basename){
+      return {...memo, [node.fields.basename]: node}
+    } else {
+      return memo;
     }
   }, {})
 }

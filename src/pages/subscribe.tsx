@@ -2,7 +2,7 @@ import React from "react";
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
-import styles from './subscribeStyles.module.css';
+const styles = require('./subscribeStyles.module.css');
 
 export default class SubscribeIndex extends React.Component {
   render(){
@@ -31,9 +31,8 @@ export default class SubscribeIndex extends React.Component {
         </p>
         <div
           className={styles.hidden}
-          ariaHidden="true"
         >
-          <input type="text" name="b_bc85e50b336a97670d097c9d0_cd363f3412" tabIndex="-1" value="" />
+          <input type="text" name="b_bc85e50b336a97670d097c9d0_cd363f3412" tabIndex={-1} value="" />
         </div>
         <div><input className={styles.submit} type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" /></div>
       </form>

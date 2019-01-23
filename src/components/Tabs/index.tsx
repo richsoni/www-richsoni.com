@@ -4,7 +4,7 @@ const styles = require('./styles.module.css')
 const initialState = { activeTab: 0 }
 type State = Readonly<typeof initialState>
 
-type TabsType = {
+export type TabsType = {
   content: () => JSX.Element,
   title: string
 }

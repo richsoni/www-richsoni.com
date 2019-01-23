@@ -1,11 +1,24 @@
 import React from "react";
 import moment from 'moment';
-import {eventNameLong, type} from '../utils/presenters';
 import Presenter from '../components/EventIndex/';
 import momentify from '../utils/momentify';
 import { graphql } from "gatsby"
+import {Events} from '../data/events';
+import {Locations, LocationNode} from '../data/locations.d';
 
-const upcomingEvents = (events = []) => {
+type ParsedEvent = {
+  location: LocationNode,
+  locationString: string,
+  typeString: string,
+  dateString: string,
+  moment: object,
+  startTime: string,
+  url: string,
+  venueString: string,
+  date?: string,
+}
+
+const upcomingEvents = (events: ParsedEvent[] = []) => {
   const now = moment.utc()
   return events
     .filter((event) => momentify(event.date) > now)
@@ -14,7 +27,7 @@ const upcomingEvents = (events = []) => {
     })
 }
 
-const pastEvents = (events = []) => {
+const pastEvents = (events: ParsedEvent[] = []) => {
   const now = moment.utc()
   return events
     .filter((e) => momentify(e.date) < now)
@@ -23,15 +36,22 @@ const pastEvents = (events = []) => {
     })
 }
 
-const parseEvents = (props) => {
+type EventProps = {
+  data: {
+    locations: Locations,
+    events: Events,
+  }
+}
+
+const parseEvents = (props: EventProps) => {
   const locations = props.data.locations.edges.map((e) => e.node);
   const events =  props.data.events.edges.map((e) => {
     const event = e.node;
-    const location = locations.find((l) => l.fields.basename === event.fields.notdate)
+    const location = locations.find((l) => l.fields.basename === event.fields.notdate) as LocationNode
     return {
       location,
       locationString: `${location.address.locality}, ${location.address.region}`,
-      typeString: type(event.frontmatter.type),
+      typeString: event.frontmatter.type,
       date: event.fields.date,
       dateString: momentify(event.fields.date).format("MM/DD/YY"),
       moment: momentify(event.fields.date),
@@ -43,11 +63,11 @@ const parseEvents = (props) => {
   return events;
 }
 
-export default class EventIndex extends React.Component {
+export default class EventIndex extends React.Component<EventProps, {}> {
   render(){
     const loadedEvents = parseEvents(this.props);
     return <Presenter
-      locations={this.props.locations}
+      locations={this.props.data.locations}
       upcomingEvents={upcomingEvents(loadedEvents)}
       pastEvents={pastEvents(loadedEvents)}
     />

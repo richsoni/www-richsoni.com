@@ -1,21 +1,30 @@
 import React from "react";
-import style from './style.css';
-import styleMod from './style.module.css';
-import moment from "moment";
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
-import {MMDDYYYY, cityCommaState} from '../utils/presenters';
-import {nodesByBasename} from '../utils/data';
+import {nodesByBasename, NodesByBasename} from '../utils/data';
 import Tabs from '../components/Tabs/';
+import {TabsType} from '../components/Tabs/';
 import LocationMap from '../components/LocationMap';
 import AlbumMediaCard from '../components/AlbumMediaCard';
 import { graphql } from "gatsby"
 
-export default class EventsTemplate extends React.Component {
+import {EventNode} from '../data/events';
+import {Albums, AlbumNode} from '../data/albums';
+import {Locations, LocationNode} from '../data/locations.d';
+import {Songs, SongNode} from '../data/songs.d';
 
+type EventsProps = {
+  data: {
+    event: EventNode,
+    locations: Locations,
+    albums: Albums,
+    songs: Songs,
+  }
+}
+export default class EventsTemplate extends React.Component<EventsProps,  {}>{
   render() {
-    const {event, locations} = this.props.data;
+    const {event} = this.props.data;
     const location = this.location();
     return (
       <Content>
@@ -32,13 +41,13 @@ export default class EventsTemplate extends React.Component {
 
   location() {
     const {event, locations} = this.props.data
-    const locationsByBasename = nodesByBasename(locations);
-    return locationsByBasename[event.fields.notdate];
+    const locationsByBasename = nodesByBasename(locations) as NodesByBasename;
+    return locationsByBasename[event.fields.notdate!] as LocationNode;
   }
 
   tabs() {
     const {event} = this.props.data;
-    let tabs = [];
+    let tabs:TabsType[] = [];
 
     const publish_notes = event.frontmatter.publish_notes
     if(publish_notes){
@@ -76,14 +85,14 @@ export default class EventsTemplate extends React.Component {
   links() {
     const {event, albums} = this.props.data;
     const albumBasename = event.frontmatter.links.album;
-    const albumsByBasename = nodesByBasename(albums);
-    const album = albumsByBasename[albumBasename]
+    const albumsByBasename = nodesByBasename(albums) as NodesByBasename;
+    const album = albumsByBasename[albumBasename] as AlbumNode
     return <AlbumMediaCard data={album}></AlbumMediaCard>
   }
 
   notes() {
     const {event} = this.props.data;
-    return <div dangerouslySetInnerHTML={{ __html: event.html }} />
+    return <div dangerouslySetInnerHTML={{ __html: event.html! }} />
   }
 
   setlist() {
@@ -91,13 +100,13 @@ export default class EventsTemplate extends React.Component {
       event,
       songs,
     } = this.props.data;
-    const songsByBasename = nodesByBasename(songs)
+    const songsByBasename = nodesByBasename(songs) as NodesByBasename
     return <div>
       <h2>Setlist</h2>
       <ol>
         {
           event.frontmatter.setlist.map((sl) => {
-            const song = songsByBasename[sl]
+            const song = songsByBasename[sl] as SongNode
             if(!song) { console.error(sl, " is not a song") }
             return <li key={song.fields.basename}><a href={song.fields.url}>{song.frontmatter.title}</a></li>
           })

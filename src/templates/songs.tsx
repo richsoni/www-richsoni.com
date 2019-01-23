@@ -1,5 +1,4 @@
 import React from "react";
-import style from './style.css';
 import moment from "moment";
 import {eventsWithSong} from '../utils/data';
 import Content from '../components/content/';
@@ -7,9 +6,34 @@ import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import { graphql } from "gatsby"
 
-export default ({ data }) => {
+interface SongFrontmatter {
+  artists: string[],
+  composed_at: string,
+  title: string,
+}
+
+interface SongFields {
+  basename: string,
+  url: string,
+}
+
+interface Node {
+  frontmatter: SongFrontmatter,
+  fields: SongFields,
+  id: string,
+  html: string,
+}
+
+type Props = {
+  data: {
+    song: Node,
+    events: {},
+  },
+}
+
+export default ({ data }: Props) => {
   const song = data.song;
-  const date = new moment(song.fields.composedAt).format('MM/DD/YYYY')
+  const date = moment(song.frontmatter.composed_at).format('MM/DD/YYYY')
   const _eventsWithSong = eventsWithSong(data.events, song.fields.basename);
   const performedLive = eventsWithSong.length > 0 ? `Performed Live: ${_eventsWithSong.length} ${_eventsWithSong.length === 1 ? 'time' : 'times'}` : ''
   return (
@@ -19,8 +43,8 @@ export default ({ data }) => {
         <Breadcrumb>{song.frontmatter.title}</Breadcrumb>
       </Breadcrumbs>
       {performedLive}
+      Composed: {date}
       <div style={{marginTop: '2em'}} dangerouslySetInnerHTML={{__html: song.html}} />
-      <h3>Comments</h3>
     </Content>
   )
 };
@@ -31,6 +55,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        composed_at
       }
       fields {
         date

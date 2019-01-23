@@ -1,14 +1,39 @@
 import React from "react";
-import styles from './style.module.css';
-import Table from '../components/Table/';
-import Tabs from '../components/Tabs/';
+import { graphql } from "gatsby"
 import {sortObjMomentASC, sortObjMomentDESC} from '../utils/sorting';
 import momentify from '../utils/momentify';
 import {eventsBySong} from '../utils/data';
+import Table from '../components/Table/';
+import Tabs from '../components/Tabs/';
 import Content from '../components/content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
-import { graphql } from "gatsby"
+import { Songs } from '../data/songs';
+
+type SongQuery = {
+  songs: Songs,
+  events: {}
+}
+
+type SongIndexProps = {
+  data: SongQuery
+}
+
+type ParsedSong = {
+  title: string,
+  composedAt: string,
+  artists: string,
+  isMine: boolean,
+  composedAtMoment: any,
+  url: string,
+  performanceCount: number,
+  firstPerformanceMoment: any,
+  firstPerformance: string,
+  lastPerformanceMoment: any,
+  lastPerformance: string,
+  key: string,
+}
+
 
 const tableFields = [
   {
@@ -43,9 +68,9 @@ const tableFields = [
   },
 ];
 
-const parseSongs = (props) => {
-  const songs = props.data.songs.edges.map((s) => s.node)
-  const _eventsBySong = eventsBySong(props.data.events, props.data.songs);
+const parseSongs = (data: SongQuery): Array<ParsedSong> => {
+  const songs = data.songs.edges.map((s) => s.node)
+  const _eventsBySong = eventsBySong(data.events);
   return songs.map((song) => {
     const artists = song.frontmatter.artists.sort().join(', ')
     const composedAtMoment = momentify(song.frontmatter.composed_at);
@@ -70,7 +95,8 @@ const parseSongs = (props) => {
     }
   });
 }
-export default class SongIndex extends React.Component {
+
+export default class SongIndex extends React.Component<SongIndexProps, {}> {
 
   render(){
     return (
@@ -84,7 +110,7 @@ export default class SongIndex extends React.Component {
   }
 
   tabs() {
-    const songs = parseSongs(this.props);
+    const songs = parseSongs(this.props.data);
     return [{
       content: () => <Table
         fields={tableFields}
@@ -94,13 +120,13 @@ export default class SongIndex extends React.Component {
     }, {
       content: () => <Table
         fields={tableFields}
-        items={songs.filter((s) => s.isMine)}
+        items={songs.filter((s: ParsedSong) => s.isMine)}
       />,
       title: "Originals",
     }, {
       content: () => <Table
         fields={tableFields}
-        items={songs.filter((s) => !s.isMine)}
+        items={songs.filter((s: ParsedSong) => !s.isMine)}
       />,
       title: "Covers",
     },
