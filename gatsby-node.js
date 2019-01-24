@@ -1,5 +1,5 @@
 const path = require('path');
-const buildExtraMarkdownFields = require('./lib/MarkdownFields');
+const buildExtraMarkdownFields = require('./lib/MarkdownFields2');
 const existsSync = require(`fs-exists-sync`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
