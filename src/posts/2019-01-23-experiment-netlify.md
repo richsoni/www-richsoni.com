@@ -15,9 +15,6 @@ That was back in 2013, and a lot has changed since then both on this site, and i
 In this post, I am going to work through launching a parallel build of my site on [Netlify].
 This will allow me to evaluate it as an alternative to hosting via Github pages.
 
-
-
-
 
 [Netlify]: https://www.netlify.com/
 [Github Pages]: https://pages.github.com/
