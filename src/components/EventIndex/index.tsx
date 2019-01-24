@@ -2,7 +2,7 @@ import React from 'react';
 import {SORTDESC} from '../Table/';
 import Table from '../Table/';
 import {sortASC, sortDESC} from '../Table/dateSort';
-import Content from '../content/';
+import Content from '../Content/';
 import {Breadcrumbs} from '../Breadcrumbs/';
 import {Breadcrumb} from '../Breadcrumbs/';
 

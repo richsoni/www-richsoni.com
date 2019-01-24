@@ -5,7 +5,7 @@ import momentify from '../utils/momentify';
 import {eventsBySong} from '../utils/data';
 import Table from '../components/Table/';
 import Tabs from '../components/Tabs/';
-import Content from '../components/content/';
+import Content from '../components/Content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import { Songs } from '../data/songs';

@@ -1,6 +1,6 @@
 import React from "react";
 const styles = require('./style.module.css');
-import Content from '../components/content/';
+import Content from '../components/Content/';
 import {Breadcrumbs} from '../components/Breadcrumbs/';
 import {Breadcrumb} from '../components/Breadcrumbs/';
 import AlbumArtwork from '../components/AlbumArtwork/';
