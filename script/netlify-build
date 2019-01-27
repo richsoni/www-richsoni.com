@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+DIR=`pwd`
+cd node_modules/@netlify/build-image
+./test-tools/test-build.sh $DIR

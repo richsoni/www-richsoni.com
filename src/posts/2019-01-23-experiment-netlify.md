@@ -264,6 +264,55 @@ Cached node version v9.11.2
 buildbot@50750cae5d63:/$
 ```
 
+# Pulling in @netlify/build-image
+
+The [netlify-build-image] project contains a `package.json` which is published to npm.
+
+I was able to add this as a development dependency to my project:
+```
+yarn add --dev netlify/build-image
+```
+
+Then I wrote a script which would execute the netlify build:
+```
+$ cat script/netlify-build
+#!/usr/bin/env bash
+DIR=`pwd`
+cd node_modules/@netlify/build-image
+./test-tools/test-build.sh $DIR
+```
+
+Then I added a build command to my package.json:
+```
+$ cat package.json | grep 'netlify:build'
+  "netlify:build": "./script/netlify-build"
+```
+
+This allows me to run the build locally:
+```
+yarn run netlify:build
+```
+
+I also created corresponding scripts for starting an image shell:
+```
+$ cat script/netlify-start-image
+
+#!/usr/bin/env bash
+DIR=`pwd`
+cd node_modules/@netlify/build-image
+./test-tools/start-image.sh $DIR
+
+$ cat package.json | grep 'netlify:start-image'
+"netlify:start-image": "./script/netlify-start-image"
+```
+
+And a shell can be accessed via:
+
+```
+yarn run netlify:start-image
+```
+
+
 
 [Netlify]: https://www.netlify.com/
 [A Step-by-Step Guide: Deploying on Netlify]: https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/
