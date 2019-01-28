@@ -5,69 +5,156 @@ categories: [changelog]
 tags: [netlify gatsby experiment]
 revision: 1
 title: "Building Richsoni.com with Netlify"
-hero: 
+hero: /images/posts/2019-01-28-netlify-richsoni.png
 ---
 
-[Netlify] is gaining popularity as an alternative to [Github Pages] for hosting static sites.
-One of my first posts on this site, '[How I Use Github Pages to Host My Blog]' documented my experience using [Github Pages] to host my site.
-That was back in 2013, and a lot has changed since then both on this site, and in technology offerings.
+ # Netlify
 
-In this post, I am going to work through launching a parallel build of my site on [Netlify].
-This will allow me to evaluate it as an alternative to hosting via Github pages.
+ **_[Netlify]: "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning"_**
 
-# Initial Deploy
+[Netlify] has been a popular static site hosting provider since around 2016 See (  
+  - [Ask HN: What free or low-cost static site hosting do you use most?]
+  - [Static website hosting: who's fastest? AWS, Google, Firebase, Netlify or GitHub?]
+  - [What is the best static website hosting provider?]
 
-I followed [A Step-by-Step Guide: Deploying on Netlify], which got my site up with only one small hiccup:
+); 
+
+#⚔ Github Pages vs. Netlify
+
+This site, has been hosted on [Github Pages] since 2013 (_See '[How I Use Github Pages to Host My Blog]'_).
+I am currently satisfied with using it as a hosting option for a site of this scale.
+However, some more complex projects may require the more sophisticated features offered by [Netlify].
+
+These features are outlined here: _'[GITHUB PAGES VS. NETLIFY]: Netlify is the upgrade you\'re looking for'_:
+
+<table>
+  <thead> <tr><th align="center"></th> <th align="center">GithubPages</th><th align="center">Netlify</th> </tr> </thead> 
+<tbody>
+<tr>
+<td align="center">Build Limits</td>
+<td align="center">10 Builds per hour</td>
+<td align="center">3 Builds per minute</td>
+</tr>
+
+<tr>
+<td align="center">1-click Rollbacks</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Asset Optimizations</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Form Handling</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Deploy Previews</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Continuous Deployment</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Custom Rewrites &amp; Redirects</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Compatible w/All Static Site Generators</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Prerendering</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Split Testing</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+
+<tr>
+<td align="center">Lambda Functions Integration</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+</tbody>
+</table>
+
+Given the potential to use these features in other projects, I decided to give [Netlify] a whirl 🌬.
+
+#🛳 Initial Deploy
+
+[A Step-by-Step Guide: Deploying on Netlify] outlines a straightforward process for deploying a site to Netlify.
+This article sufficed for me, except for one small hiccup I ran into when Netlify tried to build my site.
 
 ## Cannot Resolve Module
 
-My first builds spit out this error:
-
+My first build spit out this error:
 ```
 9:52:49 PM:   Error: ./src/pages/posts.tsx
 9:52:49 PM:   Module not found: Error: Can't resolve '../components/content/' in '/opt/build  /repo/src/pages'
 9:52:49 PM:   resolve '../components/content/' in '/opt/build/repo/src/pages'
 ```
 
-Indeed my `posts.tsx` looked like this:
+Indeed my while `posts.tsx` was looking for a file called `../components/content/`, the file actually was named `../components/Content/`:
 ```
-//./src/pages/posts.tsx
+$ head -n1 src/pages/posts.tsx
 import Content from '../components/content/'
-```
 
-While the filesystem looked like this:
-```
 $ ls src/components/
 AlbumArtwork    FixedMenu       Logo            Table
 AlbumMediaCard  Footer          MailingListHalf Tabs
 BaseMeta        Half            MenuToggle      disqus
 Breadcrumbs     LatestRelease   OverlayMenu
-Content         Layout          ResponsiveMenu
+*Content*         Layout          ResponsiveMenu
 EventIndex      LocationMap.tsx SocialButton
 ```
 
-Note the casing difference.  For some reason my machine allowed this casing mismatch, but Netlify did not.
-
-This issue took me a while to identify.  Here are some possible prevention tactics:
+On MacOS this type of casing mismatch is acceptable.  However, the [netlify-build-image] requiers Ubuntu which respects directory casing.
+This issue took me a while to identify, so its worth considering prevention options:
 [] Typescript: [file-name-casing] rule would prevent, and automatically fix these issues in the future
 [] Using the [netlify-build-image] to develop could have identified this issue more quickly
 
-# The Site
+# Deploy Complete!
 
-The site is located here: https://vigilant-wiles-695009.netlify.com/
+The site is located here: https://richsoni.netlify.com/
 
-# Developing with the netlify-build-image
+It was that easy!
 
-It seemed valuable to [netlify-build-image] seemed to have a lot of benefits to me.  So, I decided to explore that option.
+# Debugging with the netlify-build-image
+
+When researching prevention tactics for the casing mismatch error I faced, I found this library: [netlify-build-image].
+The ability to locally build that container, and debug issues seems very valuable to me.
+In the past, I have wasted a lot of time by redeploying changing up to the CI server when trying to fix a build.
+So, I decided to check [netlify-build-image] out.
 
 ## Setup
-This also was pretty simple.  I followed the [Testing Locally](https://github.com/netlify/build-image#testing-locally) instructions, and they made sense, except for one confusing point:
+The instructions for [netlify-build-image] are fairly clear, and simple:
+I followed [Testing Locally](https://github.com/netlify/build-image#testing-locally).
 
+However, there was one thing that was not clear in the instructions:
 *It was not clear that you had to clone the [netlify/build-image] repository*.
 
 I opened a Pull Request (https://github.com/netlify/build-image/pull/252) with the tool to make the instructions more clear.
 Hopefully they take the suggestions.
-
 
 ## The Build
 
@@ -77,31 +164,7 @@ This was inded the case:
 ~/code/github/netlify/build-image(master)------------------------------------------------------------------------
 $ ./test-tools/start-image.sh ~/code/personal/richsoni.github.io
 buildbot@46702c0a6065:/$ build yarn build
-Cloning into '/opt/buildhome/repo'...
-done.
-Installing dependencies
-Attempting node version '9.11.2' from .node-version
-Downloading and installing node v9.11.2...
-Downloading https://nodejs.org/dist/v9.11.2/node-v9.11.2-linux-x64.tar.xz...
-Now using node v9.11.2 (npm v5.6.0)
-Started restoring cached node modules
-Finished restoring cached node modules
-Started restoring cached yarn cache
-Finished restoring cached yarn cache
-Installing yarn at version 1.3.2
-Installing Yarn!
-> Downloading tarball...
-yarn install v1.3.2
-[1/4] Resolving packages...
-[2/4] Fetching packages...
-[3/4] Linking dependencies...
-[4/4] Building fresh packages...
-yarn run v1.3.2
-$ gatsby build
-... (gatsby doin' its thang)
-success Building static HTML for pages — 2.202 s — 294/294 387.20 pages/second
-info Done building in 31.159 sec
-Done in 31.34s.
+...(Docker running the build)
 Caching artifacts
 Started saving node modules
 Finished saving node modules
@@ -123,163 +186,45 @@ Voila, the error is reproduced:
 ```
 $ ./test-tools/start-image.sh ~/code/personal/richsoni.github.io       buildbot@50750cae5d63:/$ build yarn build
 Cloning into '/opt/buildhome/repo'...
-done.
-Installing dependencies
-Attempting node version '9.11.2' from .node-version
-Downloading and installing node v9.11.2...
-Downloading https://nodejs.org/dist/v9.11.2/node-v9.11.2-linux-x64.tar.xz...
-#                                                                      ####                                                                   #######                                                                ##########                                                             #############                                                          #################                                                      ####################                                                   #######################                                                ##########################                                             #############################                                          ################################                                       ###################################                                    ######################################                                 ##########################################                             ############################################                           ###############################################                        ##################################################                     ####################################################                   ########################################################               ###########################################################            ##############################################################         #################################################################      ####################################################################   ############################################################################################################################################### 100.0%
-Computing checksum with sha256sum
-Checksums matched!
-Now using node v9.11.2 (npm v5.6.0)
-Attempting ruby version 2.3.6, read from environment
-Using ruby version 2.3.6
-Using PHP version 5.6
-Started restoring cached node modules
-Finished restoring cached node modules
-Started restoring cached yarn cache
-Finished restoring cached yarn cache
-Installing yarn at version 1.3.2
-Installing Yarn!
-> Downloading tarball...
-
-[1/2]: https://yarnpkg.com/downloads/1.3.2/yarn-v1.3.2.tar.gz --> /tmp/yarn.tar.gz.MpXOOZlnrV
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:-100    91  100    91    0     0    531      0 --:--:-- --:--:-- --:--:--   535
-  0     0    0   608    0     0   1707      0 --:--:-- --:--:-- --:--:--  1707
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:-100  865k  100  865k    0     0   656k      0  0:00:01  0:00:01 --:--:-- 1932k
-
-[2/2]: https://yarnpkg.com/downloads/1.3.2/yarn-v1.3.2.tar.gz.asc --> /tmp/yarn.tar.gz.MpXOOZlnrV.asc
-100    95  100    95    0     0   4368      0 --:--:-- --:--:-- --:--:--  4368
-  0     0    0   612    0     0   5133      0 --:--:-- --:--:-- --:--:--  5133
-100  1027  100  1027    0     0   7102      0 --:--:-- --:--:-- --:--:--  7102
-> Verifying integrity...
-gpg: Signature made Thu 02 Nov 2017 04:44:10 PM UTC using RSA key ID FD2497F5
-gpg: Good signature from "Yarn Packaging <yarn@dan.cx>"
-gpg: Note: This key has expired!
-Primary key fingerprint: 72EC F46A 56B4 AD39 C907  BBB7 1646 B01B 86E5 0310
-     Subkey fingerprint: 6A01 0C51 6600 6599 AA17  F081 46C2 130D FD24 97F5
-> GPG signature looks good
-> Extracting to ~/.yarn...
-> Adding to $PATH...
-> We've added the following to your /opt/buildhome/.profile
-> If this isn't the profile of your current shell then please add the following to your correct profile:
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-> Successfully installed Yarn 1.3.2! Please open another terminal where the `yarn` command will now be available.
-Installing NPM modules using Yarn version 1.3.2
-yarn install v1.3.2
-[1/4] Resolving packages...
-[2/4] Fetching packages...
-info fsevents@1.2.4: The platform "linux" is incompatible with this module.
-info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
-[3/4] Linking dependencies...
-warning "gatsby > mini-css-extract-plugin > schema-utils > ajv-errors@1.0.0" has unmet peer dependency "ajv@>=5.0.0".
-warning "gatsby-plugin-typescript > @babel/preset-typescript@7.1.0" has unmet peer dependency "@babel/core@^7.0.0-0".
-warning "gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript@7.2.0" has unmet peer dependency "@babel/core@^7.0.0-0".
-warning "gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript > @babel/plugin-syntax-typescript@7.2.0" has unmet peer dependency "@babel/core@^7.0.0-0".
-warning "gatsby-plugin-typescript-checker > fork-ts-checker-webpack-plugin@0.5.0" has unmet peer dependency "tslint@^4.0.0 || ^5.0.0".
-warning "gatsby-plugin-typescript-checker > fork-ts-checker-webpack-plugin@0.5.0" has unmet peer dependency "webpack@^2.3.0 || ^3.0.0 || ^4.0.0".
-[4/4] Building fresh packages...
-warning Your current version of Yarn is out of date. The latest version is "1.13.0" while you're on "1.3.2".
-info To upgrade, run the following command:
-$ curl -o- -L https://yarnpkg.com/install.sh | bash
-Done in 27.33s.
-NPM modules installed using Yarn
-Started restoring cached go cache
-Finished restoring cached go cache
-
-unset GOOS;
-unset GOARCH;
-export GOROOT='/opt/buildhome/.gimme/versions/go1.10.linux.amd64';
-export PATH="/opt/buildhome/.gimme/versions/go1.10.linux.amd64/bin:${PATH}";
-go version >&2;
-
-export GIMME_ENV='/opt/buildhome/.gimme/env/go1.10.linux.amd64.env';
-go version go1.10 linux/amd64
-Installing missing commands
-Verify run directory
-Executing user command: yarn build
-yarn run v1.3.2
-$ gatsby build
-success open and validate gatsby-configs — 0.010 s
-success load plugins — 0.229 s
-success onPreInit — 0.747 s
-success delete html and css files from previous builds — 0.008 s
-success initialize cache — 0.009 s
-success copy gatsby files — 0.050 s
-success onPreBootstrap — 0.016 s
-success source and transform nodes — 1.171 s
-success building schema — 0.398 s
-success createPages — 0.845 s
-success createPagesStatefully — 0.053 s
-success onPreExtractQueries — 0.000 s
-success update schema — 0.273 s
-success extract queries from components — 0.226 s
-success run graphql queries — 11.809 s — 294/294 24.90 queries/second
-success write out page data — 0.012 s
-success write out redirect data — 0.003 s
-success onPostBootstrap — 0.003 s
-
-info bootstrap finished - 18.818 s
-
-
-error Generating JavaScript bundles failed
-
-
+... Other Output
   Error: ./src/pages/posts.tsx
   Module not found: Error: Can't resolve '../components/content/' in '/  opt/buildhome/repo/src/pages'
-  resolve '../components/content/' in '/opt/buildhome/repo/src/pages'
-    Parsed request is a directory
-    using description file: /opt/buildhome/repo/package.json (relative   path: ./src/pages)
-      Field 'browser' doesn't contain a valid alias configuration
-      using description file: /opt/buildhome/repo/package.json (relativ  e path: ./src/components/content)
-        as directory
-          /opt/buildhome/repo/src/components/content doesn't exist
-  [/opt/buildhome/repo/src/components/content]
-   @ ./src/pages/posts.tsx 7:0-45 156:31-38
-   @ ./.cache/async-requires.js
-   @ ./.cache/production-app.js
-
-error Command failed with exit code 1.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-Caching artifacts
-Started saving node modules
-Finished saving node modules
-Started saving yarn cache
-Finished saving yarn cache
-Started saving pip cache
-Finished saving pip cache
-Started saving emacs cask dependencies
-Finished saving emacs cask dependencies
-Started saving maven dependencies
-Finished saving maven dependencies
-Started saving boot dependencies
-Finished saving boot dependencies
-Started saving go dependencies
-Finished saving go dependencies
-Cached node version v9.11.2
-buildbot@50750cae5d63:/$
+...
 ```
 
-# Pulling in @netlify/build-image
+# Depending on @netlify/build-image
 
-The [netlify-build-image] project contains a `package.json` which is published to npm.
+The [netlify-build-image] is published as a [public npm project](https://github.com/netlify/build-image/blob/master/package.json).
 
-I was able to add this as a development dependency to my project:
+So, it can be added to a project as a `devDependency`:
 ```
 yarn add --dev netlify/build-image
 ```
 
-Then I wrote a script which would execute the netlify build:
+# Wrapping `@netlify/build-image`
+
+I wrote two scripts to wrap this library:
 ```
 $ cat script/netlify-build
 #!/usr/bin/env bash
-DIR=`pwd`
-cd node_modules/@netlify/build-image
-./test-tools/test-build.sh $DIR
+if git diff-index --quiet HEAD --; then
+  PROJECT_DIR=`pwd`
+  : ${1?"Usage: $0 First Argument must be the build command to run in the Netlify Image"}
+  cd node_modules/@netlify/build-image
+  ./test-tools/test-build.sh $PROJECT_DIR 'npm run bootstrap_and_build'
+else
+  echo "Can only run this command with a clean git directory"
+fi
+
+$ cat script/netlify-start-image
+#!/usr/bin/env bash
+if git diff-index --quiet HEAD --; then
+  PROJECT_DIR=`pwd`
+  cd node_modules/@netlify/build-image
+  ./test-tools/start-image.sh $PROJECT_DIR
+else
+  echo "Can only run this command with a clean git directory"
+fi
 ```
 
 Then I added a build command to my package.json:
@@ -319,4 +264,8 @@ yarn run netlify:start-image
 [Github Pages]: https://pages.github.com/
 [file-name-casing]: https://palantir.github.io/tslint/rules/file-name-casing/
 [netlify-build-image]: https://github.com/netlify/build-image
-
+[Ask HN: What free or low-cost static site hosting do you use most?]:https://news.ycombinator.com/item?id=13021722
+[Static website hosting: who's fastest? AWS, Google, Firebase, Netlify or GitHub?]: https://www.savjee.be/2017/10/Static-website-hosting-who-is-fastest/
+[What is the best static website hosting provider?]: https://www.slant.co/topics/2256/~best-static-website-hosting-provider
+[GITHUB PAGES VS. NETLIFY]: https://www.netlify.com/github-pages-vs-netlify/
+[How I Use Github Pages to Host My Blog]: /posts/2013-12-03-how-i-use-github-pages-to-host-my-blog/

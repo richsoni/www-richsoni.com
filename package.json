@@ -11,7 +11,7 @@
     "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
     "tsc:check": "tsc --noEmit",
     "tsc:watch": "tsc --noEmit --watch",
-    "netlify:build": "./script/netlify-build",
+    "netlify:build": "./script/netlify-build 'npm run build'",
     "netlify:start-image": "./script/netlify-start-image"
   },
   "dependencies": {
