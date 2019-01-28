@@ -70,7 +70,7 @@ alias q='cd ~/quicklinks; ls`
 
 ```
 
-[read here](http://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/) if you need more information on how make an alias / where to put it.
+[read here](https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/) if you need more information on how make an alias / where to put it.
 
 #4.  The final product
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 categories: Coding
-avatar: "http://www.vtxoa.com/forums/customavatars/avatar31627_1.gif"
-hero: "http://www.unleashthefanboy.com/wp-content/uploads/2013/08/yoda-quotes.jpeg"
+avatar: "https://www.vtxoa.com/forums/customavatars/avatar31627_1.gif"
+hero: "https://www.unleashthefanboy.com/wp-content/uploads/2013/08/yoda-quotes.jpeg"
 tags: [coding, self development]
 depricated: true
 title: '10 Skills Every Developer Should Master'
@@ -61,8 +61,8 @@ This will be applicable in your code as well.  You cannot master half of the too
 
 **Recommended Reading**
 
-1.  [Regular Expressions Cookbook]("http://www.amazon.com/gp/product/1449319432/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1449319432&linkCode=as2&tag=richsonicom-20") is how I started learning regex, but it is a bit slow for beginners.
-1.  [Textmate: Power Editing for the Mac]( http://www.amazon.com/gp/product/097873923X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=097873923X&linkCode=as2&tag=richsonicom-20 ) was the book that actually taught me regex.  Specifically the search chapter.
+1.  [Regular Expressions Cookbook]("https://www.amazon.com/gp/product/1449319432/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1449319432&linkCode=as2&tag=richsonicom-20") is how I started learning regex, but it is a bit slow for beginners.
+1.  [Textmate: Power Editing for the Mac]( https://www.amazon.com/gp/product/097873923X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=097873923X&linkCode=as2&tag=richsonicom-20 ) was the book that actually taught me regex.  Specifically the search chapter.
 
 
 #GNU Tools
@@ -73,7 +73,7 @@ Even experts continue to marvel at the power bestowed upon a properly crafted ch
   
 **Recommended Reading**  
 
-1.  All developers must own [Unix Power Tools](http://www.amazon.com/gp/product/0596003307/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596003307&linkCode=as2&tag=richsonicom-20)
+1.  All developers must own [Unix Power Tools](https://www.amazon.com/gp/product/0596003307/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596003307&linkCode=as2&tag=richsonicom-20)
 1.  Taco Bell Coding
 1.  Read man pages, you will be surprised at the power some commands have (e.g. man find; man curl; man grep)
 
@@ -95,7 +95,7 @@ My prompt port is also way faster in bash.
 
 **Recommended Reading**
 
-1.  The [Bash Cookbook](http://www.amazon.com/gp/product/0596526784/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596526784&linkCode=as2&tag=richsonicom-20) really sharpened my skills in a logical order.
+1.  The [Bash Cookbook](https://www.amazon.com/gp/product/0596526784/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596526784&linkCode=as2&tag=richsonicom-20) really sharpened my skills in a logical order.
 
 #Javascript
 

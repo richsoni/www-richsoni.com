@@ -227,7 +227,7 @@ diff gatsby-node.js
 
 # Visit Page
 
-With `gatsby develop` was running smoothly, I loaded http://localhost:8000 in my browser.
+With `gatsby develop` was running smoothly, I loaded https://localhost:8000 in my browser.
 The site looked fairly functional, except that the chrome was missing (The Header and Footer).
 
 I remembered seeing a section about this in [Gatsby V1 to V2 Migration Guide](https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/).

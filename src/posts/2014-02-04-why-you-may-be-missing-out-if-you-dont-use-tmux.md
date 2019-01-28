@@ -168,10 +168,10 @@ Install it with a package manager: ```sudo [yum|apt-get|brew] install tmux]```
 Then choose one or all of these ways to learn:
 
 1.  [My videos](https://www.bitcast.io/b/tmux-tunes-week-1) which will let you start using tmux immediately, and gradually show more features as time goes on.
-1.  Purchase [this book](http://www.amazon.com/gp/product/B00A4I3ZVY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A4I3ZVY&linkCode=as2&tag=richsonicom-20) that takes about two weeks to read / get up to speed ( this is how I learned tmux )
+1.  Purchase [this book](https://www.amazon.com/gp/product/B00A4I3ZVY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A4I3ZVY&linkCode=as2&tag=richsonicom-20) that takes about two weeks to read / get up to speed ( this is how I learned tmux )
 1.  Reading `$ man tmux` will get experienced unix users up to speed for free
 
 # Further Reading
-1.  [Interview with the author of tmux](http://undeadly.org/cgi?action=article&sid=20090712190402)
+1.  [Interview with the author of tmux](https://undeadly.org/cgi?action=article&sid=20090712190402)
 1.  Movies:  [tmux Tunes by codriffs](https://www.bitcast.io/b/tmux-tunes-week-1)
-1.  Book:  [tmux: Productive Mouse-Free Development](http://www.amazon.com/gp/product/B00A4I3ZVY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A4I3ZVY&linkCode=as2&tag=richsonicom-20)
+1.  Book:  [tmux: Productive Mouse-Free Development](https://www.amazon.com/gp/product/B00A4I3ZVY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A4I3ZVY&linkCode=as2&tag=richsonicom-20)

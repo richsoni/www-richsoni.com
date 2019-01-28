@@ -65,7 +65,7 @@ A vi user can edit files notwithstanding the box's configuration.
 Most text editors require additional installation which is sometimes out of scope.
 
 Additionally, vi has a reputation of making text editing breathtakingly efficient.
-Because of this, many developers, including myself, use [vim](http://vim.org) ( vi iMproved ) as their day to day editor.
+Because of this, many developers, including myself, use [vim](https://vim.org) ( vi iMproved ) as their day to day editor.
 
 Knowing basic vi commands saves time and frustration when using an alien machine.
 At a minimum, learn to insert text, save/quit, and move around.
@@ -74,8 +74,8 @@ At a minimum, learn to insert text, save/quit, and move around.
 ### Recommended Actions
 
   1.  beginner: Complete the first quarter of ``` $ vitutor ``` within a terminal.
-  1.  [yannesposito wrote the best vim overview post I have ever seen.  It covers everything you need to know](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
-  1.  intermediate: <a href="http://www.amazon.com/gp/product/1934356980/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356980&linkCode=as2&tag=richsonicom-20">Practical Vim: Edit Text at the Speed of Thought (Pragmatic Programmers)</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=1934356980" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1.  [yannesposito wrote the best vim overview post I have ever seen.  It covers everything you need to know](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+  1.  intermediate: <a href="https://www.amazon.com/gp/product/1934356980/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356980&linkCode=as2&tag=richsonicom-20">Practical Vim: Edit Text at the Speed of Thought (Pragmatic Programmers)</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=1934356980" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
  
 
 ---
@@ -105,9 +105,9 @@ For example, the regex: ```^\$?[0-9,]+(\.[0-9]+)?$```, matches any valid US curr
 
 ### Recommended Actions
 
-  1.  [Regular Expressions Cookbook](http://www.amazon.com/gp/product/1449319432/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1449319432&linkCode=as2&tag=richsonicom-20)
+  1.  [Regular Expressions Cookbook](https://www.amazon.com/gp/product/1449319432/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1449319432&linkCode=as2&tag=richsonicom-20)
      is explicative, but slow for beginners.
-  1.  Section 4.2 in [Textmate: Power Editing for the Mac]( http://www.amazon.com/gp/product/097873923X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=097873923X&linkCode=as2&tag=richsonicom-20 )
+  1.  Section 4.2 in [Textmate: Power Editing for the Mac]( https://www.amazon.com/gp/product/097873923X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=097873923X&linkCode=as2&tag=richsonicom-20 )
      did a better job at explaining regexes.
   1.  (in [vi](#VI)) ```:h usr_27.txt```, is great to remember because its extensive, and [vi](#VI) can always be accessed.
 
@@ -150,9 +150,9 @@ Here are the steps:  *grab the file; print each word on a single line; alphabeti
 
 ### Recommended Actions
 
-  1.  All developers must own [Unix Power Tools](http://www.amazon.com/gp/product/0596003307/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596003307&linkCode=as2&tag=richsonicom-20)
-  1.  [In the beginning there was the command line](http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml).
-  1.  [Taco Bell Programming](http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html)
+  1.  All developers must own [Unix Power Tools](https://www.amazon.com/gp/product/0596003307/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596003307&linkCode=as2&tag=richsonicom-20)
+  1.  [In the beginning there was the command line](https://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml).
+  1.  [Taco Bell Programming](https://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html)
   1.  Read man pages, you will be surprised at the breadth of certain commands (e.g. man find; man curl; man grep)
 
 
@@ -178,7 +178,7 @@ As such, all developers benefit from knowing bash even if they use another shell
 
 ### Recommended Actions
 
-  1.  The [Bash Cookbook](http://www.amazon.com/gp/product/0596526784/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596526784&linkCode=as2&tag=richsonicom-20)
+  1.  The [Bash Cookbook](https://www.amazon.com/gp/product/0596526784/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596526784&linkCode=as2&tag=richsonicom-20)
      teaches both basic and advanced features.
 
 ---
@@ -203,9 +203,9 @@ In addition to being portable, Javascript can dice and slice web pages to quickl
 
 ### Recommended Actions
 
-  1.  <a href="http://www.amazon.com/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=richsonicom-20">JavaScript: The Good Parts</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=0596517742" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-  1. <a href="http://www.amazon.com/gp/product/B00D624AQO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00D624AQO&linkCode=as2&tag=richsonicom-20">Functional JavaScript: Introducing Functional Programming with Underscore.js</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00D624AQO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-  1. "[Best JS Resource Ever](http://jstherightway.org)" ~ Paul Pucciarelli
+  1.  <a href="https://www.amazon.com/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=richsonicom-20">JavaScript: The Good Parts</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=0596517742" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1. <a href="https://www.amazon.com/gp/product/B00D624AQO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00D624AQO&linkCode=as2&tag=richsonicom-20">Functional JavaScript: Introducing Functional Programming with Underscore.js</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00D624AQO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1. "[Best JS Resource Ever](https://jstherightway.org)" ~ Paul Pucciarelli
 
 ---
 
@@ -231,7 +231,7 @@ As such, learning emacs keybindings enables a user to manouver a [bash](#Bash) s
 ### Recommended Actions
 
   *  [Hack Emacs videos](https://www.youtube.com/playlist?list=PLABBCB510477C08DB)
-  *  [beginner guide to emacs](http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/)
+  *  [beginner guide to emacs](https://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/)
   *  emacs help ``` M-h ```
 
 ---
@@ -257,8 +257,8 @@ With a strong foundation in SQL, learning any dialect will be a breeze.
 
 ### Recommended Actions
 
-  1.  <a href="http://www.amazon.com/gp/product/1449394094/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1449394094&linkCode=as2&tag=richsonicom-20">SQL Pocket Guide</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=1449394094" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-  1.  [SQL Zoo](http://sqlzoo.net/wiki/Main_Page) is the only site you need to learn SQL.
+  1.  <a href="https://www.amazon.com/gp/product/1449394094/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1449394094&linkCode=as2&tag=richsonicom-20">SQL Pocket Guide</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=1449394094" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1.  [SQL Zoo](https://sqlzoo.net/wiki/Main_Page) is the only site you need to learn SQL.
 
 ---
 
@@ -273,9 +273,9 @@ With a strong foundation in SQL, learning any dialect will be a breeze.
 </blockquote>
 
 Markdown is simple, but it packs a mean productivity punch.
-[Jekyll](http://jekyllrb.com/)
+[Jekyll](https://jekyllrb.com/)
 uses it to render blog posts (see [how my blog runs](/how-i-use-github-pages-to-host-my-blog)).
-It is also terse enough to quickly decorate an email (check out [MarkdownHere for Chrome](http://markdown-here.com/index.html)).
+It is also terse enough to quickly decorate an email (check out [MarkdownHere for Chrome](https://markdown-here.com/index.html)).
 
 Amazing speed gains come when writing documentation in Markdown.
 Its syntax makes it painless to quickly produce documentation.
@@ -283,7 +283,7 @@ Its syntax makes it painless to quickly produce documentation.
 
 ### Recommended Actions
 
-  1.  [Markdown Tutorial](http://www.markdowntutorial.com/) is an interactive site that teaches markdown.
+  1.  [Markdown Tutorial](https://www.markdowntutorial.com/) is an interactive site that teaches markdown.
   1.  [The Github Tutorial](https://help.github.com/articles/markdown-basics) is how I learned Markdown.
 
 ---
@@ -312,7 +312,7 @@ Tmux can be controlled by scripts, and automate repetitive workflow tasks.
 ### Recommended Actions
 
   1.  Read [my article](/why-you-may-be-missing-out-if-you-dont-use-tmux) for an in depth description of tmux.
-  1.  [Pragmatic Programming - Tmux](http://www.amazon.com/gp/product/B00A4I3ZVY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A4I3ZVY&linkCode=as2&tag=richsonicom-20) that takes about two weeks to read / get up to speed ( this is how I learned tmux )
+  1.  [Pragmatic Programming - Tmux](https://www.amazon.com/gp/product/B00A4I3ZVY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A4I3ZVY&linkCode=as2&tag=richsonicom-20) that takes about two weeks to read / get up to speed ( this is how I learned tmux )
   1.  [My videos](https://www.bitcast.io/b/tmux-tunes-week-1) will let you start using tmux immediately, and gradually show more features as time goes on.
 
 
@@ -341,9 +341,9 @@ This is a simple use, but R can do much more sophisticated statistics.
 
 ### Recommended Actions
 
-  1. A great general into to R: <a href="http://www.amazon.com/gp/product/1593273843/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1593273843&linkCode=as2&tag=richsonicom-20">The Art of R Programming: A Tour of Statistical Software Design</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=1593273843" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-  1. I always like cookbooks:  <a href="http://www.amazon.com/gp/product/0596809158/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596809158&linkCode=as2&tag=richsonicom-20">R Cookbook (O'Reilly Cookbooks)</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=0596809158" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-  1. My general reference, since I do a lot of graphs:  <a href="http://www.amazon.com/gp/product/B0056ZUJ46/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0056ZUJ46&linkCode=as2&tag=richsonicom-20">R Graph Cookbook</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B0056ZUJ46" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1. A great general into to R: <a href="https://www.amazon.com/gp/product/1593273843/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1593273843&linkCode=as2&tag=richsonicom-20">The Art of R Programming: A Tour of Statistical Software Design</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=1593273843" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1. I always like cookbooks:  <a href="https://www.amazon.com/gp/product/0596809158/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596809158&linkCode=as2&tag=richsonicom-20">R Cookbook (O'Reilly Cookbooks)</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=0596809158" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  1. My general reference, since I do a lot of graphs:  <a href="https://www.amazon.com/gp/product/B0056ZUJ46/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0056ZUJ46&linkCode=as2&tag=richsonicom-20">R Graph Cookbook</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B0056ZUJ46" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 # Conclusion
 
@@ -353,7 +353,7 @@ Veterans can always learn new tricks that will make them work more productively.
 
 ### It can take up to 10 years to become an expert at something.
 > The (Beatles) had been playing in clubs since 1957. Ten years before Sgt. Pepper’s, their first critically successful album.
-####~ [Pragmatic Thinking and Learning, page 44](http://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)
+####~ [Pragmatic Thinking and Learning, page 44](https://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)
 
 And obviously, even masters always have more to learn.
 

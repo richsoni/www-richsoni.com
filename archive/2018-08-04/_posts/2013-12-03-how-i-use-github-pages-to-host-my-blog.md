@@ -31,20 +31,20 @@ There are several parts to this article:
 
 # The Technologies
 
-  I landed on using [github pages](http://pages.github.com/) to host my site after some floundering with a rails app on heroku, and a wordpress app.  
+  I landed on using [github pages](https://pages.github.com/) to host my site after some floundering with a rails app on heroku, and a wordpress app.  
   It is nice because its free, and gives you a lot right out of the box if you go along with its conventions.  
 
-  Even though I have design skills, I outsourced that work, and bought a template from [wrapbootstrap](http://wrapbootstrap.com).  
+  Even though I have design skills, I outsourced that work, and bought a template from [wrapbootstrap](https://wrapbootstrap.com).  
   I did this because I was eager to start writing, and its an easy way to get up and running with a polished.  
 
-  [Github Pages](http://pages.github.com/) uses [Jekyll](http://jekyllrb.com) to generate your blog in html.
+  [Github Pages](https://pages.github.com/) uses [Jekyll](https://jekyllrb.com) to generate your blog in html.
 
 
 ## Jekyll
 
-  [Jekyll](http://jekyllrb.com) uses [The Liquid Templating Engine](http://liquidmarkup.org/), and [Yaml](http://yaml.org/) to generate a static blog.
-  It took a bit to get used to [Jekyll](http://jekyllrb.com), but once I figured out a workflow it became painless to  cut the [wrapbootstrap](http://wrapbootstrap.com) theme into it. 
-  Since you just write each post in a [Markdown](http://www.whatismarkdown.com/) file, there is not much to actually getting your content loading in [Jekyll](http://jekyllrb.com).  
+  [Jekyll](https://jekyllrb.com) uses [The Liquid Templating Engine](https://liquidmarkup.org/), and [Yaml](https://yaml.org/) to generate a static blog.
+  It took a bit to get used to [Jekyll](https://jekyllrb.com), but once I figured out a workflow it became painless to  cut the [wrapbootstrap](https://wrapbootstrap.com) theme into it. 
+  Since you just write each post in a [Markdown](https://www.whatismarkdown.com/) file, there is not much to actually getting your content loading in [Jekyll](https://jekyllrb.com).  
 
 # Setup
 
@@ -54,7 +54,7 @@ There are several parts to this article:
 
   1.  Create a repo on github, make sure the name is ```(your_unique_sitename).github.io``` because that is how github knows to make a site from the repo.  [(how to create a repo)](https://help.github.com/articles/create-a-repo) [(github pages help)](https://help.github.com/categories/20/articles)
   2.  Clone the repo locally if you have not already
-  3.  ```gem install jekyll```  [(how to)](http://jekyllrb.com/docs/installation/)
+  3.  ```gem install jekyll```  [(how to)](https://jekyllrb.com/docs/installation/)
   4.  cd into the repo foler and run ```jekyll new```
   5.  ```git add .; git push origin HEAD```
   6.  navigate to ```(your_unique_sitename).github.io```, and you should see the jekyll project.
@@ -66,15 +66,15 @@ There are several parts to this article:
   1.  Open _config.yml, and edit its contents.  If you want to copy mine [its here](https://github.com/richsoni/richsoni.github.com/blob/master/_config.yml)
   2.  Start jekyll by running ```jekyll serve -w``` the ```-w``` tells it to regenerate the files when you save.  Note: all files are generated in the _publish folder which is in the .gitignore file by default when you run ``jekyll new`` (i.e. they are only for development)
   3.  Navigate to localhost:4000 to view your site
-  4.  Cut up your template into Jekyll.  I used [the documentation](http://jekyllrb.com/docs/home/), but here are some quick tips to get started.
+  4.  Cut up your template into Jekyll.  I used [the documentation](https://jekyllrb.com/docs/home/), but here are some quick tips to get started.
 
-      a. The _layouts folder contains templates that will wrap around all files that use it (declared in the YAML [Front Matter](http://jekyllrb.com/docs/frontmatter/)
+      a. The _layouts folder contains templates that will wrap around all files that use it (declared in the YAML [Front Matter](https://jekyllrb.com/docs/frontmatter/)
          you render the page content in liquid by putting ``{ {content} }``
       b. To generate partials, create a file in the _includes folder, and put ``{ % include filename % }``
-      c. You can declare any variable in the [Front Matter](http://jekyllrb.com/docs/frontmatter/), and use it in the template.  It is not reserved for Jekyll only vars
+      c. You can declare any variable in the [Front Matter](https://jekyllrb.com/docs/frontmatter/), and use it in the template.  It is not reserved for Jekyll only vars
       d. Use _data to declare static data in yaml.  I used this for my Project blurb section.
       e. If you want to use markdown but not in a blog post, you can.  Just write it and Jekyll will compile it to html.  For example, ``projects/carbon.md => projects/carbon.html' which can be navigated to in the browser.
-         These files also can leverage [Front Matter](http://jekyllrb.com/docs/frontmatter/), so slap a layout around it.
+         These files also can leverage [Front Matter](https://jekyllrb.com/docs/frontmatter/), so slap a layout around it.
 
 <hr>
 

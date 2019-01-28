@@ -205,15 +205,15 @@ include '../../shared/special.scss'
 
 In my opinion, the solution with CSSModules is often not only more simple, shorter, but its also legible to a wider audience than the alternatives.
 
-[Conway's Law]: http://www.melconway.com/Home/Committees_Paper.html
+[Conway's Law]: https://www.melconway.com/Home/Committees_Paper.html
 [CSS Evolution: From CSS, SASS, BEM, CSS Modules to Styled Components]: https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b
 [Radium]: https://github.com/FormidableLabs/radium
-[Less]: http://lesscss.org/
+[Less]: https://lesscss.org/
 [Sass]: https://sass-lang.com/
 [StyledComponents]: https://www.styled-components.com/
 [Styled Components: To Use or Not to Use?]: https://medium.com/building-crowdriff/styled-components-to-use-or-not-to-use-a6bb4a7ffc21
 [The Debate Around 'Do We Even Need CSS Anymore?']: https://css-tricks.com/the-debate-around-do-we-even-need-css-anymore/
 [CSSModules]: https://github.com/css-modules/css-modules
-[BEM]: http://getbem.com/
+[BEM]: https://getbem.com/
 [Create React App]: https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
 [Occam's Razor]: https://en.wikipedia.org/wiki/Occam's_razor

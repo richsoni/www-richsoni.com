@@ -8,12 +8,12 @@ title: "Show Recordings on the Internet Archive"
 hero: /images/posts/2018-09-10-pine-island-show-recap-hero.png
 ---
 
-I played at [Pine Island Brewing](http://pineislandbeer.com/) on September 9th 2018, and October 21st 2018.
-More information on each show can be found on its page: [Pine Island 2018-09-09](http://www.richsoni.com/events/2018-09-09-pine-island-brewery/), and [Pine Island 2018-10-21](http://www.richsoni.com/events/2018-10-21-pine-island-brewery/).
+I played at [Pine Island Brewing](https://pineislandbeer.com/) on September 9th 2018, and October 21st 2018.
+More information on each show can be found on its page: [Pine Island 2018-09-09](https://www.richsoni.com/events/2018-09-09-pine-island-brewery/), and [Pine Island 2018-10-21](https://www.richsoni.com/events/2018-10-21-pine-island-brewery/).
 
 
 The recording of this show was not the greatest quality, but the performance was solid.
-Despite the technical difficulties, I enjoy sharing these recordings with anyone interested, so I have setup a musician account on [Internet Archive](http://www.archive.org).
+Despite the technical difficulties, I enjoy sharing these recordings with anyone interested, so I have setup a musician account on [Internet Archive](https://www.archive.org).
 I will be uploading new shows, and trying my best to get old ones up there as well!
 
 <div style='width:100%'>

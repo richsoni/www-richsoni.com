@@ -19,7 +19,7 @@ All of the techniques are both clever and sensible.
 They didn't write down the tune or melody of new songs.
 This was not out of laziness, but a way to filter out the unmemorable songs.
 The post,
-[The Beatles: the birth of the band](http://www.telegraph.co.uk/culture/music/the-beatles/10321180/The-Beatles-the-birth-of-the-band.html)
+[The Beatles: the birth of the band](https://www.telegraph.co.uk/culture/music/the-beatles/10321180/The-Beatles-the-birth-of-the-band.html)
 describes the technique:
 
 > If they couldn't remember something the next day, they could hardly expect it to stick in the mind of anyone else
@@ -44,10 +44,10 @@ Some thoughts keep coming up, over and over again, these are often the best idea
 There are many tasks which engage the creative side of the mind.
 We can apply the technique in any of those situations.
 The book
-[Rework](http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
+[Rework](https://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
 explains an iteration of the same technique (unintentionally), but for creating software.
 Below is a series of excerpts from the *Don't write it down* chapter of
-[Rework](http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
+[Rework](https://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
 
   >  How should you keep track of what customers want? Don't.
   >  The requests that really matter are the ones you'll hear over and over.
@@ -85,7 +85,7 @@ It returns mostly new versions and combinations of ideas it previously conceived
 
 If you are having trouble conjuring up ideas, then train your brain to get creative.
 Read more about the science of harnessing your creative side in
-[Pragmatic Thinking and Learning.](http://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)
+[Pragmatic Thinking and Learning.](https://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)
 This book also presents practical methods for balancing your left and right brain.
 When properly balanced it becomes an unstoppable force at formulating striking new ideas.
   
@@ -121,13 +121,13 @@ As stupid as this is, they write the check, so do as they wish.
 Employ this method, and enjoy not having a massive laundry list of ideas and things to do.
 Projects shouldn't be bogged down with details that don't matter.
 The authors of 
-[Rework](http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
+[Rework](https://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
 say: '*If there is a request you keep forgetting, that's a sign it isn't very important.*'
 So, go out and enjoy the work you are doing, and don't sweat the small stuff!!!
 
 --------------------
 # Further Reading
 
-  1. The Young Beatles: [The Beatles: the birth of the band](http://www.telegraph.co.uk/culture/music/the-beatles/10321180/The-Beatles-the-birth-of-the-band.html)
-  1. Productivity, and running a company: [Rework](http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
-  1. Thinking and being creative: [Pragmatic Thinking and Learning.](http://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)
+  1. The Young Beatles: [The Beatles: the birth of the band](https://www.telegraph.co.uk/culture/music/the-beatles/10321180/The-Beatles-the-birth-of-the-band.html)
+  1. Productivity, and running a company: [Rework](https://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0307463745&linkCode=as2&tag=richsonicom-20)
+  1. Thinking and being creative: [Pragmatic Thinking and Learning.](https://www.amazon.com/gp/product/1934356050/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1934356050&linkCode=as2&tag=richsonicom-20)

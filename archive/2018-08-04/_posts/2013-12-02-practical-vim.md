@@ -1,8 +1,8 @@
 ---
 layout: post
 categories: [Book Reviews]
-avatar: "http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1934356980&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=richsonicom-20"
-hero:   "http://ecx.images-amazon.com/images/I/41DZSBfwndL._SX258_BO1,204,203,200_.jpg"
+avatar: "https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1934356980&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=richsonicom-20"
+hero:   "https://ecx.images-amazon.com/images/I/41DZSBfwndL._SX258_BO1,204,203,200_.jpg"
 tags: [book reviews, vim, coding]
 blurb: 'A great book for a vim user at any level to sharpen their skills'
 title: 'Book Review: Practical Vim'
@@ -44,5 +44,5 @@ That is how awesome this book is.
 
 *If you decide to take my recommendation, and purchase the book. Please use the link below, so I can get something back*  
 
-<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=richsonicom-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=1934356980" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="https://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=richsonicom-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=1934356980" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 

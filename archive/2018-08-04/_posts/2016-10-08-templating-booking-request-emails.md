@@ -8,7 +8,7 @@ author: Rich Soni
 ---
 
 This was written for the Bandflare Blog.
-See it the original [here](http://blog.bandflare.com/diy/template/venue/management/2016/10/12/templating-booking-request-emails.html)
+See it the original [here](https://blog.bandflare.com/diy/template/venue/management/2016/10/12/templating-booking-request-emails.html)
 
 DIY musicians need to send booking inquiries on a regular basis.
 Putting the time and consideration into a well crafted, reusable template saves time and ensures quality.
@@ -28,7 +28,7 @@ I believe my experience playing at SIMILAR_VENUES_HERE make me well suited to pe
 
 I usually have about 20 fans show up to each of my shows, and my sets contain a mix of original music, Irish Songs, and Acoustic Covers (Bob Dylan, Grateful Dead, The Band etc.)
 
-You can find out more about me including sample me music here: http://www.bandf.la/reRichSoni.
+You can find out more about me including sample me music here: https://www.bandf.la/reRichSoni.
 
 Hope to hear from you soon,
 Rich

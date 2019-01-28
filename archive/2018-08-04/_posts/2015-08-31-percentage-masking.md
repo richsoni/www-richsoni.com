@@ -91,14 +91,14 @@ Use the table provided as a rule of thumb to guide your unit choice in negotiati
 
 # Resources
 
-1. [http://biaslist.com][BIASLIST] A Great Site Explaining Cognitive Biases
+1. [https://biaslist.com][BIASLIST] A Great Site Explaining Cognitive Biases
 1. [Mental Accounting and Changes in Price: The Frame Dependence of Reference Dependence][MACHANGE]
 1. [Wikipedia: Framing Effect][FRAME]
 1. [Wikipedia: Mental Accounting][MENTALACCOUNTING]
 1. [Wikipedia: Money Illusion][MONEYILLUSION]
 
-[MACHANGE]:http://jcr.oxfordjournals.org/content/jcr/22/1/90.full.pdf
+[MACHANGE]:https://jcr.oxfordjournals.org/content/jcr/22/1/90.full.pdf
 [FRAME]:https://en.wikipedia.org/wiki/Framing_effect_(psychology)
 [MENTALACCOUNTING]:https://en.wikipedia.org/wiki/Mental_accounting
 [MONEYILLUSION]:https://en.wikipedia.org/wiki/Money_illusion
-[BIASLIST]:http://biaslist.com
+[BIASLIST]:https://biaslist.com

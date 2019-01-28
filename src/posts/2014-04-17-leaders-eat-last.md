@@ -12,26 +12,26 @@ blurb: 'A book that lived up to my expectations'
 
 # Backed By Facts
 
-I was first introduced to Simon Sinek's work through his [2009 Ted Talk](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action).
+I was first introduced to Simon Sinek's work through his [2009 Ted Talk](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action).
 After watching that video, I decided to read about Sinek's theories.
 His first book,
-<a href="http://www.amazon.com/gp/product/B002Q6XUE4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002Q6XUE4&linkCode=as2&tag=richsonicom-20">Start with Why: How Great Leaders Inspire Everyone to Take Action</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B002Q6XUE4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
+<a href="https://www.amazon.com/gp/product/B002Q6XUE4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002Q6XUE4&linkCode=as2&tag=richsonicom-20">Start with Why: How Great Leaders Inspire Everyone to Take Action</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B002Q6XUE4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
 was a great success, and highly recommended.
 
 His sophomore release,
-<a href="http://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last: Why Some Teams Pull Together and Others Don't</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
+<a href="https://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last: Why Some Teams Pull Together and Others Don't</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
 is just as compelling as
-<a href="http://www.amazon.com/gp/product/B002Q6XUE4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002Q6XUE4&linkCode=as2&tag=richsonicom-20">Start with Why</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B002Q6XUE4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
+<a href="https://www.amazon.com/gp/product/B002Q6XUE4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002Q6XUE4&linkCode=as2&tag=richsonicom-20">Start with Why</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B002Q6XUE4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
 I urge anyone that works as part of a team to read the book.
 
 Unlike most leadership books, the concepts in
-<a href="http://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
+<a href="https://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
  are backed by a thick list of scientific studies.
 The book exemplifies teamwork optimization through scientific evidence and historical anecdotes.
 I respect and appreciate the books lengthy bibliography which I dipped into for my own research.
 
 There are troves of information within
-<a href="http://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.
+<a href="https://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.
 This article showcases a handful of concepts plucked from the notes I took while reading the book.
 
   1.  <a href='#ExpandTheCircleofSafety'>Expand The Circle of Safety</a>
@@ -64,7 +64,7 @@ Widening the circle removes the team's focus on internal threats, so they can co
 As such, leaders should strive to widen Circles of Safety within their teams.
 
 In 
-<a href="http://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
+<a href="https://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
 Sinek suggests several ways to widen the Circle of Safety.
 One suggestion is to focus on relationships instead of numbers.
 By doing this leaders assure team members that they are not going to relinquish them for short term financial gains.
@@ -118,13 +118,13 @@ A rank or position does not dictate who a leader is.
 It is the level of belief the followers have in the leader to provide leadership to the team that chooses the leader.
 
 # Conclusion
-<a href="http://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="https://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">Leaders Eat Last</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 is a great read.
 This article is just a small taste of the kinds of information Simon Sinek explores within the book.
 
 I downloaded the book on audible, and plowed through it.
 Additionally, I purchased the
-<a href="http://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">ebook from amazon</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="https://www.amazon.com/gp/product/B00DGZKQM8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DGZKQM8&linkCode=as2&tag=richsonicom-20">ebook from amazon</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B00DGZKQM8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 so I could re-read / highlight all the good parts.
 
 If you read the book, make sure to contribute to the discussion in the comments section below.
