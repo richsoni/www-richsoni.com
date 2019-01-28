@@ -118,19 +118,19 @@ Unlike the dictionary, our definitions leave the subject matter to the discretio
 As an example here is a sampling of some of my favorite hackers:
 
 <ol>
-<li>  Gina Trapini (Lifehacker) <a href='http://ginatrapani.org/'>site</a> </li>
-<li>  Richard Stallman (Software Hacker) <a href='http://en.wikipedia.org/wiki/Richard_Stallman'>wiki</a>, <a href='https://stallman.org/'>site</a> </li>
+<li>  Gina Trapini (Lifehacker) <a href='https://ginatrapani.org/'>site</a> </li>
+<li>  Richard Stallman (Software Hacker) <a href='https://en.wikipedia.org/wiki/Richard_Stallman'>wiki</a>, <a href='https://stallman.org/'>site</a> </li>
 
-<li>  Ramit Sethi (Budget hacker) <a href='http://www.iwillteachyoutoberich.com/blog/'>blog</a>, <a href='http://www.amazon.com/gp/product/0761147489/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0761147489&linkCode=as2&tag=richsonicom-20&linkId=T2EOTFOPGVK3KPCS'>book</a> </li>
+<li>  Ramit Sethi (Budget hacker) <a href='https://www.iwillteachyoutoberich.com/blog/'>blog</a>, <a href='https://www.amazon.com/gp/product/0761147489/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0761147489&linkCode=as2&tag=richsonicom-20&linkId=T2EOTFOPGVK3KPCS'>book</a> </li>
 
-<li>  Benny Lewis (Language Hacker) <a href='http://www.fluentin3months.com/'>blog</a>, <a href='http://www.amazon.com/gp/product/0062282697/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0062282697&linkCode=as2&tag=richsonicom-20&linkId=OG2PZV6AM4QTDB3H'>book </a> </li>
+<li>  Benny Lewis (Language Hacker) <a href='https://www.fluentin3months.com/'>blog</a>, <a href='https://www.amazon.com/gp/product/0062282697/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0062282697&linkCode=as2&tag=richsonicom-20&linkId=OG2PZV6AM4QTDB3H'>book </a> </li>
 
-<li>  Kevin Mitnick (Security Hacker) <a href='http://en.wikipedia.org/wiki/Kevin_Mitnick'>wiki</a>, <a href='http://www.amazon.com/gp/product/0316037729/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0316037729&linkCode=as2&tag=richsonicom-20&linkId=AQUN4MQHRAIEFERF'>book</a> </li>
+<li>  Kevin Mitnick (Security Hacker) <a href='https://en.wikipedia.org/wiki/Kevin_Mitnick'>wiki</a>, <a href='https://www.amazon.com/gp/product/0316037729/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0316037729&linkCode=as2&tag=richsonicom-20&linkId=AQUN4MQHRAIEFERF'>book</a> </li>
 
-<li>  Rolf Potts (Travel Hacker) <a href='http://www.rolfpotts.com/'>site</a>, <a href='http://www.amazon.com/gp/product/0812992180/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0812992180&linkCode=as2&tag=richsonicom-20&linkId=FGX4XXIJEP2FLWSO'>book</a> </li>
-<li>  Vanessa Van Edwards (People Skills Hacker) <a href='http://www.scienceofpeople.com/'>site</a> </li>
-<li>  Tim Feriss (Learning Hacker) <a href='http://fourhourworkweek.com/blog/'>blog</a>, <a href='http://www.amazon.com/gp/product/0547884591/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0547884591&linkCode=as2&tag=richsonicom-20&linkId=JYM3XBS67WHRRI6N'>book</a> </li>
-<li>  Babak Nivi and Naval Ravikant (Venture Hackers) <a href='http://venturehacks.com/'>blog</a> </li>
+<li>  Rolf Potts (Travel Hacker) <a href='https://www.rolfpotts.com/'>site</a>, <a href='https://www.amazon.com/gp/product/0812992180/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0812992180&linkCode=as2&tag=richsonicom-20&linkId=FGX4XXIJEP2FLWSO'>book</a> </li>
+<li>  Vanessa Van Edwards (People Skills Hacker) <a href='https://www.scienceofpeople.com/'>site</a> </li>
+<li>  Tim Feriss (Learning Hacker) <a href='https://fourhourworkweek.com/blog/'>blog</a>, <a href='https://www.amazon.com/gp/product/0547884591/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0547884591&linkCode=as2&tag=richsonicom-20&linkId=JYM3XBS67WHRRI6N'>book</a> </li>
+<li>  Babak Nivi and Naval Ravikant (Venture Hackers) <a href='https://venturehacks.com/'>blog</a> </li>
 </ol>
 </aside>
 
@@ -185,12 +185,12 @@ To become a hacker you have to curate the 3 features a hacker has for that activ
 # Resources
 
 1. [On Hacking by Richard Stallman](https://stallman.org/articles/on-hacking.html)
-1. Gina Trapini (Lifehacker) [site](http://ginatrapani.org/)
-1. Richard Stallman (Software Hacker) [wiki](http://en.wikipedia.org/wiki/Richard_Stallman), [site](https://stallman.org/)
-1. Ramit Sethi (Budget hacker) [blog](http://www.iwillteachyoutoberich.com/blog/), [book](http://www.amazon.com/gp/product/0761147489/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0761147489&linkCode=as2&tag=richsonicom-20&linkId=T2EOTFOPGVK3KPCS)
-1. Benny Lewis (Language Hacker) [blog](http://www.fluentin3months.com/), [book ](http://www.amazon.com/gp/product/0062282697/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0062282697&linkCode=as2&tag=richsonicom-20&linkId=OG2PZV6AM4QTDB3H)
-1. Kevin Mitnick (Security Hacker) [wiki](http://en.wikipedia.org/wiki/Kevin_Mitnick), [book](http://www.amazon.com/gp/product/0316037729/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0316037729&linkCode=as2&tag=richsonicom-20&linkId=AQUN4MQHRAIEFERF)
-1. Rolf Potts (Travel Hacker) [site](http://www.rolfpotts.com/), [book](http://www.amazon.com/gp/product/0812992180/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0812992180&linkCode=as2&tag=richsonicom-20&linkId=FGX4XXIJEP2FLWSO)
-1. Vanessa Van Edwards (People Skills Hacker) [site](http://www.scienceofpeople.com/)
-1. Tim Feriss (Learning Hacker) [blog](http://fourhourworkweek.com/blog/), [book](http://www.amazon.com/gp/product/0547884591/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0547884591&linkCode=as2&tag=richsonicom-20&linkId=JYM3XBS67WHRRI6N)
-1. Babak Nivi and Naval Ravikant (Venture Hackers) [blog](http://venturehacks.com/)
+1. Gina Trapini (Lifehacker) [site](https://ginatrapani.org/)
+1. Richard Stallman (Software Hacker) [wiki](https://en.wikipedia.org/wiki/Richard_Stallman), [site](https://stallman.org/)
+1. Ramit Sethi (Budget hacker) [blog](https://www.iwillteachyoutoberich.com/blog/), [book](https://www.amazon.com/gp/product/0761147489/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0761147489&linkCode=as2&tag=richsonicom-20&linkId=T2EOTFOPGVK3KPCS)
+1. Benny Lewis (Language Hacker) [blog](https://www.fluentin3months.com/), [book ](https://www.amazon.com/gp/product/0062282697/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0062282697&linkCode=as2&tag=richsonicom-20&linkId=OG2PZV6AM4QTDB3H)
+1. Kevin Mitnick (Security Hacker) [wiki](https://en.wikipedia.org/wiki/Kevin_Mitnick), [book](https://www.amazon.com/gp/product/0316037729/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0316037729&linkCode=as2&tag=richsonicom-20&linkId=AQUN4MQHRAIEFERF)
+1. Rolf Potts (Travel Hacker) [site](https://www.rolfpotts.com/), [book](https://www.amazon.com/gp/product/0812992180/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0812992180&linkCode=as2&tag=richsonicom-20&linkId=FGX4XXIJEP2FLWSO)
+1. Vanessa Van Edwards (People Skills Hacker) [site](https://www.scienceofpeople.com/)
+1. Tim Feriss (Learning Hacker) [blog](https://fourhourworkweek.com/blog/), [book](https://www.amazon.com/gp/product/0547884591/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0547884591&linkCode=as2&tag=richsonicom-20&linkId=JYM3XBS67WHRRI6N)
+1. Babak Nivi and Naval Ravikant (Venture Hackers) [blog](https://venturehacks.com/)

@@ -79,7 +79,7 @@ I dont actually use these functions in my application code, but include them to 
 ##  For The Faint Hearted
 
 Some are weary of overwriting builtin prototypes.
-This currying solution provided by [Ampersand55 on reddit](http://www.reddit.com/r/javascript/comments/2maw9q/sifting_for_javascript_ruby_style/) may suit them better than the above solution.
+This currying solution provided by [Ampersand55 on reddit](https://www.reddit.com/r/javascript/comments/2maw9q/sifting_for_javascript_ruby_style/) may suit them better than the above solution.
 
 ```
 function grep(regex) {

@@ -12,7 +12,7 @@ This can be determined by the following question: Would receiving 1,000,000 fans
 If they answer yes, they are a startup artist.
 
 Like Paul Graham says: "A barbershop isn't designed to grow fast. Whereas a search engine, for example, is".
-I got the idea of a startup being differentiated by growth from [this essay](http://paulgraham.com/growth.html).
+I got the idea of a startup being differentiated by growth from [this essay](https://paulgraham.com/growth.html).
 The startup artist, should revolve its strategy around growth checkpoints.
 Instead, I see many measuring consequences/tactics for the growth.
 
@@ -31,4 +31,4 @@ The strategies above should only be executed if they answer the following:
 1. if so, are we doing everything we can to make sure we have that growth?
 1. is it the least amount of work we can do to get the most new fans?
 
-If these questions cannot be answered the activity is [just playing house](http://paulgraham.com/before.html).
+If these questions cannot be answered the activity is [just playing house](https://paulgraham.com/before.html).

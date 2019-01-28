@@ -36,7 +36,7 @@ This same person will take your old iPod or cell phone, fix it up and use it.
 
 Like the Jawa they jump for joy when they are given some old technology junk that they can either use or sell.  
 
-This person will drive around on garbage day listening to [Rag and Bone](http://www.youtube.com/watch?v=uLcnPZbnX5c), and look for old computers that where thrown out.  
+This person will drive around on garbage day listening to [Rag and Bone](https://www.youtube.com/watch?v=uLcnPZbnX5c), and look for old computers that where thrown out.  
 
 Don't laugh to hard though, all you Non-Jawas, because this person knows a lot more than the average person about technology, and has made a hefty sum of cash in the process.  
 <!-- more -->
@@ -50,7 +50,7 @@ Don't laugh to hard though, all you Non-Jawas, because this person knows a lot m
 > "Boba Fett! Boba Fett Where?"
 > ~ Han Solo
 
-In [Snow Crash]("http://www.amazon.com/gp/product/B000FBJCJE/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000FBJCJE&linkCode=as2&tag=richsonicom-20") by Neal Stephenson, gargoyles are people that wear body suits of technology to submerge themselves into the 'internet' world within the story.  
+In [Snow Crash]("https://www.amazon.com/gp/product/B000FBJCJE/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000FBJCJE&linkCode=as2&tag=richsonicom-20") by Neal Stephenson, gargoyles are people that wear body suits of technology to submerge themselves into the 'internet' world within the story.  
 This reminds me a lot of Boba Fett because I picture gargoyles to look similar to him.  
 
 Boba Fett is really into his gear.  
@@ -59,7 +59,7 @@ He has his jet pack, blaster, helmet, and countless tools attached to his armor.
 In our society, this is the person with 2 phones ( both always open ), an iPad, and if they are baller, a Google Glass.  
 They are the bona fide early adopter, and gadget collector.  
 
-This person will buy a [Fitbit]("http://www.amazon.com/gp/product/B0095PZHPE/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0095PZHPE&linkCode=as2&tag=richsonicom-20") just because they read its cool.  
+This person will buy a [Fitbit]("https://www.amazon.com/gp/product/B0095PZHPE/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0095PZHPE&linkCode=as2&tag=richsonicom-20") just because they read its cool.  
 They look just like Boba Fett while walking down the street with all of their gear strapped to them.  
 
 

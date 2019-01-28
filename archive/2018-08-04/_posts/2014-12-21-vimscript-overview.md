@@ -16,7 +16,7 @@ blurb: 'A Brief Transfer of Wisdom On Vimscript'
 
 I presented this material at the New York Vim Meetup.
 View the presentation below:
-<iframe width="560" height="315" src="http://www.youtube.com/embed/WfyXKnQ9kAQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WfyXKnQ9kAQ" frameborder="0" allowfullscreen></iframe>
 
 # Here I Dreamt I Was An Architect
 
@@ -639,62 +639,62 @@ Please feel free to post questions in the comments section below.
 1. ```:h variables```
 
 
-[echo]: http://learnvimscriptthehardway.stevelosh.com/chapters/01.html "Learn Vimscript The Hard Way - Echoing Messages"
-[set]: http://learnvimscriptthehardway.stevelosh.com/chapters/02.html "Learn Vimscript The Hard Way - Setting Options"
-[mappings]: http://learnvimscriptthehardway.stevelosh.com/chapters/03.html "Learn Vimscript The Hard Way - Basic Mapping"
-[abbreviations]: http://learnvimscriptthehardway.stevelosh.com/chapters/08.html "Learn Vimscript The Hard Way - Abbreviations"
-[autocommands]: http://learnvimscriptthehardway.stevelosh.com/chapters/12.html "Learn Vimscript The Hard Way - Autocommands"
-[variables]: http://learnvimscriptthehardway.stevelosh.com/chapters/19.html "Learn Vimscript The Hard Way - Variables"
-[scope]: http://learnvimscriptthehardway.stevelosh.com/chapters/20.html "Learn Vimscript The Hard Way - Variable Scoping"
-[functions]: http://learnvimscriptthehardway.stevelosh.com/chapters/23.html "Learn Vimscript The Hard Way - Functions"
-[strings]: http://learnvimscriptthehardway.stevelosh.com/chapters/26.html "Learn Vimscript The Hard Way - Strings"
-[execute]: http://learnvimscriptthehardway.stevelosh.com/chapters/28.html "Learn Vimscript The Hard Way - Execute"
-[normal]: http://learnvimscriptthehardway.stevelosh.com/chapters/29.html "Learn Vimscript The Hard Way - Normal"
-[execute normal]: http://learnvimscriptthehardway.stevelosh.com/chapters/30.html "Learn Vimscript The Hard Way - Execute Normal!"
-[plugins]: http://learnvimscriptthehardway.stevelosh.com/chapters/42.html "Learn Vimscript The Hard Way - Plugin Layout in the Dark Ages"
-[ftdetect]: http://learnvimscriptthehardway.stevelosh.com/chapters/44.html "Learn Vimscript The Hard Way - Detecting Filetypes"
-[syntax]: http://learnvimscriptthehardway.stevelosh.com/chapters/45.html "Learn Vimscript The Hard Way - Basic Syntax Highlighting"
-[external commands]: http://learnvimscriptthehardway.stevelosh.com/chapters/52.html "Learn Vimscript The Hard Way - External Commands"
-[autoload]: http://learnvimscriptthehardway.stevelosh.com/chapters/53.html "Learn Vimscript The Hard Way - Autoloading"
-[documentation]: http://learnvimscriptthehardway.stevelosh.com/chapters/54.html "Learn Vimscript The Hard Way: Documentation"
+[echo]: https://learnvimscriptthehardway.stevelosh.com/chapters/01.html "Learn Vimscript The Hard Way - Echoing Messages"
+[set]: https://learnvimscriptthehardway.stevelosh.com/chapters/02.html "Learn Vimscript The Hard Way - Setting Options"
+[mappings]: https://learnvimscriptthehardway.stevelosh.com/chapters/03.html "Learn Vimscript The Hard Way - Basic Mapping"
+[abbreviations]: https://learnvimscriptthehardway.stevelosh.com/chapters/08.html "Learn Vimscript The Hard Way - Abbreviations"
+[autocommands]: https://learnvimscriptthehardway.stevelosh.com/chapters/12.html "Learn Vimscript The Hard Way - Autocommands"
+[variables]: https://learnvimscriptthehardway.stevelosh.com/chapters/19.html "Learn Vimscript The Hard Way - Variables"
+[scope]: https://learnvimscriptthehardway.stevelosh.com/chapters/20.html "Learn Vimscript The Hard Way - Variable Scoping"
+[functions]: https://learnvimscriptthehardway.stevelosh.com/chapters/23.html "Learn Vimscript The Hard Way - Functions"
+[strings]: https://learnvimscriptthehardway.stevelosh.com/chapters/26.html "Learn Vimscript The Hard Way - Strings"
+[execute]: https://learnvimscriptthehardway.stevelosh.com/chapters/28.html "Learn Vimscript The Hard Way - Execute"
+[normal]: https://learnvimscriptthehardway.stevelosh.com/chapters/29.html "Learn Vimscript The Hard Way - Normal"
+[execute normal]: https://learnvimscriptthehardway.stevelosh.com/chapters/30.html "Learn Vimscript The Hard Way - Execute Normal!"
+[plugins]: https://learnvimscriptthehardway.stevelosh.com/chapters/42.html "Learn Vimscript The Hard Way - Plugin Layout in the Dark Ages"
+[ftdetect]: https://learnvimscriptthehardway.stevelosh.com/chapters/44.html "Learn Vimscript The Hard Way - Detecting Filetypes"
+[syntax]: https://learnvimscriptthehardway.stevelosh.com/chapters/45.html "Learn Vimscript The Hard Way - Basic Syntax Highlighting"
+[external commands]: https://learnvimscriptthehardway.stevelosh.com/chapters/52.html "Learn Vimscript The Hard Way - External Commands"
+[autoload]: https://learnvimscriptthehardway.stevelosh.com/chapters/53.html "Learn Vimscript The Hard Way - Autoloading"
+[documentation]: https://learnvimscriptthehardway.stevelosh.com/chapters/54.html "Learn Vimscript The Hard Way: Documentation"
 
-[sl01]: http://learnvimscriptthehardway.stevelosh.com/chapters/01.html "Learn Vimscript The Hard Way - Echoing Messages"
-[sl02]: http://learnvimscriptthehardway.stevelosh.com/chapters/02.html "Learn Vimscript The Hard Way - Setting Options"
-[sl03]: http://learnvimscriptthehardway.stevelosh.com/chapters/03.html "Learn Vimscript The Hard Way - Basic Mapping"
-[sl08]: http://learnvimscriptthehardway.stevelosh.com/chapters/08.html "Learn Vimscript The Hard Way - Abbreviations"
-[sl12]: http://learnvimscriptthehardway.stevelosh.com/chapters/12.html "Learn Vimscript The Hard Way - Autocommands"
-[sl19]: http://learnvimscriptthehardway.stevelosh.com/chapters/19.html "Learn Vimscript The Hard Way - Variables"
-[sl20]: http://learnvimscriptthehardway.stevelosh.com/chapters/20.html "Learn Vimscript The Hard Way - Variable Scoping"
-[sl23]: http://learnvimscriptthehardway.stevelosh.com/chapters/23.html "Learn Vimscript The Hard Way - Functions"
-[sl26]: http://learnvimscriptthehardway.stevelosh.com/chapters/26.html "Learn Vimscript The Hard Way - Strings"
-[sl28]: http://learnvimscriptthehardway.stevelosh.com/chapters/28.html "Learn Vimscript The Hard Way - Execute"
-[sl29]: http://learnvimscriptthehardway.stevelosh.com/chapters/29.html "Learn Vimscript The Hard Way - Normal"
-[sl30]: http://learnvimscriptthehardway.stevelosh.com/chapters/30.html "Learn Vimscript The Hard Way - Execute Normal!"
-[sl42]: http://learnvimscriptthehardway.stevelosh.com/chapters/42.html "Learn Vimscript The Hard Way - Plugin Layout in the Dark Ages"
-[sl44]: http://learnvimscriptthehardway.stevelosh.com/chapters/44.html "Learn Vimscript The Hard Way - Detecting Filetypes"
-[sl45]: http://learnvimscriptthehardway.stevelosh.com/chapters/45.html "Learn Vimscript The Hard Way - Basic Syntax Highlighting"
-[sl52]: http://learnvimscriptthehardway.stevelosh.com/chapters/52.html "Learn Vimscript The Hard Way - External Commands"
-[sl53]: http://learnvimscriptthehardway.stevelosh.com/chapters/53.html "Learn Vimscript The Hard Way - Autoloading"
-[sl54]: http://learnvimscriptthehardway.stevelosh.com/chapters/54.html "Learn Vimscript The Hard Way: Documentation"
+[sl01]: https://learnvimscriptthehardway.stevelosh.com/chapters/01.html "Learn Vimscript The Hard Way - Echoing Messages"
+[sl02]: https://learnvimscriptthehardway.stevelosh.com/chapters/02.html "Learn Vimscript The Hard Way - Setting Options"
+[sl03]: https://learnvimscriptthehardway.stevelosh.com/chapters/03.html "Learn Vimscript The Hard Way - Basic Mapping"
+[sl08]: https://learnvimscriptthehardway.stevelosh.com/chapters/08.html "Learn Vimscript The Hard Way - Abbreviations"
+[sl12]: https://learnvimscriptthehardway.stevelosh.com/chapters/12.html "Learn Vimscript The Hard Way - Autocommands"
+[sl19]: https://learnvimscriptthehardway.stevelosh.com/chapters/19.html "Learn Vimscript The Hard Way - Variables"
+[sl20]: https://learnvimscriptthehardway.stevelosh.com/chapters/20.html "Learn Vimscript The Hard Way - Variable Scoping"
+[sl23]: https://learnvimscriptthehardway.stevelosh.com/chapters/23.html "Learn Vimscript The Hard Way - Functions"
+[sl26]: https://learnvimscriptthehardway.stevelosh.com/chapters/26.html "Learn Vimscript The Hard Way - Strings"
+[sl28]: https://learnvimscriptthehardway.stevelosh.com/chapters/28.html "Learn Vimscript The Hard Way - Execute"
+[sl29]: https://learnvimscriptthehardway.stevelosh.com/chapters/29.html "Learn Vimscript The Hard Way - Normal"
+[sl30]: https://learnvimscriptthehardway.stevelosh.com/chapters/30.html "Learn Vimscript The Hard Way - Execute Normal!"
+[sl42]: https://learnvimscriptthehardway.stevelosh.com/chapters/42.html "Learn Vimscript The Hard Way - Plugin Layout in the Dark Ages"
+[sl44]: https://learnvimscriptthehardway.stevelosh.com/chapters/44.html "Learn Vimscript The Hard Way - Detecting Filetypes"
+[sl45]: https://learnvimscriptthehardway.stevelosh.com/chapters/45.html "Learn Vimscript The Hard Way - Basic Syntax Highlighting"
+[sl52]: https://learnvimscriptthehardway.stevelosh.com/chapters/52.html "Learn Vimscript The Hard Way - External Commands"
+[sl53]: https://learnvimscriptthehardway.stevelosh.com/chapters/53.html "Learn Vimscript The Hard Way - Autoloading"
+[sl54]: https://learnvimscriptthehardway.stevelosh.com/chapters/54.html "Learn Vimscript The Hard Way: Documentation"
 
-[events]: http://vimdoc.sourceforge.net/htmldoc/autocmd.html#autocmd-events-abc
-[event]: http://vimdoc.sourceforge.net/htmldoc/autocmd.html#autocmd-events-abc
+[events]: https://vimdoc.sourceforge.net/htmldoc/autocmd.html#autocmd-events-abc
+[event]: https://vimdoc.sourceforge.net/htmldoc/autocmd.html#autocmd-events-abc
 
-[redvin]: http://www.reddit.com/r/vim/comments/1tm8z7/nerdtree_replacement_by_tim_pope/
+[redvin]: https://www.reddit.com/r/vim/comments/1tm8z7/nerdtree_replacement_by_tim_pope/
 [dunt]: https://medium.com/@mozhuuuuu/vimmers-you-dont-need-nerdtree-18f627b561c3
-[ch54]: http://learnvimscriptthehardway.stevelosh.com/chapters/54.html
-[lvsthw]: http://learnvimscriptthehardway.stevelosh.com/
+[ch54]: https://learnvimscriptthehardway.stevelosh.com/chapters/54.html
+[lvsthw]: https://learnvimscriptthehardway.stevelosh.com/
 [scriptease]: https://github.com/tpope/vim-scriptease
 [vim-vinegar]: https://github.com/tpope/vim-vinegar
 [vim-exchange]: https://github.com/tommcdo/vim-exchange
 [vinegar]: https://github.com/tpope/vim-vinegar
 [nerdtree]: https://github.com/scrooloose/nerdtree
-[Oil and vinegar]: http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
+[Oil and vinegar]: https://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
 [tpope]: https://github.com/tpope
 [tommcdo]: https://github.com/tommcdo
 [AndrewRadev]: https://github.com/AndrewRadev
-[Four Freedoms Park]: http://www.fdrfourfreedomspark.org/
-[Louis Khan]: http://www.biography.com/people/louis-kahn-37884
+[Four Freedoms Park]: https://www.fdrfourfreedomspark.org/
+[Louis Khan]: https://www.biography.com/people/louis-kahn-37884
 [fugitive]: https://github.com/tpope/vim-fugitive
 [splitjoin]: https://github.com/AndrewRadev/splitjoin.vim
 [vim-rails]: https://github.com/tpope/vim-rails

@@ -62,7 +62,7 @@ The next sections briefly introduce each element.
 
 ## Todo.txt
 
-[Todo.txt](http://todotxt.com/) is a task management system developed by [Gina Trapini](http://ginatrapani.org/), founder of [lifehacker](http://www.lifehacker.com).
+[Todo.txt](https://todotxt.com/) is a task management system developed by [Gina Trapini](https://ginatrapani.org/), founder of [lifehacker](https://www.lifehacker.com).
 Todo.txt is
 [simple set of rules](https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format)
 for managing a todo list within a plain text (\*.txt) file.
@@ -89,7 +89,7 @@ Others abandoned the app and edit the file via [Dropbox](https://db.tt/OxyOeOS).
 
 ### Resources
 
-1.  [Official Website](http://todotxt.com/)
+1.  [Official Website](https://todotxt.com/)
 1.  [Todo.txt Formatting Rules](https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format)
 1.  <a href="https://itunes.apple.com/us/app/todo.txt-touch/id491342186?mt=8&uo=4" target="itunes_store">The Official Todo.txt iPhone App</a>
 
@@ -139,7 +139,7 @@ Pomodoro trains us to alternate between chunks of work and short breaks.
 
 
 This article will not delve into the psychology behind why Pomodoro works (read about it in
-<a href="http://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=3981567900" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="https://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=3981567900" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
  if you are interested).
 
 Rather, it provides simple high level approach to the technique:
@@ -152,22 +152,22 @@ Rather, it provides simple high level approach to the technique:
 
 
 Pomodoro gets much more nuanced, but this recipe will yield 80% of the potential productivity gains.
-Once the basics of this technique are second nature then try to squeeze out some further optimizations (see <a href="http://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a>).
+Once the basics of this technique are second nature then try to squeeze out some further optimizations (see <a href="https://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a>).
 
 ### Tips
 
-1.  You use a <a href="http://www.amazon.com/gp/product/B00FEC2IRM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00FEC2IRM&linkCode=as2&tag=richsonicom-20&linkId=HOCQIHFMLNWYVUK6">Tomato Clock</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B0027BVVQM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+1.  You use a <a href="https://www.amazon.com/gp/product/B00FEC2IRM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00FEC2IRM&linkCode=as2&tag=richsonicom-20&linkId=HOCQIHFMLNWYVUK6">Tomato Clock</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=B0027BVVQM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 (or just an [App](https://itunes.apple.com/us/app/pomodoroapp/id705103149?mt=12&uo=4)) to track the time.
 1.  Try to wear headphones while on Tomato Time, so that people are less prone to distracting you.
 
 ### Resources
 
 1.  [PomodoroApp](https://itunes.apple.com/us/app/pomodoroapp/id705103149?mt=12&uo=4) <a href="https://itunes.apple.com/us/app/pomodoroapp/id705103149?mt=12&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_macappstore-sm.png) no-repeat;width:81px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_macappstore-sm.svg);}"></a>
-1.  <a href="http://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=3981567900" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+1.  <a href="https://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=3981567900" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 , has a ton of great insights behind the technique.
 It has many nuggets of information that can be used to refine the technique.
-1.  [Freedom](http://macfreedom.com/), Popular method for preventing the viewing of distracting websites
-1.  [SelfControl](http://visitsteve.com/made/selfcontrol/), does the same thing but its free
+1.  [Freedom](https://macfreedom.com/), Popular method for preventing the viewing of distracting websites
+1.  [SelfControl](https://visitsteve.com/made/selfcontrol/), does the same thing but its free
 
 ## Zen Mode
 
@@ -187,18 +187,18 @@ Make use of these at a minimum, but use real Zen Mode when its available since i
 
 ### Tips
 
-1.  Mac OS X users should upgrade to Mavericks because that [release improved the multi screen *"Poor Man's Zen Mode"*](http://support.apple.com/kb/HT5891)
+1.  Mac OS X users should upgrade to Mavericks because that [release improved the multi screen *"Poor Man's Zen Mode"*](https://support.apple.com/kb/HT5891)
 1.  Disable any operating system notifications that can pop up while you are working
-1.  Get Rid of Growlesque notification systems, for Mavericks [read this](http://www.macgasm.net/2014/02/12/turn-off-web-notification-center-mavericks/)
+1.  Get Rid of Growlesque notification systems, for Mavericks [read this](https://www.macgasm.net/2014/02/12/turn-off-web-notification-center-mavericks/)
 1.  Remember that Operating System menus are constantly flashing messages, so make sure you don't just maximize a window, but really make it fullscreen.
 
 ### Resources
 
-1.  In [this video](http://www.youtube.com/watch?v=2dTQWQXhSJU#t=1738) author Neal Strauss discusses his daily routine with Tim Ferris in , around min 28.
+1.  In [this video](https://www.youtube.com/watch?v=2dTQWQXhSJU#t=1738) author Neal Strauss discusses his daily routine with Tim Ferris in , around min 28.
 1.  <a href="https://itunes.apple.com/us/app/writeroom/id417967324?mt=12&uo=4" target="itunes_store">WriteRoom</a>, is a very popular Zen Mode text editor for Mac OS X
 1.  <a href="https://itunes.apple.com/us/app/ommwriter-dana-ii/id412347921?mt=12&uo=4" target="itunes_store">OmmWriter</a>, also a very popular Zen Mode text editor for Mac OS X
 1.  <a href="https://itunes.apple.com/us/app/ulysses-iii/id623795237?mt=12&uo=4" target="itunes_store">Ulysses</a> is the most feature dense writing app with Zen Mode from this list
-1.  [This Post](http://focusmanifesto.com/tools-for-beating-distraction/) lists out a ton of software for other Operating Systems and browsers, I cannot vouch for them since I have not tested them myself
+1.  [This Post](https://focusmanifesto.com/tools-for-beating-distraction/) lists out a ton of software for other Operating Systems and browsers, I cannot vouch for them since I have not tested them myself
 
 # Combining The Pieces
 
@@ -345,19 +345,19 @@ If you choose to take my recommendations please use the following links, so I ca
 If I do not have affiliate links to your favorite site, please let me know so I can use them in the future.*
 
 
-1.  [Official Website](http://todotxt.com/)
+1.  [Official Website](https://todotxt.com/)
 1.  [Todo.txt Formatting Rules](https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format)
 1.  <a href="https://itunes.apple.com/us/app/todo.txt-touch/id491342186?mt=8&uo=4" target="itunes_store">The Official Todo.txt iPhone App</a>
 1.  <a href="https://itunes.apple.com/us/app/find-nearest-starbucks/id446983581?mt=8&uo=4" target="itunes_store">Find Nearest Starbucks</a> App
 1.  [PomodoroApp](https://itunes.apple.com/us/app/pomodoroapp/id705103149?mt=12&uo=4) <a href="https://itunes.apple.com/us/app/pomodoroapp/id705103149?mt=12&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_macappstore-sm.png) no-repeat;width:81px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_macappstore-sm.svg);}"></a>
-1.  <a href="http://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=3981567900" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+1.  <a href="https://www.amazon.com/gp/product/3981567900/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3981567900&linkCode=as2&tag=richsonicom-20&linkId=JDSVLCXRUREJC6GR">The Official Pomodoro Book</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=richsonicom-20&l=as2&o=1&a=3981567900" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 , has a ton of great insights behind the technique.
 It has many nuggets of information that can be used to refine the technique.
-1.  [Freedom](http://macfreedom.com/), Popular method for preventing the viewing of distracting websites
-1.  [SelfControl](http://visitsteve.com/made/selfcontrol/), does the same thing but its free
-1.  In [this video](http://www.youtube.com/watch?v=2dTQWQXhSJU#t=1738) author Neal Strauss discusses his daily routine with Tim Ferris in , around min 28.
+1.  [Freedom](https://macfreedom.com/), Popular method for preventing the viewing of distracting websites
+1.  [SelfControl](https://visitsteve.com/made/selfcontrol/), does the same thing but its free
+1.  In [this video](https://www.youtube.com/watch?v=2dTQWQXhSJU#t=1738) author Neal Strauss discusses his daily routine with Tim Ferris in , around min 28.
 1.  <a href="https://itunes.apple.com/us/app/writeroom/id417967324?mt=12&uo=4" target="itunes_store">WriteRoom</a>, is a very popular Zen Mode text editor for Mac OS X
 1.  <a href="https://itunes.apple.com/us/app/ommwriter-dana-ii/id412347921?mt=12&uo=4" target="itunes_store">OmmWriter</a>, also a very popular Zen Mode text editor for Mac OS X
 1.  <a href="https://itunes.apple.com/us/app/ulysses-iii/id623795237?mt=12&uo=4" target="itunes_store">Ulysses</a> is the most feature dense writing app with Zen Mode from this list
-1.  [This Post](http://focusmanifesto.com/tools-for-beating-distraction/) lists out a ton of software for other Operating Systems and browsers, I cannot vaugue for them since I have not tested them myself
+1.  [This Post](https://focusmanifesto.com/tools-for-beating-distraction/) lists out a ton of software for other Operating Systems and browsers, I cannot vaugue for them since I have not tested them myself
 
