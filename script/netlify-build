@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+if git diff-index --quiet HEAD --; then
+  PROJECT_DIR=`pwd`
+  : ${1?"Usage: $0 First Argument must be the build command to run in the Netlify Image"}
+  cd node_modules/@netlify/build-image
+  ./test-tools/test-build.sh $PROJECT_DIR "$2"
+else
+  echo "Can only run this command with a clean git directory"
+fi

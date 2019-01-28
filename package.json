@@ -8,11 +8,14 @@
     "serve": "gatsby serve",
     "start": "gatsby develop",
     "deploy": "gh-pages-clean && gatsby build --prefix-paths && gh-pages -b master -d public -r https://github.com/richsoni/richsoni.github.io.git",
-    "tsc:coverage": "./scripts/typescript-vs-javascript 2> /dev/null",
+    "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
     "tsc:check": "tsc --noEmit",
-    "tsc:watch": "tsc --noEmit --watch"
+    "tsc:watch": "tsc --noEmit --watch",
+    "netlify:build": "./script/netlify-build 'npm run build'",
+    "netlify:start-image": "./script/netlify-start-image"
   },
   "dependencies": {
+    "@netlify/build-image": "netlify/build-image",
     "@types/object-assign": "^4.0.30",
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
