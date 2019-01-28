@@ -148,7 +148,10 @@ So, I decided to check [netlify-build-image] out.
 
 ## Setup
 The instructions for [netlify-build-image] are fairly clear, and simple:
-I followed [Testing Locally](https://github.com/netlify/build-image#testing-locally).
+I followed [Testing Locally](https://github.com/netlify/build-image#testing-locally), and pulled the docker image:
+```
+docker pull netlify/build
+```
 
 However, there was one thing that was not clear in the instructions:
 *It was not clear that you had to clone the [netlify/build-image] repository*.
@@ -211,7 +214,7 @@ if git diff-index --quiet HEAD --; then
   PROJECT_DIR=`pwd`
   : ${1?"Usage: $0 First Argument must be the build command to run in the Netlify Image"}
   cd node_modules/@netlify/build-image
-  ./test-tools/test-build.sh $PROJECT_DIR 'npm run bootstrap_and_build'
+  ./test-tools/test-build.sh $PROJECT_DIR 'yarn run bootstrap_and_build'
 else
   echo "Can only run this command with a clean git directory"
 fi
@@ -230,35 +233,23 @@ fi
 The way I use them is described in the `package.json`:
 ```
 $ cat package.json | grep 'netlify:build'
-  "netlify:build": "./script/netlify-build 'npm run build'",
+  "netlify:build": "./script/netlify-build 'yarn run build'",
   "netlify:start-image": "./script/netlify-start-image"
 ```
 
-This allows me to run the build locally:
-```
-yarn run netlify:build
-```
-
-I also created corresponding scripts for starting an image shell:
-```
-$ cat script/netlify-start-image
-
-#!/usr/bin/env bash
-DIR=`pwd`
-cd node_modules/@netlify/build-image
-./test-tools/start-image.sh $DIR
-
-$ cat package.json | grep 'netlify:start-image'
-"netlify:start-image": "./script/netlify-start-image"
-```
-
-And a shell can be accessed via:
+This allows me to interact with the [netlify-build-image] in a few different ways:
 
 ```
-yarn run netlify:start-image
+# Testing the build
+$ yarn run netlify:build
+=> $ ./script/netlify-build 'yarn run build'
+... {OUTPUT}
+✨  Done in 406.96s.
+
+# Debugging the build
+$ yarn run netlify:start-image
+$> build 'yarn run build'
 ```
-
-
 
 [Netlify]: https://www.netlify.com/
 [A Step-by-Step Guide: Deploying on Netlify]: https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/
