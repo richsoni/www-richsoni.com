@@ -227,10 +227,11 @@ else
 fi
 ```
 
-Then I added a build command to my package.json:
+The way I use them is described in the `package.json`:
 ```
 $ cat package.json | grep 'netlify:build'
-  "netlify:build": "./script/netlify-build"
+  "netlify:build": "./script/netlify-build 'npm run build'",
+  "netlify:start-image": "./script/netlify-start-image"
 ```
 
 This allows me to run the build locally:
