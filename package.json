@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
     "start": "lerna exec --parallel -- 'yarn start'",
-    "prebuild": "yarn bootstrap",
+    "prebuild": "yarn bootstrap && lerna link",
     "build": "lerna exec --parallel -- 'yarn build'",
-    "bootstrap": "lerna boostrap"
+    "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
     "lerna": "^3.10.5"
