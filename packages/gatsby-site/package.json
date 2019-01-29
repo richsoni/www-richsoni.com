@@ -1,13 +1,12 @@
 {
   "name": "@richsoni/gatsby-site",
   "version": "2.0.0",
+  "private": true,
   "description": "Gatsby site for richsoni.com",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
     "start": "gatsby develop",
+    "build": "gatsby build",
     "deploy": "gh-pages-clean && gatsby build --prefix-paths && gh-pages -b master -d public -r https://github.com/richsoni/richsoni.github.io.git",
     "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
     "tsc:check": "tsc --noEmit",

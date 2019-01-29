@@ -10,7 +10,7 @@
     "react-dom": "^16.7.0"
   },
   "scripts": {
-    "start": "start-storybook -p 9009 -s public",
+    "start": "tsc -w & start-storybook -p 9009 -s public",
     "build": "tsc && yarn storybook:build",
     "storybook:build": "build-storybook -s public"
   },

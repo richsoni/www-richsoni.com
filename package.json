@@ -2,9 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "lerna run start --scope '@richsoni/gatsby-site' --stream",
+    "start": "lerna exec --parallel -- 'yarn start'",
+    "prebuild": "yarn bootstrap",
     "build": "lerna exec --parallel -- 'yarn build'",
-    "build:ci": "lerna bootstrap && yarn build",
     "bootstrap": "lerna boostrap"
   },
   "devDependencies": {
