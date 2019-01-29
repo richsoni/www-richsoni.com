@@ -1,6 +1,6 @@
 ---
 title: Sweet Grass Memory
-composed_at: 2016-04
+composed_at: 2016-04-01
 artists: [Rich Soni]
 ---
 

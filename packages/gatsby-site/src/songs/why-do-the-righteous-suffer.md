@@ -1,6 +1,6 @@
 ---
 title: Why Do The Righteous Suffer
-composed_at: 2015-08
+composed_at: 2015-08-01
 artists: [Rich Soni]
 ---
 

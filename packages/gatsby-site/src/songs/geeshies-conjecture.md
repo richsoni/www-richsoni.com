@@ -1,6 +1,6 @@
 ---
 title: Geeshie's Conjecture
-composed_at: 03/28-03/29
+composed_at: 2017-03-28
 artists: [Rich Soni]
 ---
 

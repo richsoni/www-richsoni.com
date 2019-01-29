@@ -1,6 +1,6 @@
 ---
 title: Fly Away
-composed_at: 2016-04
+composed_at: 2016-04-11
 artists: [Rich Soni]
 ---
 

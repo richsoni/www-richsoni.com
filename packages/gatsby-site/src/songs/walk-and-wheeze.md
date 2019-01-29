@@ -1,6 +1,6 @@
 ---
 title: Walk & Wheeze
-composed_at: 2017-05-09,2017-05-10
+composed_at: 2017-05-09
 artists: [Rich Soni]
 ---
 
