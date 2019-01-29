@@ -1,1 +1,0 @@
-{"version":3,"file":"main.36f5268ea3710ea6f26e.bundle.js","sources":["webpack:///./src/Component.tsx"],"sourcesContent":["import * as React from \"react\";\n\nexport default (props: any) => {\n  return <div>Storybook Component</div>;\n};\n"],"mappings":"AAAA","sourceRoot":""}
