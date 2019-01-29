@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
-    "build": "tsc",
-    "build-storybook": "build-storybook -s public"
+    "build": "tsc && yarn storybook:build",
+    "storybook:build": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
