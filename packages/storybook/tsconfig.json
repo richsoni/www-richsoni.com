@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "./build/components",
     "declaration": true,
     "skipLibCheck": true,
     "module": "esnext",
