@@ -1,45 +1,13 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
+  "name": "root",
+  "private": true,
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "start": "gatsby develop",
-    "deploy": "gh-pages-clean && gatsby build --prefix-paths && gh-pages -b master -d public -r https://github.com/richsoni/richsoni.github.io.git",
-    "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
-    "tsc:check": "tsc --noEmit",
-    "tsc:watch": "tsc --noEmit --watch",
-    "netlify:build": "./script/netlify-build 'npm run build'",
-    "netlify:start-image": "./script/netlify-start-image"
+    "start": "lerna run start --scope '@richsoni/gatsby-site' --stream"
   },
-  "dependencies": {
-    "@netlify/build-image": "netlify/build-image",
-    "@types/object-assign": "^4.0.30",
-    "@types/react": "^16.7.17",
-    "@types/react-dom": "^16.0.11",
-    "@types/react-helmet": "^5.0.7",
-    "@types/react-image-fallback": "^8.0.0",
-    "fs-exists-sync": "^0.1.0",
-    "gatsby": "^2.0.0",
-    "gatsby-link": "^2.0.7",
-    "gatsby-plugin-meta-redirect": "^1.1.0",
-    "gatsby-plugin-pathdata": "^1.1.0",
-    "gatsby-plugin-react-helmet": "^3.0.3",
-    "gatsby-plugin-typescript": "^2.0.3",
-    "gatsby-plugin-typescript-checker": "^1.0.2",
-    "gatsby-source-filesystem": "^2.0.10",
-    "gatsby-transformer-remark": "^2.1.14",
-    "gatsby-transformer-yaml": "^2.1.6",
-    "gh-pages": "^2.0.0",
-    "moment": "^2.22.2",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0",
-    "react-image-fallback": "^8.0.0",
-    "react-media": "^1.8.0",
-    "typescript": "^3.2.2"
-  }
+  "devDependencies": {
+    "lerna": "^3.10.5"
+  },
+  "workspaces": [
+     "packages/*"
+  ]
 }

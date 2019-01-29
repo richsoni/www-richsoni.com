@@ -1,0 +1,42 @@
+{
+  "name": "@richsoni/storybook",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "private": true,
+  "dependencies": {
+    "@types/storybook__react": "^4.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "scripts": {
+    "start": "start-storybook -p 9009 -s public",
+    "build": "tsc",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-links": "^4.1.11",
+    "@storybook/addons": "^4.1.11",
+    "@storybook/react": "^4.1.11",
+    "@types/jest": "23.3.13",
+    "@types/node": "10.12.19",
+    "@types/react": "16.7.22",
+    "@types/react-dom": "16.0.11",
+    "babel-loader": "^8.0.5",
+    "react-scripts": "2.1.3",
+    "tslint": "^5.12.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.2.4"
+  }
+}
