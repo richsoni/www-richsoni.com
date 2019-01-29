@@ -1,6 +1,6 @@
 ---
 title: How Come Sweet Gum
-composed_at: 03-01-2015
+composed_at: 2015-03-01
 artists: [Rich Soni]
 ---
 
