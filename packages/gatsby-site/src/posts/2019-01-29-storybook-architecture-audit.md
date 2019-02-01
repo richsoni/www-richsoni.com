@@ -39,8 +39,6 @@ The official [Storybook] website has a listing of [Storybook Examples].
 Since the website's code is open source, any project can open a pull request, changing [this file](https://github.com/storybooks/storybook/blob/master/docs/src/pages/examples/_examples.yml) to include their project as an example.
 At this time, 28 projects have done so:
 
-
-
 1. [Coursera Storybook]
 1. [Grommet Storybook]
 1. [Wix Style React Storybook]
@@ -516,6 +514,56 @@ Wix also implemented a new pattern `TestKit`, which provides React test snippets
 
 https://github.com/wix/wix-style-react/tree/master/testkit
 
+# Conclusions
+
+## Quality Tiers
+
+In my opinion there are 3 tiers of Storybook projects within these 28 examples:
+1. Incomplete - missing basic patterns that are easy to configure
+2. Standard - following the basic patterns
+3. Progressive - pushing the envelope with custom attributes
+
+## Features
+
+The *Incomplete* projects where missing some of the following items:
+* Cover Stories - Seems too easy to not have
+* Info Addon -  Seems too easy to not have
+* Categories Menu - Requires some thought, but allows for a more mature project in the future
+* Partial Fanning of Component Variations - A personal preference, but it has lots of benefits to the user
+
+The following features are nice, but seem impractical given the effort required:
+* Release Status
+* Playground
+
+## Examples
+
+Here is how I break the examples down by category (bolded my personal favorites):
+
+### Progressive
+1. **[Trunx Storybook]**
+1. **[Wix Style React Storybook]**
+1. [Coursera Storybook]
+
+### Standard
+1. **[GumGum Storybook]**
+1. **[Lucid UI Storybook]**
+1. **[Hack Oregon Storybook]**
+1. **[Vanilla React Storybook]**
+1. [React Native Web Storybook]
+1. [Tachyons Components Storybook]
+1. [Artsy Force Storybook]
+1. [Semantic-UI Storybook]
+1. [Fyndiq Storybook]
+1. [MockingBot Storybook]
+
+### Incomplete
+1. [Grommet Storybook]
+1. [Carbon Components Storybook]
+1. [Lonely Planet Storybook]
+1. [Buffer Components Storybook]
+1. [Cosmos Storybook]
+
+
 [Coursera Storybook]: https://building.coursera.org/coursera-ui/
 [Grommet Storybook]: https://storybook.grommet.io/
 [Wix Style React Storybook]: https://wix.github.io/wix-style-react/
@@ -544,8 +592,6 @@ https://github.com/wix/wix-style-react/tree/master/testkit
 [Cosmos Storybook]: https://auth0-cosmos.now.sh/sandbox/
 [MockingBot Storybook]: https://ibot.guide
 [Vanilla React Storybook]: https://vanilla-framework.github.io/vanilla-framework-react/
-
-
 
 [Coursera Storybook]: https://building.coursera.org/coursera-ui/
 [Grommet Storybook]: https://storybook.grommet.io/
