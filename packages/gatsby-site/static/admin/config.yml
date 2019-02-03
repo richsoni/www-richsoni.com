@@ -2,7 +2,7 @@ backend:
   name: github
   repo: richsoni/www-richsoni.com
 
-media_folder: static/assets
+media_folder: "packages/gatsby-site/static/assets"
 public_folder: assets
 publish_mode: editorial_workflow
 slug:
@@ -42,9 +42,15 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - label: Song
+      - label: Title
         name: title
+      - label: song
+        name: song
         widget: relation
         collection: songs
         searchFields: [title]
+        displayFields: [title]
         valueField: title
+      - label: file
+        name: file
+        widget: file
