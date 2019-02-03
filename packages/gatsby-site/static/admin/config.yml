@@ -1,0 +1,50 @@
+backend:
+  name: github
+  repo: richsoni/www-richsoni.com
+
+media_folder: static/assets
+public_folder: assets
+publish_mode: editorial_workflow
+slug:
+  sanitize_replacement: '-'
+
+collections:
+  - name: albums
+    label: Albums
+    folder: "packages/gatsby-site/src/albums"
+    create: true
+    format: frontmatter
+    fields:
+      - name: title
+        label: Title
+      - name: tracklist
+        label: Tracklist
+        widget: list
+        field: {label: track, widget: string}
+  - label: Songs
+    name: songs
+    folder: "packages/gatsby-site/src/songs"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - label: Title
+        name: title
+      - label: Artists
+        name: artists
+        widget: list
+        default: ['Rich Soni']
+      - label: Body
+        name: body
+        widget: markdown
+  - label: Recordings
+    name: recordings
+    folder: "packages/gatsby-site/src/recordings"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Song
+        name: title
+        widget: relation
+        collection: songs
+        searchFields: [title]
+        valueField: title

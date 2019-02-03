@@ -15,8 +15,8 @@
     "netlify:start-image": "./script/netlify-start-image"
   },
   "dependencies": {
-    "@richsoni/storybook": "0.1.0",
     "@netlify/build-image": "netlify/build-image",
+    "@richsoni/storybook": "0.1.0",
     "@types/object-assign": "^4.0.30",
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
@@ -26,6 +26,7 @@
     "gatsby": "^2.0.0",
     "gatsby-link": "^2.0.7",
     "gatsby-plugin-meta-redirect": "^1.1.0",
+    "gatsby-plugin-netlify-cms": "^3.0.12",
     "gatsby-plugin-pathdata": "^1.1.0",
     "gatsby-plugin-react-helmet": "^3.0.3",
     "gatsby-plugin-typescript": "^2.0.3",
@@ -35,6 +36,7 @@
     "gatsby-transformer-yaml": "^2.1.6",
     "gh-pages": "^2.0.0",
     "moment": "^2.22.2",
+    "netlify-cms": "^2.3.3",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
