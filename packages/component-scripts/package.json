@@ -1,0 +1,32 @@
+{
+  "name": "@richsoni/component-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./bin/component-scripts.js",
+  "bin": {
+    "component-scripts": "./bin/component-scripts.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.7",
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "lodash": "^4.17.11",
+    "rollup": "^1.1.2",
+    "rollup-plugin-postcss-modules": "^1.0.10",
+    "rollup-plugin-typescript2": "^0.19.2",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "build": "echo 'no build for component-scripts'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {}
+}

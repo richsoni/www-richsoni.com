@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "declaration": true,
+    "skipLibCheck": true,
+    "module": "es2015",
+
+    "moduleResolution": "node",
+    "lib": [ "dom", "dom.iterable", "esnext" ],
+    "jsx": "react",
+    "resolveJsonModule": true,
+
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "target": "es5",
+
+
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "src/**/*.ts*"
+  ]
+}
