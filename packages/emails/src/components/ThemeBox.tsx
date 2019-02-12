@@ -9,7 +9,7 @@ type Theme = "light" | "dark"
 
 export type Props = {
   theme: Theme
-  children: JSX.Element[]
+  children: string | JSX.Element[]
 }
 
 const baseTheme = {

@@ -23,7 +23,15 @@ export default class TellAStory1 extends React.Component<Props> {
         <ThemeBox theme='light' >
           <ImgCell src="https://gallery.mailchimp.com/bc85e50b336a97670d097c9d0/images/5db44f69-384e-4146-b07c-b52920112ecd.jpg" />
           <TitledCell title='Organic Music Now!'>
-            I have a few in mind, but if you have a place in mind let me know
+            <p>
+              My&nbsp;podcast 'Organic Music Now!', is on <A href="https://itunes.apple.com/us/podcast/organic-music-now/id1335730643?mt=2" target="_blank">iTunes</A>&nbsp;for your listening pleasure.
+              <br />
+              <br />
+              Episode 4: 72 on 72 is out now on <A href="https://itunes.apple.com/us/podcast/organic-music-now/id1335730643?mt=2" target="_blank">iTunes</A>!&nbsp;
+              <br />
+              <br />
+              I also released an annotated transcript of the episode with links and media included!&nbsp;<A href="http://www.richsoni.com/blog/posts/2018-06-08-72-on-72-transcript.html" target="_blank">Read it Here</A>
+            </p>
           </TitledCell>
         </ThemeBox>
 
