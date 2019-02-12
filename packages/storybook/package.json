@@ -7,6 +7,7 @@
   "dependencies": {
     "@types/storybook__react": "^4.0.0",
     "react": "^16.7.0",
+    "@richsoni/emails": "1.0.0",
     "react-dom": "^16.7.0"
   },
   "scripts": {

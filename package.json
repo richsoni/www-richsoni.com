@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "start": "lerna exec --parallel -- 'yarn start'",
+    "start:storybook": "lerna exec --scope='@richsoni/storybook' --parallel -- 'yarn start' ",
     "prebuild": "yarn bootstrap && lerna link",
     "build": "lerna exec --parallel -- 'yarn build'",
     "bootstrap": "lerna bootstrap"
