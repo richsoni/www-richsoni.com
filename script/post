@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+DIR='packages/gatsby-site/src/posts'
+FILE=`ls $DIR | tail -n1`
+echo "$DIR/$FILE"
