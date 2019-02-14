@@ -1,6 +1,7 @@
 ---
 title: Amelia
-artists: [Rich Soni]
+artists:
+  - Rich
 ---
 
 Your father was a railroad man  
