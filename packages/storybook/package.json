@@ -5,10 +5,12 @@
   "types": "dist/types/index.d.ts",
   "private": true,
   "dependencies": {
-    "@types/storybook__react": "^4.0.0",
-    "react": "^16.7.0",
     "@richsoni/emails": "1.0.0",
     "@richsoni/tile-stv6": "1.0.0",
+    "@storybook/addon-knobs": "^4.1.11",
+    "@types/storybook__addon-knobs": "^4.0.1",
+    "@types/storybook__react": "^4.0.0",
+    "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
   "scripts": {

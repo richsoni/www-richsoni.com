@@ -4,7 +4,6 @@
   "description": "Style Tile for STV6 theme (http://styletil.es/)",
   "author": "richsoni",
   "license": "MIT",
-  "repository": "richsoni/@richsoni/tile-stv6",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
