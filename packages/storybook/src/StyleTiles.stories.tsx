@@ -1,4 +1,4 @@
-import STV6Tile from "@richsoni/tile-stv6";
+import StyleTile from "@richsoni/style-tile";
 import { array, color, text, withKnobs} from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
@@ -7,9 +7,22 @@ const stories = storiesOf("StyleTiles", module);
 
 stories.addDecorator(withKnobs);
 
+stories.add("default", () => (
+  <div style={{width: 1200, margin: "auto auto"}}>
+    <StyleTile
+      tileVersion={1}
+      adjectives={array("Adjectives", [
+        "Example",
+        "Adjective",
+        "Another Example",
+      ])}
+    />
+  </div>
+));
+
 stories.add("STV6", () => (
   <div style={{width: 1200, margin: "auto auto"}}>
-    <STV6Tile
+    <StyleTile
       projectName="RichSoni.com"
       tileVersion={1}
       logoSRC={text("Logo SRC", "https://richsoni.com/static/logo-300-ccaf244cfbddb3bd8bc2478b293c0b3a.png")}

@@ -1,7 +1,7 @@
 {
-  "name": "@richsoni/tile-stv6",
+  "name": "@richsoni/style-tile",
   "version": "1.0.0",
-  "description": "Style Tile for STV6 theme (http://styletil.es/)",
+  "description": "Style Tile (http://styletil.es/)",
   "author": "richsoni",
   "license": "MIT",
   "main": "dist/index.js",

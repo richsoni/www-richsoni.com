@@ -17,10 +17,10 @@ export type TileColors = {
 const defaultColors = {
   background: 'white',
   foreground: 'black',
-  primaryColor: 'blue',
-  secondaryColor: 'red',
-  primaryColorSoft: 'coral',
-  secondaryColorSoft: 'coral',
+  primaryColor: 'slategray',
+  secondaryColor: 'dimgray',
+  primaryColorSoft: 'darkgray',
+  secondaryColorSoft: 'silver',
 }
 
 const Texture = (
@@ -60,9 +60,9 @@ const ColorBox = ({
 }
 
 export type TileProps = {
-  projectName: string,
-  logoSRC: string,
-  tileVersion: number,
+  projectName?: string,
+  logoSRC?: string,
+  tileVersion?: number,
   colors?: TileColors,
   fontFamily?: string,
   textures?: string[],
@@ -107,9 +107,9 @@ export default ({
   fontFamily = '"Lucida Grande","Arial",sans-serif',
   textures = [],
   adjectives = [],
-  projectName,
-  tileVersion,
-  logoSRC
+  projectName = "Project Name",
+  tileVersion = 1,
+  logoSRC = ""
 }: TileProps) => {
   return (
     <div className={styles.tile} style={{
