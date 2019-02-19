@@ -14,13 +14,12 @@ stories.add("STV6", () => (
       tileVersion={1}
       logoSRC={text("Logo SRC", "https://richsoni.com/static/logo-300-ccaf244cfbddb3bd8bc2478b293c0b3a.png")}
       colors={{
-        background: color("Color: background", "#000"),
-        backgroundAccent: color("Color: backgroundAccent", "#5dc3ff"),
-        backgroundSoft: color("Color: backgroundSoft", "#333333"),
-        foreground: color("Color: foreground", "#fff"),
-        foregroundAccent: color("Color: foregroundAccent", "#ff6b5a"),
-        foregroundEmph: color("Color: foregroundEmph", "#f7feb3"),
-        foregroundSoft: color("Color: foregroundSoft", "#c2e3ff"),
+        background: color("Color: background", "#ffffff"),
+        foreground: color("Color: foreground", "#000000"),
+        primaryColor: color("Color: primaryColor", "#1565c0"),
+        primaryColorSoft: color("Color: primaryColorSoft", "#4DAAF6"),
+        secondaryColor: color("Color: secondaryColor", "#FF5F00"),
+        secondaryColorSoft: color("Color: secondaryColorSoft", "#F7A65B"),
       }}
       textures={array("Texture Images", [
         "https://richsoni.com/images/releases/safety-tapes-vol-6.png",
