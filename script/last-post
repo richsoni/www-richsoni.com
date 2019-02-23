@@ -1,0 +1,2 @@
+#! /usr/bin/env bash
+$EDITOR packages/gatsby-site/src/posts/`ls packages/gatsby-site/src/posts | tail -n 1`

@@ -1,10 +1,55 @@
 const {kebabCase} = require('lodash')
-const componentScriptsPkg = require('./packages/component-scripts/package.json')
+const strftime = require('strftime')
 
-const appPath = 'packages/{{componentName}}/'
-const templatePath = '.templates/component-package/'
+
 
 module.exports = function (plop) {
+  const date = strftime('%F', new Date())
+
+  plop.setGenerator('blog-post', {
+    description: 'A Blog Post',
+    prompts: [{
+      type: 'input',
+      name: 'postName',
+      message: 'postName - use kebabCase \n( see: https://www.npmjs.com/package/lodash.kebabcase )\n>',
+      validate: (input) => {
+        return input !== '' && input === kebabCase(input)
+      }
+    },
+    {
+      type: 'input',
+      name: 'categories',
+      message: 'categories - use kebabCase (separate by ,) \n( see: https://www.npmjs.com/package/lodash.kebabcase )\n>',
+    },
+    {
+      type: 'input',
+      name: 'tags',
+      message: 'tags - use kebabCase (separate by ,) \n( see: https://www.npmjs.com/package/lodash.kebabcase )\n>',
+    },
+    {
+      type: 'input',
+      name: 'title',
+      message: 'title - use any case',
+    },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'packages/gatsby-site/src/posts/'+date+'-{{postName}}.md',
+        templateFile: '.templates/post.md.hbs',
+        data: {
+          date: date
+        }
+      },
+    ]
+  });
+
+  const componentScriptsArgs = {
+    pkg: require('./packages/component-scripts/package.json'),
+    appPath: 'packages/{{componentName}}/',
+    templatePath: '.templates/component-package/',
+  }
+
   plop.setGenerator('package-component', {
     description: 'A Package Level Component',
     prompts: [{
@@ -18,35 +63,35 @@ module.exports = function (plop) {
     actions: [
       {
         type: 'add',
-        path: appPath+'package.json',
-        templateFile: templatePath+'package.json.hbs',
+        path: componentScriptsArgs.appPath+'package.json',
+        templateFile: componentScriptsArgs.templatePath+'package.json.hbs',
         data: {
-          componentScriptsVersion: componentScriptsPkg.version
+          componentScriptsVersion: componentScriptsArgs.pkg.version
         }
       },
 
       {
         type: 'add',
-        path: appPath+'readme.md',
-        templateFile: templatePath+'readme.md.hbs'
+        path: componentScriptsArgs.appPath+'readme.md',
+        templateFile: componentScriptsArgs.templatePath+'readme.md.hbs'
       },
 
       {
         type: 'add',
-        path: appPath+'src/index.tsx',
-        templateFile: templatePath+'src/index.tsx.hbs'
+        path: componentScriptsArgs.appPath+'src/index.tsx',
+        templateFile: componentScriptsArgs.templatePath+'src/index.tsx.hbs'
       },
 
       {
         type: 'add',
-        path: appPath+'src/index.stories.tsx',
-        templateFile: templatePath+'src/index.stories.tsx.hbs'
+        path: componentScriptsArgs.appPath+'src/index.stories.tsx',
+        templateFile: componentScriptsArgs.templatePath+'src/index.stories.tsx.hbs'
       },
 
       {
         type: 'add',
-        path: appPath+'src/index.module.css',
-        templateFile: templatePath+'src/index.module.css.hbs'
+        path: componentScriptsArgs.appPath+'src/index.module.css',
+        templateFile: componentScriptsArgs.templatePath+'src/index.module.css.hbs'
       },
     ]
   });
