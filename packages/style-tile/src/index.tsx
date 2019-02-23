@@ -122,14 +122,14 @@ export default ({
             className={styles.topBar}
             style={{
               color: colors.background,
-              background: colors.foreground,
+              background: colors.primaryColor,
             }}
           >
             <div
                className={styles.logo}
                style={{
                  backgroundImage: `url(${logoSRC})`,
-                 backgroundColor: colors.primaryColor,
+                 backgroundColor: colors.primaryColorSoft,
                }}
             />
             <div className={styles.headerRight}> {projectName} </div>
