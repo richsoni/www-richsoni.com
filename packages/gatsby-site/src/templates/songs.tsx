@@ -35,16 +35,19 @@ export default ({ data }: Props) => {
   const song = data.song;
   const date = moment(song.frontmatter.composed_at).format('MM/DD/YYYY')
   const _eventsWithSong = eventsWithSong(data.events, song.fields.basename);
-  const performedLive = eventsWithSong.length > 0 ? `Performed Live: ${_eventsWithSong.length} ${_eventsWithSong.length === 1 ? 'time' : 'times'}` : ''
+  const performedLive = eventsWithSong.length > 0 ? `Performed Live: ${_eventsWithSong.length} ${_eventsWithSong.length === 1 ? 'time' : 'times'}` : '';
+  const composedOn = song.frontmatter.composed_at ? `Date Composed: ${date}` : '';
+
   return (
     <Content>
       <Breadcrumbs>
         <Breadcrumb href="/songs">Songs</Breadcrumb>
         <Breadcrumb>{song.frontmatter.title}</Breadcrumb>
       </Breadcrumbs>
-      {performedLive}
-      Composed: {date}
-      <div style={{marginTop: '2em'}} dangerouslySetInnerHTML={{__html: song.html}} />
+      <h3>{performedLive}</h3>
+      <h3>{composedOn}</h3>
+      <h3>Lyrics:</h3>
+      <div dangerouslySetInnerHTML={{__html: song.html}} />
     </Content>
   )
 };

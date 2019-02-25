@@ -30,7 +30,7 @@ export default class FixedMenu extends React.Component<Props, State> {
         <div style={{ }}>
           <nav
             style={{
-              right: showNavMenu ? 80 : -10000,
+              right: !showNavMenu ? 80 : -10000,
             }}
             className={`${styles.navItemsContainer}`}
           >
@@ -38,7 +38,7 @@ export default class FixedMenu extends React.Component<Props, State> {
           </nav>
           <nav
             style={{
-              right: !showNavMenu ? 64 : -10000,
+              right: showNavMenu ? 64 : -10000,
             }}
             className={`${styles.socialButtonsContainer}`}
           >
