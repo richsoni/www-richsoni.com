@@ -1,0 +1,20 @@
+{
+  "name": "@richsoni/events",
+  "version": "1.0.0",
+  "description": "Event data for richsoni.com",
+  "author": "richsoni",
+  "license": "MIT",
+  "repository": "richsoni/www-richsoni.com",
+  "scripts": {
+    "start": "echo No start for events"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+  },
+  "files": [
+    "data"
+  ]
+}

@@ -26,6 +26,9 @@ class MarkdownFields {
   }
 
   relativeDirectory() {
+    if(this.parent().sourceInstanceName === 'events'){
+      return 'events'
+    }
     return this.parent().relativeDirectory;
   }
 

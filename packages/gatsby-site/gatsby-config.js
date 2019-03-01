@@ -6,6 +6,13 @@ module.exports = {
   {
     resolve: 'gatsby-source-filesystem',
     options: {
+      name: 'events',
+      path: `${__dirname}/node_modules/@richsoni/events/data/`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
       name: 'src',
       path: `${__dirname}/src/`,
     },
