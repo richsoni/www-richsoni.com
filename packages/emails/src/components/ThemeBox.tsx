@@ -3,13 +3,13 @@
  */
 
 import * as React from 'react'
-/// @ts-ignore
+import {ReactNode} from "react";
 
 type Theme = "light" | "dark"
 
 export type Props = {
-  theme: Theme
-  children: string | JSX.Element[]
+  theme: Theme,
+  children: ReactNode,
 }
 
 const baseTheme = {
@@ -32,9 +32,9 @@ const Cell = (props: any) => {
   )
 }
 
-type TitledCellProps = {
+interface TitledCellProps {
   title: string,
-  children: string | JSX.Element
+  children: ReactNode,
 }
 
 export const TitledCell = (props: TitledCellProps) => {

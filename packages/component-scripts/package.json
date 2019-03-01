@@ -17,7 +17,8 @@
     "typescript": "^3.3.3"
   },
   "scripts": {
-    "build": "echo 'no build for component-scripts'"
+    "build": "echo 'no build for component-scripts'",
+    "start": "echo 'no start for component-scripts'"
   },
   "eslintConfig": {
     "extends": "react-app"

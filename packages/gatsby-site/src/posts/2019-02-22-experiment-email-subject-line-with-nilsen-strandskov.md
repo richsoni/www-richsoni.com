@@ -67,7 +67,7 @@ We conducted an A/B test on my 'Week Of Reminder' email.
 As the name suggests, this email is sent about one week before the show reminding the list about it.
 Pretty simple.
 
-I usually use a very simpe subject line like: 'Show This Saturday'.
+I usually use a very simple subject line like: 'Show This Saturday'.
 Nilsen suggested we A/B test this line with something more experimental like: "Hey {Name}, what are your plans this Saturday?".
 That is exactly what we did.
 
