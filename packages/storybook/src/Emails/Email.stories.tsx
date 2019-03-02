@@ -1,4 +1,4 @@
-import { Header, ImgCell, OpenMic, ThemeBox, TitledCell} from "@richsoni/emails";
+import { Header, ImgCell, OpenMic, ThemeBox, TitledCell} from "@richsoni/email-components";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
