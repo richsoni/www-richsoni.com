@@ -1,10 +1,10 @@
 {
-  "name": "@richsoni/table",
+  "name": "@richsoni/link-table",
   "version": "1.0.0",
-  "description": "A Table Component",
+  "description": "A Component for displaying a sortable table of links",
   "author": "richsoni",
   "license": "MIT",
-  "repository": "richsoni/@richsoni/table",
+  "repository": "richsoni/www-richsoni.com",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -21,7 +21,9 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "natural-orderby": "^2.0.1"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",

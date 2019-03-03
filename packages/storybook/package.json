@@ -7,7 +7,7 @@
   "dependencies": {
     "@richsoni/email-components": "1.0.0",
     "@richsoni/style-tile": "1.0.0",
-    "@richsoni/table": "1.0.0",
+    "@richsoni/link-table": "1.0.0",
     "@storybook/addon-knobs": "^4.1.11",
     "@storybook/addon-options": "^4.1.12",
     "@types/storybook__addon-knobs": "^4.0.1",

@@ -1,15 +1,15 @@
-import Table from "@richsoni/table";
+import LinkTable from "@richsoni/link-table";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
-const stories = storiesOf("Table", module);
+const stories = storiesOf("LinkTable", module);
 
 stories.add("default", () => (
   <div style={{width: 1200, margin: "auto auto"}}>
-    <Table
+    <LinkTable
       attributes={['Column 1', 'Column 2', 'Column 3', 'Column 4']}
       sortBy='Column 1'
-      sortDir='ASC'
+      sortDir='asc'
       items={[{
         _id: '1',
         'Column 1': 'hello',

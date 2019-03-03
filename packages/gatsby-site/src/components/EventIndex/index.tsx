@@ -1,36 +1,30 @@
 import React from 'react';
-import {SORTDESC} from '../Table/';
-import Table from '../Table/';
-import {sortASC, sortDESC} from '../Table/dateSort';
 import Content from '../Content/';
 import {Breadcrumbs} from '../Breadcrumbs/';
 import {Breadcrumb} from '../Breadcrumbs/';
+import LinkTable from '@richsoni/link-table';
+
+const eventToTableItem = (event: any) => {
+  return {
+    _id: JSON.stringify(event),
+    'Date': event.dateString,
+    'Venue': event.venueString,
+    'Type': event.typeString,
+    'Start': event.startTime,
+    'Location': event.locationString,
+    'href': event.url,
+  }
+}
 
 export default (props: any) => {
   const upcomingEvents = props.upcomingEvents.length ? (
     <div>
       <p><i>Showing {props.upcomingEvents.length} events</i></p>
-      <Table
-         fields={[{
-           title: 'Date',
-           key: 'dateString',
-           sortASC,
-           sortDESC,
-         }, {
-           title: 'Start',
-           key: 'startTime',
-         }, {
-           title: 'Venue',
-           key: 'venueString',
-         }, {
-           title: 'Type',
-           key: 'typeString',
-         }, {
-           title: 'Location',
-           key: 'locationString',
-         }]}
-         items={props.upcomingEvents}
-         sortDefaultKey='dateString'
+      <LinkTable
+        attributes={['Date', 'Start', 'Venue', 'Type', 'Location']}
+        sortBy='Date'
+        sortDir='asc'
+        items={props.upcomingEvents.map(eventToTableItem)}
       />
     </div>
   ) : (
@@ -48,25 +42,11 @@ export default (props: any) => {
       <Breadcrumb>Past Events</Breadcrumb>
     </Breadcrumbs>
     <p><i>Showing {props.pastEvents.length} events</i></p>
-    <Table
-       fields={[{
-         title: 'Date',
-         key: 'dateString',
-         sortASC,
-         sortDESC,
-       }, {
-         title: 'Venue',
-         key: 'venueString',
-       }, {
-         title: 'Type',
-         key: 'typeString',
-       }, {
-         title: 'Location',
-         key: 'locationString',
-       }]}
-       items={props.pastEvents}
-       sortDefaultKey='dateString'
-       sortDefaultDirection={SORTDESC}
+    <LinkTable
+      attributes={['Date', 'Venue', 'Type', 'Location']}
+      sortBy='Date'
+      sortDir='desc'
+      items={props.pastEvents.map(eventToTableItem)}
     />
   </Content>
 }
