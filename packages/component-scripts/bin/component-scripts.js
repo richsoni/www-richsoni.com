@@ -20,4 +20,5 @@ new commander.Command(utilPkg.name)
   })
   .command('build', 'build the project ~(src/app.js -> dist/app.js)')
   .command('clean', 'clean the project ~(rm -rf dist)')
+  .command('start', 'start the project')
   .parse(process.argv);

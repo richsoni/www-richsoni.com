@@ -6,7 +6,7 @@ class AlbumArt extends React.Component<Props> {
   static defaultProps = {};
 
   render() {
-    return <div>AlbumArt!</div>;
+    return <div>test</div>;
   }
 }
 

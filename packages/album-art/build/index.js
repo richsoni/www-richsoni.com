@@ -39,7 +39,7 @@ var AlbumArt = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     AlbumArt.prototype.render = function () {
-        return React.createElement("div", null, "AlbumArt!");
+        return React.createElement("div", null, "test");
     };
     AlbumArt.defaultProps = {};
     return AlbumArt;

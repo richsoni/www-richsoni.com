@@ -1,11 +1,13 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
+    "defaultSeverity": "warn",
+     "extends": [
         "tslint:recommended"
     ],
     "jsRules": {},
     "rules": {
-       "max-line-length": false
+       "max-line-length": false,
+       "quotemark": false,
+        "object-literal-sort-keys": false
     },
     "rulesDirectory": []
 }
