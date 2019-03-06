@@ -6,7 +6,8 @@
   "license": "MIT",
   "repository": "richsoni/www-richsoni.com",
   "scripts": {
-    "start": "echo No start for events"
+    "start": "echo No start for events",
+    "build": "echo No build for events"
   },
   "dependencies": {
   },

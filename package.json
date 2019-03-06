@@ -7,7 +7,7 @@
     "start:gatsby": "lerna exec --scope='@richsoni/gatsby-site' --parallel -- 'npm run start' ",
     "prebuild": "npm run bootstrap && lerna link",
     "build": "lerna exec --parallel -- 'npm run build'",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap --hoist"
   },
   "devDependencies": {
     "lerna": "^3.10.5"
