@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "@richsoni/email-components": "1.0.0",
+    "@richsoni/components-icon": "1.0.0",
     "@richsoni/style-tile": "1.0.0",
     "@richsoni/components-album-art": "1.0.0",
     "@richsoni/link-table": "1.0.0",
