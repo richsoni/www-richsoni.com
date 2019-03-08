@@ -7,7 +7,6 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gh-pages-clean && gatsby build --prefix-paths && gh-pages -b master -d public -r https://github.com/richsoni/richsoni.github.io.git",
     "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
     "tsc:check": "tsc --noEmit",
     "tsc:watch": "tsc --noEmit --watch",
@@ -36,7 +35,6 @@
     "gatsby-source-filesystem": "^2.0.10",
     "gatsby-transformer-remark": "^2.1.14",
     "gatsby-transformer-yaml": "^2.1.6",
-    "gh-pages": "^2.0.0",
     "moment": "^2.22.2",
     "natural-orderby": "^2.0.1",
     "netlify-cms": "^2.3.3",

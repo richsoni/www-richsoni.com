@@ -1,7 +1,6 @@
 const {kebabCase} = require('lodash')
 const strftime = require('strftime')
-
-
+const {execSync} = require('child_process');
 
 module.exports = function (plop) {
   const date = strftime('%F', new Date())
@@ -47,7 +46,7 @@ module.exports = function (plop) {
   const componentScriptsArgs = {
     pkg: require('./packages/component-scripts/package.json'),
     appPath: 'packages/{{componentName}}/',
-    templatePath: '.templates/component-package/',
+    templatePath: 'packages/component-scripts/templates/component-package/',
   }
 
   plop.setGenerator('package-component', {
@@ -84,15 +83,19 @@ module.exports = function (plop) {
 
       {
         type: 'add',
-        path: componentScriptsArgs.appPath+'src/index.stories.tsx',
-        templateFile: componentScriptsArgs.templatePath+'src/index.stories.tsx.hbs'
-      },
-
-      {
-        type: 'add',
         path: componentScriptsArgs.appPath+'src/index.module.css',
         templateFile: componentScriptsArgs.templatePath+'src/index.module.css.hbs'
       },
+
+      (data) => {
+        try {
+          execSync('lerna bootstrap', {stdio: 'inherit'})
+        } catch(err) {
+          execSync(`rm -rf packages/${data.componentName}`)
+          return 'error rollback!'
+        }
+        return 'done'
+      }
     ]
   });
 };
