@@ -22,9 +22,11 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
     input: resolveApp('src/index.tsx'),
     plugins: [
       external(),
-      postcss({ modules: true }),
       url(),
       // svgr(),
+      postcss({
+        modules: true,
+      }),
       resolve(),
       typescript({
         rollupCommonJSResolveHack: true,
@@ -37,13 +39,6 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
         }
       }),
       commonjs()
-      // postcss({
-      //   extract: true,  // extracts to `${basename(dest)}.css`
-      //   plugins: [autoprefixer()],
-      //   writeDefinitions: true,
-      //   modules: true,
-      //   modules: { }
-      // }),
     ],
   };
 
@@ -67,7 +62,7 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
       .then((bundle) => {
         outputOptions.map((outputOption) => {
           bundle.write(outputOption);
-          console.log(chalk.green('built'));
+          console.log(chalk.green('built1'));
         })
       })
   } else {
@@ -92,7 +87,7 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
       //   ERROR        — encountered an error while bundling
       //   FATAL        — encountered an unrecoverable error
       if(event.code === 'BUNDLE_END'){
-        console.log(chalk.green('built'));
+        console.log(chalk.green('built2'));
         // glob.sync(resolveApp('src/**/*.css')).forEach((css) => {  // Use forEach because https://github.com/rollup/rollup/issues/1873
         //   const definition = `${css}.d.ts`
         //   if (!fs.existsSync(definition))
