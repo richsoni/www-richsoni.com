@@ -87,6 +87,12 @@ module.exports = function (plop) {
         templateFile: componentScriptsArgs.templatePath+'src/index.module.css.hbs'
       },
 
+      {
+        type: 'add',
+        path: componentScriptsArgs.appPath+'src/css-modules.d.ts',
+        templateFile: componentScriptsArgs.templatePath+'src/css-modules.d.ts'
+      },
+
       (data) => {
         try {
           execSync('lerna bootstrap', {stdio: 'inherit'})
