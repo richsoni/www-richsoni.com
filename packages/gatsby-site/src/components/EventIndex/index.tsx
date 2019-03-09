@@ -2,7 +2,7 @@ import React from 'react';
 import Content from '../Content/';
 import {Breadcrumbs} from '../Breadcrumbs/';
 import {Breadcrumb} from '../Breadcrumbs/';
-import LinkTable from '@richsoni/link-table';
+import LinkTable from '@richsoni/components-link-table';
 
 const eventToTableItem = (event: any) => {
   return {

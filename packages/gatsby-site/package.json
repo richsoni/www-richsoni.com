@@ -17,7 +17,7 @@
     "@netlify/build-image": "netlify/build-image",
     "@richsoni/events": "1.0.0",
     "@richsoni/storybook": "0.1.0",
-    "@richsoni/link-table": "1.0.0",
+    "@richsoni/components-link-table": "1.0.0",
     "@types/object-assign": "^4.0.30",
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
