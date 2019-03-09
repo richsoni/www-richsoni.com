@@ -36,7 +36,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts-ts": "^2.16.0",
-    "typescript": "^2.8.3"
+    "typescript": "^3.3.3333"
   },
   "files": [
     "build"
