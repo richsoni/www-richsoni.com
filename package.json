@@ -14,12 +14,12 @@
   },
   "dependencies": {
     "lerna-update-wizard": "^0.11.1",
-    "node": "10.15.3",
+    "node": "^10.15.1",
     "npm": "^6.9.0",
     "plop": "^2.2.1",
     "strftime": "^0.10.0"
   },
   "workspaces": [
-     "packages/*"
+    "packages/*"
   ]
 }
