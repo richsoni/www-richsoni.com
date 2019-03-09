@@ -1,4 +1,4 @@
-import {A, Email, Header, ImgCell, OpenMic, ThemeBox, TitledCell} from "@richsoni/email-components";
+import {A, Email, Header, ImgCell, OpenMic, ThemeBox, TitledCell} from "@richsoni/components-email";
 import { boolean, withKnobs} from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";

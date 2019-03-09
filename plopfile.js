@@ -45,7 +45,7 @@ module.exports = function (plop) {
 
   const componentScriptsArgs = {
     pkg: require('./packages/component-scripts/package.json'),
-    appPath: 'packages/{{componentName}}/',
+    appPath: 'packages/components-{{componentName}}/',
     templatePath: 'packages/component-scripts/templates/component-package/',
   }
 

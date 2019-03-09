@@ -2,6 +2,7 @@ const rollup = require('rollup');
 const typescript = require('rollup-plugin-typescript2');
 const commonjs = require('rollup-plugin-commonjs');
 const external = require('rollup-plugin-peer-deps-external');
+const json = require('rollup-plugin-json');
 const postcss = require('rollup-plugin-postcss');
 const resolve = require('rollup-plugin-node-resolve');
 const url = require('rollup-plugin-url');
@@ -22,6 +23,7 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
     input: resolveApp('src/index.tsx'),
     plugins: [
       external(),
+      json(),
       url(),
       // svgr(),
       postcss({

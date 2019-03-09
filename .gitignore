@@ -1,4 +1,6 @@
 storybook-static
+.vim-tslint
+.editorconfig
 tmp
 .DS_Store
 # old jekyll stuff

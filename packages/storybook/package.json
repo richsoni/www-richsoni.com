@@ -5,7 +5,7 @@
   "types": "dist/types/index.d.ts",
   "private": true,
   "dependencies": {
-    "@richsoni/email-components": "1.0.0",
+    "@richsoni/components-email": "1.0.0",
     "@richsoni/components-icon": "1.0.0",
     "@richsoni/components-chip": "1.0.0",
     "@richsoni/style-tile": "1.0.0",
