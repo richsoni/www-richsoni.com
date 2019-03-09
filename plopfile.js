@@ -35,7 +35,7 @@ module.exports = function (plop) {
       {
         type: 'add',
         path: 'packages/gatsby-site/src/posts/'+date+'-{{postName}}.md',
-        templateFile: '.templates/post.md.hbs',
+        templateFile: 'packages/components-scripts/templates/post.md.hbs',
         data: {
           date: date
         }
