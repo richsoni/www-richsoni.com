@@ -1,4 +1,4 @@
-import StyleTile from "@richsoni/style-tile";
+import StyleTile from "@richsoni/components-style-tile";
 import { array, color, text, withKnobs} from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";

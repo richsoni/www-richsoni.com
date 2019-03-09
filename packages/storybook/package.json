@@ -8,7 +8,7 @@
     "@richsoni/components-email": "1.0.0",
     "@richsoni/components-icon": "1.0.0",
     "@richsoni/components-chip": "1.0.0",
-    "@richsoni/style-tile": "1.0.0",
+    "@richsoni/components-style-tile": "1.0.0",
     "@richsoni/components-album-art": "1.0.0",
     "@richsoni/components-link-table": "1.0.0",
     "@storybook/addon-knobs": "^5.0.0",

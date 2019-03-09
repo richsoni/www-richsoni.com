@@ -6,7 +6,7 @@
     "start:storybook": "lerna exec --scope='@richsoni/storybook' --parallel -- 'npm run start' ",
     "start:gatsby": "lerna exec --scope='@richsoni/gatsby-site' --parallel -- 'npm run start' ",
     "prebuild": "npm run bootstrap && lerna link",
-    "build": "lerna exec --parallel -- 'npm run build'",
+    "build": "lerna run --parallel -- 'npm build' --ignore='@richsoni/storybook' && lerna run --scope='@richsoni/storybook' ",
     "bootstrap": "lerna bootstrap --hoist"
   },
   "devDependencies": {
