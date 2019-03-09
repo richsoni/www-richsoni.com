@@ -1,13 +1,24 @@
 import * as React from 'react';
 import styles from './index.module.css'
 
-type Props = {};
+interface Props {
+  label: string,
+  onClick?: () => any,
+  color: 'default' | 'primary' | 'secondary',
+};
 
 class Chip extends React.Component<Props> {
-  static defaultProps = {};
+  static defaultProps = {
+    label: '',
+    color: 'default',
+  };
 
   render() {
-    return <div className={styles.container}>Chip!</div>;
+    const {label, onClick, color} = this.props;
+    return <div
+      role='button'
+      onClick={onClick || (() => {}) }
+      className={`${styles.container} ${styles[color]} ${onClick ? styles.clickable : ''}`}><span>{label}</span></div>;
   }
 }
 

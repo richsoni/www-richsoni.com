@@ -1,4 +1,48 @@
 .container {
-  background-color: khaki;
-  border: 1px solid charcoal;
+  height: 32px;
+  cursor: default;
+  border: none;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  margin: 8px;
+  font-size: 0.8125rem;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 16px;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.default {
+  background-color: #e0e0e0;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.primary {
+  background-color: aquamarine;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.secondary {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.container span {
+  cursor: inherit;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.clickable {
+  cursor: pointer !important;
 }
