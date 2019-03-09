@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-if git diff-index --quiet HEAD --; then
-  PROJECT_DIR=`pwd`
-  cd node_modules/@netlify/build-image
-  ./test-tools/start-image.sh $PROJECT_DIR
-else
-  echo "Can only run this command with a clean git directory"
-fi

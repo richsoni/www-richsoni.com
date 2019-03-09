@@ -9,12 +9,9 @@
     "build": "gatsby build",
     "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
     "tsc:check": "tsc --noEmit",
-    "tsc:watch": "tsc --noEmit --watch",
-    "netlify:build": "./script/netlify-build 'npm run build'",
-    "netlify:start-image": "./script/netlify-start-image"
+    "tsc:watch": "tsc --noEmit --watch"
   },
   "dependencies": {
-    "@netlify/build-image": "netlify/build-image",
     "@richsoni/components-link-table": "1.0.0",
     "@richsoni/events": "1.0.0",
     "@richsoni/storybook": "0.1.0",
