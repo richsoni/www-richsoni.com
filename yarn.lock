@@ -1799,10 +1799,6 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build-image@netlify/build-image":
-  version "2.6.11"
-  resolved "https://codeload.github.com/netlify/build-image/tar.gz/d4101d8dfc9f4a0c591a188ca477d17d73546934"
-
 "@netlify/open-api@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-0.9.0.tgz#8ac676555df6d2ab38d1397f3b772e04fd518596"
