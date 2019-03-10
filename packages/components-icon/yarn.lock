@@ -717,11 +717,6 @@
     "@svgr/core" "^2.4.1"
     rollup-pluginutils "^2.3.1"
 
-"@types/jest@^23.1.5":
-  version "23.3.14"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.14.tgz#37daaf78069e7948520474c87b80092ea912520a"
-  integrity sha512-Q5hTcfdudEL2yOmluA1zaSyPbzWPmJ3XfSWeP3RyoYvS9hnje1ZyagrZOuQ6+1nQC1Gw+7gap3pLNL3xL6UBug==
-
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
