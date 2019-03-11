@@ -7,7 +7,7 @@
     "component-scripts": "./bin/component-scripts.js"
   },
   "dependencies": {
-    "@babel/core": "^7.3.4",
+    "@babel/core": "7.3.4",
     "@babel/runtime": "7",
     "@svgr/rollup": "^4.1.0",
     "autoprefixer": "^9.4.7",
