@@ -42,7 +42,7 @@
     "react-media": "^1.8.0",
     "typescript": "^3.3.3333"
   },
-  "workspaces": [
+  "workspaces": {
     "nohoist": ["gatsby", "gatsby-*"]
-  ]
+  }
 }
