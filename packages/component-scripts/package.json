@@ -9,7 +9,7 @@
   "dependencies": {
     "@babel/core": "7.3.4",
     "@babel/runtime": "7",
-    "@svgr/rollup": "^4.1.0",
+    "@svgr/rollup": "2.0.0-alpha.26fa501a",
     "autoprefixer": "^9.4.7",
     "chalk": "^2.4.2",
     "chokidar": "^2.1.2",
