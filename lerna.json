@@ -1,12 +1,23 @@
 {
   "version": "3.0.0",
-  "npmClient": "yarn",
-  "useWorkspaces": true,
+  "npmClient": "npm",
   "command": {
     "publish": {
-      "ignoreChanges": ["ignored-file", "*.md"],
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
       "message": "chore(release): publish"
+    },
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ],
+      "hoist": true,
+      "ignoreScripts": true
     }
   },
-  "packages": ["packages/*"]
+  "packages": [
+    "packages/*"
+  ]
 }

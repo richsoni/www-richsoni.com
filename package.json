@@ -2,15 +2,14 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "cleaninstall": "npm run clean && npm run install",
+    "prepare": "npm run bootstrap",
+    "prebootstrap": "lerna exec ../../scripts/prune-package-locks",
+    "bootstrap": "lerna bootstrap && lerna exec --parallel npm run prepare",
     "clean": "lerna exec --parallel -- 'rm -rf dist' && lerna clean && rm -rf node_modules",
-    "install": "yarn install",
-    "prepare": "lerna bootstrap",
+    "cleaninstall": "npm run clean && npm run install",
     "start": "lerna exec --parallel -- 'npm run start'",
     "start:storybook": "lerna exec --scope='@richsoni/storybook' --parallel -- 'npm run start' ",
-    "start:gatsby": "lerna exec --scope='@richsoni/gatsby-site' --parallel -- 'npm run start' ",
-    "prebuild": "npm run bootstrap && lerna link",
-    "build": "lerna run build --parallel --ignore='@richsoni/storybook' --ignore='@richsoni/gatsby-site' && lerna run build --parallel --scope='@richsoni/gatsby-site' --scope='@richsoni/storybook'"
+    "start:gatsby": "lerna exec --scope='@richsoni/gatsby-site' --parallel -- 'npm run start' "
   },
   "devDependencies": {
     "lerna": "^3.10.5"
@@ -22,8 +21,5 @@
     "npm": "^6.9.0",
     "plop": "^2.2.1",
     "strftime": "^0.10.0"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
