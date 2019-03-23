@@ -29,7 +29,8 @@
   },
   "scripts": {
     "build": "echo 'no build for component-scripts'",
-    "start": "echo 'no start for component-scripts'"
+    "start": "echo 'no start for component-scripts'",
+    "prepare": "echo 'no prepare'"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+NPM_FILE=$PWD/.npmrc;
+TEMPLATE="package-lock=false"
+
+if [ "$LERNA_ROOT_PATH" == "" ]; then
+  echo "[ERROR]: Exit with status 1"
+  echo "[Usage]: this script can only be used within the context of a 'lerna exec' command"
+  exit 1;
+fi
+
+if [ -f $PWD/package-lock.json ]; then
+  rm -rf $PWD/package-lock.json
+  echo "[Remove] $PWD/package-lock.json"
+fi
+
+if [ ! -f $NPM_FILE ]; then
+  touch $NPM_FILE;
+  echo "[CREATE]: $NPM_FILE";
+fi
+
+GREP=`grep -c "$TEMPLATE" $NPM_FILE`
+if [ $GREP -eq 0 ]; then
+  echo "$TEMPLATE" > $NPM_FILE;
+  echo "[APPEND]: '$TEMPLATE' > $NPM_FILE"
+fi

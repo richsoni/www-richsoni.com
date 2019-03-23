@@ -7,7 +7,7 @@
   "repository": "richsoni/www-richsoni.com",
   "scripts": {
     "start": "echo No start for events",
-    "build": "echo No build for events"
+    "prepare": "echo No build for events"
   },
   "dependencies": {
   },

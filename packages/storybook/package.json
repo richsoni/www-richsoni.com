@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "tsc -w & start-storybook -p 9009 -s public",
-    "build": "tsc && npm run storybook:build",
+    "prepare": "tsc && npm run storybook:build",
     "storybook:build": "build-storybook -s public -o ./build/storybook"
   },
   "eslintConfig": {
