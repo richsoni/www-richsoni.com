@@ -6,6 +6,7 @@
     "prebootstrap": "lerna exec ../../script/prune-package-locks",
     "bootstrap": "lerna bootstrap && lerna exec --parallel npm run prepare",
     "clean": "lerna exec --parallel -- 'rm -rf dist' && lerna clean && rm -rf node_modules",
+    "build": "lerna run build --parallel --scope='@richsoni/storybook' --scope='@richsoni/gatsby-site'",
     "cleaninstall": "npm run clean && npm install",
     "start": "lerna exec --parallel -- 'npm run start'",
     "start:storybook": "lerna exec --scope='@richsoni/storybook' --parallel -- 'npm run start' ",
