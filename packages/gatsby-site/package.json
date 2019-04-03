@@ -6,7 +6,6 @@
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
-    "prepare": "echo prepare",
     "build": "gatsby build",
     "tsc:coverage": "./script/typescript-vs-javascript 2> /dev/null",
     "tsc:check": "tsc --noEmit",
