@@ -1,6 +1,7 @@
 const {kebabCase} = require('lodash')
 const strftime = require('strftime')
 const {execSync} = require('child_process');
+const fs = require('fs')
 
 module.exports = function (plop) {
   const date = strftime('%F', new Date())
@@ -39,6 +40,27 @@ module.exports = function (plop) {
         data: {
           date: date
         }
+      },
+    ]
+  });
+
+  plop.setGenerator('event', {
+    description: 'Create an event',
+    prompts: [{
+      type: 'rawlist',
+      name: 'venue',
+      message: 'choose a venue',
+      choices: fs.readdirSync('./packages/gatsby-site/src/data/locations/').map((x) => x.replace('.yaml',''))
+    },{
+      type: 'text',
+      name: 'eventDate',
+      message: 'eventDate - use the following format YYYY-MM-DD',
+    },],
+    actions: [
+      {
+        type: 'add',
+        path: 'packages/events/data/{{eventDate}}-{{venue}}.md',
+        templateFile: 'templates/event.md.hbs',
       },
     ]
   });

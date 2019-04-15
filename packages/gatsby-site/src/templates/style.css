@@ -22,6 +22,7 @@
   line-height: 36px;
   word-spacing: 1px;
   font-weight: bold;
+  overflow: visible;
 }
 
 .blog-post-body h2 {
