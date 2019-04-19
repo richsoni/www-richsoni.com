@@ -4,7 +4,7 @@
   "scripts": {
     "all": "npm ci && npm run bootstrap && npm run build",
     "bootstrap": "lerna bootstrap --no-progress",
-    "build": "lerna exec --parallel -- npm run build",
+    "build": "lerna exec -- npm run build",
     "clean": "lerna exec --parallel -- 'rm -rf dist' && lerna clean --yes && rm -rf node_modules",
     "cleaninstall": "npm run clean && npm run all",
     "start": "lerna exec --parallel -- 'npm run start'",
