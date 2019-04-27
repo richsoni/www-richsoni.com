@@ -18,7 +18,9 @@
     "build": "component-scripts build",
     "start": "component-scripts start"
   },
-  "dependencies": {},
+  "dependencies": {
+     "@richsoni/components-icon": "1.0.0"
+  },
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"

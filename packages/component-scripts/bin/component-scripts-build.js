@@ -11,7 +11,6 @@ const resolveOwn = relativePath => path.resolve(__dirname, '..', relativePath);
 
 const utilPkg = require(resolveOwn('package.json'));
 const build = require(resolveOwn('commands/build'));
-const clean = require(resolveOwn('commands/clean'));
 
 new commander.Command(`${utilPkg.name}-build`)
   .version(utilPkg.version)
@@ -23,5 +22,4 @@ const commandArgs = {
   resolveOwn,
 };
 
-clean(commandArgs);
 build(commandArgs);

@@ -17,6 +17,7 @@ const chalk = require('chalk');
 module.exports = ({resolveOwn, resolveApp, watch}) => {
   console.log(chalk.green('building'));
   const pkg = fs.readJSONSync(resolveApp('package.json'));
+  const pkgName = pkg.name.replace(/[^\w]/g, '_');
   // see https://rollupjs.org/guide/en#rollup-rollup
   // for options
   const inputOptions = {
@@ -27,7 +28,9 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
       url(),
       // svgr(),
       postcss({
-        modules: true,
+        modules: {
+          generateScopedName: pkgName+'__[name]__[local]__[hash:base64:5]'
+        }
       }),
       resolve(),
       typescript({
