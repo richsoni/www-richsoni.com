@@ -39,6 +39,7 @@ if(engine === 'npm') {
     hoist: true,
     ignoreScripts: true
   };
+  fs.unlink(resolveApp('yarn.lock'))
 } else if(engine === 'yarn') {
   packageJSON.private = true;
   packageJSON.workspaces = "packages/*"
@@ -46,6 +47,7 @@ if(engine === 'npm') {
   lernaJSON.npmClient = "yarn";
   lernaJSON.useWorkspaces = true;
   delete lernaJSON.command.bootstrap;
+  fs.unlink(resolveApp('package-lock.json'))
 } else {
   program.outputHelp()
   return;

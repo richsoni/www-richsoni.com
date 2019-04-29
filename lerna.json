@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "command": {
     "publish": {
       "ignoreChanges": [
@@ -8,16 +8,10 @@
         "*.md"
       ],
       "message": "chore(release): publish"
-    },
-    "bootstrap": {
-      "npmClientArgs": [
-        "--no-package-lock"
-      ],
-      "hoist": true,
-      "ignoreScripts": true
     }
   },
   "packages": [
     "packages/*"
-  ]
+  ],
+  "useWorkspaces": true
 }
