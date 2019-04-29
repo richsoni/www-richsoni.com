@@ -35,7 +35,7 @@ if(engine === 'npm') {
   delete lernaJSON.useWorkspaces;
   lernaJSON.command = lernaJSON.command || {};
   lernaJSON.command.bootstrap = {
-    npmClientArgs: ['--no-package-json'],
+    npmClientArgs: ['--no-package-lock'],
     hoist: true,
     ignoreScripts: true
   };
@@ -50,6 +50,7 @@ if(engine === 'npm') {
   program.outputHelp()
   return;
 }
-console.log(packageJSON, lernaJSON)
-// fs.writeFileSync(paths.packageJSON, JSON.stringify(packageJSON, null, 2));
-// fs.writeFileSync(paths.lernaJSON, JSON.stringify(packageJSON, null, 2));
+fs.writeFileSync(paths.packageJSON, JSON.stringify(packageJSON, null, 2));
+fs.writeFileSync(paths.lernaJSON, JSON.stringify(lernaJSON, null, 2));
+console.log("Wrote package.json")
+console.log("Wrote lerna.json")

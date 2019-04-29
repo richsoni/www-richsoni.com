@@ -10,7 +10,9 @@
       "message": "chore(release): publish"
     },
     "bootstrap": {
-      "npmClientArgs": [ "--no-package-lock" ],
+      "npmClientArgs": [
+        "--no-package-lock"
+      ],
       "hoist": true,
       "ignoreScripts": true
     }
