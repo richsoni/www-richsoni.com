@@ -1,0 +1,5 @@
+---
+title: Boredom
+artists: [Buzzcocks]
+---
+
