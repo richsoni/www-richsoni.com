@@ -18,7 +18,7 @@ setlist:
   - workingmans-blues
   - lonesome-whistle
   - tomorrow-might-be-monday
-  - electric-slide
+  - electric-boogie
   - please-come-home
   - y-control
   - the-modern-age
