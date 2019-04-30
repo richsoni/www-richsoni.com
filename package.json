@@ -26,5 +26,7 @@
     "plop": "^2.2.1",
     "strftime": "^0.10.0"
   },
-  "workspaces": "packages/*"
+  "workspaces": [
+    "packages/*"
+  ]
 }
