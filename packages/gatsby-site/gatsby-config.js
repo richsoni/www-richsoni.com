@@ -18,7 +18,18 @@ module.exports = {
     },
   },
   'gatsby-plugin-react-helmet',
-  'gatsby-transformer-remark',
+  {
+    resolve: 'gatsby-transformer-remark',
+    options: {
+      plugins: [{
+        resolve: 'gatsby-remark-embed-spotify',
+        options: {
+          width: 400,
+          height: 100,
+        }
+      }]
+    }
+  },
   {
     resolve: 'gatsby-plugin-pathdata',
     options: {

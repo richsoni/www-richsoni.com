@@ -3,38 +3,20 @@ title: Spike Drivers Blues
 artists:
   - Mississippi John Hurt
 ---
-The hammer that killed John Henry  
-But it won't kill me  
-No, it won't kill me.  
 
-The hammer that killed John Henry  
-But it won't kill me  
-No, it won't kill me.  
+### Hammer killed John Henry, wont kill me
 
-John Henry was a steel-driving man  
-Yes, he went down  
-Well, he went down.  
+...is how [Harry Smith] summarizes this song in the [liner notes] to the last section of his [Anthology of American Folk Music].  The following is the original version John Hurt Recorded in 1928.
 
-John Henry, he left his hammer  
-Layin’side the road  
-Layin’side the road.  
+https://open.spotify.com/track/6pn0i3Xn08jPUYRaGMaVqT?si=CxTptz-LR0CkAAjXq47JHw
 
-John Henry, he left his hammer  
-All painted in red  
-All painted in red.  
+I however always preferred the version released in 1966:
 
-Take this hammer and carry it to my captain  
-Tell him I'm gone  
-Won't you tell him I'm gone.  
 
-Take this hammer and throw it in the river  
-It will ring right on.  
-It will shine right on.  
+https://open.spotify.com/track/4ane7rKiUR2VN1xbNLPqSM?si=eLBd3FXyQ2qRK0LrV7JmmQ
 
-I walked all the way from East Colorado  
-Honey, that's my home  
-Babe, that's my home  
+The song is a rejection of the live by the sword die by the sword mentality portrayed in the traditional John Henry / Gonna Die With A Hammer in My Hand Motif, which [Harry Smith] conveniently included in the same set.
 
-This is the hammer that killed John Henry  
-But it won't kill me  
-No, it won't kill me.  
+[Harry Smith]: https://en.wikipedia.org/wiki/Harry_Everett_Smith
+[liner notes]: https://folkways-media.si.edu/liner_notes/smithsonian_folkways/SFW40090.pdf
+[Anthology of American Folk Music]: https://folkways.si.edu/anthology-of-american-folk-music/african-american-music-blues-old-time/music/album/smithsonian

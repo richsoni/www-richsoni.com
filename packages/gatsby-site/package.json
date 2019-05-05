@@ -12,6 +12,7 @@
     "tsc:watch": "tsc --noEmit --watch"
   },
   "dependencies": {
+    "gatsby-remark-embed-spotify": "2.0.2",
     "@richsoni/components-link-table": "1.0.0",
     "@richsoni/events": "1.0.0",
     "@richsoni/storybook": "0.1.0",

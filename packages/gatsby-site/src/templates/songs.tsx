@@ -46,7 +46,6 @@ export default ({ data }: Props) => {
       </Breadcrumbs>
       <h3>{performedLive}</h3>
       <h3>{composedOn}</h3>
-      <h3>Lyrics:</h3>
       <div dangerouslySetInnerHTML={{__html: song.html}} />
     </Content>
   )
