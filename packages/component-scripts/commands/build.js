@@ -23,7 +23,6 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
   const inputOptions = {
     input: resolveApp('src/index.tsx'),
     plugins: [
-      external(),
       json(),
       url(),
       // svgr(),
