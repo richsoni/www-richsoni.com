@@ -8,63 +8,36 @@ external_sources:
   -
     tag: facebook
     href: https://www.facebook.com/events/377398163116522/
----
 
-# Rehearsal
-## 42 Songs
+  -
+    tag: archive
+    href: https://archive.org/details/rs2019-05-26.pine-island-brewery.dr-05
 
+setlist:
 - blues-in-a-bottle
-- ordinary-man-and-the-angel
-- stormy-window
-
-- spike-drivers-blues
-- black-and-blues
-- wayward-sister
-
-- brown-eyed-women
-- song-of-broken-justice
+- hey-baby-doll
 - fly-away
-
+- casey-jones
+- wander-with-me
+- pine-of-the-pub
+- whiskey-in-the-jar
+- queen-of-the-carnival
+- brown-eyed-women
+- bearfort-tower
+- down-in-the-bottom
+- from-four-until-late
+- black-rose
+- thanks-for-the-dream
+- evergreen-eyes
+- get-off-of-my-cloud
+- sweet-grass-memory
 - lets-get-deserted
 - boredom
-- sweet-grass-memory
-
-- workingmans-blues
-- evergreen-eyes
-- lonesome-whistle
-
-- tomorrow-might-be-monday
-- wander-with-me
-- electric-boogie
-
-- please-come-home
-- y-control
+- mellow-mood
+- together
+- song-of-broken-justice
+- black-velvet-band
 - the-modern-age
-
-- casey-jones
-- black-rose
-- ballad-of-the-condor
-
-- just-like-tom-thumbs-blues
-- amelia
-- hey-baby-doll
-
-- black-velvet-band
-- just-like-just-like-tom-thumbs-blues
-- purple-gun
-
-- the-weight
-- thanks-for-the-dream
-- the-girl-who-laughs-at-the-moon
-
-- pine-of-the-pub
-- black-velvet-band
-- the-wild-rover
-
 - benny-bet-his-wife-in-a-game-of-texas-stud
-- magellan-and-me
-- bearfort-tower
-
-- geeshies-conjecture
-- need-for-love
-- weed-smokers-dream
+- please-come-home
+---

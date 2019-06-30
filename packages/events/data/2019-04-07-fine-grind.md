@@ -2,7 +2,10 @@
 startTime: 7:00 PM
 endTime: 9:00 PM
 type: open-mic-host
-publish_notes: true
+external_sources:
+  -
+    tag: archive
+    hrefs: https://archive.org/details/rs2019-04-07.fine-grind.dr-05
 setlist:
   - blues-in-a-bottle
   - ordinary-man-and-the-angel
