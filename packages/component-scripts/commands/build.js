@@ -22,7 +22,14 @@ module.exports = ({resolveOwn, resolveApp, watch}) => {
   // for options
   const inputOptions = {
     input: resolveApp('src/index.tsx'),
+    external: [].concat(
+     Object.keys(pkg.dependencies || {}),
+     Object.keys(pkg.peerDependencies || {}),
+    ),
     plugins: [
+      external({
+        packageJsonPath: resolveApp('package.json'),
+      }),
       json(),
       url(),
       // svgr(),
