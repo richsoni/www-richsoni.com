@@ -1,5 +1,5 @@
 ---
-title: Black & Blues
+title: Bearfort Tower
 composed_at: 2018-08-11
 artists: [Rich Soni]
 ---
