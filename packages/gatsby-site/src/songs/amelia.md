@@ -1,6 +1,9 @@
 ---
 title: Amelia
 artists: [Rich Soni]
+recordings:
+  - id: rs2019-06-09.pine-island-brewery.dr-40
+    tags: recording.error.distortion.minor
 ---
 
 Your father was a railroad man  

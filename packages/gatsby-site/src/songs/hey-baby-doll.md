@@ -1,6 +1,6 @@
 ---
 title: Hey Baby Doll
-composed_at: 2015-10-27
+composed_at: 2015-07-09
 artists: [Rich Soni]
 ---
 

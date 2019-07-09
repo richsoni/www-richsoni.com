@@ -1,6 +1,6 @@
 ---
 title: Willie The Wandering Gypsy
-artists: [Waylon Jennings]
+artists: [Waylon Jennings, Billy Joe Shaver]
 ---
 
 Three fingers whiskey pleasures the drinkers  
