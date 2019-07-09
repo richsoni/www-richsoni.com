@@ -8,43 +8,48 @@ external_sources:
   -
     tag: facebook
     href: https://www.facebook.com/events/326759544927178/
----
-
 equipment:
   - globe-flexigon-surge-protector
   - yamaha-mg10xu
   - yamaha-pa10b
   - electro-voice-zlx-12p
-
 setlist:
-
-- New Guitar Cable
-- Berringer Headphone PreAmp
-- Two Midsize Guitar Cables for Recorder
-- 
-
-- house-of-the-rising-sun
-- i-wont-back-down
-- take-me-home-country-road
-- blues-in-a-bottle
-- diamonds-on-the-soles-of-her-shoes
-- king-of-the-road
-- lucky-old-sun
-- mellow-mood
-
-- just-like-just-like-tom-thumbs-blues
-- geeshies-conjecture
-- black-rose
-- benny-bet-his-wife-in-a-game-of-texas-stud
-- lets-get-deserted
-- fly-away
-- amelia
-- ordinary-man-and-the-angel
-- between-these-canals
-- workingmans-blues
-- tomorrow-might-be-monday
-- sweet-grass-memory
-- my-dog-achilles
-- stormy-window
-- black-and-blues
-- bearfort-tower
+  - ballad-of-the-condor
+  - amelia
+  - lucky-old-sun
+  - black-rose
+  - whiskey-in-the-jar
+  - tomorrow-might-be-monday
+  - between-these-canals
+  - house-of-the-rising-sun
+  - workingmans-blues
+  - ordinary-man-and-the-angel
+  - queen-of-the-carnival
+  - take-me-home-country-roads
+  - need-for-love
+  - stormy-window
+  - brown-eyed-women
+  - lets-get-deserted
+  - benny-bet-his-wife-in-a-game-of-texas-stud
+  - y-control
+  - song-of-broken-justice
+  - sweet-grass-memory
+  - casey-jones
+  - black-and-blues
+  - i-wont-back-down
+  - please-come-home
+  - the-modern-age
+  - the-weight
+  - geeshies-conjecture
+  - black-velvet-band
+  - wander-with-me
+  - blues-in-a-bottle
+  - from-four-until-late
+  - diamonds-on-the-soles-of-her-shoes
+  - evergreen-eyes
+  - thanks-for-the-dream
+  - king-of-the-road
+  - old-five-and-dimers-like-me
+  - willie-the-wandering-gypsy
+  - thats-what-i-call-love
+---
