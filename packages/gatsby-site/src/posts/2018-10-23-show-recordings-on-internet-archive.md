@@ -2,7 +2,7 @@
 layout: post
 date: 2018-10-17
 categories: [changelog]
-tags: []
+tags: [live-music-archive]
 revision: 1
 title: "Show Recordings on the Internet Archive"
 hero: /images/posts/2018-09-10-pine-island-show-recap-hero.png
