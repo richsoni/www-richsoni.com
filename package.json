@@ -6,7 +6,7 @@
     "bootstrap": "lerna bootstrap --no-progress",
     "build:deps": "lerna exec --ignore='@richsoni/gatsby-site' --ignore='@richsoni/storybook' -- npm run build",
     "build": "lerna exec -- npm run build",
-    "clean": "lerna exec --parallel -- 'rm -rf dist' && lerna clean --yes && rm -rf node_modules",
+    "clean": "lerna exec -- 'rm -rf dist' && lerna clean --yes && rm -rf node_modules",
     "cleaninstall": "npm run clean && npm run all",
     "start": "lerna exec --parallel -- 'npm run start'",
     "start:storybook": "lerna exec --scope='@richsoni/storybook' --parallel -- 'npm run start' ",
