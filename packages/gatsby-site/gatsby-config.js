@@ -20,7 +20,19 @@ module.exports = {
   {
     resolve: 'gatsby-transformer-remark',
     options: {
-      plugins: [{
+      plugins: [
+        {
+          resolve: 'gatsby-remark-mermaid',
+          options: {
+              language: 'mermaid',
+              theme: 'default',
+              viewport: {
+                  width: 400,
+                  height: 400
+              }
+          },
+        },
+        {
         resolve: 'gatsby-remark-embed-spotify',
         options: {
           width: 400,

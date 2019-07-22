@@ -3,6 +3,10 @@
   overflow: auto;
 }
 
+.mermaid * {
+  overflow: initial;
+}
+
 .blog-post-body {
   font-size: 18px;
   line-height: 26px;
