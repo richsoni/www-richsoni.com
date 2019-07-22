@@ -19,7 +19,7 @@
     "start": "component-scripts start"
   },
   "dependencies": {
-     "@richsoni/components-icon": "1.0.0"
+    "@richsoni/components-icon": "1.0.0"
   },
   "peerDependencies": {
     "react": "*",
@@ -33,7 +33,7 @@
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "react-scripts-ts": "^2.16.0",
-    "typescript": "3.3.3333"
+    "typescript": "^3.5.3"
   },
   "files": [
     "build"
