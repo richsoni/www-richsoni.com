@@ -4,7 +4,7 @@ date: 2019-07-19
 categories: []
 tags: [music live-music-archive]
 revision: 2
-title: "sox"
+title: "Using SoX to improve Live Music Archive Publishing Latency"
 hero: "/images/posts/2019-07-09-hero.png"
 ---
 
